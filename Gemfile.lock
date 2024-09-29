@@ -1,12 +1,9 @@
-<<<<<<< HEAD
 PATH
   remote: .
   specs:
     jekyll-agency (1.1.0)
       jekyll (>= 4.0, < 4.4)
 
-=======
->>>>>>> 767d16e (Initial commit)
 GEM
   remote: https://rubygems.org/
   specs:
@@ -19,11 +16,8 @@ GEM
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
     ffi (1.17.0)
-<<<<<<< HEAD
-=======
     ffi (1.17.0-arm64-darwin)
     ffi (1.17.0-x86_64-darwin)
->>>>>>> 767d16e (Initial commit)
     forwardable-extended (2.6.0)
     google-protobuf (3.25.5)
     google-protobuf (3.25.5-arm64-darwin)
@@ -48,17 +42,12 @@ GEM
       safe_yaml (~> 1.0)
       terminal-table (>= 1.8, < 4.0)
       webrick (~> 1.7)
-<<<<<<< HEAD
-    jekyll-sass-converter (3.0.0)
-      sass-embedded (~> 1.54)
-=======
     jekyll-feed (0.17.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-sass-converter (3.0.0)
       sass-embedded (~> 1.54)
     jekyll-seo-tag (2.8.0)
       jekyll (>= 3.8, < 5.0)
->>>>>>> 767d16e (Initial commit)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     kramdown (2.4.0)
@@ -70,13 +59,10 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
-<<<<<<< HEAD
-=======
     minima (2.5.2)
       jekyll (>= 3.5, < 5.0)
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
->>>>>>> 767d16e (Initial commit)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (6.0.1)
@@ -84,19 +70,16 @@ GEM
     rb-fsevent (0.11.2)
     rb-inotify (0.11.1)
       ffi (~> 1.0)
-    rexml (3.3.7)
+    rexml (3.3.8)
     rouge (4.4.0)
     safe_yaml (1.0.5)
     sass-embedded (1.69.5)
       google-protobuf (~> 3.23)
       rake (>= 13.0.0)
-<<<<<<< HEAD
-=======
     sass-embedded (1.69.5-arm64-darwin)
       google-protobuf (~> 3.23)
     sass-embedded (1.69.5-x86_64-darwin)
       google-protobuf (~> 3.23)
->>>>>>> 767d16e (Initial commit)
     terminal-table (3.0.2)
       unicode-display_width (>= 1.1.1, < 3)
     unicode-display_width (2.6.0)
@@ -109,19 +92,16 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-<<<<<<< HEAD
   bundler (~> 2.0)
-  jekyll-agency!
-  rake (~> 13.0)
-=======
   http_parser.rb (~> 0.6.0)
   jekyll (~> 4.3.4)
+  jekyll-agency!
   jekyll-feed (~> 0.12)
   minima (~> 2.5)
+  rake (~> 13.0)
   tzinfo (>= 1, < 3)
   tzinfo-data
   wdm (~> 0.1)
->>>>>>> 767d16e (Initial commit)
 
 BUNDLED WITH
    2.5.20
