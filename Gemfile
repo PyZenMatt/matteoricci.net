@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 #after any changes to the Gemfile, execute bundle update!
 source "https://rubygems.org"
 gemspec
@@ -6,7 +6,6 @@ gemspec
 # Delete the following lines if not on Windows: 
 # Performance-booster for watching directories on Windows
 gem "wdm", ">= 0.1.0" if Gem.win_platform?
-=======
 source "https://rubygems.org"
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
@@ -40,4 +39,4 @@ gem "wdm", "~> 0.1", :platforms => [:mingw, :x64_mingw, :mswin]
 # Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds since newer versions of the gem
 # do not have a Java counterpart.
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
->>>>>>> 767d16e (Initial commit)
+
