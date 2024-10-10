@@ -69,9 +69,9 @@ en: &DEFAULT_EN
     end: "Be Part <br> of Our <br> Story!"
 
   about:
-    title: "About Us"
-    text: "our story"
-    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
+    title: "About Me"
+    text: "Chi Sono"
+    body: Sono Matteo Ricci, scrittore e blogger appassionato, con un forte desiderio di esprimere e condividere le mie idee.<br><br>La scrittura è il mio strumento preferito per esplorare il mondo e raccontare ciò che mi ispira.<br><br>Gestisco diversi blog che trattano argomenti a me cari, come benessere, creatività, Bitcoin e molto altro.<br><br>Mi piace raccontare storie, spiegare concetti complessi in modo semplice e offrire spunti di riflessione ai miei lettori.<br><br>Oltre alla scrittura, il disegno è un’altra mia grande passione. <br><br>Mi piace eseguire sketch urbani dei posti che visito. <br><br>Trovo che l’arte visiva, come la parola scritta, sia un modo potente per comunicare e dare forma alle idee.<br><br>Nel mondo della tecnologia, ho esperienza in programmazione in Python, Django e altre tecnologie che oggi sono all'avanguardia.<br><br> Mi piace rimanere informato e studiare sempre nuovi argomenti, partecipo spesso a room formative di penetration test su TryHackMe, dove metto alla prova le mie conoscenze. <br><br>Preferisco usare queste competenze come strumenti per arricchire il mio lavoro di scrittura e condividere le mie conoscenze con gli altri ma non mi limito alla paretcipazioni su progetti open source e collaborazioni.<br><br>Il mio sito, matteoricci.net, è il luogo in cui raccolgo tutte le mie passioni e creo contenuti che riflettono ciò che amo.<br><br>Il mio sogno? Continuare a scrivere, viaggiare e diventare un nomade digitale, condividendo storie e conoscenze attraverso blog e corsi online.<br><br>Se ti interessa esplorare il mondo del benessere, della creatività o della tecnologia, i miei progetti sono una finestra aperta sul mio percorso.<br><br> Se sei interessato a conoscermi non esitare a scrivermi all'indirizzo <b>info@matteoricci.net</b> oppure <a href="https://github.com/PyZenMatt" target="_blank">visita il mio profilo GitHub</a> <br><br> A presto!
     section: about
 
   clients:
