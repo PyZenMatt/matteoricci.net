@@ -17,4 +17,12 @@ group :jekyll_plugins do
     gem 'jekyll-archives'
     gem 'kramdown'
     gem 'rouge'
+    gem 'rexml'
+    gem "jekyll", "~> 4.2.0"  # Ultima versione stabile di Jekyll
+    gem "kramdown-parser-gfm" # Supporto per la sintassi di GitHub Flavored Markdown
+    
+
+
 end
+
+gem "webrick", "~> 1.9"
