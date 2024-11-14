@@ -2,12 +2,13 @@
 layout: post
 title: "Multimedia in HTML"
 author: sal
-categories: html, tutorial, sviluppo web, linguaggio HTML
-image: assets/images/
+categories: HTML, tutorial, sviluppo web, linguaggio HTML
+image: assets/images/ 
 featured: 
-description: "- Inserire audio e video ,attributi per gestire il comportamento dei media: controls, autoplay, loop, muted. [link]"
+description: "Inserire audio e video ,attributi per gestire il comportamento dei media: controls, autoplay, loop, muted. [link]"
 keywords: HTML, introduzione HTML, guida HTML, tag HTML, creare sito web, linguaggio HTML
 Introduzione a HTML: Creare le Fondamenta del Web
+hidden: true
 ---
 
 In HTML, gli elementi `<audio>` e `<video>` permettono di incorporare file multimediali come audio e video direttamente nelle pagine web, offrendo all'utente una riproduzione controllata senza la necessità di plugin esterni.

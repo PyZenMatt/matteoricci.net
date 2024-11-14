@@ -2,10 +2,12 @@
 layout: post
 title: "Accesibilità in Html"
 author: Teo
-categories: html, tutorial, sviluppo web, linguaggio HTML
+categories: HTML, tutorial, sviluppo web, linguaggio HTML
 image: assets/images/
 featured: 
+hidden: true
 description: " Questi attributi permettono di aggiungere funzionalità o informazioni agli elementi e sono supportati da tutti i browser."
+hidden: true
 ---
 
 L'accessibilità in HTML è un aspetto cruciale per rendere i contenuti web fruibili a tutti, incluse le persone con disabilità. Vediamo alcune delle best practice fondamentali per garantire un'esperienza inclusiva, focalizzandoci sull'uso degli attributi alt per le immagini e degli attributi ARIA.

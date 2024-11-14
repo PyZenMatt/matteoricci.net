@@ -1,12 +1,13 @@
 ---
 layout: post
 title: "Testo e formattazione"
-author: sal
-categories: html, tutorial, sviluppo web, linguaggio HTML
+author: teo
+categories: HTML, tutorial, sviluppo web, linguaggio HTML
 image: assets/images/
 description: "Tag per la formattazione del testo Liste"
 keywords: HTML, introduzione HTML, guida HTML, tag HTML, creare sito web, linguaggio HTML
 Introduzione a HTML: Creare le Fondamenta del Web
+hidden: true
 ---
 
 Partiamo dalle basi e analizziamo con cura ogni tag per la formattazione del testo e le liste in HTML. Immagina che HTML sia come uno strumento per dare struttura al testo, mentre i tag di formattazione e liste servono per dare uno stile e una gerarchia visiva. Vediamo ogni tag nel dettaglio.

@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "incorporazione di contenuti esterni
-author: sal
-categories: html, tutorial, sviluppo web, linguaggio HTML
+title: "incorporazione di contenuti esterni"
+author: Teo
+categories: HTML, tutorial, sviluppo web, linguaggio HTML
 image: assets/images/
-featured: true
+featured: 
 description: Canvas per la grafica dinamica API avanzate geolocalizzazione, storage locale (localStorage, sessionStorage)"
+hidden: true
 ---
 L’incorporazione di contenuti esterni come mappe o video nelle tue pagine HTML è utile per arricchire l’esperienza dell’utente, aggiungendo funzionalità interattive e contenuti multimediali. Un modo comune per farlo è utilizzare il tag HTML `<iframe>`. Vediamo nel dettaglio come funziona.
 

@@ -1,12 +1,13 @@
 ---
 layout: post
 title: "Validazione e strumenti per HTML"
-author: sal
-categories: html, tutorial, sviluppo web, linguaggio HTML
+author: teo
+categories: HTML, tutorial, sviluppo web, linguaggio HTML
 image: assets/images/
 featured: 
 description: "- Strumenti per la validazione e il debugging dell’HTML. Editor consigliati per lavorare con HTML: Visual Studio Code, Atom, Sublime Text."
 keywords: HTML, introduzione HTML, guida HTML, tag HTML, creare sito web, linguaggio HTML
+hidden: true
 ---
 
 L'HTML (Hypertext Markup Language) è il linguaggio di markup standard per la creazione di pagine web. Una buona pratica nello sviluppo web è assicurarsi che l'HTML sia ben strutturato e conforme agli standard per garantire la compatibilità e l'accessibilità attraverso diversi browser e dispositivi. Ecco una panoramica degli strumenti di validazione, debugging e degli editor consigliati per lavorare con l'HTML:

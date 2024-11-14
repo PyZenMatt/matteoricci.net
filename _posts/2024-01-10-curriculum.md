@@ -3,13 +3,10 @@ layout: post
 title:  "Curriculum Vitae  "
 author: Matteo Ricci
 categories: 
-tags: [curriculum]
+tags: curriculum
 image: assets/images/cv.png
 description: "Il mio curriculum vitae. Sempre pronto ad essere consultato"
 hidden: true
-
-
-
 ---
 
 Privacy e Protezione delle Informazioni

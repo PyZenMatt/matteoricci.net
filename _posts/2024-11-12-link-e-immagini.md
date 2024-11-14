@@ -2,11 +2,12 @@
 layout: post
 title: "Link e immagini"
 author: sal
-categories: html, tutorial, sviluppo web, linguaggio HTML
+categories: HTML, tutorial, sviluppo web, linguaggio HTML
 image: assets/images/
 featured: 
 description: "Creare collegamenti ipertestuali , Inserire immagini con e proprietà per gestire dimensioni e testo alternativo"
 keywords: HTML, introduzione HTML, guida HTML, tag HTML, creare sito web, linguaggio HTML
+hidden: true
 ---
 In HTML, per creare collegamenti ipertestuali e inserire immagini, si utilizzano i tag <a> e <img>. Di seguito, ti spiego in dettaglio come funzionano e come personalizzarli.
 1. Creare Collegamenti Ipertestuali con <a href="">

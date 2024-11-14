@@ -1,12 +1,13 @@
 ---
 layout: post
 title: "Introduzione a HTML: Guida Completa per Principianti"
-author: sal
-categories: html, tutorial, sviluppo web, linguaggio HTML, guida
+author: Teo
+categories: HTML, tutorial, sviluppo web, linguaggio HTML, guida
 image: assets/images/html.jpg
 featured: true
 description: "Scopri le basi dell'HTML in questa guida per principianti: dai tag alla struttura delle pagine web, impara a costruire le fondamenta del web."
 keywords: HTML, introduzione HTML, guida HTML, tag HTML, creare sito web, linguaggio HTML
+hidden: true
 Introduzione a HTML: Creare le Fondamenta del Web
 ---
 

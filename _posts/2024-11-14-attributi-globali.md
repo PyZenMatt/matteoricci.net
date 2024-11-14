@@ -2,10 +2,12 @@
 layout: post
 title: "Attributi Globali"
 author: Teo
-categories: html, tutorial, sviluppo web, linguaggio HTML
+categories: HTML, tutorial, sviluppo web, linguaggio HTML
 image: assets/images/
-featured: 
+featured:
+hidden: true
 description: " Questi attributi permettono di aggiungere funzionalità o informazioni agli elementi e sono supportati da tutti i browser."
+hidden: true
 ---
 
 

@@ -1,12 +1,13 @@
 ---
 layout: post
 title: "Formattazione semantica"
-author: sal
-categories: html, tutorial, sviluppo web, linguaggio HTML
+author: Teo
+categories: HTML, tutorial, sviluppo web, linguaggio HTML
 image: assets/images/
 featured: 
 description: "Uso dei tag semantici"
 Introduzione a HTML: Creare le Fondamenta del Web
+hidden: true
 ---
 La formattazione semantica in HTML consiste nell’uso di tag specifici per definire il ruolo e la funzione di diverse parti di una pagina web. Usare tag semantici è importante per creare un codice leggibile, ben organizzato e accessibile, sia per i motori di ricerca che per gli utenti. I tag semantici aiutano a indicare chiaramente cosa rappresenta ciascuna sezione del contenuto, permettendo ai browser e agli screen reader di interpretarlo correttamente. Di seguito analizziamo i principali tag semantici e il loro utilizzo.
 1. **Header**

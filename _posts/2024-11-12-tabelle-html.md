@@ -2,12 +2,13 @@
 layout: post
 title: "Tabelle HTML"
 author: sal
-categories: html, tutorial, sviluppo web, linguaggio HTML
+categories: HTML, tutorial, sviluppo web, linguaggio HTML
 image: assets/images/
 featured: 
 description: "- Creazione di tabelle "
 keywords: HTML, introduzione HTML, guida HTML, tag HTML, creare sito web, linguaggio HTML
 Introduzione a HTML: Creare le Fondamenta del Web
+hidden: true
 ---
 
 In HTML, le tabelle sono create usando una struttura specifica di tag che organizzano dati in righe e colonne. Ecco una guida dettagliata su come funzionano i vari elementi per costruire una tabella:
