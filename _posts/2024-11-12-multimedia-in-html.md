@@ -3,7 +3,7 @@ layout: post
 title: "Multimedia in HTML"
 author: sal
 categories: html, tutorial, sviluppo web, linguaggio HTML
-image: assets/images/html.jpg
+image: assets/images/
 featured: 
 description: "- Inserire audio e video ,attributi per gestire il comportamento dei media: controls, autoplay, loop, muted. [link]"
 keywords: HTML, introduzione HTML, guida HTML, tag HTML, creare sito web, linguaggio HTML
