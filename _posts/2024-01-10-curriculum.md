@@ -2,7 +2,7 @@
 layout: post
 title:  "Curriculum Vitae  "
 author: Matteo Ricci
-categories: [ Cv ]
+categories: 
 tags: [curriculum]
 image: assets/images/cv.png
 description: "Il mio curriculum vitae. Sempre pronto ad essere consultato"
@@ -61,7 +61,7 @@ Sviluppo di relazioni durature con i clienti e negoziazione di accordi commercia
 
 
 # Market Developer | Coca-Cola Italia
-**Napoili Periodo: 2014 - 2016**
+**Napoli Periodo: 2014 - 2016**
 
 Identificazione di nuove opportunità di mercato e sviluppo di piani d'azione per aumentare la visibilità del marchio.
 

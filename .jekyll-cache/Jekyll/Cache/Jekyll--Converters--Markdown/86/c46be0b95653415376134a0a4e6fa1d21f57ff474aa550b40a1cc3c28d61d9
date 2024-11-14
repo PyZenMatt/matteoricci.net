@@ -1,0 +1,168 @@
+I"�<p>Capisco perfettamente: partiamo dalle basi e analizziamo con cura ogni tag per la formattazione del testo e le liste in HTML. Immagina che HTML sia come uno strumento per dare struttura al testo, mentre i tag di formattazione e liste servono per dare uno stile e una gerarchia visiva. Vediamo ogni tag nel dettaglio.
+Tag per la Formattazione del Testo</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre>&lt;strong&gt; e &lt;b&gt;
+    &lt;strong&gt;: Utilizziamo questo tag per dare enfasi forte a una parola o frase, segnalandone l’importanza. Anche i lettori di schermo lo interpretano come un contenuto di maggior rilievo. Visivamente, appare in grassetto.
+    &lt;b&gt;: Anche questo tag rende il testo in grassetto, ma è una scelta puramente visiva e non segnala un significato speciale per il contenuto. Lo usiamo solo per dare stile.
+
+Esempio:
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><strong>Testo importante</strong>
+<b>Testo in grassetto senza enfasi</b></p>
+
+<p><em> e <i></i></em></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>&lt;em&gt;: Sta per "emphasis" e indica un'enfasi leggera su una parola o frase. Di solito viene reso in corsivo e viene interpretato dai lettori di schermo per sottolineare il significato.
+&lt;i&gt;: Applica il corsivo ma non ha alcun significato semantico, quindi è solo per lo stile, senza enfasi.
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Esempio:</p>
+
+<p><em>Testo con enfasi leggera</em>
+<i>Testo in corsivo senza enfasi</i></p>
+
+<p><u></u></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>&lt;u&gt;: Applica una sottolineatura al testo. È usato raramente oggi, ma può servire in casi specifici, per esempio quando si vuole evidenziare qualcosa senza usarlo per link o enfasi.
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Esempio:</p>
+
+<p><u>Testo sottolineato</u></p>
+
+<p><small></small></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>&lt;small&gt;: Riduce la dimensione del testo. È comunemente usato per note a margine o commenti che devono risultare meno prominenti rispetto al testo principale.
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Esempio:</p>
+
+<p><small>Testo meno importante o nota</small></p>
+
+<p><mark></mark></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>&lt;mark&gt;: Evidenzia il testo come se fosse passato con un evidenziatore, per mettere in risalto un contenuto specifico. Di solito viene reso con uno sfondo giallo o altro colore chiaro.
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Esempio:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>&lt;mark&gt;Testo evidenziato&lt;/mark&gt;
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Liste in HTML</p>
+
+<p>In HTML, abbiamo due tipi principali di liste: ordinate e non ordinate. Vediamole.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre>Liste non ordinate (&lt;ul&gt;)
+    Una lista non ordinata usa un elenco puntato. Ogni elemento della lista è un punto separato, senza una sequenza numerica.
+    Tag utilizzati:
+        &lt;ul&gt;: Racchiude l'intera lista non ordinata.
+        &lt;li&gt;: Ogni elemento della lista è definito con questo tag.
+
+Esempio:
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<ul>
+    <li>Elemento uno</li>
+    <li>Elemento due</li>
+    <li>Elemento tre</li>
+</ul>
+
+<p>Questo produrrà:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>Elemento uno
+Elemento due
+Elemento tre
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Liste ordinate (&lt;ol&gt;)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre>Una lista ordinata ha una sequenza numerica per ogni elemento, perfetta per elenchi che seguono un ordine logico o di importanza.
+Tag utilizzati:
+    &lt;ol&gt;: Racchiude l'intera lista ordinata.
+    &lt;li&gt;: Definisce ogni elemento della lista.
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Esempio:</p>
+
+<ol>
+    <li>Passo uno</li>
+    <li>Passo due</li>
+    <li>Passo tre</li>
+</ol>
+
+<p>Questo produrrà:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>Passo uno
+Passo due
+Passo tre
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Liste nidificate</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>È possibile inserire una lista all'interno di un'altra lista, creando così delle sotto-liste. Funziona sia con le liste ordinate che con quelle non ordinate.
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Esempio:</p>
+
+<ul>
+    <li>Frutta
+        <ul>
+            <li>Mela</li>
+            <li>Banana</li>
+        </ul>
+    </li>
+    <li>Verdura
+        <ul>
+            <li>Carota</li>
+            <li>Spinaci</li>
+        </ul>
+    </li>
+</ul>
+
+<p>Questo produrrà:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre>Frutta
+    Mela
+    Banana
+Verdura
+    Carota
+    Spinaci
+</pre></td></tr></tbody></table></code></pre></div></div>
+:ET

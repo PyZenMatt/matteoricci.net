@@ -1,0 +1,100 @@
+I"�<p>Gli attributi globali in HTML sono attributi che possono essere applicati a qualsiasi elemento, indipendentemente dal tipo. Questi attributi permettono di aggiungere funzionalità o informazioni agli elementi e sono supportati da tutti i browser. Di seguito una spiegazione dettagliata di ciascun attributo globale:</p>
+<ol>
+  <li>
+    <p>id</p>
+
+    <p>Descrizione: L’attributo “id” viene utilizzato per assegnare un identificatore unico a un elemento HTML.</p>
+
+    <p>Usi principali:
+     Viene usato per accedere a elementi specifici nel DOM (Document Object Model) tramite JavaScript.
+     È utile anche per collegare sezioni di una pagina tramite gli URL. Per esempio, #header scorrerà automaticamente alla sezione che ha id=”header”.</p>
+
+    <p>Regole: Deve essere un valore unico all’interno della pagina per evitare ambiguità.</p>
+  </li>
+  <li>
+    <p>class</p>
+
+    <p>Descrizione: L’attributo class assegna uno o più nomi di classe a un elemento.
+ Usi principali:
+     Permette di applicare stili CSS agli elementi in modo selettivo. Gli elementi che condividono la stessa classe ricevono lo stesso stile.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre> È possibile assegnare più classi a un elemento separandole con uno spazio (ad es. class="btn primary").
+
+ Consente di selezionare un gruppo di elementi con la stessa classe tramite JavaScript.
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+
+    <p>Regole: A differenza di id, più elementi possono avere la stessa class.</p>
+  </li>
+  <li>
+    <p>style</p>
+
+    <p>Descrizione: L’attributo style permette di definire uno stile CSS in linea su un elemento specifico.</p>
+
+    <p>Usi principali:
+     Consente di applicare stili direttamente a un elemento senza dover scrivere regole CSS separate.
+     È utile per specificare stili particolari in modo rapido, ma non è raccomandato per una manutenzione a lungo termine (meglio usare file CSS separati).
+     Esempio: &lt;p style="color: red; font-size: 16px;"&gt;Testo rosso&lt;/p&gt;.</p>
+
+    <p>Limiti: Gli stili in linea hanno priorità sugli stili definiti in file CSS esterni o tag <style> interni.</style></p>
+  </li>
+  <li>
+    <p>title</p>
+
+    <p>Descrizione: L’attributo title fornisce informazioni supplementari sull’elemento.</p>
+
+    <p>Usi principali:
+     Mostra un suggerimento o tooltip quando si passa il mouse sopra l’elemento.
+     Può essere usato per fornire informazioni aggiuntive agli utenti.
+     Esempio: ```html<a href="https://esempio.com" title="Vai a Esempio.com">Link</a>’’’.</p>
+
+    <p>Accessibilità: Il title è utile anche per la lettura degli screen reader per descrivere link e altri elementi.</p>
+  </li>
+  <li>
+    <p>lang</p>
+
+    <p>Descrizione: L’attributo lang definisce la lingua del contenuto dell’elemento.
+ Usi principali:
+     Indica ai browser, motori di ricerca e screen reader la lingua di un elemento specifico, migliorando l’accessibilità e la SEO.
+     Permette di gestire correttamente elementi multilingue all’interno della stessa pagina.
+     Esempio:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre> ```html &lt;p lang="it"&gt; ```
+    
+ Questo è un testo in italiano.&lt;/p&gt;.  Nota: La lingua viene specificata seguendo lo standard ISO (es. en per inglese, it per italiano).
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>
+    <p>data-* (Attributi personalizzati)</p>
+
+    <p>Descrizione: L’attributo data-* permette di aggiungere dati personalizzati agli elementi senza influenzare la struttura o la semantica del documento.
+ Usi principali:
+     Gli attributi data-* sono utilizzati per memorizzare informazioni personalizzate, che possono poi essere lette o modificate tramite JavaScript.
+     Utili per aggiungere metadati all’elemento che potrebbero essere rilevanti per interazioni dinamiche.
+     Esempio:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre> ```html &lt;div data-user-id="123" data-role="admin"&gt;Contenuto utente&lt;/div&gt;```
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+
+    <p>Struttura: Devono iniziare con data-, seguito da un nome personalizzato (data-nome), e i valori vengono gestiti facilmente in JavaScript.</p>
+  </li>
+</ol>
+
+<p>Questi attributi globali rendono il linguaggio HTML flessibile, permettendo di definire e gestire sia la struttura visiva (con style, class) che l’interattività (id, data-*).
+Conclusioni</p>
+
+<p>Comprendere gli attributi globali in HTML è un passo fondamentale per chiunque desideri approfondire la struttura e la funzionalità del web. Questi attributi aggiungono flessibilità e accessibilità ai contenuti, rendendo il codice più versatile e migliorando l’interazione con altre tecnologie come CSS e JavaScript. Ricorda di applicare sempre gli attributi “id” e “class” in modo strategico, per mantenere una struttura chiara e funzionale, e di sfruttare attributi come “lang” per migliorare l’accessibilità e il SEO del sito.</p>
+
+<p>Se sei all’inizio del tuo percorso con HTML, prendere dimestichezza con questi attributi ti aiuterà a costruire una base solida. Continua a esplorare e applicare questi elementi nel tuo codice: padroneggiare i concetti fondamentali è essenziale per progredire verso uno sviluppo web più avanzato.</p>
+
+<p>Per ulteriori tutorial e guide pratiche, esplora le nostre altre risorse. Buona programmazione e buon lavoro con HTML!</p>
+
+<p><a href="/multimedia-in-html/">Capitolo 9</a></p>
+
+:ET

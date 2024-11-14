@@ -1,0 +1,138 @@
+I"V3<p>In HTML, gli elementi <code class="language-plaintext highlighter-rouge">&lt;audio&gt;</code> e <code class="language-plaintext highlighter-rouge">&lt;video&gt;</code> permettono di incorporare file multimediali come audio e video direttamente nelle pagine web, offrendo all’utente una riproduzione controllata senza la necessità di plugin esterni.</p>
+
+<h3 id="elemento-audio">Elemento <code class="language-plaintext highlighter-rouge">&lt;audio&gt;</code></h3>
+
+<p>L’elemento <code class="language-plaintext highlighter-rouge">&lt;audio&gt;</code> serve a inserire contenuti audio come file musicali, podcast o effetti sonori. La sintassi base è:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"path_to_audio_file.mp3"</span><span class="nt">&gt;&lt;/audio&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Per una maggiore compatibilità con diversi browser, si possono specificare più formati di file audio all’interno del tag <code class="language-plaintext highlighter-rouge">&lt;audio&gt;</code> usando <code class="language-plaintext highlighter-rouge">&lt;source&gt;</code>:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;audio</span> <span class="na">controls</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"audio_file.mp3"</span> <span class="na">type=</span><span class="s">"audio/mpeg"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"audio_file.ogg"</span> <span class="na">type=</span><span class="s">"audio/ogg"</span><span class="nt">&gt;</span>
+  Your browser does not support the audio element.
+<span class="nt">&lt;/audio&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>In questo esempio, il browser tenterà di riprodurre il file in formato <code class="language-plaintext highlighter-rouge">.mp3</code>. Se non è supportato, proverà con <code class="language-plaintext highlighter-rouge">.ogg</code>. La riga finale è un testo alternativo che appare nei browser che non supportano l’elemento.</p>
+
+<h3 id="elemento-video">Elemento <code class="language-plaintext highlighter-rouge">&lt;video&gt;</code></h3>
+
+<p>L’elemento <code class="language-plaintext highlighter-rouge">&lt;video&gt;</code> permette di incorporare contenuti video. Funziona in modo simile a <code class="language-plaintext highlighter-rouge">&lt;audio&gt;</code>, ma per file video. La sintassi di base è:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;video</span> <span class="na">src=</span><span class="s">"path_to_video_file.mp4"</span> <span class="na">width=</span><span class="s">"640"</span> <span class="na">height=</span><span class="s">"360"</span><span class="nt">&gt;&lt;/video&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Come con <code class="language-plaintext highlighter-rouge">&lt;audio&gt;</code>, è possibile specificare più formati video per garantire compatibilità:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;video</span> <span class="na">width=</span><span class="s">"640"</span> <span class="na">height=</span><span class="s">"360"</span> <span class="na">controls</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"video_file.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"video_file.webm"</span> <span class="na">type=</span><span class="s">"video/webm"</span><span class="nt">&gt;</span>
+  Your browser does not support the video element.
+<span class="nt">&lt;/video&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="attributi-per-gestire-il-comportamento-dei-media">Attributi per gestire il comportamento dei media</h3>
+
+<p>Gli elementi <code class="language-plaintext highlighter-rouge">&lt;audio&gt;</code> e <code class="language-plaintext highlighter-rouge">&lt;video&gt;</code> supportano una serie di attributi che controllano la riproduzione e il comportamento dei media.</p>
+
+<ol>
+  <li>
+    <p><strong><code class="language-plaintext highlighter-rouge">controls</code></strong>: mostra i controlli per la riproduzione. Questi includono pulsanti per play/pausa, regolazione del volume e, nel caso di <code class="language-plaintext highlighter-rouge">&lt;video&gt;</code>, una barra di avanzamento e un pulsante di full screen.</p>
+
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"audio_file.mp3"</span> <span class="na">controls</span><span class="nt">&gt;&lt;/audio&gt;</span>
+<span class="nt">&lt;video</span> <span class="na">src=</span><span class="s">"video_file.mp4"</span> <span class="na">controls</span><span class="nt">&gt;&lt;/video&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong><code class="language-plaintext highlighter-rouge">autoplay</code></strong>: fa partire automaticamente la riproduzione del contenuto multimediale non appena la pagina viene caricata. <strong>Attenzione</strong>: molti browser bloccano l’autoplay per impostazione predefinita, a meno che l’elemento non sia anche silenziato (<code class="language-plaintext highlighter-rouge">muted</code>).</p>
+
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"audio_file.mp3"</span> <span class="na">autoplay</span><span class="nt">&gt;&lt;/audio&gt;</span>
+<span class="nt">&lt;video</span> <span class="na">src=</span><span class="s">"video_file.mp4"</span> <span class="na">autoplay</span><span class="nt">&gt;&lt;/video&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong><code class="language-plaintext highlighter-rouge">loop</code></strong>: riproduce il contenuto in loop continuo, ripartendo da capo una volta che è terminato.</p>
+
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"audio_file.mp3"</span> <span class="na">loop</span><span class="nt">&gt;&lt;/audio&gt;</span>
+<span class="nt">&lt;video</span> <span class="na">src=</span><span class="s">"video_file.mp4"</span> <span class="na">loop</span><span class="nt">&gt;&lt;/video&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong><code class="language-plaintext highlighter-rouge">muted</code></strong>: avvia il contenuto multimediale con l’audio disattivato, utile in combinazione con <code class="language-plaintext highlighter-rouge">autoplay</code> per superare le restrizioni dei browser sull’avvio automatico.</p>
+
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"audio_file.mp3"</span> <span class="na">autoplay</span> <span class="na">muted</span><span class="nt">&gt;&lt;/audio&gt;</span>
+<span class="nt">&lt;video</span> <span class="na">src=</span><span class="s">"video_file.mp4"</span> <span class="na">autoplay</span> <span class="na">muted</span><span class="nt">&gt;&lt;/video&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+</ol>
+
+<h3 id="esempio-completo">Esempio completo</h3>
+
+<p>Ecco un esempio che utilizza un elemento <code class="language-plaintext highlighter-rouge">&lt;audio&gt;</code> e un elemento <code class="language-plaintext highlighter-rouge">&lt;video&gt;</code> con vari attributi:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;h2&gt;</span>Audio Example<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;audio</span> <span class="na">controls</span> <span class="na">autoplay</span> <span class="na">loop</span> <span class="na">muted</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"song.mp3"</span> <span class="na">type=</span><span class="s">"audio/mpeg"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"song.ogg"</span> <span class="na">type=</span><span class="s">"audio/ogg"</span><span class="nt">&gt;</span>
+  Your browser does not support the audio element.
+<span class="nt">&lt;/audio&gt;</span>
+
+<span class="nt">&lt;h2&gt;</span>Video Example<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;video</span> <span class="na">width=</span><span class="s">"640"</span> <span class="na">height=</span><span class="s">"360"</span> <span class="na">controls</span> <span class="na">autoplay</span> <span class="na">loop</span> <span class="na">muted</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"movie.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"movie.webm"</span> <span class="na">type=</span><span class="s">"video/webm"</span><span class="nt">&gt;</span>
+  Your browser does not support the video element.
+<span class="nt">&lt;/video&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="compatibilità-dei-formati">Compatibilità dei formati</h3>
+
+<p>Non tutti i formati audio e video sono supportati da tutti i browser. Ecco una guida base ai formati generalmente accettati:</p>
+
+<ul>
+  <li><strong>Audio</strong>: <code class="language-plaintext highlighter-rouge">MP3</code> (<code class="language-plaintext highlighter-rouge">audio/mpeg</code>), <code class="language-plaintext highlighter-rouge">AAC</code> (<code class="language-plaintext highlighter-rouge">audio/aac</code>), <code class="language-plaintext highlighter-rouge">OGG</code> (<code class="language-plaintext highlighter-rouge">audio/ogg</code>)</li>
+  <li><strong>Video</strong>: <code class="language-plaintext highlighter-rouge">MP4</code> (<code class="language-plaintext highlighter-rouge">video/mp4</code> con codec H.264), <code class="language-plaintext highlighter-rouge">WebM</code> (<code class="language-plaintext highlighter-rouge">video/webm</code> con codec VP8/VP9), <code class="language-plaintext highlighter-rouge">OGG</code> (<code class="language-plaintext highlighter-rouge">video/ogg</code> con codec Theora)</li>
+</ul>
+
+<p>Scegliere più formati garantisce compatibilità su diverse piattaforme e dispositivi.</p>
+
+<h3 id="conclusioni">Conclusioni</h3>
+
+<p>Gli elementi <code class="language-plaintext highlighter-rouge">&lt;audio&gt;</code> e <code class="language-plaintext highlighter-rouge">&lt;video&gt;</code> offrono un modo efficace per integrare media nelle pagine HTML. Utilizzando gli attributi <code class="language-plaintext highlighter-rouge">controls</code>, <code class="language-plaintext highlighter-rouge">autoplay</code>, <code class="language-plaintext highlighter-rouge">loop</code>, e <code class="language-plaintext highlighter-rouge">muted</code>, puoi definire con precisione il comportamento di riproduzione, creando un’esperienza utente più interattiva e personalizzata.</p>
+:ET
