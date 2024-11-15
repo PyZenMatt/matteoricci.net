@@ -1,4 +1,4 @@
-I"�s
+I"Mu
 <!-- Featured
 ================================================== -->
 <section class="featured-posts">
@@ -528,7 +528,7 @@ Benvenuti nella guida completa per principianti sull’HTML. Qui imparerete le b
                 
 
                     
-                        <img class="img-fluid" src="/assets/images/css.jpg" alt="Introduzione CSS: Transazione e animazione" /> 
+                        <img class="img-fluid" src="/assets/images/" alt="Introduzione CSS: Transazione e animazione" /> 
                     
 
                 
@@ -691,8 +691,7 @@ Benvenuti nella guida completa per principianti sull’HTML. Qui imparerete le b
                 <a class="text-dark" href="/programmazione-ad-oggetti/">Programmazione ad oggetti</a>
                 
             </h2>
-            <h4 class="card-text">Introduzione
-</h4>
+            <h4 class="card-text">La Programmazione Orientata agli Oggetti (Object-Oriented Programming, OOP) rappresenta uno dei pilastri fondamentali dello sviluppo software moderno. Questo paradigma si basa sull’utilizzo di classi e oggetti per organizzare il codice...</h4>
         </div>
         <div class="card-footer bg-white">
             <div class="wrapfooter">
@@ -725,7 +724,7 @@ Benvenuti nella guida completa per principianti sull’HTML. Qui imparerete le b
                 
 
                     
-                        <img class="img-fluid" src="/assets/images/" alt="Progetti Pratici" /> 
+                        <img class="img-fluid" src="/assets/images/" alt="Progetti pratici per principianti in Python" /> 
                     
 
                 
@@ -733,10 +732,10 @@ Benvenuti nella guida completa per principianti sull’HTML. Qui imparerete le b
         </div>
         <div class="card-body">
             <h2 class="card-title">
-                <a class="text-dark" href="/progetti-pratici/">Progetti Pratici</a>
+                <a class="text-dark" href="/progetti-pratici/">Progetti pratici per principianti in Python</a>
                 
             </h2>
-            <h4 class="card-text">Ho analizzato il contenuto del file, che presenta un articolo con progetti pratici per principianti in Python, come una calcolatrice, un gioco “Indovina il Numero”, gestione della lista della spesa...</h4>
+            <h4 class="card-text">Quando si inizia a programmare, il passaggio dalla teoria alla pratica può sembrare intimidatorio. Python, con la sua sintassi semplice e leggibile, è uno dei linguaggi migliori per imparare a...</h4>
         </div>
         <div class="card-footer bg-white">
             <div class="wrapfooter">
@@ -780,8 +779,7 @@ Benvenuti nella guida completa per principianti sull’HTML. Qui imparerete le b
                 <a class="text-dark" href="/moduli-e-librerie/">Moduli e librerie</a>
                 
             </h2>
-            <h4 class="card-text">Introduzione ai Moduli e alle Librerie in Python
-</h4>
+            <h4 class="card-text">Python è uno dei linguaggi di programmazione più popolari, in parte grazie alla sua filosofia di design modulare che incoraggia il riutilizzo del codice. Moduli e librerie sono strumenti fondamentali...</h4>
         </div>
         <div class="card-footer bg-white">
             <div class="wrapfooter">

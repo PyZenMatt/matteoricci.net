@@ -22,10 +22,6 @@ L'**HTML** (HyperText Markup Language) è il linguaggio principale per la creazi
 - **Struttura**: Come organizzare il codice.
 - **Best Practice**: Scrivere codice chiaro e ottimizzato.
 
-
-
-
-
 Benvenuti nella **guida** introduttiva a **HTML**, il linguaggio di markup che sta alla base di ogni pagina web. Se volete imparare a creare un sito o semplicemente capire il funzionamento delle pagine che visitate, questo è il posto giusto! Scopriamo insieme come **HTML** (HyperText Markup Language) crea la **struttura** delle pagine web e impariamo a usarlo efficacemente.
 Cos'è **HTML**?
 
@@ -195,4 +191,4 @@ Ecco un esempio di una pagina **HTML** semplice che contiene vari elementi:
 
 **HTML** è quindi la base di tutte le pagine web: fornisce la **struttura** e organizza i contenuti. Ogni elemento è creato per essere semplice e leggibile e costituisce il "blocco" su cui si costruiscono tutte le interfacce web, in combinazione con CSS per la presentazione e JavaScript per le interazioni.
 
-[Vai al capitolo 2](/elementi-di-base/)
+[Vai al capitolo 2]({{ site.baseurl }}/elementi-di-base/)

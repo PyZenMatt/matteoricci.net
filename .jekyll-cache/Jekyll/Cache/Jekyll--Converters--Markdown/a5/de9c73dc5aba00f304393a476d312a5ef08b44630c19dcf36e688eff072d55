@@ -1,6 +1,4 @@
-I"(#<p>Introduzione ai Moduli e alle Librerie in Python</p>
-
-<p>Python è uno dei linguaggi di programmazione più popolari, in parte grazie alla sua filosofia di design modulare che incoraggia il riutilizzo del codice. Moduli e librerie sono strumenti fondamentali che permettono agli sviluppatori di organizzare il codice, accedere a funzionalità predefinite e potenziare le applicazioni tramite pacchetti esterni. Questa struttura modulare semplifica la creazione, gestione e manutenzione di progetti di qualsiasi dimensione.</p>
+I"�"<p>Python è uno dei linguaggi di programmazione più popolari, in parte grazie alla sua filosofia di design modulare che incoraggia il riutilizzo del codice. Moduli e librerie sono strumenti fondamentali che permettono agli sviluppatori di organizzare il codice, accedere a funzionalità predefinite e potenziare le applicazioni tramite pacchetti esterni. Questa struttura modulare semplifica la creazione, gestione e manutenzione di progetti di qualsiasi dimensione.</p>
 
 <p>Un modulo è un file che contiene codice Python, come definizioni di funzioni, classi o variabili, che può essere riutilizzato in altri programmi. Python viene fornito con un’ampia gamma di moduli predefiniti, e grazie alla comunità open-source è possibile accedere a migliaia di pacchetti aggiuntivi.</p>
 
