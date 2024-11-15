@@ -1,0 +1,157 @@
+I"x<p>Moduli e Librerie in Python</p>
+
+<p>Python è un linguaggio di programmazione estremamente modulare, progettato per favorire il riutilizzo del codice tramite l’uso di moduli e librerie. Questi strumenti permettono di organizzare meglio il codice, importare funzionalità predefinite o estendere il linguaggio tramite pacchetti esterni.</p>
+<ol>
+  <li>Importazione di moduli</li>
+</ol>
+
+<p>Un modulo è semplicemente un file Python che contiene definizioni, funzioni e variabili. Python offre due modi principali per importare moduli:
+A. Usare import</p>
+
+<p>L’istruzione import consente di caricare un intero modulo. Dopo l’importazione, è necessario usare il nome del modulo come prefisso per accedere ai suoi elementi.</p>
+
+<p>Esempio:</p>
+
+<p>import math</p>
+
+<h1 id="usare-una-funzione-del-modulo-math">Usare una funzione del modulo math</h1>
+<p>area_cerchio = math.pi * (5**2)
+print(“Area del cerchio:”, area_cerchio)</p>
+
+<p>B. Usare from … import …</p>
+
+<p>Questa sintassi consente di importare singoli elementi da un modulo, evitando di dover usare il prefisso.</p>
+
+<p>Esempio:</p>
+
+<p>from math import sqrt</p>
+
+<h1 id="usare-direttamente-sqrt">Usare direttamente sqrt</h1>
+<p>radice = sqrt(16)
+print(“Radice quadrata di 16:”, radice)</p>
+
+<p>C. Usare as per rinominare</p>
+
+<p>Puoi rinominare un modulo o una funzione con un alias, utile per abbreviare nomi lunghi.</p>
+
+<p>Esempio:</p>
+
+<p>import math as m</p>
+
+<p>circonferenza = 2 * m.pi * 5
+print(“Circonferenza:”, circonferenza)</p>
+
+<ol>
+  <li>Uso delle librerie standard</li>
+</ol>
+
+<p>Python fornisce una vasta gamma di librerie standard che coprono moltissimi casi d’uso. Queste librerie sono incluse nella distribuzione base di Python e non richiedono installazioni aggiuntive.
+A. Libreria math</p>
+
+<p>Contiene funzioni matematiche avanzate:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>math.sqrt(x): Radice quadrata.
+math.sin(x), math.cos(x): Funzioni trigonometriche.
+math.pi, math.e: Costanti matematiche.
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Esempio:</p>
+
+<p>import math
+print(“Logaritmo naturale di e:”, math.log(math.e))</p>
+
+<p>B. Libreria random</p>
+
+<p>Genera numeri casuali o sceglie elementi casuali da una lista:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>random.randint(a, b): Numero intero casuale tra a e b.
+random.choice(seq): Elemento casuale da una sequenza.
+random.shuffle(seq): Mescola una lista.
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Esempio:</p>
+
+<p>import random
+numeri = [1, 2, 3, 4, 5]
+random.shuffle(numeri)
+print(“Lista mescolata:”, numeri)</p>
+
+<p>C. Libreria os</p>
+
+<p>Interagisce con il sistema operativo:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>os.getcwd(): Ottiene la directory corrente.
+os.listdir(): Lista i file in una directory.
+os.mkdir(), os.rmdir(): Crea o rimuove directory.
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Esempio:</p>
+
+<p>import os
+print(“Directory corrente:”, os.getcwd())</p>
+
+<ol>
+  <li>Introduzione a pip e librerie esterne</li>
+</ol>
+
+<p>Python consente di espandere le sue capacità installando librerie esterne tramite pip, il gestore di pacchetti integrato.
+A. Usare pip</p>
+
+<p>Puoi installare pacchetti da PyPI (Python Package Index) usando pip.</p>
+
+<p>Esempio:</p>
+
+<p>pip install nome_pacchetto</p>
+
+<p>Per aggiornare un pacchetto:</p>
+
+<p>pip install –upgrade nome_pacchetto</p>
+
+<p>Per elencare i pacchetti installati:</p>
+
+<p>pip list</p>
+
+<p>B. Libreria esterna requests</p>
+
+<p>Gestisce facilmente le richieste HTTP. Esempio:</p>
+
+<p>import requests</p>
+
+<p>response = requests.get(“https://api.github.com”)
+print(“Stato della risposta:”, response.status_code)
+print(“Contenuto della risposta:”, response.json())</p>
+
+<p>C. Libreria esterna pandas</p>
+
+<p>Usata per l’analisi e la manipolazione dei dati. Esempio:</p>
+
+<p>import pandas as pd</p>
+
+<p>data = {“Nome”: [“Alice”, “Bob”], “Età”: [25, 30]}
+df = pd.DataFrame(data)
+print(df)</p>
+
+<ol>
+  <li>
+    <p>Vantaggi di moduli e librerie</p>
+
+    <p>Riutilizzabilità: Semplifica il riutilizzo del codice.
+ Espandibilità: Aggiunge nuove funzionalità senza doverle implementare da zero.
+ Organizzazione: Migliora la leggibilità e la struttura del codice.
+ Efficienza: Risparmia tempo usando librerie consolidate.</p>
+  </li>
+</ol>
+
+<p>Conclusione</p>
+
+<p>Lavorare con moduli e librerie è essenziale per scrivere codice Python efficiente e scalabile. Familiarizzare con le librerie standard e imparare a installare pacchetti esterni con pip ti permette di affrontare praticamente ogni tipo di problema in Python</p>
+:ET

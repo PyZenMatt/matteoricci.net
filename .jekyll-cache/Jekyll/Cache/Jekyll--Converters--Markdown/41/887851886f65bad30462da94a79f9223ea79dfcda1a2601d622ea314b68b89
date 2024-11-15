@@ -1,0 +1,78 @@
+I"�<h3 id="colori-css">Colori CSS</h3>
+
+<p>CSS offre varie modalità per definire i colori. I colori possono essere espressi usando nomi, valori esadecimali, RGB, RGBA e HSL.</p>
+
+<ol>
+  <li>
+    <p><strong>Nomi dei Colori</strong>: Esistono nomi predefiniti per alcuni colori in CSS, come <code class="language-plaintext highlighter-rouge">red</code>, <code class="language-plaintext highlighter-rouge">blue</code>, <code class="language-plaintext highlighter-rouge">green</code>, <code class="language-plaintext highlighter-rouge">black</code>, e <code class="language-plaintext highlighter-rouge">white</code>. Questo metodo è semplice, ma limitato ai colori standard.</p>
+  </li>
+  <li>
+    <p><strong>Valori Esadecimali</strong>: Un colore in esadecimale viene espresso con un simbolo <code class="language-plaintext highlighter-rouge">#</code> seguito da sei cifre che rappresentano i valori di rosso, verde e blu (ad esempio, <code class="language-plaintext highlighter-rouge">#FF5733</code> per un arancione acceso). I primi due caratteri indicano il rosso, i successivi due il verde e gli ultimi due il blu. Ogni coppia di cifre va da <code class="language-plaintext highlighter-rouge">00</code> a <code class="language-plaintext highlighter-rouge">FF</code>, dove <code class="language-plaintext highlighter-rouge">00</code> è il minimo e <code class="language-plaintext highlighter-rouge">FF</code> il massimo.</p>
+  </li>
+  <li>
+    <p><strong>RGB (Red, Green, Blue)</strong>: La notazione RGB permette di definire i colori specificando i valori di rosso, verde e blu in un intervallo da 0 a 255. Per esempio, <code class="language-plaintext highlighter-rouge">rgb(255, 87, 51)</code> corrisponde a un arancione simile a <code class="language-plaintext highlighter-rouge">#FF5733</code>.</p>
+  </li>
+  <li>
+    <p><strong>RGBA</strong>: È una variante di RGB che aggiunge un valore di opacità (alpha) con un intervallo da 0 (completamente trasparente) a 1 (completamente opaco). Esempio: <code class="language-plaintext highlighter-rouge">rgba(255, 87, 51, 0.5)</code> crea un colore arancione con trasparenza al 50%.</p>
+  </li>
+  <li>
+    <p><strong>HSL (Hue, Saturation, Lightness)</strong>: In questa notazione, il colore è definito tramite tonalità (hue), saturazione e luminosità. La tonalità è un angolo in gradi (0-360°) su una ruota dei colori, mentre saturazione e luminosità sono percentuali. Per esempio, <code class="language-plaintext highlighter-rouge">hsl(16, 100%, 60%)</code> definisce un colore arancione.</p>
+  </li>
+  <li>
+    <p><strong>HSLA</strong>: Simile a HSL ma aggiunge un canale alpha per la trasparenza, come per RGBA. Esempio: <code class="language-plaintext highlighter-rouge">hsla(16, 100%, 60%, 0.5)</code> crea un colore arancione semi-trasparente.</p>
+  </li>
+</ol>
+
+<hr />
+
+<h3 id="immagini-di-sfondo-e-proprietà-correlate">Immagini di Sfondo e Proprietà Correlate</h3>
+
+<p>CSS offre molte proprietà per gestire gli sfondi delle pagine o degli elementi. Le principali proprietà per lavorare con gli sfondi sono <code class="language-plaintext highlighter-rouge">background-color</code>, <code class="language-plaintext highlighter-rouge">background-image</code>, <code class="language-plaintext highlighter-rouge">background-size</code>, <code class="language-plaintext highlighter-rouge">background-position</code> e <code class="language-plaintext highlighter-rouge">background-repeat</code>.</p>
+
+<ol>
+  <li>
+    <p><strong>background-color</strong>: Imposta il colore di sfondo di un elemento. Può essere definito con qualsiasi metodo colore visto sopra (es. <code class="language-plaintext highlighter-rouge">background-color: #FF5733</code> o <code class="language-plaintext highlighter-rouge">background-color: rgba(255, 87, 51, 0.5)</code>).</p>
+  </li>
+  <li>
+    <p><strong>background-image</strong>: Permette di impostare un’immagine di sfondo. È comune definire il percorso dell’immagine come URL. Esempio: <code class="language-plaintext highlighter-rouge">background-image: url('path/to/image.jpg');</code>. Supporta anche gradienti lineari o radiali come immagini di sfondo, ad esempio, <code class="language-plaintext highlighter-rouge">background-image: linear-gradient(to right, #FF5733, #33FF57);</code>.</p>
+  </li>
+  <li><strong>background-size</strong>: Definisce la dimensione dell’immagine di sfondo. I valori più comuni sono:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">cover</code>: adatta l’immagine per coprire completamente l’elemento.</li>
+      <li><code class="language-plaintext highlighter-rouge">contain</code>: adatta l’immagine in modo che rientri completamente all’interno dell’elemento.</li>
+      <li>Valori specifici in pixel o percentuale, ad esempio <code class="language-plaintext highlighter-rouge">background-size: 50% 100%</code>.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>background-position</strong>: Determina la posizione dell’immagine di sfondo all’interno dell’elemento. Può essere espresso in parole chiave (come <code class="language-plaintext highlighter-rouge">top</code>, <code class="language-plaintext highlighter-rouge">center</code>, <code class="language-plaintext highlighter-rouge">bottom</code>, <code class="language-plaintext highlighter-rouge">left</code>, <code class="language-plaintext highlighter-rouge">right</code>), percentuali (es. <code class="language-plaintext highlighter-rouge">background-position: 50% 50%</code> per centrare l’immagine) o valori specifici in pixel.</p>
+  </li>
+  <li><strong>background-repeat</strong>: Indica se e come ripetere un’immagine di sfondo. I principali valori sono:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">repeat</code>: ripete l’immagine sia orizzontalmente che verticalmente.</li>
+      <li><code class="language-plaintext highlighter-rouge">repeat-x</code>: ripete solo orizzontalmente.</li>
+      <li><code class="language-plaintext highlighter-rouge">repeat-y</code>: ripete solo verticalmente.</li>
+      <li><code class="language-plaintext highlighter-rouge">no-repeat</code>: l’immagine viene visualizzata solo una volta, senza ripetizioni.</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="proprietà-composta-background">Proprietà Composta <code class="language-plaintext highlighter-rouge">background</code></h3>
+
+<p>CSS consente di usare la proprietà <code class="language-plaintext highlighter-rouge">background</code> come scorciatoia per combinare tutte le proprietà sopra citate in una singola dichiarazione. Ad esempio:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">background</span><span class="o">:</span> <span class="nt">url</span><span class="o">(</span><span class="s2">'path/to/image.jpg'</span><span class="o">)</span> <span class="nt">no-repeat</span> <span class="nt">center</span><span class="o">/</span><span class="nt">cover</span> <span class="nf">#FF5733</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>In questo esempio:</p>
+<ul>
+  <li>L’immagine è centrata (<code class="language-plaintext highlighter-rouge">center</code>).</li>
+  <li>È impostata a coprire tutto l’elemento (<code class="language-plaintext highlighter-rouge">cover</code>).</li>
+  <li>Non si ripete (<code class="language-plaintext highlighter-rouge">no-repeat</code>).</li>
+  <li>È presente un colore di sfondo alternativo (#FF5733) che verrà mostrato se l’immagine non viene caricata.</li>
+</ul>
+
+<hr />
+
+<p>Queste proprietà consentono un controllo dettagliato sia sui colori che sugli sfondi, rendendo gli elementi e le pagine più dinamici e visualmente accattivanti.</p>
+:ET

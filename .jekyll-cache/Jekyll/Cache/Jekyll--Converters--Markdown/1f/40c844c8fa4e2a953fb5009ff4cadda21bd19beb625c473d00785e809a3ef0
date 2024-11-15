@@ -1,0 +1,210 @@
+I"S<p>Le funzioni in Python sono uno dei concetti più importanti e permettono di organizzare il codice in modo più leggibile, riutilizzabile e modulare. Ecco una trattazione dettagliata sui quattro aspetti richiesti:</p>
+<ol>
+  <li>Creazione di funzioni con def</li>
+</ol>
+
+<p>In Python, le funzioni vengono definite utilizzando la parola chiave def. Una funzione è un blocco di codice progettato per svolgere un compito specifico, che può essere chiamato ogni volta che è necessario.</p>
+
+<p>Sintassi base:</p>
+
+<p>def nome_funzione(parametri):
+    # Blocco di codice
+    return risultato</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>nome_funzione: Il nome della funzione deve essere descrittivo e seguire le convenzioni del linguaggio (snake_case).
+parametri: Variabili che la funzione può accettare come input (facoltativi).
+return: Opzionale, restituisce un valore dalla funzione al chiamante.
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Esempio:</p>
+
+<p>def saluta():
+    print(“Ciao, mondo!”)</p>
+
+<p>Chiamando la funzione con saluta(), verrà stampato “Ciao, mondo!”.</p>
+<ol>
+  <li>Parametri e argomenti
+Parametri</li>
+</ol>
+
+<p>I parametri sono le variabili dichiarate nella definizione della funzione. Servono come segnaposto per i valori che verranno passati alla funzione.</p>
+
+<p>Esempio:</p>
+
+<p>def saluta_persona(nome):
+    print(f”Ciao, {nome}!”)</p>
+
+<p>Argomenti</p>
+
+<p>Gli argomenti sono i valori effettivi che vengono passati alla funzione al momento della chiamata.</p>
+
+<p>saluta_persona(“Alice”)  # Output: Ciao, Alice!</p>
+
+<p>Tipologie di argomenti</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>Argomenti posizionali: Gli argomenti vengono associati ai parametri in base alla loro posizione.
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>def moltiplica(a, b):
+    return a * b</p>
+
+<p>print(moltiplica(3, 4))  # Output: 12</p>
+
+<p>Argomenti con valore di default: Si possono specificare valori predefiniti per i parametri. Se un valore non viene passato, verrà usato il valore di default.</p>
+
+<p>def saluta_persona(nome=”amico”):
+    print(f”Ciao, {nome}!”)</p>
+
+<p>saluta_persona()          # Output: Ciao, amico!
+saluta_persona(“Luca”)    # Output: Ciao, Luca!</p>
+
+<p>Argomenti con parole chiave: Gli argomenti possono essere passati specificando il nome del parametro.</p>
+
+<p>print(moltiplica(b=4, a=3))  # Output: 12</p>
+
+<p>Argomenti variabili: Si possono utilizzare *args per passare un numero variabile di argomenti posizionali e **kwargs per un numero variabile di argomenti a parole chiave.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre>def somma(*numeri):
+    return sum(numeri)
+
+print(somma(1, 2, 3, 4))  # Output: 10
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<ol>
+  <li>Restituzione di valori con return</li>
+</ol>
+
+<p>La parola chiave return permette a una funzione di restituire un valore al chiamante. Una funzione può restituire uno o più valori.</p>
+
+<p>Esempio base:</p>
+
+<p>def somma(a, b):
+    return a + b</p>
+
+<p>risultato = somma(5, 7)
+print(risultato)  # Output: 12</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre>Valore singolo: return valore
+Valori multipli: return valore1, valore2 (ritorna una tupla)
+
+def calcola(a, b):
+    return a + b, a - b
+
+somma, differenza = calcola(5, 3)
+print(somma, differenza)  # Output: 8 2
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Importante:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre>Se non viene usato return, la funzione restituisce None per impostazione predefinita.
+
+def senza_return():
+    pass
+
+print(senza_return())  # Output: None
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<ol>
+  <li>Scope delle variabili (locale vs globale)</li>
+</ol>
+
+<p>Lo scope (ambito) delle variabili determina dove una variabile può essere utilizzata all’interno del codice.
+Variabili locali</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>Dichiarate all'interno di una funzione.
+Esistono solo durante l'esecuzione della funzione.
+Non possono essere usate al di fuori della funzione.
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Esempio:</p>
+
+<p>def funzione():
+    x = 10  # Variabile locale
+    print(x)</p>
+
+<p>funzione()</p>
+<h1 id="printx---errore-x-non-è-definita">print(x)  # Errore: x non è definita</h1>
+
+<p>Variabili globali</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>Dichiarate al di fuori di qualsiasi funzione.
+Possono essere utilizzate ovunque nel programma.
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Esempio:</p>
+
+<p>x = 10  # Variabile globale</p>
+
+<p>def funzione():
+    print(x)</p>
+
+<p>funzione()  # Output: 10</p>
+
+<p>Modificare variabili globali all’interno di una funzione</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>Usare la parola chiave global per indicare che una variabile dichiarata nella funzione è globale.
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Esempio:</p>
+
+<p>x = 10</p>
+
+<p>def funzione():
+    global x
+    x += 5</p>
+
+<p>funzione()
+print(x)  # Output: 15</p>
+
+<p>Buone pratiche</p>
+
+<p>Evitare di usare variabili globali all’interno delle funzioni per prevenire effetti collaterali inattesi. Preferire parametri e valori di ritorno.</p>
+
+<p>Esempio:</p>
+
+<p>def aggiungi(valore, incremento):
+    return valore + incremento</p>
+
+<p>x = 10
+x = aggiungi(x, 5)
+print(x)  # Output: 15</p>
+
+<p>Conclusione</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>Le funzioni sono fondamentali per la programmazione modulare.
+L'uso corretto di parametri, return e scope rende il codice più leggibile e robusto.
+È importante comprendere le differenze tra variabili locali e globali per evitare errori logici nel programma.
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+:ET

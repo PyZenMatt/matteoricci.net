@@ -29,8 +29,8 @@ title: Home
 {% endif %}
 
 <!-- Posts Index
-================================================== 
-<section class="recent-posts">
+================================================== -->
+<!-- <section class="recent-posts">
 
     <div class="section-title">
 
@@ -46,28 +46,40 @@ title: Home
 
         {% endfor %}
 
+    </div> -->
+
+<!-- Posts Category:Guida HTML
+================================================== -->
+
+<section class="category-posts">
+
+    <div class="section-title">
+        <h2><span>Categoria: Guida HTML</span></h2>
     </div>
-<!-- Posts Category
+    
+    <div class="row listrecent">
+        {% for post in site.categories.HTML limit:3 %} 
+            {% include postbox.html %}
+        {% endfor %}
+    </div>
+    
+</section>
+
+<!--Posts Category:Guida CSS
 ================================================== -->
     <section class="category-posts">
 
         <div class="section-title">
-            <h2><span>Category: Guida HTML</span></h2>
+            <h2><span>Categoria: Guida CSS<a href="{{site.baseurl}}/categories"></a> </span></h2>
         </div>
     
         <div class="row listrecent">
-            {% for post in site.categories.HTML %} 
+            {% for post in site.categories.guida_CSS limit:3 %} 
                 {% include postbox.html %}
             {% endfor %}
         </div>
     
-    </section>
-
-</section>
-
-
-
-
+    </section> 
 
 <!-- Pagination
 ================================================== -->

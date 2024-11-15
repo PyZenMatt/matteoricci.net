@@ -1,0 +1,306 @@
+I"�C<p><strong>Media Query e Design Responsive</strong></p>
+
+<p>Il <strong>design responsive</strong> è un approccio alla progettazione web che mira a creare siti e applicazioni in grado di adattarsi automaticamente alle diverse dimensioni e orientamenti dello schermo su cui vengono visualizzati. Questo garantisce un’esperienza utente ottimale su una vasta gamma di dispositivi, dai piccoli schermi degli smartphone ai grandi monitor desktop.</p>
+
+<hr />
+
+<h3 id="concetti-base-di-responsive-design-e-unità-di-misura-fluide--vw-vh">Concetti base di responsive design e unità di misura fluide (%, vw, vh)</h3>
+
+<p>Per realizzare un design responsive efficace, è fondamentale utilizzare <strong>unità di misura fluide</strong> che permettano agli elementi della pagina di adattarsi proporzionalmente allo spazio disponibile. Ecco le principali unità fluide utilizzate:</p>
+
+<ul>
+  <li>
+    <p><strong>Percentuale (%)</strong>: indica una proporzione rispetto all’elemento contenitore. Ad esempio, se si imposta la larghezza di un elemento al 50%, questo occuperà metà della larghezza del suo contenitore.</p>
+
+    <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nc">.contenitore</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span> <span class="c">/* Occupa il 100% della larghezza disponibile */</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Viewport Width (vw)</strong>: 1vw equivale all’1% della larghezza del viewport (l’area visibile della pagina). È utile per dimensionare elementi in base alla larghezza dello schermo.</p>
+
+    <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nc">.elemento</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">2vw</span><span class="p">;</span> <span class="c">/* La dimensione del testo varia con la larghezza dello schermo */</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Viewport Height (vh)</strong>: 1vh equivale all’1% dell’altezza del viewport. Ideale per dimensionare elementi in funzione dell’altezza dello schermo.</p>
+
+    <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nc">.sezione</span> <span class="p">{</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">100vh</span><span class="p">;</span> <span class="c">/* L'altezza dell'elemento occupa il 100% dell'altezza del viewport */</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>L’utilizzo di queste unità consente di creare layout flessibili che si adattano fluidamente alle dimensioni del dispositivo dell’utente, migliorando l’accessibilità e l’usabilità.</p>
+
+<hr />
+
+<h3 id="media-query-media-breakpoints-per-schermi-piccoli-medi-e-grandi">Media query: @media, breakpoints per schermi piccoli, medi e grandi</h3>
+
+<p>Le <strong>media query</strong> sono una funzionalità di CSS3 che permette di applicare stili specifici in base a determinate condizioni, come la larghezza dello schermo, l’orientamento del dispositivo o la risoluzione.</p>
+
+<p>La sintassi base di una media query è:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="k">@media</span> <span class="p">(</span><span class="n">condizione</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c">/* Regole CSS applicate quando la condizione è vera */</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><strong>Breakpoints</strong>: sono i punti di interruzione in cui il layout del sito cambia per adattarsi meglio alle dimensioni dello schermo. Generalmente, i breakpoints vengono definiti per tre categorie di dispositivi:</p>
+
+<ul>
+  <li>
+    <p><strong>Schermi piccoli (mobile)</strong>: dispositivi con larghezza massima di 767px.</p>
+
+    <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">767px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c">/* Stili per smartphone */</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Schermi medi (tablet)</strong>: dispositivi con larghezza compresa tra 768px e 1024px.</p>
+
+    <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">768px</span><span class="p">)</span> <span class="n">and</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">1024px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c">/* Stili per tablet */</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Schermi grandi (desktop)</strong>: dispositivi con larghezza minima di 1025px.</p>
+
+    <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">1025px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c">/* Stili per desktop */</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+</ul>
+
+<p><strong>Esempio pratico</strong>:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+</pre></td><td class="rouge-code"><pre><span class="c">/* Stili generali applicati a tutti i dispositivi */</span>
+<span class="nc">.container</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Stili specifici per dispositivi mobili */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">767px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.container</span> <span class="p">{</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c">/* Stili specifici per tablet */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">768px</span><span class="p">)</span> <span class="n">and</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">1024px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.container</span> <span class="p">{</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c">/* Stili specifici per desktop */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">1025px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.container</span> <span class="p">{</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">30px</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<h3 id="tecniche-avanzate-di-responsive-design-con-flexbox-e-css-grid">Tecniche avanzate di responsive design con Flexbox e CSS Grid</h3>
+
+<p>Oltre alle unità fluide e alle media query, CSS offre potenti strumenti come <strong>Flexbox</strong> e <strong>CSS Grid</strong> per creare layout complessi e altamente responsivi.</p>
+
+<h4 id="flexbox-flexible-box-layout">Flexbox (Flexible Box Layout)</h4>
+
+<p>Flexbox è un sistema di layout unidimensionale che gestisce la distribuzione degli elementi lungo un asse (orizzontale o verticale). È ideale per creare layout flessibili che si adattano allo spazio disponibile.</p>
+
+<p><strong>Caratteristiche principali:</strong></p>
+
+<ul>
+  <li><strong>Allineamento flessibile</strong>: controlla l’allineamento degli elementi sia sull’asse principale che su quello trasversale.</li>
+  <li><strong>Distribuzione dello spazio</strong>: gestisce gli spazi tra gli elementi in modo uniforme.</li>
+  <li><strong>Riorganizzazione degli elementi</strong>: modifica l’ordine di visualizzazione senza alterare l’ordine del codice HTML.</li>
+</ul>
+
+<p><strong>Esempio di utilizzo:</strong></p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="rouge-code"><pre><span class="nc">.container</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+  <span class="nl">flex-wrap</span><span class="p">:</span> <span class="n">wrap</span><span class="p">;</span> <span class="c">/* Permette agli elementi di andare a capo se necessario */</span>
+<span class="p">}</span>
+
+<span class="nc">.item</span> <span class="p">{</span>
+  <span class="nl">flex</span><span class="p">:</span> <span class="m">1</span> <span class="m">1</span> <span class="m">200px</span><span class="p">;</span> <span class="c">/* Crescita, restringimento, dimensione base */</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h4 id="css-grid">CSS Grid</h4>
+
+<p>CSS Grid è un sistema di layout bidimensionale che permette di gestire righe e colonne simultaneamente. È particolarmente utile per creare griglie complesse e layout articolati.</p>
+
+<p><strong>Caratteristiche principali:</strong></p>
+
+<ul>
+  <li><strong>Controllo preciso</strong>: definisce la struttura della griglia con righe e colonne di dimensioni fisse o flessibili.</li>
+  <li><strong>Posizionamento degli elementi</strong>: posiziona gli elementi in specifiche aree della griglia.</li>
+  <li><strong>Allineamento e spazio</strong>: gestisce gli spazi interni ed esterni degli elementi con precisione.</li>
+</ul>
+
+<p><strong>Esempio di utilizzo:</strong></p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="rouge-code"><pre><span class="nc">.grid-container</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">grid</span><span class="p">;</span>
+  <span class="py">grid-template-columns</span><span class="p">:</span> <span class="nb">repeat</span><span class="p">(</span><span class="n">auto-fill</span><span class="p">,</span> <span class="n">minmax</span><span class="p">(</span><span class="m">250px</span><span class="p">,</span> <span class="m">1</span><span class="n">fr</span><span class="p">));</span> <span class="c">/* Colonne flessibili */</span>
+  <span class="py">grid-gap</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.grid-item</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="m">#f2f2f2</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>In questo esempio, la griglia crea automaticamente il numero di colonne necessario per riempire lo spazio disponibile, mantenendo una larghezza minima di 250px per ogni elemento.</p>
+
+<hr />
+
+<h3 id="combinazione-di-media-query-flexbox-e-css-grid">Combinazione di Media Query, Flexbox e CSS Grid</h3>
+
+<p>Per ottenere un design completamente responsive, è possibile combinare le media query con Flexbox e CSS Grid. Ad esempio, si può utilizzare CSS Grid per il layout su schermi grandi e passare a Flexbox o a un layout a singola colonna su schermi più piccoli.</p>
+
+<p><strong>Esempio pratico:</strong></p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+</pre></td><td class="rouge-code"><pre><span class="c">/* Layout per schermi grandi */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">1025px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.container</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="n">grid</span><span class="p">;</span>
+    <span class="py">grid-template-columns</span><span class="p">:</span> <span class="nb">repeat</span><span class="p">(</span><span class="m">4</span><span class="p">,</span> <span class="m">1</span><span class="n">fr</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c">/* Layout per tablet */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">768px</span><span class="p">)</span> <span class="n">and</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">1024px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.container</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="n">grid</span><span class="p">;</span>
+    <span class="py">grid-template-columns</span><span class="p">:</span> <span class="nb">repeat</span><span class="p">(</span><span class="m">2</span><span class="p">,</span> <span class="m">1</span><span class="n">fr</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c">/* Layout per smartphone */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">767px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.container</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+    <span class="nl">flex-direction</span><span class="p">:</span> <span class="n">column</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<p><strong>Conclusione</strong></p>
+
+<p>La progettazione di siti web responsive è essenziale per garantire accessibilità e usabilità su tutti i dispositivi. Comprendendo e applicando correttamente:</p>
+
+<ul>
+  <li>Le <strong>unità di misura fluide</strong> (% , vw, vh) per creare layout adattivi.</li>
+  <li>Le <strong>media query</strong> per applicare stili specifici in base alle dimensioni dello schermo.</li>
+  <li>Le tecniche avanzate con <strong>Flexbox</strong> e <strong>CSS Grid</strong> per costruire layout flessibili e complessi.</li>
+</ul>
+
+<p>Sarai in grado di sviluppare interfacce utente che offrano un’esperienza coerente e piacevole, indipendentemente dal dispositivo utilizzato dall’utente.</p>
+:ET

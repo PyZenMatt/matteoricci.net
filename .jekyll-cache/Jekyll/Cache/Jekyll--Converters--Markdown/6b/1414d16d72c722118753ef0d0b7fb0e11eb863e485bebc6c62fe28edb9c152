@@ -1,0 +1,256 @@
+I"oO<h3 id="1-list-comprehension"><strong>1. List Comprehension</strong></h3>
+<p>La <strong>list comprehension</strong> è una sintassi concisa per creare liste in Python, che consente di generare nuovi elenchi applicando una trasformazione o un filtro agli elementi di un iterabile esistente.</p>
+
+<h4 id="sintassi-base"><strong>Sintassi Base</strong></h4>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="p">[</span><span class="n">expression</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">iterable</span> <span class="k">if</span> <span class="n">condition</span><span class="p">]</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<ul>
+  <li><strong>Expression</strong>: la trasformazione che vuoi applicare agli elementi.</li>
+  <li><strong>Iterable</strong>: la collezione da iterare (esempio: lista, range, stringa).</li>
+  <li><strong>Condition</strong> (opzionale): un filtro per includere solo gli elementi che soddisfano una determinata condizione.</li>
+</ul>
+
+<h4 id="esempio-base"><strong>Esempio Base</strong></h4>
+<p>Creare una lista dei quadrati dei numeri da 0 a 9:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="n">squares</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)]</span>
+<span class="c1"># Risultato: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<h4 id="esempio-con-condizione"><strong>Esempio con Condizione</strong></h4>
+<p>Filtrare i numeri pari:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="n">even_numbers</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
+<span class="c1"># Risultato: [0, 2, 4, 6, 8]
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<h4 id="vantaggi"><strong>Vantaggi</strong></h4>
+<ul>
+  <li><strong>Leggibilità</strong>: Una sintassi compatta e comprensibile.</li>
+  <li><strong>Prestazioni</strong>: Generalmente più veloce rispetto a un ciclo <code class="language-plaintext highlighter-rouge">for</code> tradizionale.</li>
+</ul>
+
+<h4 id="list-comprehension-nidificate"><strong>List Comprehension Nidificate</strong></h4>
+<p>Le list comprehension possono essere nidificate per elaborare strutture complesse, come matrici.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="n">matrix</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]]</span>
+<span class="n">flattened</span> <span class="o">=</span> <span class="p">[</span><span class="n">num</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">matrix</span> <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">row</span><span class="p">]</span>
+<span class="c1"># Risultato: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<h3 id="2-generatori-e-iteratori"><strong>2. Generatori e Iteratori</strong></h3>
+
+<h4 id="iteratori"><strong>Iteratori</strong></h4>
+<p>Un <strong>iteratore</strong> è un oggetto che implementa i metodi <code class="language-plaintext highlighter-rouge">__iter__()</code> e <code class="language-plaintext highlighter-rouge">__next__()</code> per consentire un’iterazione sequenziale degli elementi. Gli iteratori vengono utilizzati per risparmiare memoria elaborando un elemento alla volta.</p>
+
+<h4 id="esempio-di-iteratore"><strong>Esempio di Iteratore</strong></h4>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">iterator</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">iterator</span><span class="p">))</span>  <span class="c1"># Output: 1
+</span><span class="k">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">iterator</span><span class="p">))</span>  <span class="c1"># Output: 2
+</span><span class="k">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">iterator</span><span class="p">))</span>  <span class="c1"># Output: 3
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Se provi a chiamare <code class="language-plaintext highlighter-rouge">next()</code> dopo l’ultimo elemento, viene sollevata un’eccezione <code class="language-plaintext highlighter-rouge">StopIteration</code>.</p>
+
+<hr />
+
+<h4 id="generatori"><strong>Generatori</strong></h4>
+<p>Un <strong>generatore</strong> è una funzione speciale che utilizza la parola chiave <code class="language-plaintext highlighter-rouge">yield</code> per restituire un elemento alla volta. A differenza delle funzioni normali, i generatori mantengono lo stato tra una chiamata e l’altra.</p>
+
+<h4 id="esempio-di-generatore"><strong>Esempio di Generatore</strong></h4>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre><span class="k">def</span> <span class="nf">my_generator</span><span class="p">():</span>
+    <span class="k">yield</span> <span class="mi">1</span>
+    <span class="k">yield</span> <span class="mi">2</span>
+    <span class="k">yield</span> <span class="mi">3</span>
+
+<span class="n">gen</span> <span class="o">=</span> <span class="n">my_generator</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">gen</span><span class="p">))</span>  <span class="c1"># Output: 1
+</span><span class="k">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">gen</span><span class="p">))</span>  <span class="c1"># Output: 2
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<h4 id="differenza-tra-return-e-yield"><strong>Differenza tra <code class="language-plaintext highlighter-rouge">return</code> e <code class="language-plaintext highlighter-rouge">yield</code></strong></h4>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">return</code> interrompe l’esecuzione della funzione.</li>
+  <li><code class="language-plaintext highlighter-rouge">yield</code> sospende l’esecuzione e la riprende al punto successivo.</li>
+</ul>
+
+<h4 id="generator-expression"><strong>Generator Expression</strong></h4>
+<p>Simile alla list comprehension, ma crea un generatore invece di una lista:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="n">gen_exp</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">gen_exp</span><span class="p">))</span>  <span class="c1"># Output: 0
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<h3 id="3-decoratori-introduzione"><strong>3. Decoratori (Introduzione)</strong></h3>
+
+<p>Un <strong>decoratore</strong> è una funzione che modifica il comportamento di un’altra funzione o metodo. Viene usato spesso per aggiungere funzionalità senza modificare il codice originale.</p>
+
+<h4 id="sintassi-base-1"><strong>Sintassi Base</strong></h4>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="rouge-code"><pre><span class="k">def</span> <span class="nf">my_decorator</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">wrapper</span><span class="p">():</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Qualcosa prima della funzione."</span><span class="p">)</span>
+        <span class="n">func</span><span class="p">()</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Qualcosa dopo la funzione."</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">wrapper</span>
+
+<span class="o">@</span><span class="n">my_decorator</span>
+<span class="k">def</span> <span class="nf">say_hello</span><span class="p">():</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Ciao!"</span><span class="p">)</span>
+
+<span class="n">say_hello</span><span class="p">()</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h4 id="spiegazione"><strong>Spiegazione</strong></h4>
+<ol>
+  <li>La funzione <code class="language-plaintext highlighter-rouge">my_decorator</code> accetta una funzione come input.</li>
+  <li><code class="language-plaintext highlighter-rouge">wrapper</code> definisce il comportamento aggiuntivo.</li>
+  <li>La sintassi <code class="language-plaintext highlighter-rouge">@my_decorator</code> è equivalente a scrivere:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="n">say_hello</span> <span class="o">=</span> <span class="n">my_decorator</span><span class="p">(</span><span class="n">say_hello</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+</ol>
+
+<h4 id="esempio-pratico"><strong>Esempio Pratico</strong></h4>
+<p>Un decoratore per misurare il tempo di esecuzione:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="nn">time</span>
+
+<span class="k">def</span> <span class="nf">timer</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">wrapper</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="p">.</span><span class="n">time</span><span class="p">()</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="n">end</span> <span class="o">=</span> <span class="n">time</span><span class="p">.</span><span class="n">time</span><span class="p">()</span>
+        <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"Tempo di esecuzione: </span><span class="si">{</span><span class="n">end</span> <span class="o">-</span> <span class="n">start</span><span class="si">}</span><span class="s"> secondi"</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">result</span>
+    <span class="k">return</span> <span class="n">wrapper</span>
+
+<span class="o">@</span><span class="n">timer</span>
+<span class="k">def</span> <span class="nf">slow_function</span><span class="p">():</span>
+    <span class="n">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Funzione lenta completata"</span><span class="p">)</span>
+
+<span class="n">slow_function</span><span class="p">()</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<h3 id="4-gestione-delle-eccezioni-personalizzate"><strong>4. Gestione delle Eccezioni Personalizzate</strong></h3>
+
+<p>Python consente di definire eccezioni personalizzate per migliorare il controllo sui flussi di errore.</p>
+
+<h4 id="creare-uneccezione-personalizzata"><strong>Creare un’Eccezione Personalizzata</strong></h4>
+<p>Le eccezioni personalizzate derivano dalla classe base <code class="language-plaintext highlighter-rouge">Exception</code> o da una delle sue sottoclassi.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="k">class</span> <span class="nc">CustomError</span><span class="p">(</span><span class="nb">Exception</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">message</span> <span class="o">=</span> <span class="n">message</span>
+        <span class="nb">super</span><span class="p">().</span><span class="n">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">message</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h4 id="utilizzo"><strong>Utilizzo</strong></h4>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="rouge-code"><pre><span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">CustomError</span><span class="p">(</span><span class="s">"La divisione per zero non è consentita."</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">divide</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+<span class="k">except</span> <span class="n">CustomError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"Errore catturato: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h4 id="eccezioni-con-attributi-aggiuntivi"><strong>Eccezioni con Attributi Aggiuntivi</strong></h4>
+<p>Puoi aggiungere attributi alle eccezioni personalizzate per fornire ulteriori dettagli:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="rouge-code"><pre><span class="k">class</span> <span class="nc">CustomError</span><span class="p">(</span><span class="nb">Exception</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="n">code</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">message</span> <span class="o">=</span> <span class="n">message</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">code</span> <span class="o">=</span> <span class="n">code</span>
+        <span class="nb">super</span><span class="p">().</span><span class="n">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">message</span><span class="p">)</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="k">raise</span> <span class="n">CustomError</span><span class="p">(</span><span class="s">"Errore critico"</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>
+<span class="k">except</span> <span class="n">CustomError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"Errore: </span><span class="si">{</span><span class="n">e</span><span class="p">.</span><span class="n">message</span><span class="si">}</span><span class="s"> con codice </span><span class="si">{</span><span class="n">e</span><span class="p">.</span><span class="n">code</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<p>Questi concetti avanzati, se compresi e applicati correttamente, ti permetteranno di scrivere codice Python più pulito, efficiente e scalabile. Se desideri approfondimenti su uno di essi o esempi pratici, fammi sapere!</p>
+:ET
