@@ -3,7 +3,7 @@ layout: post
 title: "Introduzione Python"
 author: Teo
 categories: Python, tutorial, sviluppo web, guida_python 
-image: assets/images/
+image: assets/images/python.jpg
 featured: yes
 description: "Guida Python Completa: Impara le Basi per programmmare in python.
 keywords: Python, introduzione python, guida python, creare programmi in python, linguaggio python"
