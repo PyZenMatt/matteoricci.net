@@ -195,4 +195,4 @@ Ecco un esempio di una pagina **HTML** semplice che contiene vari elementi:
 
 **HTML** è quindi la base di tutte le pagine web: fornisce la **struttura** e organizza i contenuti. Ogni elemento è creato per essere semplice e leggibile e costituisce il "blocco" su cui si costruiscono tutte le interfacce web, in combinazione con CSS per la presentazione e JavaScript per le interazioni.
 
-[Vai al capitolo 2]({{site.baseurl}}/elementi-di-base/)
+[Vai al capitolo 2](/elementi-di-base/)
