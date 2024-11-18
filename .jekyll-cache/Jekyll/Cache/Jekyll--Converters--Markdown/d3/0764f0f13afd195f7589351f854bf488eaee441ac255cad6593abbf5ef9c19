@@ -1,0 +1,195 @@
+I"�;<p>Quando si inizia a programmare in JavaScript, uno dei concetti fondamentali da comprendere è quello delle <strong>funzioni</strong> e dello <strong>scope</strong>. Questi due concetti sono alla base del funzionamento del linguaggio e sono indispensabili per scrivere codice pulito, efficiente e mantenibile. In questo articolo, esploreremo in profondità cosa sono le funzioni, come funzionano e come lo scope influisce sul comportamento delle variabili al loro interno.</p>
+
+<hr />
+
+<h2 id="cosa-sono-le-funzioni-in-javascript">Cosa Sono le Funzioni in JavaScript?</h2>
+
+<p>In JavaScript, le <strong>funzioni</strong> sono blocchi di codice progettati per eseguire un compito specifico. Una funzione può accettare <strong>input</strong> (parametri), eseguire operazioni con questi valori e restituire un <strong>output</strong>. Le funzioni sono fondamentali per evitare la duplicazione di codice e promuovere la riusabilità.</p>
+
+<h3 id="sintassi-di-una-funzione">Sintassi di una Funzione</h3>
+
+<p>Esistono diversi modi per dichiarare una funzione in JavaScript. I principali sono:</p>
+
+<h4 id="1-funzioni-dichiarate-function-declaration">1. <strong>Funzioni Dichiarate (Function Declaration)</strong></h4>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="kd">function</span> <span class="nx">saluta</span><span class="p">(</span><span class="nx">nome</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">`Ciao, </span><span class="p">${</span><span class="nx">nome</span><span class="p">}</span><span class="s2">!`</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">saluta</span><span class="p">(</span><span class="dl">"</span><span class="s2">Matteo</span><span class="dl">"</span><span class="p">));</span> <span class="c1">// Output: "Ciao, Matteo!"</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h4 id="2-funzioni-espresse-function-expression">2. <strong>Funzioni Espresse (Function Expression)</strong></h4>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="kd">const</span> <span class="nx">saluta</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">nome</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">`Ciao, </span><span class="p">${</span><span class="nx">nome</span><span class="p">}</span><span class="s2">!`</span><span class="p">;</span>
+<span class="p">};</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">saluta</span><span class="p">(</span><span class="dl">"</span><span class="s2">Matteo</span><span class="dl">"</span><span class="p">));</span> <span class="c1">// Output: "Ciao, Matteo!"</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h4 id="3-arrow-functions-es6">3. <strong>Arrow Functions (ES6)</strong></h4>
+
+<p>Le arrow functions sono una sintassi compatta per definire funzioni.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="kd">const</span> <span class="nx">saluta</span> <span class="o">=</span> <span class="p">(</span><span class="nx">nome</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="s2">`Ciao, </span><span class="p">${</span><span class="nx">nome</span><span class="p">}</span><span class="s2">!`</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">saluta</span><span class="p">(</span><span class="dl">"</span><span class="s2">Matteo</span><span class="dl">"</span><span class="p">));</span> <span class="c1">// Output: "Ciao, Matteo!"</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<h2 id="scope-in-javascript-una-visione-approfondita">Scope in JavaScript: Una Visione Approfondita</h2>
+
+<p>Lo <strong>scope</strong> definisce il contesto in cui le variabili, le funzioni e gli oggetti sono accessibili. Comprendere lo scope è essenziale per evitare bug legati alla visibilità delle variabili.</p>
+
+<h3 id="tipi-di-scope-in-javascript">Tipi di Scope in JavaScript</h3>
+
+<h4 id="1-global-scope">1. <strong>Global Scope</strong></h4>
+<p>Le variabili dichiarate al di fuori di qualsiasi funzione o blocco hanno uno scope globale e possono essere accessibili ovunque nel codice.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">let</span> <span class="nx">globale</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Sono globale</span><span class="dl">"</span><span class="p">;</span>
+
+<span class="kd">function</span> <span class="nx">mostraGlobale</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">globale</span><span class="p">);</span> <span class="c1">// Accessibile</span>
+<span class="p">}</span>
+<span class="nx">mostraGlobale</span><span class="p">();</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">globale</span><span class="p">);</span> <span class="c1">// Accessibile</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h4 id="2-local-scope">2. <strong>Local Scope</strong></h4>
+<p>Le variabili dichiarate all’interno di una funzione o di un blocco di codice hanno uno scope locale e sono accessibili solo all’interno di quella funzione o blocco.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="kd">function</span> <span class="nx">saluta</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">locale</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Sono locale</span><span class="dl">"</span><span class="p">;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">locale</span><span class="p">);</span> <span class="c1">// Accessibile</span>
+<span class="p">}</span>
+<span class="nx">saluta</span><span class="p">();</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">locale</span><span class="p">);</span> <span class="c1">// Errore: locale non è definita</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h4 id="3-block-scope-es6">3. <strong>Block Scope (ES6)</strong></h4>
+
+<p>Con l’introduzione di <code class="language-plaintext highlighter-rouge">let</code> e <code class="language-plaintext highlighter-rouge">const</code>, JavaScript supporta lo <strong>scope di blocco</strong>, il che significa che le variabili dichiarate all’interno di un blocco <code class="language-plaintext highlighter-rouge">{}</code> non sono visibili al di fuori di esso.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre><span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+    <span class="kd">const</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">z</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span> <span class="c1">// var non rispetta il block scope</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span> <span class="c1">// Errore: x non è definita</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">y</span><span class="p">);</span> <span class="c1">// Errore: y non è definita</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">z</span><span class="p">);</span> <span class="c1">// Accessibile: z = 30</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<h2 id="concetto-di-closure">Concetto di Closure</h2>
+
+<p>Uno degli aspetti più potenti (e complessi) di JavaScript è il concetto di <strong>closure</strong>. Una closure è creata quando una funzione interna “ricorda” lo scope in cui è stata dichiarata, anche dopo che lo scope esterno è stato chiuso.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="rouge-code"><pre><span class="kd">function</span> <span class="nx">creaContatore</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">contatore</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">return</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">contatore</span><span class="o">++</span><span class="p">;</span>
+        <span class="k">return</span> <span class="nx">contatore</span><span class="p">;</span>
+    <span class="p">};</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">contatore1</span> <span class="o">=</span> <span class="nx">creaContatore</span><span class="p">();</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">contatore1</span><span class="p">());</span> <span class="c1">// Output: 1</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">contatore1</span><span class="p">());</span> <span class="c1">// Output: 2</span>
+
+<span class="kd">const</span> <span class="nx">contatore2</span> <span class="o">=</span> <span class="nx">creaContatore</span><span class="p">();</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">contatore2</span><span class="p">());</span> <span class="c1">// Output: 1</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>In questo esempio, la funzione interna “ricorda” la variabile <code class="language-plaintext highlighter-rouge">contatore</code> del suo scope esterno.</p>
+
+<hr />
+
+<h2 id="best-practices-per-gestire-scope-e-funzioni">Best Practices per Gestire Scope e Funzioni</h2>
+
+<h3 id="1-evitare-variabili-globali">1. Evitare Variabili Globali</h3>
+<p>Le variabili globali possono essere sovrascritte accidentalmente. Utilizza <code class="language-plaintext highlighter-rouge">let</code> e <code class="language-plaintext highlighter-rouge">const</code> per creare variabili con uno scope locale o di blocco.</p>
+
+<h3 id="2-usare-arrow-functions-per-il-binding-del-contesto">2. Usare Arrow Functions per il Binding del Contesto</h3>
+<p>Le arrow functions non creano un proprio contesto <code class="language-plaintext highlighter-rouge">this</code>, rendendole utili per mantenere il riferimento al contesto esterno.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">function</span> <span class="nx">Persona</span><span class="p">(</span><span class="nx">nome</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">nome</span> <span class="o">=</span> <span class="nx">nome</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">dillo</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`Mi chiamo </span><span class="p">${</span><span class="k">this</span><span class="p">.</span><span class="nx">nome</span><span class="p">}</span><span class="s2">`</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">matteo</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Persona</span><span class="p">(</span><span class="dl">"</span><span class="s2">Matteo</span><span class="dl">"</span><span class="p">);</span>
+<span class="nx">matteo</span><span class="p">.</span><span class="nx">dillo</span><span class="p">();</span> <span class="c1">// Output: "Mi chiamo Matteo"</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="3-modularizzare-il-codice">3. Modularizzare il Codice</h3>
+<p>Suddividere il codice in più funzioni piccole e modulari migliora la leggibilità e facilita la manutenzione.</p>
+
+<hr />
+
+<h2 id="conclusioni">Conclusioni</h2>
+
+<p>Le funzioni e lo scope sono pilastri fondamentali di JavaScript. Le funzioni ti permettono di scrivere codice riutilizzabile, mentre lo scope determina dove e come accedere alle variabili. Per padroneggiare JavaScript, è cruciale comprendere a fondo questi concetti e applicare le best practices.</p>
+
+<p>Se stai cercando di migliorare le tue competenze in JavaScript, approfondire la comprensione delle funzioni e dello scope è il passo giusto. Ti invitiamo a provare gli esempi forniti in questo articolo e a esplorare ulteriormente come closure e scope influiscono sul tuo codice.</p>
+
+<p><strong>Parole chiave SEO</strong>: funzioni in JavaScript, scope JavaScript, closure JavaScript, differenza tra var let const, guide JavaScript per principianti.</p>
+
+<hr />
+
+<p>Hai trovato utile questo articolo? Sentiti libero di condividere la tua opinione nei commenti! 😊</p>
+
+<p><a href="/oggetti-e-array/">Oggetti e array.</a></p>
+:ET

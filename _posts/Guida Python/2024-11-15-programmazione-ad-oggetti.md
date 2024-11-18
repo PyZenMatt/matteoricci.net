@@ -225,3 +225,5 @@ Ora che hai acquisito le basi dell'OOP, il passo successivo è metterle in prati
 L'OOP è un viaggio, non una destinazione. Più pratichi, più scoprirai quanto può essere potente e flessibile come strumento di programmazione. Con Python al tuo fianco, hai tutto ciò di cui hai bisogno per padroneggiare questo paradigma e costruire applicazioni eleganti ed efficaci.
 
 Buon lavoro e buon coding!
+
+[Capitolo 6]({{ site.baseurl }}/gestione-errori/)

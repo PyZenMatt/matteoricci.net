@@ -192,3 +192,5 @@ Il controllo del flusso è un aspetto essenziale della programmazione, e Python 
 Con una solida comprensione di questi concetti, sarai in grado di affrontare con successo problemi più avanzati, costruendo programmi che si comportano in modo prevedibile e organizzato. Il tuo viaggio nella programmazione con Python non finisce qui: continua a sperimentare e applicare queste basi per affrontare sfide sempre più ambiziose.
 
 Se vuoi esplorare altri argomenti legati a Python, come strutture dati o funzioni avanzate, il prossimo passo è dietro l’angolo. Buona programmazione!
+
+[Capitolo 3]({{ site.baseurl }}/strutture-dati-fondamentali/)

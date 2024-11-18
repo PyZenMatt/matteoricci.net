@@ -197,3 +197,5 @@ Python è un linguaggio che premia la leggibilità e la semplicità, e le funzio
 
 Buon coding!
 
+[Capitolo 5]({{ site.baseurl }}/programmazione-ad-oggetti/)
+

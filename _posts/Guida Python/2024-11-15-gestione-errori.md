@@ -199,3 +199,5 @@ Abbiamo esplorato i fondamenti della gestione delle eccezioni, analizzato i tipi
 Implementare queste strategie nel tuo flusso di sviluppo non solo migliorerà la qualità del tuo codice, ma ti permetterà anche di affrontare il debugging e la manutenzione con maggiore facilità. Inoltre, non dimenticare di utilizzare strumenti come i log per tenere traccia degli errori e migliorare continuamente il tuo software.
 
 La gestione degli errori è una competenza che cresce con l’esperienza e l’applicazione. Continua a sperimentare, affronta nuove sfide e perfeziona il tuo approccio. Alla fine, i tuoi sforzi contribuiranno a creare applicazioni Python più solide, affidabili e pronte per affrontare qualsiasi imprevisto.
+
+[Capitolo 7]({{ site.baseurl }}/moduli-e-librerie/)

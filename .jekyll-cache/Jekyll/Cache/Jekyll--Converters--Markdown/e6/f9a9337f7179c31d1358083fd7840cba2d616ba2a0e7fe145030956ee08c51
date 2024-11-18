@@ -1,0 +1,86 @@
+I"�<p>JavaScript è uno dei linguaggi di programmazione più popolari e potenti per il web. Se hai mai navigato su una pagina web interattiva, probabilmente hai già visto JavaScript in azione. Ma da dove iniziare se vuoi impararlo? In questo primo articolo introduttivo, ti guiderò attraverso i concetti fondamentali di JavaScript, ponendo le basi per un percorso di apprendimento chiaro ed efficace.
+Perché Imparare JavaScript?</p>
+
+<p>JavaScript è il cuore del web. Con esso puoi:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>Creare pagine interattive e dinamiche.
+Sviluppare applicazioni web complesse.
+Ampliare le tue opportunità lavorative, visto che è uno dei linguaggi più richiesti sul mercato.
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Che tu voglia diventare uno sviluppatore web o semplicemente aggiungere nuove competenze al tuo arsenale, JavaScript è il punto di partenza ideale.
+Cosa Imparerai in Questo Tutorial</p>
+
+<p>In questa guida introduttiva, scoprirai i concetti essenziali di JavaScript, organizzati in una sequenza logica che ti permetterà di imparare passo dopo passo. Ecco i temi principali che esploreremo:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="rouge-code"><pre>Ambiente di sviluppo: Configurare il tuo computer per lavorare con JavaScript.
+Sintassi base: Le fondamenta del linguaggio.
+Tipi di dati e variabili: Come JavaScript gestisce e archivia le informazioni.
+Operatori e controllo del flusso: Come prendere decisioni e automatizzare i processi.
+Funzioni: Il cuore della programmazione JavaScript.
+Oggetti e array: Come organizzare e gestire i dati.
+Manipolazione del DOM: Come rendere le tue pagine web interattive.
+Introduzione all’asincronia: Concetti base per gestire il tempo e le richieste al server.
+ES6 e modern JavaScript: Le funzionalità più recenti del linguaggio.
+Debugging e strumenti per sviluppatori: Risolvere problemi nel codice.
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Primi Passi con JavaScript</p>
+<ol>
+  <li>Configurare l’Ambiente di Sviluppo</li>
+</ol>
+
+<p>Per iniziare a scrivere JavaScript, hai bisogno di un editor di testo e di un browser. Ti consiglio:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>Editor: Usa Visual Studio Code (VS Code), uno degli editor più diffusi e potenti.
+Console del browser: Puoi iniziare a sperimentare con il codice JavaScript direttamente nella console del browser (di solito accessibile con il tasto F12).
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<ol>
+  <li>Sintassi Base</li>
+</ol>
+
+<p>Il primo passo per imparare JavaScript è familiarizzare con la sua sintassi:</p>
+
+<p>console.log(“Ciao, mondo!”);</p>
+
+<p>Questo semplice comando stampa un messaggio nella console del browser.
+Conclusione</p>
+
+<p>Questo articolo è solo il punto di partenza per il tuo viaggio con JavaScript. Nel prossimo articolo entreremo nel dettaglio con le variabili e i tipi di dati, esplorando come memorizzare e manipolare le informazioni. Con un po’ di pratica, sarai presto in grado di scrivere i tuoi programmi e di creare applicazioni web interattive.</p>
+
+<p>Hai domande o vuoi approfondire un argomento? Lascia un commento o continua a seguire questa serie per diventare un esperto di JavaScript!
+Scaletta Completa del Tutorial</p>
+
+<ol>
+  <li><a href="/introduzione-e-setup-ambiente/">Introduzione e setup dell’ambiente.</a></li>
+  <li><a href="/variabili-e-tipi-di-dati/">Variabili e tipi di dati.</a></li>
+  <li><a href="/operatori-e-strutture-di-controllo/">Operatori e strutture di controllo.</a></li>
+  <li><a href="/funzioni-e-scope/">Funzioni e scope.</a></li>
+  <li><a href="/oggetti-e-array/">Oggetti e array.</a></li>
+  <li><a href="/manipolazione-del-dom/">Manipolazione del DOM.</a></li>
+  <li><a href="/eventi-e-interattivita/">Eventi e interattività.</a></li>
+  <li><a href="/asincronia-e-fetch-api/">Asincronia e fetch API.</a></li>
+  <li><a href="/ES6-e-modern-javascript/">ES6 e modern JavaScript.</a></li>
+  <li><a href="/debugging-e-risoluzione/">Debugging e risoluzione dei problemi.</a></li>
+</ol>
+
+<p>Seguimi per rimanere aggiornato sui nuovi articoli e per approfondire il mondo di JavaScript!</p>
+
+<p>[Capitolo 1]/introduzione-e-setup-ambiente/)</p>
+:ET

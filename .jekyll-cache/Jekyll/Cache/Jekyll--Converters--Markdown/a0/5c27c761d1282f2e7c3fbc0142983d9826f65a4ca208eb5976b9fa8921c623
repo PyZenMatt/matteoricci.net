@@ -1,0 +1,314 @@
+I"�B<p>JavaScript è uno dei linguaggi di programmazione più utilizzati al mondo, e per diventare esperti è fondamentale comprendere bene due pilastri fondamentali: <strong>gli operatori</strong> e le <strong>strutture di controllo</strong>. Questi concetti sono alla base di qualsiasi script e permettono al codice di prendere decisioni, eseguire calcoli e controllare il flusso delle operazioni.</p>
+
+<hr />
+
+<h2 id="operatori-in-javascript"><strong>Operatori in JavaScript</strong></h2>
+
+<p>Gli operatori sono simboli o parole chiave utilizzate per effettuare calcoli, confronti o manipolare dati. In JavaScript possiamo dividere gli operatori in diverse categorie.</p>
+
+<h3 id="1-operatori-aritmetici"><strong>1. Operatori Aritmetici</strong></h3>
+<p>Utilizzati per eseguire operazioni matematiche come somma, sottrazione, moltiplicazione, ecc.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Operatore</th>
+      <th>Descrizione</th>
+      <th>Esempio</th>
+      <th>Risultato</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">+</code></td>
+      <td>Addizione</td>
+      <td><code class="language-plaintext highlighter-rouge">5 + 3</code></td>
+      <td><code class="language-plaintext highlighter-rouge">8</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-</code></td>
+      <td>Sottrazione</td>
+      <td><code class="language-plaintext highlighter-rouge">5 - 3</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">*</code></td>
+      <td>Moltiplicazione</td>
+      <td><code class="language-plaintext highlighter-rouge">5 * 3</code></td>
+      <td><code class="language-plaintext highlighter-rouge">15</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">/</code></td>
+      <td>Divisione</td>
+      <td><code class="language-plaintext highlighter-rouge">10 / 2</code></td>
+      <td><code class="language-plaintext highlighter-rouge">5</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%</code></td>
+      <td>Modulo (resto)</td>
+      <td><code class="language-plaintext highlighter-rouge">10 % 3</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">**</code></td>
+      <td>Potenza</td>
+      <td><code class="language-plaintext highlighter-rouge">2 ** 3</code></td>
+      <td><code class="language-plaintext highlighter-rouge">8</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="2-operatori-di-assegnazione"><strong>2. Operatori di Assegnazione</strong></h3>
+<p>Utilizzati per assegnare valori alle variabili. Possono anche combinare l’assegnazione con altre operazioni.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Operatore</th>
+      <th>Descrizione</th>
+      <th>Esempio</th>
+      <th>Risultato</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">=</code></td>
+      <td>Assegnazione semplice</td>
+      <td><code class="language-plaintext highlighter-rouge">x = 5</code></td>
+      <td><code class="language-plaintext highlighter-rouge">x = 5</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">+=</code></td>
+      <td>Addizione e assegnazione</td>
+      <td><code class="language-plaintext highlighter-rouge">x += 3</code></td>
+      <td><code class="language-plaintext highlighter-rouge">x = x + 3</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-=</code></td>
+      <td>Sottrazione e assegnazione</td>
+      <td><code class="language-plaintext highlighter-rouge">x -= 2</code></td>
+      <td><code class="language-plaintext highlighter-rouge">x = x - 2</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">*=</code></td>
+      <td>Moltiplicazione e assegn.</td>
+      <td><code class="language-plaintext highlighter-rouge">x *= 4</code></td>
+      <td><code class="language-plaintext highlighter-rouge">x = x * 4</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">/=</code></td>
+      <td>Divisione e assegnazione</td>
+      <td><code class="language-plaintext highlighter-rouge">x /= 2</code></td>
+      <td><code class="language-plaintext highlighter-rouge">x = x / 2</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="3-operatori-di-confronto"><strong>3. Operatori di Confronto</strong></h3>
+<p>Utilizzati per confrontare valori e restituiscono un risultato booleano (<code class="language-plaintext highlighter-rouge">true</code> o <code class="language-plaintext highlighter-rouge">false</code>).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Operatore</th>
+      <th>Descrizione</th>
+      <th>Esempio</th>
+      <th>Risultato</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">==</code></td>
+      <td>Uguaglianza</td>
+      <td><code class="language-plaintext highlighter-rouge">5 == "5"</code></td>
+      <td><code class="language-plaintext highlighter-rouge">true</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">===</code></td>
+      <td>Uguaglianza stretta</td>
+      <td><code class="language-plaintext highlighter-rouge">5 === "5"</code></td>
+      <td><code class="language-plaintext highlighter-rouge">false</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">!=</code></td>
+      <td>Diversità</td>
+      <td><code class="language-plaintext highlighter-rouge">5 != "6"</code></td>
+      <td><code class="language-plaintext highlighter-rouge">true</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">!==</code></td>
+      <td>Diversità stretta</td>
+      <td><code class="language-plaintext highlighter-rouge">5 !== "5"</code></td>
+      <td><code class="language-plaintext highlighter-rouge">true</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&gt;</code></td>
+      <td>Maggiore di</td>
+      <td><code class="language-plaintext highlighter-rouge">10 &gt; 5</code></td>
+      <td><code class="language-plaintext highlighter-rouge">true</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&lt;</code></td>
+      <td>Minore di</td>
+      <td><code class="language-plaintext highlighter-rouge">10 &lt; 5</code></td>
+      <td><code class="language-plaintext highlighter-rouge">false</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="4-operatori-logici"><strong>4. Operatori Logici</strong></h3>
+<p>Utilizzati per combinare più condizioni.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Operatore</th>
+      <th>Descrizione</th>
+      <th>Esempio</th>
+      <th>Risultato</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&amp;&amp;</code></td>
+      <td>AND (e logico)</td>
+      <td><code class="language-plaintext highlighter-rouge">(5 &gt; 3) &amp;&amp; (4 &lt; 6)</code></td>
+      <td><code class="language-plaintext highlighter-rouge">true</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">||</code></td>
+      <td>OR (o logico)</td>
+      <td><code class="language-plaintext highlighter-rouge">(5 &lt; 3) || (4 &gt; 2)</code></td>
+      <td><code class="language-plaintext highlighter-rouge">true</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">!</code></td>
+      <td>NOT (negazione)</td>
+      <td><code class="language-plaintext highlighter-rouge">!(5 &gt; 3)</code></td>
+      <td><code class="language-plaintext highlighter-rouge">false</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="strutture-di-controllo-in-javascript"><strong>Strutture di Controllo in JavaScript</strong></h2>
+
+<p>Le strutture di controllo permettono al codice di prendere decisioni e controllare il flusso dell’esecuzione. Possono essere suddivise in due grandi categorie: <strong>condizionali</strong> e <strong>cicli</strong>.</p>
+
+<h3 id="1-strutture-condizionali"><strong>1. Strutture Condizionali</strong></h3>
+
+<p>Le strutture condizionali vengono utilizzate per eseguire blocchi di codice basati su determinate condizioni.</p>
+
+<h4 id="11-ifelse"><strong>1.1. If/Else</strong></h4>
+<p>La struttura <code class="language-plaintext highlighter-rouge">if</code> verifica una condizione e, se è vera, esegue un blocco di codice.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">x</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">x è maggiore di 5</span><span class="dl">"</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">x non è maggiore di 5</span><span class="dl">"</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h4 id="12-else-if"><strong>1.2. Else If</strong></h4>
+<p>Puoi aggiungere più condizioni con <code class="language-plaintext highlighter-rouge">else if</code>.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre><span class="kd">let</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">y</span> <span class="o">&gt;</span> <span class="mi">25</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">y è maggiore di 25</span><span class="dl">"</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">y</span> <span class="o">&gt;</span> <span class="mi">15</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">y è maggiore di 15</span><span class="dl">"</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">y è 15 o meno</span><span class="dl">"</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h4 id="13-operatore-ternario"><strong>1.3. Operatore Ternario</strong></h4>
+<p>Un modo compatto per scrivere una condizione.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="kd">let</span> <span class="nx">age</span> <span class="o">=</span> <span class="mi">18</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">isAdult</span> <span class="o">=</span> <span class="nx">age</span> <span class="o">&gt;=</span> <span class="mi">18</span> <span class="p">?</span> <span class="dl">"</span><span class="s2">Adulto</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">Minorenne</span><span class="dl">"</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">isAdult</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="2-cicli"><strong>2. Cicli</strong></h3>
+
+<p>I cicli consentono di eseguire ripetutamente un blocco di codice finché una condizione è vera.</p>
+
+<h4 id="21-for"><strong>2.1. For</strong></h4>
+<p>Utilizzato per iterare su un intervallo noto.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h4 id="22-while"><strong>2.2. While</strong></h4>
+<p>Esegue un blocco di codice finché una condizione rimane vera.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="kd">let</span> <span class="nx">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">while</span> <span class="p">(</span><span class="nx">count</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">count</span><span class="p">);</span>
+    <span class="nx">count</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h4 id="23-do-while"><strong>2.3. Do While</strong></h4>
+<p>Esegue il codice almeno una volta prima di verificare la condizione.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="kd">let</span> <span class="nx">num</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">do</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">num</span><span class="p">);</span>
+    <span class="nx">num</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="nx">num</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<h2 id="conclusione"><strong>Conclusione</strong></h2>
+
+<p>Gli <strong>operatori</strong> e le <strong>strutture di controllo</strong> sono fondamentali per padroneggiare JavaScript. Gli operatori permettono di eseguire calcoli e confronti, mentre le strutture di controllo consentono di determinare il flusso del codice. Imparare a utilizzarli in modo efficace è il primo passo verso lo sviluppo di applicazioni interattive e funzionali.</p>
+
+<h3 id="parole-chiave-per-la-seo"><strong>Parole Chiave per la SEO</strong></h3>
+<ul>
+  <li><strong>Operatori JavaScript</strong></li>
+  <li><strong>Strutture di controllo JavaScript</strong></li>
+  <li><strong>Guida JavaScript per principianti</strong></li>
+  <li><strong>Operatori aritmetici, logici e di confronto</strong></li>
+  <li><strong>Cicli e condizioni in JavaScript</strong></li>
+</ul>
+
+<p>Con questa conoscenza, puoi iniziare a scrivere script JavaScript più complessi e affrontare con sicurezza il prossimo step nel tuo viaggio da sviluppatore.
+<a href="/funzioni-e-scope/">Funzioni e scope.</a></p>
+:ET

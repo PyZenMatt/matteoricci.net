@@ -20,9 +20,9 @@ Python è uno dei linguaggi più richiesti nel mercato del lavoro grazie alla su
 Cosa Imparerai?
 
 Ecco un elenco di argomenti da studiare per iniziare ad apprendere Python, organizzati in un percorso progressivo:
-1. Concetti di Base
+1. [Concetti di Base]({{ site.baseurl }}/definizione-e-installazione/)
 
-    Introduzione a Python:
+    Introduzione a Python
         Cos’è Python e perché usarlo.
         Installazione di Python e configurazione dell’ambiente.
         Utilizzo dell’interprete Python e di editor come Visual Studio Code o PyCharm.
@@ -32,7 +32,7 @@ Ecco un elenco di argomenti da studiare per iniziare ad apprendere Python, organ
         Operatori (aritmetici, di confronto, logici).
         Input/Output (input(), print()).
 
-2. Controllo del Flusso
+2. [Controllo del Flusso]({{ site.baseurl }}/controllo-del-flusso/)
 
     Condizioni:
         if, elif, else.
@@ -43,7 +43,7 @@ Ecco un elenco di argomenti da studiare per iniziare ad apprendere Python, organ
         Uso di range().
         Interruzione dei cicli con break e continue.
 
-3. Strutture Dati Fondamentali
+3. [Strutture Dati Fondamentali]({{ site.baseurl }}/strutture-dati-fondamentali/)
 
     Liste:
         Creazione e manipolazione.
@@ -58,44 +58,44 @@ Ecco un elenco di argomenti da studiare per iniziare ad apprendere Python, organ
     Set e Tuple:
         Differenze e utilizzo.
 
-4. Funzioni
+4. [Funzioni]({{ site.baseurl }}/funzioni-in-python/)
 
     Creazione di funzioni con def.
     Parametri e argomenti (posizionali e con valore di default).
     Restituzione di valori con return.
     Scope delle variabili (locale vs globale).
 
-5. Concetti di Programmazione Orientata agli Oggetti (OOP)
+5. [Concetti di Programmazione Orientata agli Oggetti (OOP)]({{ site.baseurl }}/programmazione-ad-oggetti/)
 
     Cos’è un oggetto e una classe.
     Creazione di classi e oggetti.
     Metodi e attributi.
     Concetti di base: incapsulamento, ereditarietà, polimorfismo.
 
-6. Gestione degli Errori
+6. [Gestione degli Errori]({{ site.baseurl }}/gestione-errori/)
 
     Uso di try, except, else, finally.
     Tipi comuni di errori (ValueError, TypeError).
 
-7. Moduli e Librerie
+7. [Moduli e Librerie]({{ site.baseurl }}/moduli-e-librerie/)
 
     Importazione di moduli (import e from).
     Uso di librerie standard (es. math, random, os).
     Introduzione a pip e librerie esterne (es. requests, pandas).
 
-8. File Handling
+8. [File Handling]({{ site.baseurl }}/file-handling/)
 
     Lettura e scrittura di file (open, read, write).
     Gestione di file con with.
 
-9. Concetti Avanzati (Facoltativi per Principianti)
+9. [Concetti Avanzati (Facoltativi per Principianti)]({{ site.baseurl }}/concetti-avanzati/)
 
     List Comprehension.
     Generatori e Iteratori.
     Decoratori (introduzione).
     Gestione delle eccezioni personalizzate.
 
-10. Progetti Pratici per Principianti
+10. [Progetti Pratici per Principianti]({{ site.baseurl }}/progetti-pratici/)
 
     Calcolatrice semplice.
     Gioco "Indovina il numero".

@@ -168,3 +168,5 @@ Uno degli aspetti più affascinanti di Python è l'enorme comunità che contribu
 La gestione delle librerie tramite strumenti come pip e l'utilizzo di ambienti virtuali garantiscono la compatibilità e la portabilità dei progetti, offrendo un controllo totale sull’ambiente di sviluppo. Infine, seguire le best practices nel design e nell’uso dei moduli e delle librerie può fare la differenza nel successo di un progetto, sia che tu stia lavorando in un piccolo team, sia in una grande organizzazione.
 
 In sintesi, imparare a padroneggiare l’uso di moduli e librerie è una competenza indispensabile per ogni sviluppatore Python. Ti incoraggio a esplorare l’enorme varietà di pacchetti disponibili, a sperimentare con la creazione di moduli personalizzati e a integrare queste pratiche nel tuo flusso di lavoro quotidiano. Python, con la sua semplicità e il suo vasto ecosistema, continuerà a essere un alleato indispensabile per risolvere problemi e creare soluzioni innovative.
+
+[Capitolo 8]({{ site.baseurl }}/file-handling/)

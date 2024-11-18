@@ -213,3 +213,5 @@ Ma l’apprendimento non si ferma qui. Python è un linguaggio in continua evolu
 Il tuo viaggio con Python è appena iniziato. La padronanza dei concetti avanzati trattati in questo articolo ti prepara non solo a scrivere codice migliore, ma anche a pensare come uno sviluppatore esperto, capace di affrontare qualsiasi problema con creatività e precisione. Continua a imparare, sperimentare e innovare: è così che si passa da buoni programmatori a grandi programmatori.
 
 Grazie per aver seguito questa guida. Non vediamo l'ora di sapere come queste conoscenze ti aiuteranno a realizzare i tuoi progetti. Rimani curioso e aperto al cambiamento: è questo lo spirito che anima la community Python e che ti permetterà di crescere nel tuo percorso da sviluppatore.
+
+[Progetti Pratici]({{ site.baseurl }}/progetti-pratici/)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Controllo del flusso"
+title: "Strutture dati fondamentali"
 author: Teo
 categories: guida_python 
 image: assets/images/
@@ -182,3 +182,5 @@ Le strutture dati fondamentali di Python sono il cuore pulsante di questo lingua
 Padroneggiare queste strutture è essenziale per scrivere codice più efficiente, leggibile e manutenibile, sia che tu stia lavorando su piccoli script o su grandi progetti. Con una solida comprensione di questi strumenti, sarai pronto ad affrontare sfide più avanzate nel mondo della programmazione Python.
 
 Continua a sperimentare e ad approfondire le tue conoscenze: il prossimo passo nel tuo viaggio potrebbe essere imparare come combinare queste strutture per creare algoritmi ancora più potenti. Buon coding!
+
+[Capitolo 4]({{ site.baseurl }}/funzioni-in-python/)

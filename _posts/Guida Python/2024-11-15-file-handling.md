@@ -217,3 +217,5 @@ Per sviluppatori che guardano avanti, integrare la conoscenza del file handling 
 In conclusione, il file handling in Python offre una porta di ingresso al lavoro con dati persistenti, essenziale per quasi ogni campo dell'informatica. Con le basi solide che Python fornisce, sei ben equipaggiato per affrontare sfide più grandi e più complesse nella gestione dei dati.
 
 Se desideri, posso anche integrare questa conclusione nel tuo documento esistente per fornire un testo coerente dall'introduzione alla conclusione. Fammi sapere come procedere!
+
+[Capitolo 9]({{ site.baseurl }}/concetti-avanzati/)
