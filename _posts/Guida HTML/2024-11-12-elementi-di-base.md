@@ -2,7 +2,7 @@
 layout: post
 title: "Elementi di Base dell'HTML Tag e Attributi"
 author: Teo
-categories: HTML, 2024, tutorial, sviluppo web, linguaggio HTML
+categories: guida_html
 image: assets/images/
 featured: 
 description: "L'HTML (HyperText Markup Language) è il linguaggio utilizzato per strutturare e visualizzare il contenuto di una pagina web. È formato da tag e attributi che servono per costruire e personalizzare gli elementi della pagina"

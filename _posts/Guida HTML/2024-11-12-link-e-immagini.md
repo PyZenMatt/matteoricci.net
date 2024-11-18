@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Link e immagini"
-author: sal
-categories: HTML, tutorial, sviluppo web, linguaggio HTML
+author: Teo
+categories: guida_html
 image: assets/images/
 featured: 
 description: "Creare collegamenti ipertestuali , Inserire immagini con e proprietà per gestire dimensioni e testo alternativo"

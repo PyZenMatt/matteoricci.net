@@ -2,7 +2,7 @@
 layout: post
 title: "Validazione e strumenti per HTML"
 author: teo
-categories: HTML, tutorial, sviluppo web, linguaggio HTML
+categories: guida_html
 image: assets/images/
 featured: 
 description: "- Strumenti per la validazione e il debugging dell’HTML. Editor consigliati per lavorare con HTML: Visual Studio Code, Atom, Sublime Text."

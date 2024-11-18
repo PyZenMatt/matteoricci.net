@@ -2,7 +2,7 @@
 layout: post
 title: "incorporazione di contenuti esterni"
 author: Teo
-categories: HTML, tutorial, sviluppo web, linguaggio HTML
+categories: guida_html
 image: assets/images/
 featured: 
 description: Canvas per la grafica dinamica API avanzate geolocalizzazione, storage locale (localStorage, sessionStorage)"

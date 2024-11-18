@@ -2,7 +2,7 @@
 layout: post
 title: "Introduzione CSS:Selettori CSS"
 author: Teo
-categories: CSS, tutorial, sviluppo web, linguaggio CSS, guida_CSS
+categories: guida_CSS
 image: assets/images/
 featured: false
 description: "Guida CSS Completa: Impara le Basi per Creare Pagine Web Moderne e Responsive"

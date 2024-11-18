@@ -2,7 +2,7 @@
 layout: post
 title: "Tabelle HTML"
 author: sal
-categories: HTML, tutorial, sviluppo web, linguaggio HTML
+categories: guida_html
 image: assets/images/
 featured: 
 description: "- Creazione di tabelle "

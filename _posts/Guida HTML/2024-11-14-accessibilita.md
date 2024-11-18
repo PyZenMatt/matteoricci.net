@@ -2,7 +2,7 @@
 layout: post
 title: "Accesibilità in Html"
 author: Teo
-categories: HTML, tutorial, sviluppo web, linguaggio HTML
+categories: guida_html
 image: assets/images/
 featured: 
 hidden: true

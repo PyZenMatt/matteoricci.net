@@ -2,7 +2,7 @@
 layout: post
 title: "Formattazione semantica"
 author: Teo
-categories: HTML, tutorial, sviluppo web, linguaggio HTML
+categories: guida_html
 image: assets/images/
 featured: 
 description: "Uso dei tag semantici"

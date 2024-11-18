@@ -54,11 +54,11 @@ title: Home
 <section class="category-posts">
 
     <div class="section-title">
-        <h2><span>Guida HTML</span></h2>
+        <h2><span>Guida<a href="{{ site.baseurl }}categories#guida_html"> HTML</a></span></h2>
     </div>
     
     <div class="row listrecent">
-        {% for post in site.categories.HTML limit:3 %} 
+        {% for post in site.categories.guida_html limit:3 %} 
             {% include postbox.html %}
         {% endfor %}
     </div>
@@ -70,7 +70,7 @@ title: Home
     <section class="category-posts">
 
         <div class="section-title">
-            <h2><span>Guida CSS<a href="{{site.baseurl}}/categories"></a> </span></h2>
+            <h2><span>Guida <a href="{{ site.baseurl }}categories#guida_CSS">CSS</a> </span></h2>
         </div>
     
         <div class="row listrecent">
@@ -86,7 +86,7 @@ title: Home
 <section class="category-posts">
 
     <div class="section-title">
-        <h2><span>Guida Python<a href="{{site.baseurl}}/categories"></a> </span></h2>
+        <h2><span>Guida <a href="{{ site.baseurl }}categories#guida_python">Python</a> </span></h2>
     </div>
 
     <div class="row listrecent">

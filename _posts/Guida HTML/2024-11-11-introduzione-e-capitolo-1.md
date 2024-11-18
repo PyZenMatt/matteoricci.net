@@ -2,7 +2,7 @@
 layout: post
 title: "Introduzione a HTML: Guida Completa per Principianti"
 author: Teo
-categories: HTML, tutorial, sviluppo web, linguaggio HTML, guida_html
+categories: guida_html
 image: assets/images/html.jpg
 featured: true
 description: "Scopri le basi dell'HTML in questa guida per principianti: dai tag alla struttura delle pagine web, impara a costruire le fondamenta del web."

@@ -2,7 +2,7 @@
 layout: post
 title: "Testo e formattazione"
 author: teo
-categories: HTML, tutorial, sviluppo web, linguaggio HTML
+categories: guida_html
 image: assets/images/
 description: "Tag per la formattazione del testo Liste"
 keywords: HTML, introduzione HTML, guida HTML, tag HTML, creare sito web, linguaggio HTML

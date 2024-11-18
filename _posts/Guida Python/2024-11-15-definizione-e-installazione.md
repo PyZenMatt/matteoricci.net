@@ -2,7 +2,7 @@
 layout: post
 title: "Definizione e installazione Python"
 author: Teo
-categories: Python, tutorial, sviluppo web, guida_python 
+categories: guida_python  
 image: assets/images/
 featured: 
 description: "Guida Python Completa: Impara le Basi per programmmare in python.
