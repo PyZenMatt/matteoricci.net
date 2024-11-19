@@ -1,0 +1,131 @@
+I"L&<h3 id="introduzione">Introduzione</h3>
+
+<p>In questo articolo, esploreremo come implementare l’autenticazione e l’autorizzazione in un progetto Django operante su un sistema operativo Linux Ubuntu. Questi concetti sono fondamentali per proteggere le risorse e fornire un accesso sicuro e personalizzato agli utenti del tuo sito web.
+Implementazione dell’Autenticazione in Django</p>
+
+<p>Django offre un sistema di autenticazione robusto che gestisce sia la registrazione degli utenti sia il login. Seguiamo i passaggi per implementare queste funzionalità nel tuo progetto Django.
+Passo 1: Configurare il modello utente</p>
+
+<p>Prima di tutto, assicurati di definire il tuo modello utente. Django utilizza un modello di autenticazione predefinito, ma puoi personalizzarlo secondo le tue necessità.</p>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre>
+<span class="kn">from</span> <span class="nn">django.contrib.auth.models</span> <span class="kn">import</span> <span class="n">AbstractUser</span>
+
+<span class="k">class</span> <span class="nc">CustomUser</span><span class="p">(</span><span class="n">AbstractUser</span><span class="p">):</span>
+    <span class="c1"># Aggiungi qui eventuali campi personalizzati
+</span>    <span class="k">pass</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Dopo aver definito il tuo modello utente, aggiornalo nel file settings.py:</p>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>
+<span class="n">AUTH_USER_MODEL</span> <span class="o">=</span> <span class="s">'myapp.CustomUser'</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="passo-2-creare-le-viste-di-autenticazione">Passo 2: Creare le viste di autenticazione</h3>
+
+<p>Utilizza le viste predefinite di Django per gestire il login e la registrazione degli utenti o crea le tue per un controllo più granulare.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre>
+<span class="kn">from</span> <span class="nn">django.contrib.auth</span> <span class="kn">import</span> <span class="n">views</span> <span class="k">as</span> <span class="n">auth_views</span>
+<span class="kn">from</span> <span class="nn">django.urls</span> <span class="kn">import</span> <span class="n">path</span>
+
+<span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">path</span><span class="p">(</span><span class="s">'login/'</span><span class="p">,</span> <span class="n">auth_views</span><span class="p">.</span><span class="n">LoginView</span><span class="p">.</span><span class="n">as_view</span><span class="p">(),</span> <span class="n">name</span><span class="o">=</span><span class="s">'login'</span><span class="p">),</span>
+    <span class="n">path</span><span class="p">(</span><span class="s">'logout/'</span><span class="p">,</span> <span class="n">auth_views</span><span class="p">.</span><span class="n">LogoutView</span><span class="p">.</span><span class="n">as_view</span><span class="p">(),</span> <span class="n">name</span><span class="o">=</span><span class="s">'logout'</span><span class="p">),</span>
+<span class="p">]</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Per la registrazione, puoi creare una vista che gestisca la creazione di nuovi utenti.</p>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre><span class="kn">from</span> <span class="nn">django.contrib.auth.forms</span> <span class="kn">import</span> <span class="n">UserCreationForm</span>
+<span class="kn">from</span> <span class="nn">django.urls</span> <span class="kn">import</span> <span class="n">reverse_lazy</span>
+<span class="kn">from</span> <span class="nn">django.views</span> <span class="kn">import</span> <span class="n">generic</span>
+
+<span class="k">class</span> <span class="nc">SignUp</span><span class="p">(</span><span class="n">generic</span><span class="p">.</span><span class="n">CreateView</span><span class="p">):</span>
+    <span class="n">form_class</span> <span class="o">=</span> <span class="n">UserCreationForm</span>
+    <span class="n">success_url</span> <span class="o">=</span> <span class="n">reverse_lazy</span><span class="p">(</span><span class="s">'login'</span><span class="p">)</span>
+    <span class="n">template_name</span> <span class="o">=</span> <span class="s">'registration/signup.html'</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<h3 id="passo-3-configurare-i-template">Passo 3: Configurare i template</h3>
+
+<p>Crea i template per il login e la registrazione. Assicurati che siano chiari e facili da usare per migliorare l’esperienza utente.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="o">&lt;</span><span class="err">!</span><span class="o">--</span> <span class="n">login</span><span class="p">.</span><span class="n">html</span> <span class="o">--&gt;</span>
+<span class="o">&lt;</span><span class="n">form</span> <span class="n">method</span><span class="o">=</span><span class="s">"post"</span><span class="o">&gt;</span>
+    <span class="p">{</span><span class="o">%</span> <span class="n">csrf_token</span> <span class="o">%</span><span class="p">}</span>
+    <span class="p">{{</span> <span class="n">form</span><span class="p">.</span><span class="n">as_p</span> <span class="p">}}</span>
+    <span class="o">&lt;</span><span class="n">button</span> <span class="nb">type</span><span class="o">=</span><span class="s">"submit"</span><span class="o">&gt;</span><span class="n">Login</span><span class="o">&lt;/</span><span class="n">button</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">form</span><span class="o">&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="gestione-dei-permessi-e-delle-autorizzazioni">Gestione dei Permessi e delle Autorizzazioni</h3>
+
+<p>Django fornisce un sistema di permessi che può essere utilizzato per gestire ciò che gli utenti possono e non possono fare.
+Passo 1: Definire i permessi</p>
+
+<p>Puoi definire permessi specifici nel tuo modello.</p>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="k">class</span> <span class="nc">Article</span><span class="p">(</span><span class="n">models</span><span class="p">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="p">...</span>
+    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
+        <span class="n">permissions</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="p">(</span><span class="s">"view_article"</span><span class="p">,</span> <span class="s">"Can view article"</span><span class="p">),</span>
+            <span class="p">(</span><span class="s">"edit_article"</span><span class="p">,</span> <span class="s">"Can edit article"</span><span class="p">),</span>
+        <span class="p">]</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Passo 2: Controllare i permessi</p>
+
+<p>Utilizza i decoratori di Django per controllare l’accesso alle tue viste basate sui permessi assegnati.</p>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="kn">from</span> <span class="nn">django.contrib.auth.decorators</span> <span class="kn">import</span> <span class="n">permission_required</span>
+
+<span class="o">@</span><span class="n">permission_required</span><span class="p">(</span><span class="s">'myapp.view_article'</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">article_detail</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">pk</span><span class="p">):</span>
+    <span class="p">...</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<h3 id="personalizzazione-del-flusso-di-login-e-registrazione">Personalizzazione del Flusso di Login e Registrazione</h3>
+
+<p>Personalizzare il flusso di login e registrazione può migliorare significativamente l’esperienza utente. Considera l’aggiunta di autenticazione a due fattori, personalizzazione delle pagine di login/registrazione e integrazione con sistemi esterni.
+Conclusione</p>
+
+<p>Implementare l’autenticazione e l’autorizzazione in Django è un passo essenziale per garantire la sicurezza e la personalizzazione del tuo sito. Con le tecniche descritte in questo tutorial, puoi costruire un sistema sicuro e user-friendly su Ubuntu. Segui questi passaggi per proteggere le tue risorse e offrire un’esperienza personalizzata ai tuoi utenti.</p>
+
+<p><a href="/django-forms/">Django Forms</a></p>
+:ET

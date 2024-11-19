@@ -8,7 +8,6 @@ featured:
 description: "Guida CSS Completa: Impara le Basi per Creare Pagine Web Moderne e Responsive"
 keywords: CSS, introduzione CSS, guida CSS, creare sito web, linguaggio HTML
 hidden: true
-Introduzione a HTML: Creare le Fondamenta del Web
 ---
 
 In CSS, lo stile dei bordi e delle ombre è utilizzato per rendere i contenuti visivamente più accattivanti e per dare profondità o risalto agli elementi. Ecco una spiegazione dettagliata delle proprietà coinvolte.

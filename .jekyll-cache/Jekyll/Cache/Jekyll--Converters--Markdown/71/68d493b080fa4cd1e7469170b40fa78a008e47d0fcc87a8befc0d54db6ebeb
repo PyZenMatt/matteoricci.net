@@ -1,0 +1,86 @@
+I"�<h2 id="views-e-template-in-django">Views e Template in Django</h2>
+
+<p>Nel framework Django, <strong>le views</strong> e <strong>i template</strong> sono due componenti fondamentali che lavorano insieme per presentare dati agli utenti in modo dinamico. Questo tutorial spiega come creare viste, utilizzare i template, e passare dati tra di loro, tutto su un sistema operativo Ubuntu Linux.</p>
+
+<h3 id="creazione-di-views-in-django">Creazione di Views in Django</h3>
+
+<p>Una <em>view</em> in Django è una funzione Python che prende una richiesta web e restituisce una risposta. Le views gestiscono la logica necessaria per presentare i dati richiesti dall’utente, che possono essere caricati da un modello o semplicemente definiti all’interno della view stessa.</p>
+
+<p>Per creare una view, definisci una funzione nel tuo file <code class="language-plaintext highlighter-rouge">views.py</code> all’interno dell’applicazione Django. Ecco un esempio semplice:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="kn">from</span> <span class="nn">django.http</span> <span class="kn">import</span> <span class="n">HttpResponse</span>
+
+<span class="k">def</span> <span class="nf">home</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">HttpResponse</span><span class="p">(</span><span class="s">"Benvenuto nella homepage!"</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Questa view restituisce un semplice messaggio di benvenuto quando viene visitata la homepage del tuo sito.
+Utilizzo dei Template</p>
+
+<p>I template in Django sono file di testo che permettono di separare la logica di programmazione dalla presentazione HTML. Utilizzano un linguaggio di template speciale che permette di inserire dati dinamici che vengono passati dalla view.</p>
+
+<p>Per utilizzare un template, prima crea un file HTML all’interno della directory templates della tua app. Per esempio, home.html potrebbe avere questo aspetto:</p>
+
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h1>{{ messaggio }}</h1>
+</body>
+</html>
+
+<p>Collegamento dei Template alle Views</p>
+
+<p>Per passare dati da una view a un template, utilizza il contesto di rendering. Modifica la tua view per passare un dizionario di dati al template, come segue:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="kn">from</span> <span class="nn">django.shortcuts</span> <span class="kn">import</span> <span class="n">render</span>
+<span class="k">def</span> <span class="nf">home</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+    <span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s">'messaggio'</span><span class="p">:</span> <span class="s">'Benvenuto nella homepage!'</span><span class="p">}</span>
+    <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="s">'home.html'</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="uso-di-tag-e-filtri-nei-template">Uso di Tag e Filtri nei Template</h2>
+
+<p>I template Django offrono tag e filtri che possono essere utilizzati per eseguire logica semplice, come cicli o condizioni, e per modificare i dati prima di visualizzarli (ad esempio, formattare date, numeri, ecc.).</p>
+
+<p>Per esempio, per iterare su una lista di elementi nel tuo template, puoi usare il tag 
+{% for %}:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="o">&lt;</span><span class="n">ul</span><span class="o">&gt;</span>
+    <span class="p">{</span><span class="o">%</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">lista_elementi</span> <span class="o">%</span><span class="p">}</span>
+        <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="p">{{</span> <span class="n">item</span> <span class="p">}}</span><span class="o">&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+    <span class="p">{</span><span class="o">%</span> <span class="n">endfor</span> <span class="o">%</span><span class="p">}</span>
+<span class="o">&lt;/</span><span class="n">ul</span><span class="o">&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>I filtri vengono applicati ai dati del template usando il carattere pipe</td>
+      <td>. Per esempio, per convertire una stringa in maiuscolo:</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>{{ messaggio|upper }}</p>
+
+<p>Conclusioni</p>
+
+<p>Le views e i template sono essenziali per lo sviluppo di applicazioni web con Django, permettendo di separare la logica di business dalla presentazione dell’interfaccia utente. Utilizzando Ubuntu Linux come sistema operativo, puoi sfruttare le potenzialità di Django per sviluppare applicazioni robuste e scalabili.</p>
+
+<p>Questo tutorial ti offre una panoramica su come implementare le viste e i template in Django. Segui questi passaggi per iniziare a costruire la tua applicazione Django su Ubuntu Linux.</p>
+:ET
