@@ -125,7 +125,22 @@ matteoricci.net: Sito personale e portfolio dove condivido progetti di programma
 
 felicita.matteoricci.net: Blog dedicato alla ricerca della felicità, con articoli originali e approfondimenti su come migliorare il benessere personale.
 
+# Certificazioni
+<a href="https://accademiadomani.org/studenti/pluginfile.php/1/tool_certificate/issues/1732116446/1329592025MR.pdf">**Fondamenti di Sistemi Operativi**</a>
 
+<a href="https://accademiadomani.org/studenti/pluginfile.php/1/tool_certificate/issues/1660813763/0096126338MR.pdf">**Coding in Python**</a>
+
+<a href="https://accademiadomani.org/studenti/pluginfile.php/1/tool_certificate/issues/1717007564/2548936084MR.pdf">**Python 3**</a>
+
+<a href="https://accademiadomani.org/studenti/pluginfile.php/1/tool_certificate/issues/1732116767/1792068928MR.pdf">**Introduzione ai Big Data**</a>
+
+<a href="https://accademiadomani.org/studenti/pluginfile.php/1/tool_certificate/issues/1732117571/3744727823MR.pdf">**Introduzione a JavaScript**</a>
+
+<a href="https://accademiadomani.org/studenti/pluginfile.php/1/tool_certificate/issues/1732117786/9379527313MR.pdf">**HTML5**</a>
+
+<a href="https://accademiadomani.org/studenti/pluginfile.php/1/tool_certificate/issues/1732118067/8701631148MR.pdf">**Javascript Avanzato**</a>
+
+<a href=" https://accademiadomani.org/studenti/pluginfile.php/1/tool_certificate/issues/1732118429/0665248963MR.pdf">**Introduzione a SQL, con MySQL e SQL server**</a>
 
 ---
 
