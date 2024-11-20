@@ -1,0 +1,47 @@
+I"�<p>In Linux, la gestione dei log di sistema è fondamentale per la manutenzione e la sicurezza. I log permettono agli amministratori di monitorare ciò che accade nel sistema, diagnosticare problemi, e mantenere un’occhiata attenta su attività sospette. Due degli strumenti principali per la consultazione dei log di sistema in Linux sono <code class="language-plaintext highlighter-rouge">journalctl</code> e <code class="language-plaintext highlighter-rouge">dmesg</code>. Entrambi giocano ruoli cruciali ma distinti nella gestione dei log.</p>
+
+<h3 id="journalctl">journalctl</h3>
+<p><code class="language-plaintext highlighter-rouge">journalctl</code> è uno strumento per esaminare e manipolare i log raccolti da systemd, il sistema di init e gestore di sistema per molte distribuzioni Linux moderne. systemd introduce un componente chiamato <code class="language-plaintext highlighter-rouge">systemd-journald</code>, che raccoglie e gestisce i log dal sistema operativo, dai processi di sistema, e da altre fonti.</p>
+
+<h4 id="caratteristiche-principali-di-journalctl">Caratteristiche principali di journalctl:</h4>
+<ul>
+  <li><strong>Centralizzato</strong>: Raccoglie informazioni da varie fonti in un unico luogo, rendendo più semplice la ricerca di eventi correlati.</li>
+  <li><strong>Persistenza</strong>: I dati di log possono essere conservati tra i riavvii, a seconda della configurazione in <code class="language-plaintext highlighter-rouge">/etc/systemd/journald.conf</code>.</li>
+  <li><strong>Filtri avanzati</strong>: È possibile filtrare i log per tempo, servizio, unità systemd e molti altri criteri.</li>
+  <li><strong>Output formattabile</strong>: Gli utenti possono visualizzare i log in formati diversi, come JSON, per facilitare l’analisi automatizzata.</li>
+</ul>
+
+<h4 id="comandi-comuni-con-journalctl">Comandi comuni con journalctl:</h4>
+<ul>
+  <li>Visualizzare tutti i log: <code class="language-plaintext highlighter-rouge">journalctl</code></li>
+  <li>Filtrare per unità: <code class="language-plaintext highlighter-rouge">journalctl -u nomeunità.service</code></li>
+  <li>Visualizzare log da una certa data: <code class="language-plaintext highlighter-rouge">journalctl --since "2021-01-01" --until "2021-01-02"</code></li>
+  <li>Seguire i log in tempo reale: <code class="language-plaintext highlighter-rouge">journalctl -f</code></li>
+</ul>
+
+<h3 id="dmesg">dmesg</h3>
+<p><code class="language-plaintext highlighter-rouge">dmesg</code> (diagnostic message) è un altro strumento essenziale che visualizza i messaggi del kernel Linux. È particolarmente utile per diagnosi relative all’hardware e ai driver, nonché per comprendere problemi che si verificano durante la fase di avvio del sistema prima che altri servizi di logging siano attivi.</p>
+
+<h4 id="caratteristiche-principali-di-dmesg">Caratteristiche principali di dmesg:</h4>
+<ul>
+  <li><strong>Accesso ai messaggi del kernel</strong>: Visualizza informazioni direttamente dal buffer del ring del kernel, che include messaggi riguardanti l’hardware e i driver.</li>
+  <li><strong>Non persistente</strong>: I messaggi visualizzati con <code class="language-plaintext highlighter-rouge">dmesg</code> sono disponibili solo fino al riavvio, a meno che non vengano esplicitamente salvati.</li>
+  <li><strong>Filtri per livello di serietà</strong>: Gli utenti possono filtrare i messaggi per livello di serietà (ad esempio, errori, avvisi).</li>
+</ul>
+
+<h4 id="comandi-comuni-con-dmesg">Comandi comuni con dmesg:</h4>
+<ul>
+  <li>Visualizzare tutti i messaggi del kernel: <code class="language-plaintext highlighter-rouge">dmesg</code></li>
+  <li>Filtrare per gravità: <code class="language-plaintext highlighter-rouge">dmesg --level=err</code></li>
+  <li>Filtrare i messaggi che contengono una stringa specifica: <code class="language-plaintext highlighter-rouge">dmesg | grep something</code></li>
+  <li>Pulire il buffer del ring del kernel: <code class="language-plaintext highlighter-rouge">dmesg -c</code> (da eseguire con cautela)</li>
+</ul>
+
+<h3 id="quando-usare-journalctl-vs-dmesg">Quando usare journalctl vs dmesg</h3>
+<ul>
+  <li><strong>journalctl</strong> è più adatto per un’analisi dettagliata e a lungo termine dei log di sistema, specialmente quando i log devono essere correlati tra diverse unità e servizi in un sistema con systemd.</li>
+  <li><strong>dmesg</strong> è ideale per la diagnostica immediata post-avvio o problemi relativi all’hardware e ai driver, data la sua capacità di catturare i messaggi del kernel dall’inizio del boot.</li>
+</ul>
+
+<p>La comprensione di come utilizzare questi strumenti è essenziale per la gestione efficace di un sistema Linux, permettendo agli amministratori di trarre il massimo dai dati di log disponibili.</p>
+:ET

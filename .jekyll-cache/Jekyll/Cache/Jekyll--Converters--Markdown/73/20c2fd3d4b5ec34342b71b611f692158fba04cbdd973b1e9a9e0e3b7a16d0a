@@ -1,0 +1,86 @@
+I"<p>Il Networking avanzato su Linux è un campo vasto e complesso che offre numerose possibilità per configurare e gestire reti. Tra i vari aspetti, due dei più rilevanti sono la configurazione manuale di rete e l’uso di SSH per l’accesso remoto. Ecco una panoramica dettagliata di entrambi:</p>
+
+<h3 id="configurazione-manuale-di-rete-su-linux">Configurazione manuale di rete su Linux</h3>
+
+<p>La configurazione manuale di rete su Linux può essere eseguita attraverso vari strumenti e file di configurazione. Uno dei modi più diretti è utilizzare i comandi <code class="language-plaintext highlighter-rouge">ifconfig</code> e <code class="language-plaintext highlighter-rouge">ip</code>, nonché modificare i file di configurazione di rete come <code class="language-plaintext highlighter-rouge">/etc/network/interfaces</code> o utilizzare il gestore di rete <code class="language-plaintext highlighter-rouge">nmcli</code> se stai utilizzando NetworkManager.</p>
+
+<h4 id="configurazione-tramite-etcnetworkinterfaces-debian-based-systems"><strong>Configurazione tramite <code class="language-plaintext highlighter-rouge">/etc/network/interfaces</code> (Debian-based systems)</strong></h4>
+
+<p>Il file <code class="language-plaintext highlighter-rouge">/etc/network/interfaces</code> è stato tradizionalmente utilizzato nei sistemi basati su Debian per configurare le interfacce di rete. Ecco un esempio di come configurare un’interfaccia ethernet statica:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre>auto eth0
+iface eth0 inet static
+address 192.168.1.100
+netmask 255.255.255.0
+gateway 192.168.1.1
+dns-nameservers 8.8.8.8 8.8.4.4
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Questo file indica al sistema di avviare automaticamente l’interfaccia <code class="language-plaintext highlighter-rouge">eth0</code>, utilizzare un indirizzo IP statico, definire la netmask, il gateway predefinito e i server DNS.</p>
+
+<h4 id="uso-del-comando-ip"><strong>Uso del comando <code class="language-plaintext highlighter-rouge">ip</code></strong></h4>
+
+<p>Il comando <code class="language-plaintext highlighter-rouge">ip</code> è uno strumento più moderno e potente per la configurazione di rete. Puoi configurare un’interfaccia di rete con <code class="language-plaintext highlighter-rouge">ip</code> così:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>ip addr add 192.168.1.100/24 dev eth0
+ip route add default via 192.168.1.1
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Questi comandi impostano l’indirizzo IP e aggiungono un gateway predefinito.</p>
+
+<h3 id="uso-di-ssh-per-laccesso-remoto">Uso di SSH per l’accesso remoto</h3>
+
+<p>SSH (Secure Shell) è un protocollo che permette di accedere in modo sicuro a un computer remoto. Puoi utilizzarlo per eseguire comandi, trasferire file e gestire risorse di rete.</p>
+
+<h4 id="configurazione-del-server-ssh"><strong>Configurazione del server SSH</strong></h4>
+
+<p>Su un sistema Linux, puoi installare un server SSH (generalmente OpenSSH) tramite il gestore di pacchetti:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>apt-get <span class="nb">install </span>openssh-server    <span class="c"># Debian-based systems</span>
+<span class="nb">sudo </span>yum <span class="nb">install </span>openssh-server        <span class="c"># Red Hat-based systems</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Dopo l’installazione, il server SSH dovrebbe avviarsi automaticamente. Puoi configurare il server modificando il file <code class="language-plaintext highlighter-rouge">/etc/ssh/sshd_config</code>, dove puoi impostare opzioni come la porta di ascolto, permessi di accesso, e uso di chiavi per l’autenticazione.</p>
+
+<h4 id="connessione-via-ssh"><strong>Connessione via SSH</strong></h4>
+
+<p>Per connetterti a un server remoto via SSH, puoi usare il comando:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>ssh <span class="o">[</span>username]@[host]
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>dove <code class="language-plaintext highlighter-rouge">username</code> è il tuo nome utente sul server remoto e <code class="language-plaintext highlighter-rouge">host</code> è l’indirizzo IP o il nome del dominio del server.</p>
+
+<h4 id="autenticazione-tramite-chiave-pubblica"><strong>Autenticazione tramite chiave pubblica</strong></h4>
+
+<p>Per una sicurezza maggiore, SSH permette l’uso di chiavi pubbliche e private per l’autenticazione:</p>
+
+<ol>
+  <li>Genera un paio di chiavi sul client con il comando:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>ssh-keygen
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>Copia la chiave pubblica sul server remoto usando:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>ssh-copy-id <span class="o">[</span>username]@[host]
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>Ora puoi accedere al server senza inserire la password (a meno che non sia richiesta la passphrase della chiave).</li>
+</ol>
+
+<h3 id="conclusioni">Conclusioni</h3>
+
+<p>Il networking avanzato su Linux offre una flessibilità incredibile che può essere adattata a molteplici scenari, dalla configurazione di semplici reti domestiche a complessi data center. Utilizzare strumenti come <code class="language-plaintext highlighter-rouge">ip</code>, <code class="language-plaintext highlighter-rouge">ifconfig</code>, e SSH consente agli amministratori di rete di gestire efficacemente le loro infrastrutture con precisione e sicurezza.</p>
+:ET

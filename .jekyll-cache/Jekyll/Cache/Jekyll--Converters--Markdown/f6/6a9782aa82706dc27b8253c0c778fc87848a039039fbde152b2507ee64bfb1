@@ -1,0 +1,41 @@
+I"<p>Il montaggio e il partizionamento dei dischi sono due aspetti fondamentali della gestione dei sistemi di archiviazione in ambienti basati su Linux e Unix. Queste operazioni permettono di organizzare meglio l’archiviazione, ottimizzare l’uso dello spazio disponibile e separare i dati in maniera efficiente. Di seguito, ti fornisco una panoramica dettagliata di questi processi utilizzando i comandi <code class="language-plaintext highlighter-rouge">mount</code>, <code class="language-plaintext highlighter-rouge">fdisk</code> e <code class="language-plaintext highlighter-rouge">parted</code>.</p>
+
+<h3 id="1-montaggio-di-dischi-mount">1. Montaggio di Dischi (<code class="language-plaintext highlighter-rouge">mount</code>)</h3>
+<p>Il montaggio di un disco o di una partizione è il processo attraverso il quale il sistema operativo rende accessibili i file contenuti in un disco o in una partizione all’interno della propria struttura di directory. Quando monti un dispositivo, lo stai inserendo in un punto specifico dell’albero delle directory, detto punto di montaggio.</p>
+
+<p><strong>Esempio di utilizzo di <code class="language-plaintext highlighter-rouge">mount</code>:</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>mount /dev/sda1 /mnt
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>In questo comando, <code class="language-plaintext highlighter-rouge">/dev/sda1</code> rappresenta la partizione del disco da montare, mentre <code class="language-plaintext highlighter-rouge">/mnt</code> è il punto del filesystem dove la partizione sarà accessibile.</p>
+
+<p>Il comando <code class="language-plaintext highlighter-rouge">mount</code> senza opzioni mostra tutti i dispositivi montati sul sistema. Per montare un filesystem con specifiche opzioni, si può usare la sintassi:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>mount <span class="nt">-t</span> <span class="nb">type</span> <span class="nt">-o</span> options device <span class="nb">dir</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Dove <code class="language-plaintext highlighter-rouge">type</code> è il tipo di filesystem (come ext4, ntfs, etc.), <code class="language-plaintext highlighter-rouge">options</code> sono le opzioni di montaggio come <code class="language-plaintext highlighter-rouge">ro</code> (read-only), e <code class="language-plaintext highlighter-rouge">device</code> e <code class="language-plaintext highlighter-rouge">dir</code> sono il dispositivo e il punto di montaggio.</p>
+
+<h3 id="2-partizionamento-di-dischi-fdisk-e-parted">2. Partizionamento di Dischi (<code class="language-plaintext highlighter-rouge">fdisk</code> e <code class="language-plaintext highlighter-rouge">parted</code>)</h3>
+<p>Il partizionamento è il processo di divisione di un disco fisico in sezioni isolate che possono essere gestite separatamente. Questo permette di avere diversi sistemi operativi su un singolo disco o di separare i dati degli utenti dai file di sistema.</p>
+
+<p><strong>2.1 <code class="language-plaintext highlighter-rouge">fdisk</code></strong>
+<code class="language-plaintext highlighter-rouge">fdisk</code> è uno degli strumenti più vecchi e più comunemente usati su Linux per la gestione delle partizioni su dischi basati su interfaccia BIOS (non su sistemi UEFI con tabelle di partizione GPT).</p>
+
+<p><strong>Esempio di utilizzo di <code class="language-plaintext highlighter-rouge">fdisk</code>:</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>fdisk /dev/sda
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Questo comando avvia <code class="language-plaintext highlighter-rouge">fdisk</code> in modalità interattiva per il disco <code class="language-plaintext highlighter-rouge">/dev/sda</code>. Da qui, è possibile creare, modificare, eliminare o visualizzare le partizioni.</p>
+
+<p><strong>2.2 <code class="language-plaintext highlighter-rouge">parted</code></strong>
+<code class="language-plaintext highlighter-rouge">parted</code> è uno strumento più moderno rispetto a <code class="language-plaintext highlighter-rouge">fdisk</code> e supporta i dischi con tabella di partizione GPT, il che lo rende adatto per dischi di dimensioni superiori a 2TB e sistemi UEFI.</p>
+
+<p><strong>Esempio di utilizzo di <code class="language-plaintext highlighter-rouge">parted</code>:</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>parted /dev/sda
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Anche <code class="language-plaintext highlighter-rouge">parted</code> può essere usato in modalità interattiva. Supporta comandi come <code class="language-plaintext highlighter-rouge">mklabel</code>, <code class="language-plaintext highlighter-rouge">mkpart</code>, e <code class="language-plaintext highlighter-rouge">print</code> per creare una tabella di partizioni, una partizione e visualizzare le informazioni sulle partizioni, rispettivamente.</p>
+
+<h3 id="considerazioni-finali">Considerazioni Finali</h3>
+<p>Il montaggio e il partizionamento sono processi critici che richiedono attenzione e pianificazione, specialmente in un ambiente di produzione. È importante effettuare backup regolari prima di modificare le partizioni per evitare la perdita di dati. Inoltre, la scelta tra <code class="language-plaintext highlighter-rouge">fdisk</code> e <code class="language-plaintext highlighter-rouge">parted</code> dovrebbe basarsi sul tipo di hardware e sulle esigenze specifiche, considerando le limitazioni e le funzionalità di ciascuno strumento.</p>
+:ET

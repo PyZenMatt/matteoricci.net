@@ -1,0 +1,66 @@
+I"�<h3 id="gestione-degli-utenti-in-linux">Gestione degli Utenti in Linux</h3>
+
+<p>Linux, essendo un sistema operativo multiutente, offre robuste funzionalità per la gestione degli utenti e dei gruppi. Questo è fondamentale per la sicurezza e l’organizzazione delle risorse del sistema. Esploreremo dettagliatamente come Linux gestisce gli utenti e i gruppi, la creazione e la modifica di questi, e come si gestiscono i permessi associati.</p>
+
+<h4 id="creazione-e-modifica-di-utenti-e-gruppi">Creazione e Modifica di Utenti e Gruppi</h4>
+
+<ol>
+  <li><strong>Creazione di un Utente</strong>: Il comando più comune per la creazione di un nuovo utente in Linux è <code class="language-plaintext highlighter-rouge">useradd</code> o <code class="language-plaintext highlighter-rouge">adduser</code> (più user-friendly e interattivo). Ad esempio, per aggiungere un nuovo utente chiamato <code class="language-plaintext highlighter-rouge">nuovoutente</code>, si utilizza:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>adduser nuovoutente
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+    <p>Questo comando crea una nuova home directory per l’utente, copia i file di configurazione standard, e imposta il gruppo predefinito.</p>
+  </li>
+  <li><strong>Modifica di un Utente</strong>: Il comando <code class="language-plaintext highlighter-rouge">usermod</code> è utilizzato per modificare le impostazioni di un utente esistente. Per esempio, per cambiare il nome utente da <code class="language-plaintext highlighter-rouge">nuovoutente</code> a <code class="language-plaintext highlighter-rouge">vecchioutente</code>, si potrebbe usare:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>usermod <span class="nt">-l</span> vecchioutente nuovoutente
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+    <p>Altri parametri di <code class="language-plaintext highlighter-rouge">usermod</code> permettono di cambiare la home directory, il gruppo, e altre impostazioni dell’utente.</p>
+  </li>
+  <li><strong>Impostazione o Cambiamento della Password</strong>: Il comando <code class="language-plaintext highlighter-rouge">passwd</code> permette di impostare o modificare la password di un utente. Se sei l’amministratore e vuoi cambiare la password di <code class="language-plaintext highlighter-rouge">nuovoutente</code>, esegui:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>passwd nuovoutente
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+    <p>Verrà chiesto di inserire la nuova password due volte per conferma.</p>
+  </li>
+  <li><strong>Creazione di un Gruppo</strong>: Il comando <code class="language-plaintext highlighter-rouge">groupadd</code> è usato per creare un nuovo gruppo. Per esempio:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>groupadd nuovogruppo
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li><strong>Modifica di un Gruppo</strong>: Per modificare le proprietà di un gruppo esistente, come aggiungere un utente a un gruppo, si usa il comando <code class="language-plaintext highlighter-rouge">usermod</code> con l’opzione <code class="language-plaintext highlighter-rouge">-G</code>:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>usermod <span class="nt">-a</span> <span class="nt">-G</span> nuovogruppo nuovoutente
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+    <p>Qui, l’opzione <code class="language-plaintext highlighter-rouge">-a</code> sta per append (aggiungi), per assicurarsi che l’utente rimanga nei gruppi precedenti oltre a essere aggiunto a <code class="language-plaintext highlighter-rouge">nuovogruppo</code>.</p>
+  </li>
+</ol>
+
+<h4 id="controllo-e-gestione-dei-permessi">Controllo e Gestione dei Permessi</h4>
+
+<p>Linux usa un sistema di permessi per controllare chi può leggere, scrivere o eseguire i file. Ogni file e directory ha un proprietario e un gruppo associato, e permessi definiti per il proprietario, il gruppo e altri utenti.</p>
+
+<ol>
+  <li><strong>Visualizzazione dei Permessi</strong>: Per vedere i permessi di un file o directory, si usa il comando <code class="language-plaintext highlighter-rouge">ls</code> con l’opzione <code class="language-plaintext highlighter-rouge">-l</code>:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">ls</span> <span class="nt">-l</span> nomefile
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+    <p>L’output mostra i permessi, il numero di link, il proprietario, il gruppo, la dimensione, la data di modifica e il nome del file.</p>
+  </li>
+  <li><strong>Modifica dei Permessi</strong>: Il comando <code class="language-plaintext highlighter-rouge">chmod</code> (change mode) è usato per cambiare i permessi di un file o directory. Ad esempio, per dare al proprietario il permesso di leggere, scrivere e eseguire un file:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">chmod </span>700 nomefile
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+    <p>I permessi possono anche essere espressi simbolicamente (es. <code class="language-plaintext highlighter-rouge">rwx</code> per read, write, execute).</p>
+  </li>
+  <li><strong>Cambiare Proprietario o Gruppo</strong>: I comandi <code class="language-plaintext highlighter-rouge">chown</code> e <code class="language-plaintext highlighter-rouge">chgrp</code> sono usati per cambiare rispettivamente il proprietario e il gruppo di un file. Per esempio:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="nb">chown </span>nuovoowner nomefile
+<span class="nb">chgrp </span>nuovogruppo nomefile
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>Questi strumenti e comandi formano la base della gestione degli utenti e dei permessi in Linux, garantendo che solo gli utenti autorizzati possano accedere o modificare i file e le risorse del sistema.</p>
+:ET

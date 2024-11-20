@@ -1,0 +1,95 @@
+I"\$<h3 id="gestione-dei-file-in-linux">Gestione dei File in Linux</h3>
+
+<p>In Linux, la gestione dei file è un aspetto fondamentale che ogni utente deve padroneggiare per sfruttare al meglio le potenzialità del sistema operativo. I comandi principali per la gestione dei file includono la creazione, la modifica, la rimozione di file, la gestione dei permessi e la visualizzazione dei contenuti dei file. Ecco una guida dettagliata su questi comandi.</p>
+
+<h4 id="creazione-modifica-e-rimozione-di-file">Creazione, Modifica e Rimozione di File</h4>
+
+<ol>
+  <li><strong>Creazione di un file</strong>: Il comando <code class="language-plaintext highlighter-rouge">touch</code> è usato per creare un nuovo file vuoto o per aggiornare la data di modifica di un file esistente. Esempio di utilizzo:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">touch </span>filename.txt
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+    <p>Questo comando crea un file vuoto chiamato <code class="language-plaintext highlighter-rouge">filename.txt</code> se non esiste, oppure aggiorna la sua data di ultima modifica se il file esiste già.</p>
+  </li>
+  <li><strong>Rimozione di un file</strong>: Il comando <code class="language-plaintext highlighter-rouge">rm</code> (remove) viene utilizzato per eliminare file e directory. Per rimuovere un file:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">rm </span>filename.txt
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+    <p>Per rimuovere una directory e tutto il suo contenuto in modo ricorsivo, si usa l’opzione <code class="language-plaintext highlighter-rouge">-r</code>:</p>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">rm</span> <span class="nt">-r</span> directoryname
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li><strong>Spostamento e rinominazione di un file</strong>: Il comando <code class="language-plaintext highlighter-rouge">mv</code> (move) serve sia per spostare che per rinominare file e directory. Per rinominare un file:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">mv </span>oldname.txt newname.txt
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+    <p>Per spostare un file in un’altra directory:</p>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">mv </span>filename.txt /path/to/directory/
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li><strong>Copia di un file</strong>: Il comando <code class="language-plaintext highlighter-rouge">cp</code> (copy) copia file e directory. Per copiare un file:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">cp </span>source.txt destination.txt
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+    <p>Per copiare una directory in modo ricorsivo, si utilizza l’opzione <code class="language-plaintext highlighter-rouge">-r</code>:</p>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">cp</span> <span class="nt">-r</span> sourcedir destdir
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+</ol>
+
+<h4 id="permessi-dei-file">Permessi dei File</h4>
+
+<ol>
+  <li><strong>Modifica dei permessi</strong>: <code class="language-plaintext highlighter-rouge">chmod</code> (change mode) è il comando utilizzato per cambiare i permessi di accesso ai file e alle directory. I permessi possono essere modificati sia in modo numerico sia simbolico. Esempio numerico:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">chmod </span>755 filename.txt
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+    <p>Questo assegna i permessi di lettura, scrittura ed esecuzione al proprietario, e di lettura ed esecuzione agli altri.</p>
+
+    <p>Esempio simbolico:</p>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">chmod </span>u+x filename.txt
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+    <p>Questo comando aggiunge il permesso di esecuzione al proprietario (u=user).</p>
+  </li>
+  <li><strong>Cambio di proprietario</strong>: Il comando <code class="language-plaintext highlighter-rouge">chown</code> (change owner) modifica il proprietario e/o il gruppo di un file o directory. Per cambiare il proprietario:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">chown </span>newowner filename.txt
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+    <p>Per cambiare sia il proprietario che il gruppo:</p>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">chown </span>newowner:newgroup filename.txt
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+</ol>
+
+<h4 id="visualizzazione-dei-file">Visualizzazione dei File</h4>
+
+<ol>
+  <li><strong>Visualizzazione del contenuto di un file</strong>: <code class="language-plaintext highlighter-rouge">cat</code> è uno dei comandi più comuni per visualizzare il contenuto di un file sullo schermo.
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">cat </span>filename.txt
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li><strong>Visualizzazione paginata</strong>: Per file più lunghi, è utile utilizzare <code class="language-plaintext highlighter-rouge">less</code> o <code class="language-plaintext highlighter-rouge">more</code> che permettono una visualizzazione paginata del contenuto:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>less filename.txt
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li><strong>Conteggio parole, linee, caratteri</strong>: Il comando <code class="language-plaintext highlighter-rouge">wc</code> (word count) è utile per ottenere informazioni sul numero di linee, parole e caratteri presenti in un file:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">wc </span>filename.txt
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li><strong>Visualizzazione con evidenziazione della sintassi</strong>: <code class="language-plaintext highlighter-rouge">less</code> può essere abilitato a mostrare la sintassi colorata con l’ausilio di altri strumenti come <code class="language-plaintext highlighter-rouge">source-highlight</code>:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>less <span class="nt">-R</span> filename.txt
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>Questi comandi formano la base per la gestione efficace dei file in un ambiente Linux e sono essenziali per l’amministrazione quotidiana del sistema.</p>
+:ET
