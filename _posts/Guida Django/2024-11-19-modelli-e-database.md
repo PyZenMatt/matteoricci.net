@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Modelli e database"
-description: "Scopri come iniziare a programmare con Django. Una guida introduttiva per principianti ed imparare le basi e costruire applicazioni web."
+description: "Esplora l'uso di modelli e database in Django. Crea applicazioni robuste con un ORM potente e migrazioni senza interruzioni."
 image: assets/images/
 author: "Teo"
 categories: guida_django

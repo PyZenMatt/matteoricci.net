@@ -6,7 +6,7 @@ categories: guida_html
 image: assets/images/
 featured: 
 hidden: true
-description: " Questi attributi permettono di aggiungere funzionalità o informazioni agli elementi e sono supportati da tutti i browser."
+description: "Rendi il tuo sito web inclusivo con le best practice sull'accessibilità HTML. Usa attributi alt, ARIA e semantica per migliorare l’esperienza di tutti gli utenti."
 hidden: true
 ---
 

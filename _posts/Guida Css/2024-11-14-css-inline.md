@@ -1,49 +1,60 @@
 ---
 layout: post
-title: "Introduzione a CSS:Cos'è il css e lo stile inline"
+title: "Lo stile inline, internal ed external"
 author: Teo
 categories: guida_CSS
 image: assets/images/
 featured: false
-description: "Guida CSS Completa: Impara le Basi per Creare Pagine Web Moderne e Responsive"
+description: "Conosci le differenze tra stili inline, interni ed esterni in CSS per scegliere la soluzione più adatta ai tuoi progetti. "
 keywords: CSS, introduzione CSS, guida CSS, creare sito web, linguaggio HTML
 hidden: true
 Introduzione a HTML: Creare le Fondamenta del Web
 ---
 
-Cos’è il CSS e come funziona con HTML
+## Cos’è il CSS e come funziona con HTML
 
 CSS, acronimo di Cascading Style Sheets (fogli di stile a cascata), è un linguaggio utilizzato per descrivere la presentazione di un documento HTML. Mentre HTML definisce la struttura e il contenuto di una pagina web (ad esempio titoli, paragrafi, immagini, link), il CSS si occupa di stabilire l’aspetto di tali elementi, come colori, font, spaziature e layout.
 
-HTML e CSS lavorano insieme, dove l’HTML rappresenta lo scheletro della pagina e il CSS ne è la “pelle” che ne determina l’aspetto. Il CSS permette di separare la presentazione dal contenuto, così da rendere il codice più ordinato, scalabile e facile da mantenere. Grazie al CSS, puoi applicare uno stile coerente su tutte le pagine di un sito con un solo file CSS, mantenendo un design uniforme e facilitando la gestione di aggiornamenti.
-Il funzionamento di CSS: Cascading e Specificità
+HTML e CSS lavorano insieme, dove l’HTML rappresenta lo scheletro della pagina e il CSS ne è la “pelle” che ne determina l’aspetto. 
+
+Il CSS permette di separare la presentazione dal contenuto, così da rendere il codice più ordinato, scalabile e facile da mantenere. 
+
+Grazie al CSS, puoi applicare uno stile coerente su tutte le pagine di un sito con un solo file CSS, mantenendo un design uniforme e facilitando la gestione di aggiornamenti.
+
+## Il funzionamento di CSS: Cascading e Specificità
 
 Il termine "cascading" si riferisce al modo in cui vengono applicati gli stili quando ci sono più dichiarazioni CSS che riguardano lo stesso elemento HTML. Le regole CSS seguono una specifica gerarchia di applicazione chiamata specificità, che può essere riassunta come segue:
 
-    Inline styles (stili in linea): sono applicati direttamente agli elementi HTML e hanno la massima priorità.
-    Internal stylesheets (fogli di stile interni): definiti all’interno della pagina HTML.
-    External stylesheets (fogli di stile esterni): definiti in un file separato e collegati alla pagina HTML.
+*** Inline styles *** (stili in linea): sono applicati direttamente agli elementi HTML e hanno la massima priorità.
+    
+*** Internal stylesheets *** (fogli di stile interni): definiti all’interno della pagina HTML.
+    
+*** External stylesheets *** (fogli di stile esterni): definiti in un file separato e collegati alla pagina HTML.
 
 Quando ci sono conflitti tra diversi stili, il CSS applica il concetto di specificità per determinare quale stile prevale. Oltre alla specificità, l’ordine in cui le regole sono dichiarate gioca un ruolo, con le regole definite per ultime che hanno la precedenza.
 Come aggiungere CSS a una pagina HTML
 
 Esistono tre modi per aggiungere CSS a una pagina HTML: inline, internal e external stylesheets. Ogni approccio ha i suoi vantaggi e svantaggi e viene usato in base al contesto e alla struttura del progetto.
+
 1. Inline CSS
 
 L'inline CSS viene utilizzato direttamente all'interno di un elemento HTML, applicando uno stile specifico solo a quel singolo elemento. È definito usando l’attributo style direttamente nell'elemento HTML, come mostrato nell'esempio seguente:
+
 ```css
 <p style="color: blue; font-size: 16px;">Questo testo è blu e ha un font di 16px.</p>
 ```
 
 Pro:
 
-    Adatto per stili molto specifici e unici a un singolo elemento.
-    Ha priorità elevata e può sovrascrivere facilmente altri stili CSS.
+Adatto per stili molto specifici e unici a un singolo elemento.
+
+Ha priorità elevata e può sovrascrivere facilmente altri stili CSS.
 
 Contro:
 
-    Complica il codice, rendendolo difficile da leggere e mantenere.
-    Non è riutilizzabile e quindi poco efficiente per progetti più grandi.
+Complica il codice, rendendolo difficile da leggere e mantenere.
+
+Non è riutilizzabile e quindi poco efficiente per progetti più grandi.
 
 2. Internal CSS (foglio di stile interno)
 

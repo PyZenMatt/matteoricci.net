@@ -5,7 +5,7 @@ author: Teo
 categories: guida_js
 image: assets/images/
 featured: 
-description: ""
+description: "Scopri come utilizzare gli eventi in JavaScript per migliorare l'interattività delle tue pagine web: esempi pratici e tecniche avanzate."
 hidden: true
 Introduzione a HTML: Creare le Fondamenta del Web
 ---

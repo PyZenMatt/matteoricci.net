@@ -5,8 +5,7 @@ author: Teo
 categories: guida_python  
 image: assets/images/
 featured: 
-description: "Guida Python Completa: Impara le Basi per programmmare in python.
-keywords: Python, introduzione python, guida python, creare programmi in python, linguaggio python"
+description: "Impara a gestire il flusso dei programmi in Python con costrutti come if, elif, else, for, while e range(). Scopri come ottimizzare il controllo logico del tuo codice."
 hidden: true
 Introduzione a Python: Iniziare ad apprendere le basi di python per programmare "
 ---

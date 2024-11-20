@@ -5,8 +5,7 @@ author: Teo
 categories: guida_python 
 image: assets/images/
 featured: 
-description: "Guida Python Completa: Impara le Basi per programmmare in python.
-keywords: Python, introduzione python, guida python, creare programmi in python, linguaggio python"
+description: "Scopri come utilizzare liste, dizionari, set e tuple in Python. Una guida completa per comprendere e padroneggiare le strutture dati essenziali per scrivere codice chiaro ed efficiente."
 hidden: true
 Introduzione a Python: Iniziare ad apprendere le basi di python per programmare "
 ---

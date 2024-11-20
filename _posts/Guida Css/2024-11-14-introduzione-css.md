@@ -5,7 +5,7 @@ author: Teo
 categories: guida_CSS
 image: assets/images/css.jpg
 featured: true
-description: "Guida CSS Completa: Impara le Basi per Creare Pagine Web Moderne e Responsive"
+description: "Inizia con il CSS: una guida completa per principianti per imparare a creare pagine web visivamente accattivanti."
 keywords: CSS, introduzione CSS, guida CSS, creare sito web, linguaggio HTML
 hidden: true
 Introduzione a HTML: Creare le Fondamenta del Web

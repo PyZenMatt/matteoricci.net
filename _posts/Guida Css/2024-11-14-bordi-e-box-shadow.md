@@ -5,7 +5,7 @@ author: Teo
 categories: guida_CSS
 image: assets/images/
 featured: 
-description: "Guida CSS Completa: Impara le Basi per Creare Pagine Web Moderne e Responsive"
+description: "Impara a usare bordi e ombre in CSS per dare profondità e risalto ai tuoi elementi web. Esempi pratici inclusi"
 keywords: CSS, introduzione CSS, guida CSS, creare sito web, linguaggio HTML
 hidden: true
 ---

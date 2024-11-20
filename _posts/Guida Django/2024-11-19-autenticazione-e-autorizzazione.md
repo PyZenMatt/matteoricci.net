@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Autenticazione e autorizzazioni in django"
-description: "Scopri come iniziare a programmare con Django. Una guida introduttiva per principianti ed imparare le basi e costruire applicazioni web."
+description: "Impara a implementare sistemi di autenticazione e autorizzazione sicuri in Django. Proteggi le tue risorse e offri esperienze personalizzate agli utenti."
 image: assets/images/
 author: "Teo"
 categories: guida_django

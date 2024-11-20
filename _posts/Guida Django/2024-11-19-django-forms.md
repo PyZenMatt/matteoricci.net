@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Django Forms"
-description: "Scopri come iniziare a programmare con Django. Una guida introduttiva per principianti ed imparare le basi e costruire applicazioni web."
+description: "Scopri come creare e validare form in Django. Una guida completa per migliorare l'interazione con gli utenti e la gestione dei dati."
 image: assets/images/
 author: "Teo"
 categories: guida_django

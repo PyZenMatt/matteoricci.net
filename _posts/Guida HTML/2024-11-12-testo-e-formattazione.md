@@ -4,7 +4,7 @@ title: "Testo e formattazione"
 author: teo
 categories: guida_html
 image: assets/images/
-description: "Tag per la formattazione del testo Liste"
+description: "Scopri i tag HTML per la formattazione del testo e la creazione di liste. Migliora la leggibilità e l'accessibilità dei tuoi contenuti web con tecniche di base e avanzate."
 keywords: HTML, introduzione HTML, guida HTML, tag HTML, creare sito web, linguaggio HTML
 Introduzione a HTML: Creare le Fondamenta del Web
 hidden: true

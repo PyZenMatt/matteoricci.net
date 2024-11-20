@@ -5,7 +5,7 @@ author: Teo
 categories: guida_CSS
 image: assets/images/
 featured: 
-description: "Guida CSS Completa: Impara le Basi per Creare Pagine Web Moderne e Responsive"
+description: "Esplora transizioni e animazioni CSS per creare interazioni dinamiche e fluide. Guida con esempi pratici per ogni esigenza."
 keywords: CSS, introduzione CSS, guida CSS, creare sito web, linguaggio HTML
 hidden: true
 Introduzione a HTML: Creare le Fondamenta del Web

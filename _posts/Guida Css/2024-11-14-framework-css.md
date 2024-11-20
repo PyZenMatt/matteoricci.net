@@ -5,7 +5,7 @@ author: Teo
 categories: guida_CSS
 image: assets/images/
 featured: 
-description: "Guida CSS Completa: Impara le Basi per Creare Pagine Web Moderne e Responsive"
+description: "Scopri i vantaggi dei framework CSS come Bootstrap e Tailwind per creare interfacce responsive e moderne in modo rapido."
 keywords: CSS, introduzione CSS, guida CSS, creare sito web, linguaggio HTML
 hidden: true
 Introduzione a HTML: Creare le Fondamenta del Web
@@ -35,6 +35,7 @@ Bootstrap è uno dei framework CSS più conosciuti e utilizzati. Sviluppato da T
 - **Sistema di Layout Responsivo**: il layout si adatta automaticamente a diverse risoluzioni.
 
 #### Quando Usare Bootstrap:
+
 Bootstrap è l’ideale per progetti che richiedono interfacce standardizzate e layout complessi, o per sviluppatori alle prime armi che desiderano una base solida e semplice da usare. È perfetto anche per applicazioni con una struttura simile a quella di molte applicazioni moderne, come dashboard aziendali e piattaforme e-commerce.
 
 ### Tailwind CSS: un Nuovo Approccio al Design
@@ -42,6 +43,7 @@ Bootstrap è l’ideale per progetti che richiedono interfacce standardizzate e 
 Tailwind CSS è un framework di utility-first, ovvero orientato alla composizione di classi per ogni proprietà stilistica, come larghezza, altezza, margini, colori, e così via. Tailwind permette di costruire design altamente personalizzati senza dover scrivere CSS tradizionale, usando solo classi predefinite nel markup HTML. Questa filosofia consente di mantenere il CSS modulare e personalizzabile, rendendolo una soluzione ottima per chi cerca flessibilità.
 
 #### Caratteristiche Principali di Tailwind CSS:
+
 - **Classi di Utility**: ogni proprietà stilistica è rappresentata da una classe, come `text-center`, `bg-blue-500`, `p-4`, ecc.
 - **Personalizzazione Totale**: permette di creare design unici e personalizzati senza limitazioni.
 - **Riduzione del CSS Superfluo**: grazie a una tecnica di purging, rimuove il CSS non utilizzato, riducendo il peso finale del foglio di stile.

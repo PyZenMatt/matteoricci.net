@@ -5,7 +5,7 @@ author: Teo
 categories: guida_js
 image: assets/images/
 featured: 
-description: "Scopri le basi dell'HTML in questa guida per principianti: dai tag alla struttura delle pagine web, impara a costruire le fondamenta del web."
+description: "Scopri come configurare il tuo ambiente per iniziare a programmare in JavaScript: una guida pratica per principianti, con strumenti e suggerimenti utili."
 keywords: HTML, introduzione HTML, guida HTML, tag HTML, creare sito web, linguaggio HTML
 hidden: true
 Introduzione a HTML: Creare le Fondamenta del Web

@@ -5,7 +5,7 @@ author: Teo
 categories: guida_js
 image: assets/images/
 featured: 
-description: ""
+description: "Scopri le funzionalità di ES6 e del JavaScript moderno: una guida per scrivere codice più leggibile, manutenibile e performante."
 hidden: true
 Introduzione a HTML: Creare le Fondamenta del Web
 ---

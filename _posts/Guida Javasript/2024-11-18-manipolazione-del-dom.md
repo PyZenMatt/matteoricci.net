@@ -5,7 +5,7 @@ author: Teo
 categories: guida_js
 image: assets/images/
 featured: 
-description: ""
+description: "Impara a manipolare il DOM con JavaScript per creare pagine web interattive: selezione degli elementi, eventi e migliori pratiche."
 hidden: true
 Introduzione a HTML: Creare le Fondamenta del Web
 ---

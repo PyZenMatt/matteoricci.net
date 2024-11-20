@@ -5,7 +5,7 @@ author: Teo
 categories: guida_CSS
 image: assets/images/
 featured: 
-description: "Guida CSS Completa: Impara le Basi per Creare Pagine Web Moderne e Responsive"
+description: "Scopri come gestire dimensioni e spaziature in CSS per creare layout puliti e responsive. Una guida passo passo per principianti e non."
 keywords: CSS, introduzione CSS, guida CSS, creare sito web, linguaggio HTML
 hidden: true
 Introduzione a HTML: Creare le Fondamenta del Web

@@ -5,7 +5,7 @@ author: Teo
 categories: guida_CSS
 image: assets/images/
 featured: 
-description: "Guida CSS Completa: Impara le Basi per Creare Pagine Web Moderne e Responsive"
+description: "Scopri come le variabili CSS semplificano la gestione degli stili e migliorano la coerenza del design nei tuoi progetti web"
 keywords: CSS, introduzione CSS, guida CSS, creare sito web, linguaggio HTML
 hidden: true
 Introduzione a HTML: Creare le Fondamenta del Web
@@ -39,9 +39,11 @@ Ecco un esempio pratico:
 
 In questo esempio:
 
+```css
 - `--primary-color` è una variabile che contiene un valore di colore esadecimale (`#3498db`).
 - `--font-size-large` rappresenta una dimensione del font (`1.5rem`).
 - `--padding-medium` rappresenta un valore di padding (`20px`).
+```
 
 La **pseudo-classe** `:root` viene spesso utilizzata per dichiarare le variabili CSS globali, applicandole all'intero documento. Tuttavia, le variabili possono essere dichiarate anche in altri selettori per applicazioni più specifiche (come componenti, sezioni, ecc.).
 

@@ -6,7 +6,7 @@ categories: guida_html
 image: assets/images/
 featured:
 hidden: true
-description: " Questi attributi permettono di aggiungere funzionalità o informazioni agli elementi e sono supportati da tutti i browser."
+description: "Approfondisci gli attributi globali HTML come id, class, e data- per aggiungere flessibilità e interattività al tuo sito. Migliora l'accessibilità e la SEO con soluzioni avanzate."
 hidden: true
 ---
 

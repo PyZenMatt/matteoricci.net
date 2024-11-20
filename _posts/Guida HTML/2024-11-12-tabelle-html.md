@@ -5,7 +5,7 @@ author: sal
 categories: guida_html
 image: assets/images/
 featured: 
-description: "- Creazione di tabelle "
+description: "Crea e struttura dati in HTML con tabelle. Impara a usare <table>, <thead>, <tbody> e altri tag per una presentazione chiara e professionale."
 keywords: HTML, introduzione HTML, guida HTML, tag HTML, creare sito web, linguaggio HTML
 Introduzione a HTML: Creare le Fondamenta del Web
 hidden: true

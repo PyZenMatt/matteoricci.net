@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Argomenti Avanzati"
-description: "Scopri come iniziare a programmare con Django. Una guida introduttiva per principianti ed imparare le basi e costruire applicazioni web."
+description: "Approfondisci Django con API REST, sicurezza avanzata e tecniche di deployment. Ottimizza e scala le tue applicazioni web come un professionista."
 image: assets/images/
 author: "Teo"
 categories: guida_django

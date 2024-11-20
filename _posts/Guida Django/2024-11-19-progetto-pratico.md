@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Progetto Pratico"
-description: "Scopri come iniziare a programmare con Django. Una guida introduttiva per principianti ed imparare le basi e costruire applicazioni web."
+description: "Segui un progetto pratico con Django e metti in pratica le tue competenze. Dalla configurazione allo sviluppo, crea un'app completa."
 image: assets/images/
 author: "Teo"
 categories: guida_django

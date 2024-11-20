@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introduzione a Django"
-description: "Scopri come iniziare a programmare con Django. Una guida introduttiva per principianti ed imparare le basi e costruire applicazioni web."
+description: "Introduzione a Django per principianti: cos'è, come funziona e perché usarlo. La guida perfetta per iniziare con questo framework potente e scalabile."
 image: assets/images/
 author: "Teo"
 categories: guida_django

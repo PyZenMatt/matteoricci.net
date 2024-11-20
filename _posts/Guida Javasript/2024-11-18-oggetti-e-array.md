@@ -5,7 +5,7 @@ author: Teo
 categories: guida_js
 image: assets/images/
 featured: 
-description: ""
+description: "Scopri come gestire dati in JavaScript con oggetti e array: una guida completa per sviluppatori di tutti i livelli."
 hidden: true
 Introduzione a HTML: Creare le Fondamenta del Web
 ---

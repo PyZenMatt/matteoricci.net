@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Views e template in django"
-description: "Scopri come iniziare a programmare con Django. Una guida introduttiva per principianti ed imparare le basi e costruire applicazioni web."
+description: "Scopri come collegare logica e presentazione con Views e Template in Django. Crea interfacce dinamiche e user-friendly per le tue applicazioni"
 image: assets/images/
 author: "Teo"
 categories: guida_django

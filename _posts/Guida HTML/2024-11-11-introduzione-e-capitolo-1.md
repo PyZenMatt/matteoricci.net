@@ -5,7 +5,7 @@ author: Teo
 categories: guida_html
 image: assets/images/html.jpg
 featured: true
-description: "Scopri le basi dell'HTML in questa guida per principianti: dai tag alla struttura delle pagine web, impara a costruire le fondamenta del web."
+description: "Scopri le basi di HTML, il linguaggio essenziale per creare pagine web. Impara i tag fondamentali, la struttura delle pagine e come costruire un sito da zero."
 keywords: HTML, introduzione HTML, guida HTML, tag HTML, creare sito web, linguaggio HTML
 hidden: true
 Introduzione a HTML: Creare le Fondamenta del Web

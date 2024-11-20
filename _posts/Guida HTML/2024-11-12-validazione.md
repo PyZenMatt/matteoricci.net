@@ -5,7 +5,7 @@ author: teo
 categories: guida_html
 image: assets/images/
 featured: 
-description: "- Strumenti per la validazione e il debugging dell’HTML. Editor consigliati per lavorare con HTML: Visual Studio Code, Atom, Sublime Text."
+description: "Ottimizza il tuo codice HTML con strumenti di validazione e debugging. Scopri i migliori editor come Visual Studio Code, Atom e Sublime Text per uno sviluppo efficiente."
 keywords: HTML, introduzione HTML, guida HTML, tag HTML, creare sito web, linguaggio HTML
 hidden: true
 ---

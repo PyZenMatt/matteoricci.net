@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Configurazione dell'Admin di Django"
-description: "Scopri come iniziare a programmare con Django. Una guida introduttiva per principianti ed imparare le basi e costruire applicazioni web."
+description: "Guida alla configurazione e personalizzazione dell'interfaccia Admin di Django. Semplifica la gestione dei contenuti con strumenti intuitivi e potenti."
 image: assets/images/
 author: "Teo"
 categories: guida_django

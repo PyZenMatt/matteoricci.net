@@ -5,8 +5,7 @@ author: Teo
 categories: guida_python  
 image: assets/images/
 featured: 
-description: "Guida Python Completa: Impara le Basi per programmmare in python.
-keywords: Python, introduzione python, guida python, creare programmi in python, linguaggio python"
+description: "Esplora le funzioni in Python: definizione, parametri, lambda, scope e decoratori. Una guida pratica per scrivere codice modulare e riutilizzabile"
 hidden: true
 Introduzione a Python: Iniziare ad apprendere le basi di python per programmare "
 ---

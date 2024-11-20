@@ -5,7 +5,7 @@ author: Teo
 categories: guida_CSS
 image: assets/images/
 featured: 
-description: "Guida CSS Completa: Impara le Basi per Creare Pagine Web Moderne e Responsive"
+description: "La tipografia è un aspetto cruciale del design di un sito web, poiché influisce sull'estetica e sulla leggibilità dei contenuti. In CSS, abbiamo diverse proprietà che ci permettono di controllare l'aspetto del testo"
 keywords: CSS, introduzione CSS, guida CSS, creare sito web, linguaggio HTML
 hidden: true
 Introduzione a HTML: Creare le Fondamenta del Web

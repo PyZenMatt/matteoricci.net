@@ -1,18 +1,14 @@
 ---
 layout: post
-title: "Introduzione CSS: css avanzato"
+title: "CSS Avanzato: Filtri, Layout e Accessibilità - Tecniche Essenziali per Web Designers**"
 author: Teo
 categories: guida_CSS
 image: assets/images/
 featured: 
-description: "Guida CSS Completa: Impara le Basi per Creare Pagine Web Moderne e Responsive"
+description: "Scopri tecniche avanzate di CSS come filtri, layout e accessibilità per migliorare il design e l'usabilità del tuo sito web."
 keywords: CSS, introduzione CSS, guida CSS, creare sito web, linguaggio HTML
 hidden: true
 Introduzione a HTML: Creare le Fondamenta del Web
----
-
-**Titolo: CSS Avanzato: Filtri, Layout e Accessibilità - Tecniche Essenziali per Web Designers**
-
 ---
 
 **Introduzione**

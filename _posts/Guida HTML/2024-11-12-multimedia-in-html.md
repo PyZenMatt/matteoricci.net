@@ -5,7 +5,7 @@ author: sal
 categories: guida_html
 image: assets/images/ 
 featured: 
-description: "Inserire audio e video ,attributi per gestire il comportamento dei media: controls, autoplay, loop, muted. [link]"
+description: "Integra audio e video nelle tue pagine web con gli elementi HTML <audio> e <video>. Scopri gli attributi per personalizzare la riproduzione."
 keywords: HTML, introduzione HTML, guida HTML, tag HTML, creare sito web, linguaggio HTML
 Introduzione a HTML: Creare le Fondamenta del Web
 hidden: true

@@ -5,7 +5,7 @@ author: Teo
 categories: guida_html
 image: assets/images/
 featured: 
-description: "Creare collegamenti ipertestuali , Inserire immagini con e proprietà per gestire dimensioni e testo alternativo"
+description: "Crea collegamenti ipertestuali e gestisci immagini in HTML con i tag <a> e <img>, migliorando navigabilità e accessibilità."
 keywords: HTML, introduzione HTML, guida HTML, tag HTML, creare sito web, linguaggio HTML
 hidden: true
 ---

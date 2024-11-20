@@ -5,7 +5,7 @@ author: Teo
 categories: guida_js
 image: assets/images/
 featured: 
-description: ""
+description: "Impara a gestire variabili e tipi di dati in JavaScript: una guida completa per principianti ed esperti con esempi pratici e consigli utili per scrivere codice efficiente."
 hidden: true
 Introduzione a HTML: Creare le Fondamenta del Web
 ---

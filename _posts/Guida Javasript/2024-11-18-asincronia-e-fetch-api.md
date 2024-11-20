@@ -5,9 +5,8 @@ author: Teo
 categories: guida_js
 image: assets/images/
 featured: 
-description: ""
+description: "Guida alla programmazione asincrona in JavaScript con Fetch API: gestisci chiamate server e asincronia in modo efficiente."
 hidden: true
-Introduzione a HTML: Creare le Fondamenta del Web
 ---
 
 JavaScript è uno dei linguaggi di programmazione più utilizzati per creare interattività nei siti web. Tra i suoi concetti fondamentali, il sistema degli **eventi** svolge un ruolo cruciale. In questo articolo, esploreremo il concetto di eventi e interattività, spiegando come funzionano e come puoi usarli per migliorare l’esperienza utente nei tuoi progetti.

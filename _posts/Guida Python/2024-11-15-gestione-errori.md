@@ -5,8 +5,7 @@ author: Teo
 categories: guida_python  
 image: assets/images/
 featured: 
-description: "Guida Python Completa: Impara le Basi per programmmare in python.
-keywords: Python, introduzione python, guida python, creare programmi in python, linguaggio python"
+description: "Scrivi codice robusto con Python: padroneggia try, except, else, e finally per gestire eccezioni e migliorare l'affidabilità dei tuoi programmi."
 hidden: true
 Introduzione a Python: Iniziare ad apprendere le basi di python per programmare "
 ---

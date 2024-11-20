@@ -5,7 +5,7 @@ author: Teo
 categories: guida_html
 image: assets/images/
 featured: 
-description: "L'HTML (HyperText Markup Language) è il linguaggio utilizzato per strutturare e visualizzare il contenuto di una pagina web. È formato da tag e attributi che servono per costruire e personalizzare gli elementi della pagina"
+description: "Guida agli elementi di base di HTML: scopri tag e attributi per creare strutture web chiare, leggibili e ottimizzate."
 keywords: HTML, introduzione HTML, guida HTML, tag HTML, creare sito web, linguaggio HTML
 published: true
 hidden: true

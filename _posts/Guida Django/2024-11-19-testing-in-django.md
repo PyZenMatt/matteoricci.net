@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Testing in Django"
-description: "Scopri come iniziare a programmare con Django. Una guida introduttiva per principianti ed imparare le basi e costruire applicazioni web."
+description: "Impara a scrivere test in Django per garantire affidabilità e qualità del codice. Strumenti integrati per migliorare lo sviluppo"
 image: assets/images/
 author: "Teo"
 categories: guida_django

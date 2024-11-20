@@ -5,7 +5,7 @@ author: Teo
 categories: guida_js
 image: assets/images/
 featured: 
-description: ""
+description: "Guida completa agli operatori e alle strutture di controllo in JavaScript: impara a gestire logica, flussi e condizioni per scrivere codice dinamico."
 hidden: true
 Introduzione a HTML: Creare le Fondamenta del Web
 ---

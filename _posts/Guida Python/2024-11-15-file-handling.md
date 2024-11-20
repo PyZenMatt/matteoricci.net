@@ -5,8 +5,7 @@ author: Teo
 categories: guida_python  
 image: assets/images/
 featured: 
-description: "Guida Python Completa: Impara le Basi per programmmare in python.
-keywords: Python, introduzione python, guida python, creare programmi in python, linguaggio python"
+description: "Gestione dei file in Python: lettura, scrittura e manipolazione di file in modo sicuro ed efficiente. Una guida essenziale per interagire con dati persistenti"
 hidden: true
 Introduzione a Python: Iniziare ad apprendere le basi di python per programmare "
 ---

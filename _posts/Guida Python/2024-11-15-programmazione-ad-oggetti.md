@@ -5,8 +5,7 @@ author: Teo
 categories: guida_python 
 image: assets/images/
 featured: 
-description: "Guida Python Completa: Impara le Basi per programmmare in python.
-keywords: Python, introduzione python, guida python, creare programmi in python, linguaggio python"
+description: "Scopri i principi fondamentali della Programmazione Orientata agli Oggetti in Python: classi, oggetti, incapsulamento, ereditarietà e polimorfismo. Una guida completa per organizzare e riutilizzare il codice."
 hidden: true
 Introduzione a Python: Iniziare ad apprendere le basi di python per programmare "
 ---
