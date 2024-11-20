@@ -5,7 +5,7 @@ author: Teo
 categories: guida_html
 image: assets/images/
 featured: 
-description: "Arricchisci le tue pagine HTML con mappe, video e contenuti interattivi. Scopri come usare <iframe> per integrare risorse esterne."
+description: "Arricchisci le tue pagine HTML con mappe, video e contenuti interattivi. Scopri come usare iframe per integrare risorse esterne."
 hidden: true
 ---
 L’incorporazione di contenuti esterni come mappe o video nelle tue pagine HTML è utile per arricchire l’esperienza dell’utente, aggiungendo funzionalità interattive e contenuti multimediali. Un modo comune per farlo è utilizzare il tag HTML `<iframe>`. Vediamo nel dettaglio come funziona.
