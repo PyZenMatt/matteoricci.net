@@ -3,7 +3,7 @@ layout: post
 title: "Introduzione a JavaScript: La Guida Completa per Iniziare"
 author: Teo
 categories: guida_js
-image: assets/images/javascript.jpg
+image: assets/images/guida_js/javascript.jpg
 featured: true
 description: "Inizia il tuo percorso con JavaScript: scopri i concetti fondamentali, le basi della programmazione e le opportunità che offre questo linguaggio."
 keywords: HTML, introduzione HTML, guida HTML, tag HTML, creare sito web, linguaggio HTML

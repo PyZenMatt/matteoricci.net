@@ -3,7 +3,7 @@ layout: post
 title: "Guida Introduttiva a Linux: Dal Livello Base all’Avanzato"
 author: Teo
 categories: guida_linux
-image: assets/images/linux.jpg
+image: assets/images/guida_linux/linux.jpg
 featured: true
 description: "Scopri come imparare Linux con questa guida completa che ti accompagna dal livello base fino ad argomenti avanzati. Perfetta per principianti ed esperti!"
 keywords: Linux, guida Linux, introduzione Linux, imparare Linux, comandi Linux, shell Linux, distribuzioni Linux

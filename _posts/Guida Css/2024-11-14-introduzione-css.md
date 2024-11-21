@@ -3,7 +3,7 @@ layout: post
 title: "Introduzione CSS: Guida Completa per Principianti"
 author: Teo
 categories: guida_CSS
-image: assets/images/css.jpg
+image: assets/images/guida_css/css.jpg
 featured: true
 description: "Inizia con il CSS: una guida completa per principianti per imparare a creare pagine web visivamente accattivanti."
 keywords: CSS, introduzione CSS, guida CSS, creare sito web, linguaggio HTML

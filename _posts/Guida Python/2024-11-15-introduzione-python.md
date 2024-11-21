@@ -3,7 +3,7 @@ layout: post
 title: "Introduzione Python"
 author: Teo
 categories: guida_python  
-image: assets/images/python.jpg
+image: assets/images/guida_python/python.jpg
 featured: yes
 description: "Benvenuto in Python: un linguaggio versatile e intuitivo per principianti ed esperti. Scopri le basi per iniziare a programmare oggi stesso"
 keywords: Python, introduzione python, guida python, creare programmi in python, linguaggio python"

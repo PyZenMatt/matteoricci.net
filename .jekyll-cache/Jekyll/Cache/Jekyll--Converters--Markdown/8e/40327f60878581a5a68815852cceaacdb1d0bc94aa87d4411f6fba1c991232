@@ -1,0 +1,110 @@
+I"=$<p>In HTML, per creare collegamenti ipertestuali e inserire immagini, si utilizzano i tag <a> e <img />. Di seguito, ti spiego in dettaglio come funzionano e come personalizzarli.</a></p>
+<ol>
+  <li>Creare Collegamenti Ipertestuali con <a href=""></a></li>
+</ol>
+
+<p>Il tag <a> viene utilizzato per creare collegamenti ipertestuali, cioè link che, quando cliccati, portano l’utente a una pagina web specifica, a un’altra sezione della stessa pagina o a un documento. La sintassi di base è:</a></p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"URL"</span><span class="nt">&gt;</span>Testo del link<span class="nt">&lt;/a&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Spiegazione degli attributi principali:</p>
+
+<p>href: È l’attributo più importante e specifica la destinazione del link. Ecco alcuni esempi:
+Per collegarsi a un sito web esterno: <a href="https://www.esempio.com">Vai a esempio.com</a></p>
+
+<p>Per collegarsi a una pagina interna del sito: <a href="pagina_interna.html">Pagina interna</a></p>
+
+<p>Per creare un collegamento a un’ancora (un punto specifico) della stessa pagina: <a href="#sezione1">Vai alla Sezione 1</a></p>
+
+<p>Per inviare un’email: <a href="mailto:email@esempio.com">Invia una mail</a></p>
+
+<p>target:</p>
+
+<p>Indica dove aprire il link. I valori principali sono:
+_self (predefinito): apre il link nella stessa scheda/finestra.
+_blank: apre il link in una nuova scheda/finestra.</p>
+
+<p>Esempio: 
+    <code class="language-plaintext highlighter-rouge">html
+    &lt;a href="https://www.esempio.com" target="_blank"&gt;Apri in una nuova scheda&lt;/a&gt;
+   </code></p>
+
+<p>title: Fornisce una descrizione o un suggerimento quando l’utente passa il mouse sul link.
+Esempio:</p>
+
+<p><a href="https://www.esempio.com" title="Visita il nostro sito">Vai a esempio.com</a></p>
+
+<p>Esempio completo:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://www.esempio.com"</span> <span class="na">target=</span><span class="s">"_blank"</span> <span class="na">title=</span><span class="s">"Visita il nostro sito"</span><span class="nt">&gt;</span>Vai a esempio.com<span class="nt">&lt;/a&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<ol>
+  <li>Inserire Immagini con <img src="" alt="" /></li>
+</ol>
+
+<p>Il tag <img /> serve per inserire immagini all’interno di una pagina web. Diversamente da altri tag, <img /> è un tag autochiudente, cioè non ha un tag di chiusura. La sintassi di base è:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"URL_dell_immagine"</span> <span class="na">alt=</span><span class="s">"Descrizione dell'immagine"</span><span class="nt">&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<h3 id="spiegazione-degli-attributi-principali">Spiegazione degli attributi principali:</h3>
+
+<p>src: Specifica la posizione dell’immagine. Questo può essere un URL esterno (come un link web) o un percorso locale (come un file nel server).
+        Esempio: <img src="immagine.jpg" alt="Descrizione dell'immagine" /></p>
+
+<p>alt: Fornisce un testo alternativo che appare se l’immagine non può essere caricata. È fondamentale per l’accessibilità (ad esempio, gli screen reader lo leggono per gli utenti con disabilità visive) e migliora la SEO.</p>
+
+<p>Esempio: <img src="immagine.jpg" alt="Foto di un paesaggio marino" /></p>
+
+<p>width e height: Specificano le dimensioni dell’immagine in pixel o percentuale. È sempre preferibile specificare solo una di queste proprietà, per evitare distorsioni dell’immagine.</p>
+
+<p>Esempio: <img src="immagine.jpg" alt="Foto di un paesaggio marino" width="300" /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>title: Fornisce un testo che appare quando si passa il mouse sull’immagine.
+    Esempio: &lt;img src="immagine.jpg" alt="Foto di un paesaggio marino" title="Paesaggio marino"&gt;
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Esempio completo:</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://www.esempio.com/immagine.jpg"</span> <span class="na">alt=</span><span class="s">"Descrizione dell'immagine"</span> <span class="na">width=</span><span class="s">"300"</span> <span class="na">height=</span><span class="s">"200"</span> <span class="na">title=</span><span class="s">"Testo alternativo"</span><span class="nt">&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Modificare le dimensioni e lo stile dell’immagine tramite CSS</p>
+
+<p>È anche possibile controllare l’aspetto delle immagini con il CSS, specialmente se si vuole applicare lo stesso stile a più immagini:</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"immagine.jpg"</span> <span class="na">alt=</span><span class="s">"Foto di un paesaggio marino"</span> <span class="na">class=</span><span class="s">"immagine-personalizzata"</span><span class="nt">&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>E poi nel file CSS:</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="nc">.immagine-personalizzata</span> <span class="p">{</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>
+    <span class="nl">border</span><span class="p">:</span> <span class="m">2px</span> <span class="nb">solid</span> <span class="no">black</span><span class="p">;</span>
+    <span class="nl">border-radius</span><span class="p">:</span> <span class="m">8px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Esempio Combinato: Collegare un’Immagine con <a> e <img /></a></p>
+
+<p>È possibile inserire un’immagine all’interno di un link, in modo che l’immagine stessa diventi cliccabile. Ecco un esempio:</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://www.esempio.com"</span> <span class="na">target=</span><span class="s">"_blank"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"immagine.jpg"</span> <span class="na">alt=</span><span class="s">"Vai al sito esempio.com"</span> <span class="na">width=</span><span class="s">"200"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>In questo modo, l’immagine diventa un link e, cliccandola, si aprirà la pagina specificata.</p>
+
+<p>La gestione di link e immagini in HTML è essenziale per migliorare la navigabilità e l’esperienza visiva di un sito web. Utilizzando correttamente i tag <a> e <img />, è possibile creare contenuti ricchi e interattivi, ottimizzati per la SEO e accessibili per tutti gli utenti. Ricorda di inserire descrizioni efficaci e testi alternativi alle immagini per favorire l’indicizzazione sui motori di ricerca e migliorare l’accessibilità. In definitiva, padroneggiare questi elementi HTML è un passo fondamentale per costruire pagine web ben strutturate, user-friendly e SEO-friendly, con contenuti che rispondano alle esigenze degli utenti e siano ottimizzati per i motori di ricerca.</a></p>
+
+<p>Spero che ora tu abbia una visione completa di come utilizzare i tag <a> e <img /> in HTML per creare collegamenti e inserire immagini nelle tue pagine web!</a></p>
+
+<p><a href="/formattazione-semantica/">Capitolo 5</a>:”Formattazione Semantica”</p>
+:ET

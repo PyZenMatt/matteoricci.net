@@ -2,7 +2,7 @@
 layout: post
 title: "Introduzione a Django: Guida per Iniziare"
 description: "Scopri Django, il potente framework Python per sviluppare applicazioni web. Una guida per principianti per imparare le basi e iniziare a costruire progetti scalabili e sicuri."
-image: assets/images/django.jpg
+image: assets/images/guida_django/django.jpg
 author: "Teo"
 categories: guida_django
 tags: django

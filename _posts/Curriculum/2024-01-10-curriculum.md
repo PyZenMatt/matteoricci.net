@@ -4,7 +4,7 @@ title:  "Curriculum Vitae  "
 author: Matteo Ricci
 categories: 
 tags: curriculum
-image: assets/images/cv.png
+image: assets/images/curriculum/cv.png
 description: "Il mio curriculum vitae. Sempre pronto ad essere consultato"
 hidden: true
 ---

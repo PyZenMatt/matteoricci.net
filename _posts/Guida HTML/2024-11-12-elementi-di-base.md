@@ -36,7 +36,8 @@ Qui class="testo-evidente" è un attributo che assegna una classe al paragrafo.
 Principali Tag Strutturali
 
 Vediamo ora alcuni dei tag più comuni e il loro uso.
-1. <h1> - <h6>
+
+- h1 - h6
 
 I tag <h1> fino a <h6> sono usati per i titoli e i sottotitoli. <h1> rappresenta il titolo principale della pagina e <h6> è il livello più basso. Usarli correttamente è importante anche per l’ottimizzazione sui motori di ricerca (SEO).
 
@@ -46,7 +47,7 @@ Esempio:
 <h2>Sottotitolo</h2>
 <h3>Sezione del Sottotitolo</h3>
 ```
-2. <p>
+- p
 
 Il tag <p> serve per creare un paragrafo. È uno dei tag più semplici e usati per il testo normale.
 
@@ -54,18 +55,19 @@ Esempio:
 ```html
 <p>Questo è un paragrafo di testo.</p>
 ```
-3. <div>
+- div
 
 Il tag <div> è un contenitore generico usato per raggruppare altri elementi. È spesso utilizzato per scopi di layout e di stile (CSS).
 
 Esempio:
+
 ```html
 <div>
   <h2>Sezione in un Div</h2>
   <p>Testo dentro un div.</p>
 </div>
 ```
-4. <span>
+- span
 
 Il tag <span> è simile a <div>, ma è un contenitore inline, quindi non crea un'interruzione di linea come fa <div>. Viene usato per applicare stili a una parte specifica di testo all'interno di un paragrafo.
 
@@ -73,7 +75,7 @@ Esempio:
 ```html
 <p>Questo è un testo con una parola <span style="color:red;">evidenziata</span>.</p>
 ```
-5. <br>
+- br
 
 Il tag <br> rappresenta un'interruzione di linea. È un tag singolo (non ha un tag di chiusura) e crea una nuova linea all'interno del testo.
 
@@ -81,7 +83,7 @@ Esempio:
 ```html
 <p>Questo è un testo su due righe.<br>Questa è la seconda linea.</p>
 ```
-6. <hr>
+- hr
 
 Il tag <hr> inserisce una linea orizzontale che viene spesso usata per separare sezioni del contenuto. Anche questo è un tag singolo.
 ```html
@@ -121,6 +123,9 @@ Ecco un esempio che mette insieme i tag che abbiamo visto:
 </body>
 </html>
 ```
+Sotto nell'immagine puoi vedere l'esempio viene visualizzato nel browser
+![Esempio degli elementi di base html](/assets/images/guida_html/esempi/html_1.png)
+
 Conclusione
 
 Comprendere gli elementi fondamentali dell'HTML è il primo passo per diventare un esperto nello sviluppo web. Con i tag e gli attributi di base, si può costruire la struttura di qualsiasi pagina e fornire le basi per aggiungere stili e interattività. Se vuoi continuare a imparare, esplora risorse avanzate o consulta le nostre guide[Capitolo 3]({{ site.baseurl }}/testo-e-formattazione/): "Testo e formattazione" per migliorare le tue competenze e scoprire nuovi strumenti per il web design. Con una solida conoscenza di HTML, sarai pronto per affrontare le sfide dello sviluppo e creare siti web accattivanti e funzionali. 
