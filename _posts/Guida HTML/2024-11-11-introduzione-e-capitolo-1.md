@@ -12,7 +12,13 @@ Introduzione a HTML: Creare le Fondamenta del Web
 ---
 
 # Introduzione
-Benvenuti nella guida completa per **principianti** sull'**HTML**. Qui imparerete le basi per creare le fondamenta del web.
+Benvenuti nella **guida** introduttiva a **HTML**, il linguaggio di markup che sta alla base di ogni pagina web. Se volete imparare a creare un sito o semplicemente capire il funzionamento delle pagine che visitate, questo è il posto giusto! Scopriamo insieme come **HTML** (HyperText Markup Language) crea la **struttura** delle pagine web e impariamo a usarlo efficacemente.
+Cos'è **HTML**?
+
+**HTML** è un linguaggio di markup utilizzato per definire la **struttura** di una pagina web. A differenza di linguaggi come Python o JavaScript, **HTML** non esegue calcoli o logiche complesse ma determina come il contenuto viene presentato nella pagina. In **HTML**, ogni elemento è racchiuso in **tag**, come titoli, paragrafi, immagini, link, ecc.
+**struttura** di Base di una Pagina **HTML**
+
+Con le basi di questo tutorial **HTML**, potete già creare e personalizzare una semplice pagina web! La pratica è essenziale: continuate a sperimentare con nuovi **tag** e layout per scoprire tutte le possibilità. Buon divertimento e buona fortuna nel mondo del web!
 
 ## Struttura delle Pagine Web
 L'**HTML** (HyperText Markup Language) è il linguaggio principale per la creazione di pagine web. Esploreremo i suoi **tag** fondamentali e come utilizzarli.
@@ -21,14 +27,6 @@ L'**HTML** (HyperText Markup Language) è il linguaggio principale per la creazi
 - **Tag**: I mattoni dell'HTML.
 - **Struttura**: Come organizzare il codice.
 - **Best Practice**: Scrivere codice chiaro e ottimizzato.
-
-Benvenuti nella **guida** introduttiva a **HTML**, il linguaggio di markup che sta alla base di ogni pagina web. Se volete imparare a creare un sito o semplicemente capire il funzionamento delle pagine che visitate, questo è il posto giusto! Scopriamo insieme come **HTML** (HyperText Markup Language) crea la **struttura** delle pagine web e impariamo a usarlo efficacemente.
-Cos'è **HTML**?
-
-**HTML** è un linguaggio di markup utilizzato per definire la **struttura** di una pagina web. A differenza di linguaggi come Python o JavaScript, **HTML** non esegue calcoli o logiche complesse ma determina come il contenuto viene presentato nella pagina. In **HTML**, ogni elemento è racchiuso in **tag**, come titoli, paragrafi, immagini, link, ecc.
-**struttura** di Base di una Pagina **HTML**
-
-Con le basi di questo tutorial **HTML**, potete già creare e personalizzare una semplice pagina web! La pratica è essenziale: continuate a sperimentare con nuovi **tag** e layout per scoprire tutte le possibilità. Buon divertimento e buona fortuna nel mondo del web!
 
 ## Introduzione all'**HTML**
 - [Cosa è **HTML** e come funziona nel contesto del web.]({{ site.baseurl }}/introduzione-e-capitolo-1/)
@@ -56,7 +54,7 @@ Con le basi di questo tutorial **HTML**, potete già creare e personalizzare una
 ## Form **HTML**
 - [**struttura** di base dei form con]({{ site.baseurl }}/form-**HTML**/) `<form>`. 
 - [Tipi di input e controllo degli utenti]({{ site.baseurl }}/form-**HTML**/): `<input>`, `<label>`, `<select>`, `<textarea>`, `<button>`, `<option>`. 
-- [Attributi come name, id, value, placeholder, required, action, method.] ({{ site.baseurl }}/form-**HTML**/)
+- [Attributi come name, id, value, placeholder, required, action, method.]({{ site.baseurl }}/form-**HTML**/)
 
 ## Attributi globali
 - [Attributi che possono essere usati su qualsiasi elemento **HTML**]({{ site.baseurl }}/attributi-globali/): id, class, style, title, lang, data-* (per dati personalizzati).
@@ -77,11 +75,13 @@ Con le basi di questo tutorial **HTML**, potete già creare e personalizzare una
 
 ## Validazione e strumenti per **HTML**
 - [Strumenti per la validazione e il debugging dell’**HTML**]({{ site.baseurl }}/validazione/)
-- [Editor consigliati per lavorare con **HTML**]({{ site.baseurl }}/validazione/): Visual Studio Code, Atom, Sublime Text. ({{ site.baseurl }}/validazione/)
+- [Editor consigliati per lavorare con **HTML**]({{ site.baseurl }}/validazione/) 
+- [Visual Studio Code, Atom, Sublime Text]({{ site.baseurl }}/validazione/)
 
 ## HTML5 Avanzato
 - [Canvas]({{ site.baseurl }}/html5/): `<canvas>` per la grafica dinamica. 
-- [API avanzate]({{ site.baseurl }}/html5/): geolocalizzazione, storage locale (localStorage, sessionStorage). ({{ site.baseurl }}/html5/)
+- [API avanzate]({{ site.baseurl }}/html5/) 
+- [Geolocalizzazione, storage locale (localStorage, sessionStorage)]({{ site.baseurl }}/html5/)
 
 
 Questi argomenti ti permetteranno di apprendere **HTML** con una progressione logica, partendo dai concetti base fino ad arrivare a quelli avanzati.
@@ -115,33 +115,57 @@ La **struttura** di una pagina **HTML** è abbastanza semplice. Ecco uno schema 
 # Spiegazione dei vari elementi
 
     <!DOCTYPE **HTML**>
-    Questo è il dichiarativo del documento e indica al browser che stiamo usando HTML5, la versione più recente del linguaggio. È essenziale per garantire che la pagina venga interpretata correttamente.
+
+Questo è il dichiarativo del documento e indica al browser che stiamo usando HTML5, la versione più recente del linguaggio. È essenziale per garantire che la pagina venga interpretata correttamente.
 
     <**HTML** lang="it">
-    Questo è il **tag** radice della tua pagina **HTML**. Tutti gli altri elementi vanno racchiusi all'interno di <**HTML**>. L'attributo lang="it" specifica la lingua della pagina (in questo caso, italiano).
+
+Questo è il **tag** radice della tua pagina **HTML**. Tutti gli altri elementi vanno racchiusi all'interno di <**HTML**>. L'attributo lang="it" specifica la lingua della pagina (in questo caso, italiano).
 
     <head>
-    Questa sezione contiene informazioni di base sulla tua pagina, che non sono visibili direttamente. All'interno di <head> puoi definire il titolo della pagina, i metadati, i link a stili CSS esterni o script JavaScript.
-        <meta charset="UTF-8">: Specifica la codifica dei caratteri, qui UTF-8, che è lo standard attuale.
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">: Aiuta a rendere la tua pagina responsive su dispositivi mobili.
-        <title>: Il titolo della tua pagina, visibile nella scheda del browser.
+
+Questa sezione contiene informazioni di base sulla tua pagina, che non sono visibili direttamente. 
+All'interno di <head> puoi definire il titolo della pagina, i metadati, i link a stili CSS esterni o script JavaScript.
+
+    <meta charset="UTF-8">: 
+
+Specifica la codifica dei caratteri, qui UTF-8, che è lo standard attuale.
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">: 
+
+Aiuta a rendere la tua pagina responsive su dispositivi mobili.
+
+    <title>: 
+
+Il titolo della tua pagina, visibile nella scheda del browser.
 
     <body>
-    Questa sezione contiene tutto ciò che è visibile sul browser. Gli elementi dentro <body> formano il contenuto principale della tua pagina.
-        <h1>: Rappresenta un titolo di primo livello. È uno degli elementi di intestazione **HTML**, dal <h1> (il titolo principale) fino a <h6>.
-        <p>: Rappresenta un paragrafo di testo.
-        <a href="https://esempio.com">: Questo è un link che, cliccato, porta l’utente a un altro sito o pagina.
+
+Questa sezione contiene tutto ciò che è visibile sul browser. Gli elementi dentro <body> formano il contenuto principale della tua pagina.
+
+    <h1> 
+
+Rappresenta un titolo di primo livello. È uno degli elementi di intestazione **HTML**, dal <h1> (il titolo principale) fino a <h6>.
+
+    <p>
+
+Rappresenta un paragrafo di testo.
+
+    <a href="https://esempio.com">
+
+ Questo è un link che, cliccato, porta l’utente a un altro sito o pagina.
 
 # Esempio Pratico: Una Pagina **HTML** Completa
 
 Ecco un esempio di una pagina **HTML** semplice che contiene vari elementi:
-```**HTML** 
-<!DOCTYPE **HTML**>
-<**HTML** lang="it">
+
+```html 
+<!DOCTYPE HTML>
+<HTML lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio di Matteo</title>
+    <title>Il mio portfolio</title>
 </head>
 <body>
     <header>
@@ -158,33 +182,51 @@ Ecco un esempio di una pagina **HTML** semplice che contiene vari elementi:
     <section id="progetti">
         <h2>I miei Progetti</h2>
         <article>
-            <h3>Progetto 1: App per la Felicità</h3>
-            <p>Questo progetto mira ad aiutare le persone a trovare la loro felicità quotidiana.</p>
+            <h3>Progetto 1: App numero 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi finibus sed metus a viverra. Cras rhoncus sodales dictum. Suspendisse sapien odio, auctor dictum magna vitae, auctor imperdiet lectus.</p>
         </article>
         <article>
-            <h3>Progetto 2: Bitcoin per Tutti</h3>
-            <p>Una **guida** pratica su come usare il Bitcoin nella vita di ogni giorno.</p>
+            <h3>Progetto 2: App numero 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi finibus sed metus a viverra. Cras rhoncus sodales dictum. Suspendisse sapien odio, auctor dictum magna vitae, auctor imperdiet lectus.</p>
         </article>
     </section>
 
     <section id="about">
         <h2>Chi sono</h2>
-        <p>Sono Matteo, sviluppatore e appassionato di Bitcoin, felicità e web design.</p>
+        <p>Sono Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi finibus sed metus a viverra. Cras rhoncus sodales dictum. Suspendisse sapien odio, auctor dictum magna vitae, auctor imperdiet lectus.</p>
     </section>
 
     <footer>
-        <p>Contattami: <a href="mailto:matteo@example.com">matteo@example.com</a></p>
+        <p>Contattami: <a href="mailto:mionome@example.com">mionome@example.com</a></p>
     </footer>
 </body>
-</**HTML**>
+</HTML>
 ```
+Puoi creare tu stesso questo esempio con un semplice file di testo salvato come index.html per poi aprirlo con il tuo browser. Dovresti visualizzare esattamente questo:
+
+![Esempio di una pagina html](/assets/images/guida_html/esempi/html_3.png)
 
 # Spiegazione aggiuntiva dell’esempio
 
-    <header>: Contiene l’intestazione della pagina, spesso con titoli e link di navigazione.
-    <nav>: Raccoglie i link di navigazione. In questo caso, i link permettono di saltare a varie sezioni della pagina.
-    <section> e <article>: Questi **tag** aiutano a suddividere la pagina in sezioni logiche. Ad esempio, <section> può rappresentare una parte della pagina (es., progetti), mentre <article> rappresenta un singolo contenuto (es., un progetto specifico).
-    <footer>: È la sezione inferiore della pagina, solitamente contenente informazioni di contatto o copyright.
+    <header> 
+
+Contiene l’intestazione della pagina, spesso con titoli e link di navigazione.
+
+    <nav>
+
+Raccoglie i link di navigazione. In questo caso, i link permettono di saltare a varie sezioni della pagina.
+
+    <section> e <article>
+
+Questi **tag** aiutano a suddividere la pagina in sezioni logiche. Ad esempio, 
+
+    <section> 
+
+può rappresentare una parte della pagina (es., progetti), mentre <article> rappresenta un singolo contenuto (es., un progetto specifico).
+
+    <footer>
+
+È la sezione inferiore della pagina, solitamente contenente informazioni di contatto o copyright.
 
 
 # Conclusione

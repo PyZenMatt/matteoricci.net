@@ -11,10 +11,15 @@ published: true
 hidden: true
 ---
 
-L'HTML (HyperText Markup Language) è il linguaggio utilizzato per strutturare e visualizzare il contenuto di una pagina web. È formato da tag e attributi che servono per costruire e personalizzare gli elementi della pagina. Partiamo dalle basi.
-Tag
+# Introduzione
+Scopri i fondamenti dell'**HTML** e inizia il tuo viaggio nel **web design!** Questo articolo esplora i **tag** e gli **attributi essenziali**, rivelando come strutturare e personalizzare le tue pagine web in modo chiaro e leggibile. 
+Impara le basi per creare un sito web solido e ottimizzato, pronto per ogni esigenza di sviluppo.
 
-Un tag è un comando racchiuso tra parentesi angolari (< >) e indica l'inizio o la fine di un elemento HTML. Di solito, ogni elemento HTML ha un tag di apertura e un tag di chiusura.
+L'**HTML** (HyperText Markup Language) è il linguaggio utilizzato per strutturare e visualizzare il contenuto di una pagina web. È formato da tag e attributi che servono per costruire e personalizzare gli elementi della pagina. Partiamo dalle basi.
+
+# Tag
+
+Un **tag** è un comando racchiuso tra parentesi angolari (< >) e indica l'inizio o la fine di un elemento HTML. Di solito, ogni elemento HTML ha un tag di apertura e un tag di chiusura.
 
 Esempio:
 
@@ -26,18 +31,20 @@ Qui, <p> è il tag di apertura e </p> è il tag di chiusura. Il contenuto tra qu
 
 # Attributi
 
-Gli attributi forniscono informazioni aggiuntive su un elemento. Vanno sempre inseriti all'interno del tag di apertura, e sono scritti come coppie nome-attributo e valore, separati da un segno uguale.
+Gli **attributi** forniscono informazioni aggiuntive su un elemento. Vanno sempre inseriti all'interno del tag di apertura, e sono scritti come coppie nome-attributo e valore, separati da un segno uguale.
 
 Esempio:
+
 ```html
 <p class="testo-evidente">Questo è un paragrafo con attributo.</p>
 ```
-Qui class="testo-evidente" è un attributo che assegna una classe al paragrafo.
-Principali Tag Strutturali
+Qui **class="testo-evidente"** è un attributo che assegna una classe al paragrafo.
+
+# Principali Tag Strutturali
 
 Vediamo ora alcuni dei tag più comuni e il loro uso.
 
-- h1 - h6
+- `<h1> - <h6>`
 
 I tag <h1> fino a <h6> sono usati per i titoli e i sottotitoli. <h1> rappresenta il titolo principale della pagina e <h6> è il livello più basso. Usarli correttamente è importante anche per l’ottimizzazione sui motori di ricerca (SEO).
 
@@ -47,7 +54,7 @@ Esempio:
 <h2>Sottotitolo</h2>
 <h3>Sezione del Sottotitolo</h3>
 ```
-- p
+- `<p>`
 
 Il tag <p> serve per creare un paragrafo. È uno dei tag più semplici e usati per il testo normale.
 
@@ -55,7 +62,7 @@ Esempio:
 ```html
 <p>Questo è un paragrafo di testo.</p>
 ```
-- div
+- `<div>`
 
 Il tag <div> è un contenitore generico usato per raggruppare altri elementi. È spesso utilizzato per scopi di layout e di stile (CSS).
 
@@ -67,7 +74,7 @@ Esempio:
   <p>Testo dentro un div.</p>
 </div>
 ```
-- span
+- `<span>`
 
 Il tag <span> è simile a <div>, ma è un contenitore inline, quindi non crea un'interruzione di linea come fa <div>. Viene usato per applicare stili a una parte specifica di testo all'interno di un paragrafo.
 
@@ -75,7 +82,7 @@ Esempio:
 ```html
 <p>Questo è un testo con una parola <span style="color:red;">evidenziata</span>.</p>
 ```
-- br
+- `<br>`
 
 Il tag <br> rappresenta un'interruzione di linea. È un tag singolo (non ha un tag di chiusura) e crea una nuova linea all'interno del testo.
 
@@ -83,9 +90,9 @@ Esempio:
 ```html
 <p>Questo è un testo su due righe.<br>Questa è la seconda linea.</p>
 ```
-- hr
+- `<hr>`
 
-Il tag <hr> inserisce una linea orizzontale che viene spesso usata per separare sezioni del contenuto. Anche questo è un tag singolo.
+Il tag `<hr>` inserisce una linea orizzontale che viene spesso usata per separare sezioni del contenuto. Anche questo è un tag singolo.
 ```html
 Esempio:
 
@@ -128,6 +135,12 @@ Sotto nell'immagine puoi vedere l'esempio viene visualizzato nel browser
 
 Conclusione
 
-Comprendere gli elementi fondamentali dell'HTML è il primo passo per diventare un esperto nello sviluppo web. Con i tag e gli attributi di base, si può costruire la struttura di qualsiasi pagina e fornire le basi per aggiungere stili e interattività. Se vuoi continuare a imparare, esplora risorse avanzate o consulta le nostre guide[Capitolo 3]({{ site.baseurl }}/testo-e-formattazione/): "Testo e formattazione" per migliorare le tue competenze e scoprire nuovi strumenti per il web design. Con una solida conoscenza di HTML, sarai pronto per affrontare le sfide dello sviluppo e creare siti web accattivanti e funzionali. 
+Comprendere gli elementi fondamentali dell'**HTML** è il primo passo per diventare un esperto nello sviluppo web. 
+
+Con i **tag** e gli **attributi** di base, si può costruire la struttura di qualsiasi pagina e fornire le basi per aggiungere stili e interattività. 
+
+Se vuoi continuare a imparare, esplora risorse avanzate o consulta la mia guida [Testo e formattazione]({{ site.baseurl }}/testo-e-formattazione/): "Testo e formattazione" per migliorare le tue competenze e scoprire nuovi strumenti per il web design. 
+
+Con una solida conoscenza di HTML, sarai pronto per affrontare le sfide dello sviluppo e creare siti web accattivanti e funzionali. 
 
 [Capitolo 3]({{ site.baseurl }}/testo-e-formattazione/): "Testo e formattazione"

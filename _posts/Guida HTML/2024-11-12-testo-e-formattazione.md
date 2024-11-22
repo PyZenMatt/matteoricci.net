@@ -12,7 +12,7 @@ hidden: true
 
 Partiamo dalle basi e analizziamo con cura ogni tag per la formattazione del testo e le liste in HTML. Immagina che HTML sia come uno strumento per dare struttura al testo, mentre i tag di formattazione e liste servono per dare uno stile e una gerarchia visiva. Vediamo ogni tag nel dettaglio.
 
-Tag per la Formattazione del Testo:
+# Tag per la Formattazione del Testo:
 
 ```html
     <strong> e <b>
@@ -25,11 +25,11 @@ Esempio:
 <strong>Testo importante</strong>
 <b>Testo in grassetto senza enfasi</b>
 ```
-- em - i
+- `<em>` - `<i>`
 
-em: Sta per "emphasis" e indica un'enfasi leggera su una parola o frase. Di solito viene reso in corsivo e viene interpretato dai lettori di schermo per sottolineare il significato.
+- `<em>`: Sta per "emphasis" e indica un'enfasi leggera su una parola o frase. Di solito viene reso in corsivo e viene interpretato dai lettori di schermo per sottolineare il significato.
 
-- i: Applica il corsivo ma non ha alcun significato semantico, quindi è solo per lo stile, senza enfasi.
+- `<i>`: Applica il corsivo ma non ha alcun significato semantico, quindi è solo per lo stile, senza enfasi.
 
 Esempio:
 
@@ -39,7 +39,7 @@ Esempio:
 ```
 - u
 
-u: Applica una sottolineatura al testo. È usato raramente oggi, ma può servire in casi specifici, per esempio quando si vuole evidenziare qualcosa senza usarlo per link o enfasi.
+- `<u>`: Applica una sottolineatura al testo. È usato raramente oggi, ma può servire in casi specifici, per esempio quando si vuole evidenziare qualcosa senza usarlo per link o enfasi.
 
 
 Esempio:
@@ -48,18 +48,14 @@ Esempio:
 <u>Testo sottolineato</u>
 ```
 
-- small
-
-small: Riduce la dimensione del testo. È comunemente usato per note a margine o commenti che devono risultare meno prominenti rispetto al testo principale.
+- `<small>`: Riduce la dimensione del testo. È comunemente usato per note a margine o commenti che devono risultare meno prominenti rispetto al testo principale.
 
 Esempio:
 
 ```html
 <small>Testo meno importante o nota</small>
 ```
-- mark
-
-mark: Evidenzia il testo come se fosse passato con un evidenziatore, per mettere in risalto un contenuto specifico. Di solito viene reso con uno sfondo giallo o altro colore chiaro.
+- `<mark>`: Evidenzia il testo come se fosse passato con un evidenziatore, per mettere in risalto un contenuto specifico. Di solito viene reso con uno sfondo giallo o altro colore chiaro.
 
 Esempio:
 
@@ -68,16 +64,16 @@ Esempio:
 ```
 ### Liste in HTML
 
-In HTML, abbiamo due tipi principali di liste: ordinate e non ordinate. Vediamole.
+In **HTML**, abbiamo due tipi principali di liste: ordinate e non ordinate. Vediamole.
 
-- Liste non ordinate (<ul>)
+- Liste non ordinate (`<ul>`)
 
 Una lista non ordinata usa un elenco puntato. Ogni elemento della lista è un punto separato, senza una sequenza numerica.
 
 Tag utilizzati:
             
-ul: Racchiude l'intera lista non ordinata.
-li: Ogni elemento della lista è definito con questo tag.
+- `<ul>`: Racchiude l'intera lista non ordinata.
+- `<li>`: Ogni elemento della lista è definito con questo tag.
 
 Esempio:
 
@@ -94,13 +90,13 @@ Questo produrrà:
     Elemento due
     Elemento tre
 
-- Liste ordinate (<ol>)
+- Liste ordinate (`<ol>`)
 
 Una lista ordinata ha una sequenza numerica per ogni elemento, perfetta per elenchi che seguono un ordine logico o di importanza.
 
 Tag utilizzati:
-        ol: Racchiude l'intera lista ordinata.
-        li: Definisce ogni elemento della lista.
+        `<ol>`: Racchiude l'intera lista ordinata.
+        `<li>`: Definisce ogni elemento della lista.
 
 Esempio:
 
@@ -211,6 +207,10 @@ Ed ecco come verrebbe visualizzato in qualsiasi browser:
 
 
 ### Conclusione
-In questo articolo, abbiamo esplorato i principali tag per la formattazione del testo in HTML, come <strong>, <em>, <b>, e altri elementi fondamentali per rendere il contenuto web accessibile e visivamente strutturato. La conoscenza di queste basi permette di creare pagine web che non solo rispettano gli standard di leggibilità e accessibilità, ma che sono anche ottimizzate per i motori di ricerca. Implementando queste best practice, i tuoi contenuti saranno meglio interpretati dai crawler, migliorando così il posizionamento nei risultati di ricerca. Continua a sperimentare con i vari tag e a testare le tue pagine per ottenere il massimo dall'HTML e far risaltare i tuoi progetti web. 
+In questo articolo, abbiamo esplorato i principali tag per la formattazione del testo in HTML, come `<strong>`, `<em>`, `<b>`, e altri elementi fondamentali per rendere il contenuto web accessibile e visivamente strutturato. 
+
+La conoscenza di queste basi permette di creare pagine web che non solo rispettano gli standard di leggibilità e accessibilità, ma che sono anche ottimizzate per i motori di ricerca. 
+
+Implementando queste best practice, i tuoi contenuti saranno meglio interpretati dai crawler, migliorando così il posizionamento nei risultati di ricerca. Continua a sperimentare con i vari tag e a testare le tue pagine per ottenere il massimo dall'**HTML** e far risaltare i tuoi progetti web. 
 
 [Capitolo 4]({{ site.baseurl }}/link-e-immagini/): "Link e Immagini"

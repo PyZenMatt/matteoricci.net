@@ -1,0 +1,175 @@
+I"A&<p>L’<strong>HTML</strong> (HyperText Markup Language) è il linguaggio utilizzato per strutturare e visualizzare il contenuto di una pagina web. È formato da tag e attributi che servono per costruire e personalizzare gli elementi della pagina. Partiamo dalle basi.</p>
+
+<h1 id="tag">Tag</h1>
+
+<p>Un <strong>tag</strong> è un comando racchiuso tra parentesi angolari (&lt; &gt;) e indica l’inizio o la fine di un elemento HTML. Di solito, ogni elemento HTML ha un tag di apertura e un tag di chiusura.</p>
+
+<p>Esempio:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;p&gt;</span>Questo è un paragrafo.<span class="nt">&lt;/p&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Qui, &lt;p&gt; è il tag di apertura e &lt;/p&gt; è il tag di chiusura. Il contenuto tra questi due tag è il testo che sarà visualizzato nel browser.</p>
+
+<h1 id="attributi">Attributi</h1>
+
+<p>Gli <strong>attributi</strong> forniscono informazioni aggiuntive su un elemento. Vanno sempre inseriti all’interno del tag di apertura, e sono scritti come coppie nome-attributo e valore, separati da un segno uguale.</p>
+
+<p>Esempio:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"testo-evidente"</span><span class="nt">&gt;</span>Questo è un paragrafo con attributo.<span class="nt">&lt;/p&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Qui <strong>class=”testo-evidente”</strong> è un attributo che assegna una classe al paragrafo.</p>
+
+<h1 id="principali-tag-strutturali">Principali Tag Strutturali</h1>
+
+<p>Vediamo ora alcuni dei tag più comuni e il loro uso.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">&lt;h1&gt; - &lt;h6&gt;</code></li>
+</ul>
+
+<p>I tag &lt;h1&gt; fino a &lt;h6&gt; sono usati per i titoli e i sottotitoli. &lt;h1&gt; rappresenta il titolo principale della pagina e &lt;h6&gt; è il livello più basso. Usarli correttamente è importante anche per l’ottimizzazione sui motori di ricerca (SEO).</p>
+
+<p>Esempio:</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;h1&gt;</span>Titolo Principale<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h2&gt;</span>Sottotitolo<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3&gt;</span>Sezione del Sottotitolo<span class="nt">&lt;/h3&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">&lt;p&gt;</code></li>
+</ul>
+
+<p>Il tag &lt;p&gt; serve per creare un paragrafo. È uno dei tag più semplici e usati per il testo normale.</p>
+
+<p>Esempio:</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;p&gt;</span>Questo è un paragrafo di testo.<span class="nt">&lt;/p&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">&lt;div&gt;</code></li>
+</ul>
+
+<p>Il tag &lt;div&gt; è un contenitore generico usato per raggruppare altri elementi. È spesso utilizzato per scopi di layout e di stile (CSS).</p>
+
+<p>Esempio:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;div&gt;</span>
+  <span class="nt">&lt;h2&gt;</span>Sezione in un Div<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Testo dentro un div.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">&lt;span&gt;</code></li>
+</ul>
+
+<p>Il tag <span> è simile a &lt;div&gt;, ma è un contenitore inline, quindi non crea un’interruzione di linea come fa &lt;div&gt;. Viene usato per applicare stili a una parte specifica di testo all’interno di un paragrafo.</span></p>
+
+<p>Esempio:</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;p&gt;</span>Questo è un testo con una parola <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"color:red;"</span><span class="nt">&gt;</span>evidenziata<span class="nt">&lt;/span&gt;</span>.<span class="nt">&lt;/p&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">&lt;br&gt;</code></li>
+</ul>
+
+<p>Il tag <br /> rappresenta un’interruzione di linea. È un tag singolo (non ha un tag di chiusura) e crea una nuova linea all’interno del testo.</p>
+
+<p>Esempio:</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;p&gt;</span>Questo è un testo su due righe.<span class="nt">&lt;br&gt;</span>Questa è la seconda linea.<span class="nt">&lt;/p&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">&lt;hr&gt;</code></li>
+</ul>
+
+<p>Il tag &lt;hr&gt; inserisce una linea orizzontale che viene spesso usata per separare sezioni del contenuto. Anche questo è un tag singolo.</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre>Esempio:
+
+<span class="nt">&lt;h2&gt;</span>Sezione 1<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;p&gt;</span>Contenuto della sezione 1.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;hr&gt;</span>
+<span class="nt">&lt;h2&gt;</span>Sezione 2<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;p&gt;</span>Contenuto della sezione 2.<span class="nt">&lt;/p&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Esempio Completo</p>
+
+<p>Ecco un esempio che mette insieme i tag che abbiamo visto:</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+</pre></td><td class="rouge-code"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Esempio HTML Base<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+
+  <span class="nt">&lt;h1&gt;</span>Benvenuto al mio sito!<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Questo è un paragrafo introduttivo.<span class="nt">&lt;/p&gt;</span>
+
+  <span class="nt">&lt;h2&gt;</span>Sezione Principale<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;div&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Questo è un contenuto di esempio in un div.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Questa frase contiene una <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"color:blue;"</span><span class="nt">&gt;</span>parola evidenziata<span class="nt">&lt;/span&gt;</span> in blu.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;hr&gt;</span>
+
+  <span class="nt">&lt;h3&gt;</span>Conclusione<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Grazie per aver visitato il sito!<span class="nt">&lt;br&gt;</span>Arrivederci!<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Sotto nell’immagine puoi vedere l’esempio viene visualizzato nel browser
+<img src="/assets/images/guida_html/esempi/html_1.png" alt="Esempio degli elementi di base html" /></p>
+
+<p>Conclusione</p>
+
+<p>Comprendere gli elementi fondamentali dell’<strong>HTML</strong> è il primo passo per diventare un esperto nello sviluppo web.</p>
+
+<p>Con i <strong>tag</strong> e gli <strong>attributi</strong> di base, si può costruire la struttura di qualsiasi pagina e fornire le basi per aggiungere stili e interattività.</p>
+
+<p>Se vuoi continuare a imparare, esplora risorse avanzate o consulta la mia guida<a href="/testo-e-formattazione/">Capitolo 3</a>: “Testo e formattazione” per migliorare le tue competenze e scoprire nuovi strumenti per il web design.</p>
+
+<p>Con una solida conoscenza di HTML, sarai pronto per affrontare le sfide dello sviluppo e creare siti web accattivanti e funzionali.</p>
+
+<p><a href="/testo-e-formattazione/">Capitolo 3</a>: “Testo e formattazione”</p>
+:ET

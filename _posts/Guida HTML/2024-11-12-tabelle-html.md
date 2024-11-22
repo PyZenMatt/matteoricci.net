@@ -11,7 +11,9 @@ Introduzione a HTML: Creare le Fondamenta del Web
 hidden: true
 ---
 
-In HTML, le tabelle sono create usando una struttura specifica di tag che organizzano dati in righe e colonne. Ecco una guida dettagliata su come funzionano i vari elementi per costruire una tabella:
+In **HTML**, le **tabelle** sono create usando una struttura specifica di tag che organizzano dati in righe e colonne. 
+
+Ecco la guida dettagliata su come funzionano i vari elementi per costruire una tabella:
 
 ### Tag di base per le Tabelle HTML
 
@@ -57,7 +59,7 @@ In HTML, le tabelle sono create usando una struttura specifica di tag che organi
 
 ### Strutturare una Tabella con le Sezioni
 
-Per rendere la struttura della tabella più chiara e facilitare la lettura, HTML permette di organizzare le tabelle in tre sezioni principali:
+Per rendere la struttura della tabella più chiara e facilitare la lettura, **HTML** permette di organizzare le tabelle in tre sezioni principali:
 
 1. **`<thead>` (Table Head)**: Contiene le righe di intestazione della tabella (spesso `<th>`). Solitamente include una sola riga che descrive le colonne della tabella.
 
@@ -97,7 +99,7 @@ Per rendere la struttura della tabella più chiara e facilitare la lettura, HTML
 
 3. **`<tfoot>` (Table Footer)**: Di solito contiene i riepiloghi o le note finali della tabella, posizionandosi alla fine della tabella.
 
-   ```html
+```html
    <table>
        <thead>
            <tr>
@@ -118,7 +120,7 @@ Per rendere la struttura della tabella più chiara e facilitare la lettura, HTML
            </tr>
        </tfoot>
    </table>
-   ```
+```
 
 ### Esempio Completo di Tabella HTML
 
@@ -164,8 +166,7 @@ In questo esempio:
 - **`colspan`**: Questo attributo permette di unire celle orizzontalmente. Ad esempio, `<td colspan="2">` permette a una cella di occupare due colonne.
 - **`rowspan`**: Simile a `colspan`, questo attributo permette a una cella di espandersi verticalmente su più righe.
 
-
-
+# Conclusione
 Con questi elementi, puoi creare una tabella ben organizzata e facile da leggere, utile per presentare dati in modo chiaro e ordinato sul web.
 
 [Capitolo 7]({{ site.baseurl }}/form-html/): "I form in HTML"

@@ -16,6 +16,7 @@ Il tag `<iframe>` (inline frame) consente di integrare contenuti di una pagina e
 ### Struttura base di `<iframe>`
 
 Ecco un esempio base di come utilizzare `<iframe>`:
+
 ```html
 <iframe src="URL_del_contenuto" width="larghezza" height="altezza" title="descrizione del contenuto"></iframe>
 ```
@@ -27,13 +28,16 @@ I principali attributi sono:
 ### Esempi di utilizzo
 
 1. **Incorporare un video di YouTube**:
+
    ```html
    <iframe width="560" height="315" src="https://www.youtube.com/embed/ID_VIDEO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
    ```
    - `src`: sostituisci `ID_VIDEO` con l’ID del video di YouTube.
    - `allowfullscreen`: consente all'utente di espandere il video a schermo intero.
+   ```
 
 2. **Incorporare una mappa di Google Maps**:
+
    ```html
    <iframe src="https://www.google.com/maps/embed?pb=ID_MAPPA" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
    ```

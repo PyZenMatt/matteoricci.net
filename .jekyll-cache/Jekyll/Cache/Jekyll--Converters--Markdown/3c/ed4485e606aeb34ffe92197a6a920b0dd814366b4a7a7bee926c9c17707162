@@ -1,0 +1,213 @@
+I"�=<h1 id="introduzione">Introduzione</h1>
+<p>Benvenuti nella <strong>guida</strong> introduttiva a <strong>HTML</strong>, il linguaggio di markup che sta alla base di ogni pagina web. Se volete imparare a creare un sito o semplicemente capire il funzionamento delle pagine che visitate, questo è il posto giusto! Scopriamo insieme come <strong>HTML</strong> (HyperText Markup Language) crea la <strong>struttura</strong> delle pagine web e impariamo a usarlo efficacemente.
+Cos’è <strong>HTML</strong>?</p>
+
+<p><strong>HTML</strong> è un linguaggio di markup utilizzato per definire la <strong>struttura</strong> di una pagina web. A differenza di linguaggi come Python o JavaScript, <strong>HTML</strong> non esegue calcoli o logiche complesse ma determina come il contenuto viene presentato nella pagina. In <strong>HTML</strong>, ogni elemento è racchiuso in <strong>tag</strong>, come titoli, paragrafi, immagini, link, ecc.
+<strong>struttura</strong> di Base di una Pagina <strong>HTML</strong></p>
+
+<p>Con le basi di questo tutorial <strong>HTML</strong>, potete già creare e personalizzare una semplice pagina web! La pratica è essenziale: continuate a sperimentare con nuovi <strong>tag</strong> e layout per scoprire tutte le possibilità. Buon divertimento e buona fortuna nel mondo del web!</p>
+
+<h2 id="struttura-delle-pagine-web">Struttura delle Pagine Web</h2>
+<p>L’<strong>HTML</strong> (HyperText Markup Language) è il linguaggio principale per la creazione di pagine web. Esploreremo i suoi <strong>tag</strong> fondamentali e come utilizzarli.</p>
+
+<h2 id="elementi-chiave-dellhtml">Elementi Chiave dell’HTML</h2>
+<ul>
+  <li><strong>Tag</strong>: I mattoni dell’HTML.</li>
+  <li><strong>Struttura</strong>: Come organizzare il codice.</li>
+  <li><strong>Best Practice</strong>: Scrivere codice chiaro e ottimizzato.</li>
+</ul>
+
+<h2 id="introduzione-allhtml">Introduzione all’<strong>HTML</strong></h2>
+<ul>
+  <li><a href="/introduzione-e-capitolo-1/">Cosa è <strong>HTML</strong> e come funziona nel contesto del web.</a></li>
+  <li><a href="/introduzione-e-capitolo-1/"><strong>struttura</strong> di base di una pagina <strong>HTML</strong></a> (<code class="language-plaintext highlighter-rouge">&lt;!DOCTYPE **HTML**&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;**HTML**&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;body&gt;</code>).</li>
+</ul>
+
+<h2 id="elementi-di-base-html">Elementi di base <strong>HTML</strong></h2>
+<ul>
+  <li><a href="/elementi-di-base/"><strong>tag</strong> e attributi</a></li>
+  <li><a href="/elementi-di-base/">Principali <strong>tag</strong> strutturali</a>: <code class="language-plaintext highlighter-rouge">&lt;h1&gt;</code> - <code class="language-plaintext highlighter-rouge">&lt;h6&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;span&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;br&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;hr&gt;</code></li>
+</ul>
+
+<h2 id="testo-e-formattazione">Testo e formattazione</h2>
+<ul>
+  <li><a href="/testo-e-formattazione/"><strong>tag</strong> per la formattazione del testo</a>: <code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;b&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;i&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;u&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;small&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;mark&gt;</code>.</li>
+  <li><a href="/testo-e-formattazione/">Liste</a>: <code class="language-plaintext highlighter-rouge">&lt;ul&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;ol&gt;</code>,<code class="language-plaintext highlighter-rouge">&lt;li&gt;</code>./</li>
+</ul>
+
+<h2 id="link-e-immagini">Link e immagini</h2>
+<ul>
+  <li><a href="/link-e-immagini/">Creare collegamenti ipertestuali con</a> <code class="language-plaintext highlighter-rouge">&lt;a href=""&gt;</code></li>
+  <li><a href="/link-e-immagini/">Inserire immagini con <code class="language-plaintext highlighter-rouge">&lt;img src="" alt=""&gt;</code> e proprietà per gestire dimensioni e testo alternativo.</a></li>
+</ul>
+
+<h2 id="formattazione-semantica">Formattazione semantica</h2>
+<ul>
+  <li><a href="/formattazione-semantica/">Uso dei <strong>tag</strong> semantici</a>: <code class="language-plaintext highlighter-rouge">&lt;header&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;footer&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;nav&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;section&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;article&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;aside&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;main&gt;</code>.</li>
+</ul>
+
+<h2 id="tabelle-html">Tabelle <strong>HTML</strong></h2>
+<ul>
+  <li><a href="/tabelle-**HTML**/">Creazione di tabelle con</a> <code class="language-plaintext highlighter-rouge">&lt;table&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;tr&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;td&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;th&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;thead&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;tbody&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;tfoot&gt;</code>.</li>
+</ul>
+
+<h2 id="form-html">Form <strong>HTML</strong></h2>
+<ul>
+  <li><a href="/form-**HTML**/"><strong>struttura</strong> di base dei form con</a> <code class="language-plaintext highlighter-rouge">&lt;form&gt;</code>.</li>
+  <li><a href="/form-**HTML**/">Tipi di input e controllo degli utenti</a>: <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;label&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;select&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;textarea&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;button&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;option&gt;</code>.</li>
+  <li><a href="/form-**HTML**/">Attributi come name, id, value, placeholder, required, action, method.</a></li>
+</ul>
+
+<h2 id="attributi-globali">Attributi globali</h2>
+<ul>
+  <li><a href="/attributi-globali/">Attributi che possono essere usati su qualsiasi elemento <strong>HTML</strong></a>: id, class, style, title, lang, data-* (per dati personalizzati).</li>
+</ul>
+
+<h2 id="multimedia-in-html">Multimedia in <strong>HTML</strong></h2>
+<ul>
+  <li><a href="/multimedia-in-**HTML**/">Inserire audio e video</a>: <code class="language-plaintext highlighter-rouge">&lt;audio&gt;</code> e <code class="language-plaintext highlighter-rouge">&lt;video&gt;</code>.</li>
+  <li><a href="/multimedia-in-**HTML**/">Attributi per gestire il comportamento dei media</a>: controls, autoplay, loop, muted.</li>
+</ul>
+
+<h2 id="incorporazione-di-altri-contenuti">Incorporazione di altri contenuti</h2>
+<ul>
+  <li><a href="/incorporazione-di-altri-contenuti/">Incorporare contenuti esterni come mappe o video con</a> <code class="language-plaintext highlighter-rouge">&lt;iframe&gt;</code>.</li>
+</ul>
+
+<h2 id="accessibilità-in-html">Accessibilità in <strong>HTML</strong></h2>
+<ul>
+  <li><a href="/accessibilita/">Best practices per rendere il contenuto accessibile</a>: alt nelle immagini, aria-* attributes.</li>
+</ul>
+
+<h2 id="html-e-seo-search-engine-optimization"><strong>HTML</strong> e SEO (Search Engine Optimization)</h2>
+<ul>
+  <li><a href="/**HTML**-e-seo/">Come usare <strong>HTML</strong> per migliorare la SEO come meta <strong>tag</strong></a>: <code class="language-plaintext highlighter-rouge">&lt;meta&gt;</code>, descrizioni, parole chiave.</li>
+  <li><a href="/**HTML**-e-seo/">Importanza della <strong>struttura</strong> semantica per il ranking</a></li>
+</ul>
+
+<h2 id="validazione-e-strumenti-per-html">Validazione e strumenti per <strong>HTML</strong></h2>
+<ul>
+  <li><a href="/validazione/">Strumenti per la validazione e il debugging dell’<strong>HTML</strong></a></li>
+  <li><a href="/validazione/">Editor consigliati per lavorare con <strong>HTML</strong></a></li>
+  <li><a href="/validazione/">Visual Studio Code, Atom, Sublime Text</a></li>
+</ul>
+
+<h2 id="html5-avanzato">HTML5 Avanzato</h2>
+<ul>
+  <li><a href="/html5/">Canvas</a>: <code class="language-plaintext highlighter-rouge">&lt;canvas&gt;</code> per la grafica dinamica.</li>
+  <li><a href="/html5/">API avanzate</a></li>
+  <li><a href="/html5/">Geolocalizzazione, storage locale (localStorage, sessionStorage)</a></li>
+</ul>
+
+<p>Questi argomenti ti permetteranno di apprendere <strong>HTML</strong> con una progressione logica, partendo dai concetti base fino ad arrivare a quelli avanzati.</p>
+
+<h1 id="cosa-è-html-e-come-funziona-nel-contesto-del-web">Cosa è <strong>HTML</strong> e come funziona nel contesto del web.</h1>
+<p><img class="" src="" alt="" />
+<strong>HTML</strong> (HyperText Markup Language) è il linguaggio di markup principale per la creazione di pagine web. Esso fornisce la <strong>struttura</strong> e il contenuto di base delle pagine, come il testo, le immagini, i link, e stabilisce come questi elementi devono apparire e comportarsi in un browser.
+Cos’è <strong>HTML</strong> e come funziona</p>
+
+<p><strong>HTML</strong> utilizza una serie di <strong>tag</strong> per definire i diversi tipi di contenuto che vuoi includere in una pagina. I <strong>tag</strong> sono delle parole chiave racchiuse tra parentesi angolari &lt; &gt;, e ogni elemento di <strong>HTML</strong> inizia con un <strong>tag</strong> di apertura e si chiude con un <strong>tag</strong> di chiusura. Per esempio, un paragrafo si rappresenta con &lt;p&gt; all’inizio e &lt;/p&gt; alla fine.</p>
+
+<p>Questi <strong>tag</strong> permettono di descrivere vari elementi, come titoli, paragrafi, immagini, link, e formati di testo. Inoltre, <strong>HTML</strong> include una serie di attributi che aggiungono informazioni extra ai <strong>tag</strong>, come il colore o la dimensione di un testo.
+<strong>struttura</strong> di base di una pagina <strong>HTML</strong></p>
+
+<p>La <strong>struttura</strong> di una pagina <strong>HTML</strong> è abbastanza semplice. Ecco uno schema di base, seguito da una spiegazione:</p>
+<pre><code class="language-**HTML**">&lt;!DOCTYPE **HTML**&gt;
+&lt;**HTML** lang="it"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;La Mia Pagina Web&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Benvenuto alla mia pagina!&lt;/h1&gt;
+    &lt;p&gt;Questo è un esempio di paragrafo nella mia pagina **HTML**.&lt;/p&gt;
+    &lt;a href="https://esempio.com"&gt;Visita questo sito&lt;/a&gt;
+&lt;/body&gt;
+&lt;/**HTML**&gt;
+</code></pre>
+<h1 id="spiegazione-dei-vari-elementi">Spiegazione dei vari elementi</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>&lt;!DOCTYPE **HTML**&gt;
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Questo è il dichiarativo del documento e indica al browser che stiamo usando HTML5, la versione più recente del linguaggio. È essenziale per garantire che la pagina venga interpretata correttamente.</p>
+
+<p>&lt;<strong>HTML</strong> lang=”it”&gt;
+Questo è il <strong>tag</strong> radice della tua pagina <strong>HTML</strong>. Tutti gli altri elementi vanno racchiusi all’interno di &lt;<strong>HTML</strong>&gt;. L’attributo lang=”it” specifica la lingua della pagina (in questo caso, italiano).</p>
+
+<head>
+Questa sezione contiene informazioni di base sulla tua pagina, che non sono visibili direttamente. All'interno di <head> puoi definire il titolo della pagina, i metadati, i link a stili CSS esterni o script JavaScript.
+<meta charset="UTF-8" />: Specifica la codifica dei caratteri, qui UTF-8, che è lo standard attuale.
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />: Aiuta a rendere la tua pagina responsive su dispositivi mobili.
+<title>: Il titolo della tua pagina, visibile nella scheda del browser.
+
+<body>
+Questa sezione contiene tutto ciò che è visibile sul browser. Gli elementi dentro <body> formano il contenuto principale della tua pagina.
+<h1>: Rappresenta un titolo di primo livello. È uno degli elementi di intestazione **HTML**, dal <h1> (il titolo principale) fino a <h6>.
+<p>: Rappresenta un paragrafo di testo.
+<a href="https://esempio.com">: Questo è un link che, cliccato, porta l’utente a un altro sito o pagina.
+
+# Esempio Pratico: Una Pagina **HTML** Completa
+
+Ecco un esempio di una pagina **HTML** semplice che contiene vari elementi:
+```**HTML** 
+&lt;!DOCTYPE **HTML**&gt;
+&lt;**HTML** lang="it"&gt;
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio di Matteo</title>
+</head>
+<body>
+    <header>
+        <h1>Benvenuti nel mio Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#progetti">Progetti</a></li>
+                <li><a href="#about">Chi sono</a></li>
+                <li><a href="#contatti">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="progetti">
+        <h2>I miei Progetti</h2>
+        <article>
+            <h3>Progetto 1: App per la Felicità</h3>
+            <p>Questo progetto mira ad aiutare le persone a trovare la loro felicità quotidiana.</p>
+        </article>
+        <article>
+            <h3>Progetto 2: Bitcoin per Tutti</h3>
+            <p>Una **guida** pratica su come usare il Bitcoin nella vita di ogni giorno.</p>
+        </article>
+    </section>
+
+    <section id="about">
+        <h2>Chi sono</h2>
+        <p>Sono Matteo, sviluppatore e appassionato di Bitcoin, felicità e web design.</p>
+    </section>
+
+    <footer>
+        <p>Contattami: <a href="mailto:matteo@example.com">matteo@example.com</a></p>
+    </footer>
+</body>
+&lt;/**HTML**&gt;
+```
+
+# Spiegazione aggiuntiva dell’esempio
+
+    <header>: Contiene l’intestazione della pagina, spesso con titoli e link di navigazione.
+    <nav>: Raccoglie i link di navigazione. In questo caso, i link permettono di saltare a varie sezioni della pagina.
+    <section> e <article>: Questi **tag** aiutano a suddividere la pagina in sezioni logiche. Ad esempio, <section> può rappresentare una parte della pagina (es., progetti), mentre <article> rappresenta un singolo contenuto (es., un progetto specifico).
+    <footer>: È la sezione inferiore della pagina, solitamente contenente informazioni di contatto o copyright.
+
+
+# Conclusione
+
+**HTML** è quindi la base di tutte le pagine web: fornisce la **struttura** e organizza i contenuti. Ogni elemento è creato per essere semplice e leggibile e costituisce il "blocco" su cui si costruiscono tutte le interfacce web, in combinazione con CSS per la presentazione e JavaScript per le interazioni.
+
+[Vai al capitolo 2](/elementi-di-base/)
+</footer></article></section></article></section></nav></header></a></p></h6></h1></h1></body></body></title></head></head>
+:ET
