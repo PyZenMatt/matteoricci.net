@@ -1,0 +1,138 @@
+I"d<h1 id="introduzione">Introduzione</h1>
+
+<p>Benvenuti nella nostra guida introduttiva a Git e al versionamento del codice. Questo articolo è il punto di partenza ideale per chiunque desideri comprendere e utilizzare Git, uno degli strumenti più potenti per il controllo di versione disponibile oggi. Da professionisti esperti a principianti nel mondo della programmazione, questa guida coprirà tutti gli aspetti essenziali di Git, partendo dalle basi fino a tecniche più avanzate.</p>
+
+<p>Scopriremo cos’è Git e perché è diventato lo standard de facto nel controllo di versione dei progetti software. Imparerai a installare e configurare Git sul tuo sistema operativo, gestire i tuoi repository locali e remoti, e utilizzare i comandi essenziali per monitorare e consolidare le tue modifiche. Approfondiremo anche il lavoro con i branch per migliorare la gestione delle versioni e esploreremo le strategie per risolvere conflitti che possono emergere durante il merge.</p>
+
+<p>Non solo, ma ti mostreremo anche come integrare Git con GitHub, un servizio cloud che facilita la collaborazione tra sviluppatori. Attraverso esempi pratici, ti guideremo nella creazione e gestione di pull request, nell’uso di comandi avanzati per ottimizzare il tuo flusso di lavoro, e nell’impiego di tecniche di automazione e integrazione per rendere i tuoi progetti più efficienti e scalabili.</p>
+
+<p>Con questa guida, ti forniremo tutte le conoscenze necessarie per iniziare a utilizzare Git con sicurezza, migliorare la collaborazione con il tuo team e portare il tuo lavoro di sviluppo al livello successivo. Sia che tu sia un novizio desideroso di imparare, sia un esperto che cerca di affinare le proprie competenze, troverai risorse preziose per padroneggiare Git e GitHub. Preparati a trasformare il modo in cui gestisci i tuoi progetti software con questa guida completa.</p>
+
+<ol>
+  <li>
+    <p>Che cos’è Git?</p>
+
+    <ul>
+      <li>Introduzione a Git: definizione e concetti fondamentali.</li>
+      <li>Perché utilizzare Git nel controllo di versione dei progetti.</li>
+      <li>Differenza tra Git e altri strumenti di versionamento.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Installare e configurare Git</p>
+
+    <ul>
+      <li>Come installare Git su Windows, macOS e Linux.</li>
+      <li>Configurare nome utente ed email per i commit.</li>
+      <li>I comandi essenziali per configurare Git: git config.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Repository: Cosa sono e come crearli</p>
+
+    <ul>
+      <li>Differenza tra repository locale e repository remoto.</li>
+      <li>Come creare un nuovo repository con git init.</li>
+      <li>Clonare un repository esistente con git clone.</li>
+    </ul>
+  </li>
+  <li>
+    <p>I comandi Git di base</p>
+
+    <ul>
+      <li>Aggiungere modifiche con git add.</li>
+      <li>Salvare modifiche con git commit.</li>
+      <li>Controllare lo stato con git status.</li>
+      <li>Vedere la cronologia con git log.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Gestione dei rami (Branching)</p>
+
+    <ul>
+      <li>Cosa sono i branch e perché sono utili.</li>
+      <li>Creare un branch con git branch.</li>
+      <li>Passare a un altro branch con git checkout.</li>
+      <li>Unire i branch con git merge.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Risolvere conflitti</p>
+
+    <ul>
+      <li>Come identificare e risolvere conflitti durante il merge.</li>
+      <li>Strategie per evitare conflitti.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Collegare GitHub a Git</p>
+
+    <ul>
+      <li>Cos’è GitHub e perché usarlo.</li>
+      <li>Come creare un repository remoto su GitHub.</li>
+      <li>Collegare il repository locale a quello remoto.</li>
+      <li>Push e pull: gestire i file tra locale e remoto.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Lavorare in team con GitHub</p>
+
+    <ul>
+      <li>Creare e gestire pull request su GitHub.</li>
+      <li>Revisione del codice e gestione dei commenti.</li>
+      <li>Strategie di collaborazione su progetti open source.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Comandi avanzati di Git</p>
+
+    <ul>
+      <li>Uso di git stash per salvare modifiche temporanee.</li>
+      <li>Revert e reset: differenze e applicazioni.</li>
+      <li>Uso di git rebase per riorganizzare i commit.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Gestione delle chiavi SSH</p>
+
+    <ul>
+      <li>Perché è utile configurare una chiave SSH per GitHub.</li>
+      <li>Generare e aggiungere una chiave SSH a GitHub.</li>
+    </ul>
+  </li>
+  <li>
+    <p>File .gitignore: Cosa sono e come usarli</p>
+
+    <ul>
+      <li>Quali file includere nel file .gitignore.</li>
+      <li>Come creare e configurare correttamente un file .gitignore.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Automazione e Integrazioni</p>
+
+    <ul>
+      <li>Automazione delle pipeline CI/CD con GitHub Actions.</li>
+      <li>Come collegare GitHub a strumenti di project management.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Ottimizzazione per SEO nei progetti GitHub</p>
+
+    <ul>
+      <li>Creare README.md ottimizzati per il SEO.</li>
+      <li>Scrivere descrizioni efficaci per i repository.</li>
+      <li>Usare i tag e le licenze per migliorare la visibilità del progetto.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Risorse aggiuntive per padroneggiare Git e GitHub</p>
+
+    <ul>
+      <li>Migliori guide gratuite per imparare Git.</li>
+      <li>Corsi online consigliati su Git e GitHub.</li>
+      <li>Esercizi pratici per migliorare le competenze.</li>
+    </ul>
+  </li>
+</ol>
+:ET

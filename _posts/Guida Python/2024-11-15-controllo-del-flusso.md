@@ -192,4 +192,4 @@ Con una solida comprensione di questi concetti, sarai in grado di affrontare con
 
 Se vuoi esplorare altri argomenti legati a Python, come strutture dati o funzioni avanzate, il prossimo passo è dietro l’angolo. Buona programmazione!
 
-[Capitolo 3]({{ site.baseurl }}/strutture-dati-fondamentali/)
+[Strutture Dati Fondamentali]({{ site.baseurl }}/strutture-dati-fondamentali/)

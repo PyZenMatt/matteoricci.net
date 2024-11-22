@@ -206,4 +206,4 @@ Ora che hai configurato l'ambiente, sei pronto per iniziare a scrivere il tuo pr
 
 Buona programmazione e benvenuto nella comunità di Python!
 
-[Capitolo 2]({{sitebase.url}}/controllo-del-flusso)
+[Sintassi Base]({{ site.baseurl }}/sintassi-di-base/)

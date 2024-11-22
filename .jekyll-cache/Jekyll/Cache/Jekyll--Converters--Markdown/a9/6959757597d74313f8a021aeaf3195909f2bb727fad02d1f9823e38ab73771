@@ -1,0 +1,166 @@
+I"<p>{% if page.url == “/” %}</p>
+
+<!-- Featured
+================================================== -->
+<section class="featured-posts">
+    <div class="section-title">
+        <h2><span>Featured</span></h2>
+    </div>
+    <div class="row">
+
+    {% for post in site.posts %}
+
+        {% if post.featured == true %}
+
+            {% include featuredbox.html %}
+
+        {% endif %}
+
+    {% endfor %}
+
+    </div>
+</section>
+
+<p>{% endif %}</p>
+
+<!-- Posts Index
+================================================== -->
+<!-- <section class="recent-posts">
+
+    <div class="section-title">
+
+        <h2><span>Last Stories</span></h2>
+
+    </div>
+
+    <div class="row listrecent">
+
+        {% for post in paginator.posts limit:3 %}
+
+        {% include postbox.html %}
+
+        {% endfor %}
+
+    </div> -->
+
+<!--Posts Category:Guida Linux
+================================================== -->
+<section class="category-posts">
+
+    <div class="section-title">
+        <h2><span>Guida <a href="{{ site.baseurl }}categories#guida_linux">Linux</a> </span></h2>
+    </div>
+
+    <div class="row listrecent">
+        {% for post in site.categories.guida_linux limit:3 %} 
+            {% include postbox.html %}
+        {% endfor %}
+    </div>
+
+</section>
+
+<!--Posts Category:Guida Django
+================================================== -->
+<section class="category-posts">
+
+    <div class="section-title">
+        <h2><span>Guida <a href="{{ site.baseurl }}categories#guida_django">Django</a> </span></h2>
+    </div>
+
+    <div class="row listrecent">
+        {% for post in site.categories.guida_django limit:3 %} 
+            {% include postbox.html %}
+        {% endfor %}
+    </div>
+
+</section>
+
+<!-- Posts Category:Guida HTML
+================================================== -->
+
+<section class="category-posts">
+
+    <div class="section-title">
+        <h2><span>Guida<a href="{{ site.baseurl }}categories#guida_html"> HTML</a></span></h2>
+    </div>
+    
+    <div class="row listrecent">
+        {% for post in site.categories.guida_html limit:3 %} 
+            {% include postbox.html %}
+        {% endfor %}
+    </div>
+    
+</section>
+
+<!--Posts Category:Guida CSS
+================================================== -->
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="rouge-code"><pre>&lt;section class="category-posts"&gt;
+
+    &lt;div class="section-title"&gt;
+        &lt;h2&gt;&lt;span&gt;Guida &lt;a href="{{ site.baseurl }}categories#guida_CSS"&gt;CSS&lt;/a&gt; &lt;/span&gt;&lt;/h2&gt;
+    &lt;/div&gt;
+
+    &lt;div class="row listrecent"&gt;
+        {% for post in site.categories.guida_CSS limit:3 %} 
+            {% include postbox.html %}
+        {% endfor %}
+    &lt;/div&gt;
+
+&lt;/section&gt; 
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<!--Posts Category:Guida Python
+================================================== -->
+<section class="category-posts">
+
+    <div class="section-title">
+        <h2><span>Guida <a href="{{ site.baseurl }}categories#guida_python">Python</a> </span></h2>
+    </div>
+
+    <div class="row listrecent">
+        {% for post in site.categories.guida_python limit:3 %} 
+            {% include postbox.html %}
+        {% endfor %}
+    </div>
+
+</section>
+
+<!--Posts Category:Guida Javascript
+================================================== -->
+<section class="category-posts">
+
+    <div class="section-title">
+        <h2><span>Guida <a href="{{ site.baseurl }}categories#guida_js">JS</a> </span></h2>
+    </div>
+
+    <div class="row listrecent">
+        {% for post in site.categories.guida_js limit:3 %} 
+            {% include postbox.html %}
+        {% endfor %}
+    </div>
+
+</section>
+
+<!-- Pagination
+================================================== -->
+<div class="bottompagination">
+<div class="pointerup"><i class="fa fa-caret-up"></i></div>
+<span class="navigation" role="navigation">
+    {% include pagination.html %}
+</span>
+</div>
+
+:ET
