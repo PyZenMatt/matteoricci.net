@@ -72,3 +72,5 @@ input[type="text"] { border: 1px solid black; } /* Selettore di attributo */
 ```
 
 Questa guida ti dà una panoramica sui principali selettori CSS e come combinarli per avere un controllo dettagliato sullo stile degli elementi della tua pagina web.
+
+[Box Model]({{sitebase.url}}/box-model/)

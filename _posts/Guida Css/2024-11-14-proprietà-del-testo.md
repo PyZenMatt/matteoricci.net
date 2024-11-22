@@ -157,3 +157,5 @@ p {
 ### Conclusione
 
 La tipografia CSS è un potente strumento per migliorare la leggibilità e l'attrattiva del testo in un sito web. Con la giusta combinazione di proprietà di testo, font personalizzati e una scelta consapevole delle unità di misura, è possibile creare un’esperienza visiva coerente e ottimizzata per diversi dispositivi e risoluzioni.
+
+[Layout CSS]({{sitebase.url}}/layout-css/)

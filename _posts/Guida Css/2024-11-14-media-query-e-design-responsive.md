@@ -220,3 +220,5 @@ La progettazione di siti web responsive è essenziale per garantire accessibilit
 - Le tecniche avanzate con **Flexbox** e **CSS Grid** per costruire layout flessibili e complessi.
 
 Sarai in grado di sviluppare interfacce utente che offrano un'esperienza coerente e piacevole, indipendentemente dal dispositivo utilizzato dall'utente.
+
+[Pseudo-classi e Pseudo-elementi]({{sitebase.url}}/pseudo-classi-e-pseudo-elementi/)

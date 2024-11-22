@@ -122,3 +122,5 @@ Combinando tutte queste proprietà, puoi creare un elemento stilizzato:
 - **Ombre**: usa `box-shadow` per creare ombre intorno agli elementi e `text-shadow` per aggiungere ombre al testo, dando profondità e risalto visivo. 
 
 Questi strumenti ti permettono di creare effetti visivi che migliorano l'estetica e la leggibilità dei contenuti CSS.
+
+[Transizioni e Animazioni CSS]({{sitebase.url}}/transizioni-e-animazioni/)

@@ -123,3 +123,5 @@ Le variabili CSS sono supportate dalla maggior parte dei browser moderni, ma è 
 ### Conclusioni
 
 Le variabili CSS sono uno strumento fondamentale per i web designer e sviluppatori moderni, in quanto migliorano la flessibilità, la coerenza e la manutenibilità del codice CSS.
+
+[Framework CSS (Introduzione)]({{sitebase.url}}/framework-css/)

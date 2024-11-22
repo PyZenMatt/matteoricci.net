@@ -76,3 +76,5 @@ CSS Grid è un potente sistema di layout bidimensionale che consente di organizz
 ---
 
 Questi strumenti combinati permettono di creare layout molto complessi, rispondendo in modo flessibile alle diverse risoluzioni dei dispositivi.
+
+[Stile dei Bordo e Box Shadow]({{sitebase.url}}/bordi-e-box-shadow/)

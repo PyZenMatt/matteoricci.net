@@ -68,3 +68,5 @@ Questa regola farà in modo che qualsiasi elemento con la classe `.button` abbia
 5. **Evitare l'uso diretto di inline-style**: Gli stili inline hanno una specificità molto alta, quindi usare ID e classi nei CSS separati può prevenire la necessità di `!important`.
 
 Quindi, sia la **specificità** che la **cascata** giocano un ruolo fondamentale nel determinare come e quando applicare i CSS agli elementi, e l’uso attento di `!important` è cruciale per mantenere il codice CSS pulito, leggibile e mantenibile.
+
+[CSS Variables (Custom Properties)]({{sitebase.url}}/css-variables/)

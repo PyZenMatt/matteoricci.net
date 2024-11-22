@@ -1,0 +1,217 @@
+I"E0<h2 id="cosè-il-css-e-come-funziona-con-html">Cos’è il CSS e come funziona con HTML</h2>
+
+<p>CSS, acronimo di Cascading Style Sheets (fogli di stile a cascata), è un linguaggio utilizzato per descrivere la presentazione di un documento HTML. Mentre HTML definisce la struttura e il contenuto di una pagina web (ad esempio titoli, paragrafi, immagini, link), il CSS si occupa di stabilire l’aspetto di tali elementi, come colori, font, spaziature e layout.</p>
+
+<p>HTML e CSS lavorano insieme, dove l’HTML rappresenta lo scheletro della pagina e il CSS ne è la “pelle” che ne determina l’aspetto.</p>
+
+<p>Il CSS permette di separare la presentazione dal contenuto, così da rendere il codice più ordinato, scalabile e facile da mantenere.</p>
+
+<p>Grazie al CSS, puoi applicare uno stile coerente su tutte le pagine di un sito con un solo file CSS, mantenendo un design uniforme e facilitando la gestione di aggiornamenti.</p>
+
+<h2 id="il-funzionamento-di-css-cascading-e-specificità">Il funzionamento di CSS: Cascading e Specificità</h2>
+
+<p>Il termine “cascading” si riferisce al modo in cui vengono applicati gli stili quando ci sono più dichiarazioni CSS che riguardano lo stesso elemento HTML. Le regole CSS seguono una specifica gerarchia di applicazione chiamata specificità, che può essere riassunta come segue:</p>
+
+<p><em>** Inline styles **</em> (stili in linea): sono applicati direttamente agli elementi HTML e hanno la massima priorità.</p>
+
+<p><em>** Internal stylesheets **</em> (fogli di stile interni): definiti all’interno della pagina HTML.</p>
+
+<p><em>** External stylesheets **</em> (fogli di stile esterni): definiti in un file separato e collegati alla pagina HTML.</p>
+
+<p>Quando ci sono conflitti tra diversi stili, il CSS applica il concetto di specificità per determinare quale stile prevale. Oltre alla specificità, l’ordine in cui le regole sono dichiarate gioca un ruolo, con le regole definite per ultime che hanno la precedenza.
+Come aggiungere CSS a una pagina HTML</p>
+
+<p>Esistono tre modi per aggiungere CSS a una pagina HTML: inline, internal e external stylesheets. Ogni approccio ha i suoi vantaggi e svantaggi e viene usato in base al contesto e alla struttura del progetto.</p>
+
+<ol>
+  <li>Inline CSS</li>
+</ol>
+
+<p>L’inline CSS viene utilizzato direttamente all’interno di un elemento HTML, applicando uno stile specifico solo a quel singolo elemento. È definito usando l’attributo style direttamente nell’elemento HTML, come mostrato nell’esempio seguente:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="o">&lt;</span><span class="nt">p</span> <span class="nt">style</span><span class="o">=</span><span class="s1">"color: blue; font-size: 16px;"</span><span class="o">&gt;</span><span class="nt">Questo</span> <span class="nt">testo</span> <span class="nt">è</span> <span class="nt">blu</span> <span class="nt">e</span> <span class="nt">ha</span> <span class="nt">un</span> <span class="nt">font</span> <span class="nt">di</span> <span class="err">16</span><span class="nt">px</span><span class="o">.&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Pro:</p>
+
+<p>Adatto per stili molto specifici e unici a un singolo elemento.</p>
+
+<p>Ha priorità elevata e può sovrascrivere facilmente altri stili CSS.</p>
+
+<p>Contro:</p>
+
+<p>Complica il codice, rendendolo difficile da leggere e mantenere.</p>
+
+<p>Non è riutilizzabile e quindi poco efficiente per progetti più grandi.</p>
+
+<ol>
+  <li>Internal CSS (foglio di stile interno)</li>
+</ol>
+
+<p>Il CSS interno viene scritto all’interno di un tag <style> situato nella sezione &lt;head&gt; del documento HTML. Questo approccio viene utilizzato quando vuoi applicare stili che si applicano a tutta la pagina, ma senza creare un file esterno.</style></p>
+
+<p>Esempio di CSS interno:</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+</pre></td><td class="rouge-code"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"it"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Pagina con CSS interno<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;style&gt;</span>
+    <span class="nt">body</span> <span class="p">{</span>
+      <span class="nl">background-color</span><span class="p">:</span> <span class="m">#f0f0f0</span><span class="p">;</span>
+      <span class="nl">font-family</span><span class="p">:</span> <span class="n">Arial</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nt">h1</span> <span class="p">{</span>
+      <span class="nl">color</span><span class="p">:</span> <span class="m">#333333</span><span class="p">;</span>
+      <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nt">p</span> <span class="p">{</span>
+      <span class="nl">color</span><span class="p">:</span> <span class="m">#555555</span><span class="p">;</span>
+      <span class="nl">line-height</span><span class="p">:</span> <span class="m">1.6</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;h1&gt;</span>Ciao Mondo!<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Questa è una pagina di esempio con CSS interno.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Pro:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>Utile per pagine singole che richiedono stili specifici.
+Gli stili sono facilmente accessibili senza un file CSS esterno.
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Contro:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>Non è ideale per gestire stili di un sito web con più pagine, poiché non è riutilizzabile.
+Il codice HTML risulta più pesante e disordinato, specialmente in progetti grandi.
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<ol>
+  <li>External CSS (foglio di stile esterno)</li>
+</ol>
+
+<p>Il CSS esterno si trova in un file separato con estensione .css (ad esempio, stile.css). Questo file viene collegato all’HTML tramite il tag <link /> all’interno della sezione &lt;head&gt; del documento HTML. È l’approccio più comune e professionale per i progetti web di qualsiasi dimensione, poiché consente di applicare gli stessi stili a più pagine, mantenendo il codice HTML pulito e organizzato.</p>
+
+<p>Esempio di file HTML che usa un CSS esterno:</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="rouge-code"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"it"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Pagina con CSS esterno<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"stile.css"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;h1&gt;</span>Ciao Mondo!<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Questa è una pagina di esempio con CSS esterno.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Esempio di file stile.css:</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="rouge-code"><pre>body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #333333;
+  text-align: center;
+}
+
+p {
+  color: #555555;
+  line-height: 1.6;
+}
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Pro:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>Mantiene il codice HTML ordinato e facile da leggere.
+Consente il riutilizzo degli stessi stili su più pagine.
+Facile da aggiornare: modificando il file CSS, gli stili si aggiornano in tutto il sito.
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Contro:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>Richiede una richiesta HTTP aggiuntiva per caricare il file CSS, anche se può essere minimizzata con la memorizzazione nella cache.
+Inizialmente richiede una configurazione leggermente più complessa, ma i vantaggi di mantenimento sono molto più elevati.
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Quale metodo scegliere?</p>
+
+<p>In generale, il metodo inline viene utilizzato solo per piccole modifiche specifiche, internal per pagine isolate con stili personalizzati, e external per siti web con più pagine, dove la coerenza degli stili è cruciale. L’external CSS è lo standard per il web design moderno, poiché permette una manutenzione semplificata e un’esperienza utente più omogenea su tutto il sito.</p>
+
+<p>Per concludere questo articolo sulle basi del CSS e sull’uso dello stile inline, vorrei ancora sottolineare l’importanza di comprendere le diverse modalità con cui si possono applicare stili ai documenti HTML.</p>
+
+<p>L’inline CSS, nonostante sia meno utilizzato nelle applicazioni professionali a causa della sua limitata riusabilità e della mancanza di separazione tra contenuto e presentazione, resta utile in situazioni specifiche come test rapidi o modifiche mirate che non richiedono fogli di stile esterni o globali.</p>
+
+<p>Ora che hai acquisito le nozioni essenziali su come funziona CSS e come applicare gli stili inline, sei pronto a esplorare approcci più avanzati, come i fogli di stile esterni e i CSS modulari, per creare progetti più strutturati e facili da mantenere.</p>
+
+<p><a href="/selettori-css/">Selettori CSS</a></p>
+:ET

@@ -1,98 +1,160 @@
 ---
 layout: post
-title: "Introduzione CSS: Guida Completa per Principianti"
+title: "Lo stile inline, internal ed external"
 author: Teo
 categories: guida_CSS
-image: assets/images/guida_css/css.jpg
-featured: true
-description: "Inizia con il CSS: una guida completa per principianti per imparare a creare pagine web visivamente accattivanti."
+image: assets/images/
+featured: false
+description: "Conosci le differenze tra stili inline, interni ed esterni in CSS per scegliere la soluzione più adatta ai tuoi progetti. "
 keywords: CSS, introduzione CSS, guida CSS, creare sito web, linguaggio HTML
 hidden: true
 Introduzione a HTML: Creare le Fondamenta del Web
 ---
 
-Il CSS (Cascading Style Sheets) è il linguaggio fondamentale per definire l’aspetto e il layout di una pagina web. Questa guida CSS è pensata per chi desidera apprendere il CSS, dai concetti base fino a quelli avanzati.
-Cosa Troverai in Questa Guida CSS
+## Cos’è il CSS e come funziona con HTML
 
-Questa guida è suddivisa in capitoli che coprono i seguenti argomenti:
+CSS, acronimo di Cascading Style Sheets (fogli di stile a cascata), è un linguaggio utilizzato per descrivere la presentazione di un documento HTML. Mentre HTML definisce la struttura e il contenuto di una pagina web (ad esempio titoli, paragrafi, immagini, link), il CSS si occupa di stabilire l’aspetto di tali elementi, come colori, font, spaziature e layout.
 
-    Introduzione al CSS
-        Cos’è il CSS e come funziona con HTML.
-        Come aggiungere CSS a una pagina HTML: inline, internal e external stylesheet.
+HTML e CSS lavorano insieme, dove l’HTML rappresenta lo scheletro della pagina e il CSS ne è la “pelle” che ne determina l’aspetto. 
 
-    Selettori CSS
-        Selettori di base: tipo (h1, p), classe (.classe), ID (#id).
-        Selettori avanzati: discendente, figlio diretto, pseudo-classi (
-        ,
-        ,
-        ), pseudo-elementi (::before, ::after).
-        Selettori combinati e attributi selettori.
+Il CSS permette di separare la presentazione dal contenuto, così da rendere il codice più ordinato, scalabile e facile da mantenere. 
 
-    Box Model
-        Comprendere il Box Model (contenuto, padding, border, margin).
-        Differenze tra content-box e border-box.
+Grazie al CSS, puoi applicare uno stile coerente su tutte le pagine di un sito con un solo file CSS, mantenendo un design uniforme e facilitando la gestione di aggiornamenti.
 
-    Colori e Background
-        Colori CSS: nome dei colori, valori esadecimali, RGB, RGBA, HSL.
-        Immagini di sfondo e proprietà correlate: background-color, background-image, background-size, background-position, background-repeat.
+## Il funzionamento di CSS: Cascading e Specificità
 
-    Tipografia CSS
-        Proprietà del testo: color, font-size, font-weight, font-style, text-align, line-height.
-        Google Fonts e font customizzati.
-        Uso delle unità di misura relative (em, rem) e assolute (px, %).
+Il termine "cascading" si riferisce al modo in cui vengono applicati gli stili quando ci sono più dichiarazioni CSS che riguardano lo stesso elemento HTML. Le regole CSS seguono una specifica gerarchia di applicazione chiamata specificità, che può essere riassunta come segue:
 
-    Layout CSS
-        Tecniche di layout tradizionali: display (inline, block, inline-block), position (static, relative, absolute, fixed, sticky).
-        Flexbox: concetti di display: flex, justify-content, align-items, flex-direction, flex-wrap, align-self.
-        CSS Grid: grid-template-columns, grid-template-rows, grid-gap, grid-area.
+*** Inline styles *** (stili in linea): sono applicati direttamente agli elementi HTML e hanno la massima priorità.
+    
+*** Internal stylesheets *** (fogli di stile interni): definiti all’interno della pagina HTML.
+    
+*** External stylesheets *** (fogli di stile esterni): definiti in un file separato e collegati alla pagina HTML.
 
-    Dimensioni e Spaziatura
-        Unità di misura CSS: px, %, em, rem, vw, vh.
-        Proprietà di spaziatura: padding, margin, border.
+Quando ci sono conflitti tra diversi stili, il CSS applica il concetto di specificità per determinare quale stile prevale. Oltre alla specificità, l’ordine in cui le regole sono dichiarate gioca un ruolo, con le regole definite per ultime che hanno la precedenza.
+Come aggiungere CSS a una pagina HTML
 
-    Stile dei Bordo e Box Shadow
-        Bordo: border, border-radius, border-color, border-style.
-        Ombre: box-shadow, text-shadow.
+Esistono tre modi per aggiungere CSS a una pagina HTML: inline, internal e external stylesheets. Ogni approccio ha i suoi vantaggi e svantaggi e viene usato in base al contesto e alla struttura del progetto.
 
-    Transizioni e Animazioni CSS
-        Creare transizioni: transition-property, transition-duration, transition-timing-function.
-        Animazioni CSS: @keyframes, animation-name, animation-duration, animation-iteration-count, animation-direction.
+1. Inline CSS
 
-    Media Query e Design Responsive
-        Concetti base di responsive design e unità di misura fluide (%, vw, vh).
-        Media query: @media, breakpoints per schermi piccoli, medi e grandi.
-        Tecniche avanzate di responsive design con Flexbox e CSS Grid.
+L'inline CSS viene utilizzato direttamente all'interno di un elemento HTML, applicando uno stile specifico solo a quel singolo elemento. È definito usando l’attributo style direttamente nell'elemento HTML, come mostrato nell'esempio seguente:
 
-    Pseudo-classi e Pseudo-elementi
-        Uso di pseudo-classi (
-        ,
-        ,
-        ,
-        ).
-        Pseudo-elementi (::before, ::after, ::placeholder).
+```css
+<p style="color: blue; font-size: 16px;">Questo testo è blu e ha un font di 16px.</p>
+```
 
-    Specificità e Cascata
-        Concetti di specificità e ordine di applicazione degli stili.
-        Uso dell’!important e best practices per evitarlo.
+Pro:
 
-    CSS Variables (Custom Properties)
-        Creare variabili CSS con --nome-var.
-        Utilizzare variabili CSS con la funzione var().
+Adatto per stili molto specifici e unici a un singolo elemento.
 
-    Framework CSS (Introduzione)
-        Introduzione a framework CSS come Bootstrap e Tailwind (opzionale, dopo aver compreso i fondamenti di CSS).
+Ha priorità elevata e può sovrascrivere facilmente altri stili CSS.
 
-    CSS Avanzato
-        Filtri CSS: filter, blur, brightness, contrast.
-        Layout avanzati con object-fit, clip-path, shape-outside.
-        CSS per l’accessibilità.
+Contro:
 
-Con questa guida introduttiva al CSS, getterai le basi per costruire siti web visivamente accattivanti e responsive. 
+Complica il codice, rendendolo difficile da leggere e mantenere.
 
-Comprendere il funzionamento dei fogli di stile CSS è essenziale per chiunque desideri approcciarsi allo sviluppo web, migliorando non solo l’aspetto estetico delle pagine ma anche l’esperienza utente. 
+Non è riutilizzabile e quindi poco efficiente per progetti più grandi.
 
-Nei prossimi capitoli, esploreremo tecniche avanzate e best practices, inclusi i selettori CSS, il layout e le animazioni.
+2. Internal CSS (foglio di stile interno)
 
-Continua a seguire questa guida CSS per acquisire tutte le competenze necessarie per diventare un esperto nello sviluppo web. Buono studio e buon coding!
+Il CSS interno viene scritto all’interno di un tag <style> situato nella sezione <head> del documento HTML. Questo approccio viene utilizzato quando vuoi applicare stili che si applicano a tutta la pagina, ma senza creare un file esterno.
 
-[Capitolo 1]({{sitebase.url}}/introduzione-css/)
+Esempio di CSS interno:
+```html
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina con CSS interno</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      color: #333333;
+      text-align: center;
+    }
+    p {
+      color: #555555;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ciao Mondo!</h1>
+  <p>Questa è una pagina di esempio con CSS interno.</p>
+</body>
+</html>
+```
+Pro:
+
+    Utile per pagine singole che richiedono stili specifici.
+    Gli stili sono facilmente accessibili senza un file CSS esterno.
+
+Contro:
+
+    Non è ideale per gestire stili di un sito web con più pagine, poiché non è riutilizzabile.
+    Il codice HTML risulta più pesante e disordinato, specialmente in progetti grandi.
+
+3. External CSS (foglio di stile esterno)
+
+Il CSS esterno si trova in un file separato con estensione .css (ad esempio, stile.css). Questo file viene collegato all’HTML tramite il tag <link> all’interno della sezione <head> del documento HTML. È l’approccio più comune e professionale per i progetti web di qualsiasi dimensione, poiché consente di applicare gli stessi stili a più pagine, mantenendo il codice HTML pulito e organizzato.
+
+Esempio di file HTML che usa un CSS esterno:
+```html
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina con CSS esterno</title>
+  <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+  <h1>Ciao Mondo!</h1>
+  <p>Questa è una pagina di esempio con CSS esterno.</p>
+</body>
+</html>
+```
+Esempio di file stile.css:
+```html
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #333333;
+  text-align: center;
+}
+
+p {
+  color: #555555;
+  line-height: 1.6;
+}
+```
+Pro:
+
+    Mantiene il codice HTML ordinato e facile da leggere.
+    Consente il riutilizzo degli stessi stili su più pagine.
+    Facile da aggiornare: modificando il file CSS, gli stili si aggiornano in tutto il sito.
+
+Contro:
+
+    Richiede una richiesta HTTP aggiuntiva per caricare il file CSS, anche se può essere minimizzata con la memorizzazione nella cache.
+    Inizialmente richiede una configurazione leggermente più complessa, ma i vantaggi di mantenimento sono molto più elevati.
+
+Quale metodo scegliere?
+
+In generale, il metodo inline viene utilizzato solo per piccole modifiche specifiche, internal per pagine isolate con stili personalizzati, e external per siti web con più pagine, dove la coerenza degli stili è cruciale. L’external CSS è lo standard per il web design moderno, poiché permette una manutenzione semplificata e un’esperienza utente più omogenea su tutto il sito.
+
+Per concludere questo articolo sulle basi del CSS e sull’uso dello stile inline, vorrei ancora sottolineare l’importanza di comprendere le diverse modalità con cui si possono applicare stili ai documenti HTML. 
+
+L’inline CSS, nonostante sia meno utilizzato nelle applicazioni professionali a causa della sua limitata riusabilità e della mancanza di separazione tra contenuto e presentazione, resta utile in situazioni specifiche come test rapidi o modifiche mirate che non richiedono fogli di stile esterni o globali.
+
+Ora che hai acquisito le nozioni essenziali su come funziona CSS e come applicare gli stili inline, sei pronto a esplorare approcci più avanzati, come i fogli di stile esterni e i CSS modulari, per creare progetti più strutturati e facili da mantenere.
+
+[Selettori CSS]({{sitebase.url}}/selettori-css/)

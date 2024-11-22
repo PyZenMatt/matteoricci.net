@@ -73,3 +73,5 @@ In questo esempio, l’elemento si sposterà da sinistra verso destra, scorrendo
 
 ### Uso combinato di transizioni e animazioni
 Le transizioni sono ottime per effetti semplici come il cambiamento di colore o di dimensioni al passaggio del mouse, mentre le animazioni sono più versatili per effetti continui e ciclici. Entrambe possono migliorare notevolmente l'interattività e la percezione visiva di una pagina, se usate con equilibrio.
+
+[Media Query e Design Responsive]({{sitebase.url}}/media-query-e-design-responsive/)

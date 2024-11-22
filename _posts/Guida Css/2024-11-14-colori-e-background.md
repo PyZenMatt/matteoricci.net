@@ -67,3 +67,5 @@ In questo esempio:
 ---
 
 Queste proprietà consentono un controllo dettagliato sia sui colori che sugli sfondi, rendendo gli elementi e le pagine più dinamici e visualmente accattivanti.
+
+[Tipografia CSS]({{sitebase.url}}/proprieta-del-testo/)

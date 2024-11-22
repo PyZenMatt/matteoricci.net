@@ -54,3 +54,5 @@ a:hover {
 }
 
 Questi strumenti offrono un gran livello di flessibilità e precisione nella definizione degli stili, permettendo ai designer di creare interfacce utente dinamiche e accattivanti senza sovraccaricare il markup HTML con classi o ID aggiuntivi.
+
+[Specificità e Cascata]({{sitebase.url}}/specificita-a-cascata/)
