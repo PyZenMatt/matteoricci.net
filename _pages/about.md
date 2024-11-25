@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Mediumish Template for Jekyll
+title: About Me
 permalink: /about
 comments: true
 ---
@@ -8,28 +8,33 @@ comments: true
 <div class="row justify-content-between">
 <div class="col-md-8 pr-5">
 
-<p>This website is built with Jekyll and Mediumish template for Jekyll. It's for demonstration purposes, no real content can be found. Mediumish template for Jekyll is compatible with Github pages, in fact even this demo is created with Github Pages and hosted with Github.</p>
+<p> Ciao io sono Matteo Ricci, e questo sito rappresenta il mio spazio personale, dove esploro e condivido le mie passioni, esperienze e progetti.<br><br>
+ 
+ Sono uno sviluppatore con competenze in Python, Django, e un interesse crescente per il penetration testing. La mia formazione tecnica si unisce a una grande curiosità verso il mondo del web design e delle tecnologie open source come Linux e Bitcoin.<br><br>
 
-<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/mediumish-jekyll-template.png" alt="jekyll template mediumish" /></p>
-<h4>Documentation</h4>
+Oltre alla programmazione, nutro una profonda passione per l'arte e il disegno, in particolare nello studio dell'anatomia umana e dei volti, e per il buddismo orientale, che guida la mia ricerca di equilibrio e felicità. <br><br>
 
-<p>Please, read the docs <a href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/">here</a>.</p>
+Questo mix unico di interessi è il motore dei miei progetti: dal blog sulla felicità a quello dedicato a Bitcoin e alle sue implicazioni.<br><br>
 
-<h4>Questions or bug reports?</h4>
+<h1>Cosa troverai su matteoricci.net?</h1><br>
 
-<p>Head over to our <a href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Github repository</a>!</p>
+Blog tematici: Articoli su Python, Bitcoin, felicità, arte e molto altro.<br><br>
+    
+Progetti personali: Soluzioni innovative come l'integrazione della Lightning Network per l'acquisto di biglietti aerei.<br><br>
+    
+Risorse per la community: Contenuti open source, guide pratiche e corsi gratuiti.<br><br>
 
-</div>
+<h2>Missione</h2>
+<br>
+Credo nell'importanza di condividere conoscenza e valore con gli altri.<br><br>
 
-<div class="col-md-4">
+Il mio obiettivo è creare un'identità digitale che rifletta chi sono, utilizzando la tecnologia per esplorare nuove opportunità.<br><br>
+ 
+Sto lavorando per diventare un nomade digitale, guadagnando con la scrittura, il disegno e la programmazione, sempre con la filosofia open-source al centro.<br><br>
 
-<div class="sticky-top sticky-top-80">
-<h5>Buy me a coffee</h5>
+Se sei interessato a collaborare o semplicemente a condividere idee, non esitare a contattarmi. Questo spazio è tanto mio quanto della community che lo segue.<br><br>
 
-<p>Thank you for your support! Your donation helps me to maintain and improve <a target="_blank" href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Mediumish <i class="fab fa-github"></i></a>.</p>
+Matteo Ricci
+Sviluppatore, creativo e ricercatore di felicità</p>
 
-<a target="_blank" href="https://www.wowthemes.net/donate/" class="btn btn-danger">Buy me a coffee</a> <a target="_blank" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/" class="btn btn-warning">Documentation</a>
 
-</div>
-</div>
-</div>
