@@ -34,7 +34,7 @@ Sto lavorando per diventare un nomade digitale, guadagnando con la scrittura, il
 
 Se sei interessato a collaborare o semplicemente a condividere idee, non esitare a contattarmi. Questo spazio è tanto mio quanto della community che lo segue.<br><br>
 
-Matteo Ricci
+Matteo Ricci<br><br>
 Sviluppatore, creativo e ricercatore di felicità</p>
 
 
