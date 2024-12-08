@@ -1,6 +1,6 @@
 ---
 layout: post
-title: " Introduzione a Vue.js: La Base per Applicazioni Web Moderne"
+title: "Introduzione a Vue.js: La Base per Applicazioni Web Moderne"
 author: Teo
 categories: guida_vue
 image: assets/images/guida_vue.js/vuejs.jpg

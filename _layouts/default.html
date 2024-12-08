@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <link rel="icon" href="{{ site.baseurl }}/assets/images/logo.png">
+{% include cookie-banner.html %}
 
 <title>{{ page.title }} | {{site.name}}</title>
 
@@ -123,9 +124,9 @@ ga('send', 'pageview');
     {{ content }}
 </div>
 
-{% if site.mailchimp-list %}
+<!-- {% if site.mailchimp-list %}
 <!-- Bottom Alert Bar
-================================================== -->
+================================================== 
 <div class="alertbar">
 	<div class="container text-center">
 		<span><img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{site.title}}"> &nbsp;Scrvimi ed entra in contatto <b>con me</b> </span>
@@ -137,7 +138,7 @@ ga('send', 'pageview');
         </form>
 	</div>
 </div>
-{% endif %}
+{% endif %} -->
     
 </div>
 
@@ -175,7 +176,8 @@ ga('send', 'pageview');
                 Copyright © {{ site.time | date: "%Y" }} {{ site.name }} 
             </div>
             <div class="col-md-6 col-sm-6 text-center text-lg-right">    
-                <a target="_blank" href="https://matteoricci./">matteoricci.net</a> by Matteo Ricci 
+                <a target="_blank" href="https://matteoricci/">matteoricci.net</a> by Matteo Ricci <br>
+                <a target="_blank" href="https://privacy.html/">Privacy</a> 
             </div>
         </div>
     </div>
@@ -193,6 +195,8 @@ ga('send', 'pageview');
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
 <script src="{{ site.baseurl }}/assets/js/mediumish.js"></script>
+<script src="{{ site.baseurl }}/assets/js/cookies.js"></script>
+
 
 {% if site.lazyimages == "enabled" %}
 <script src="{{ site.baseurl }}/assets/js/lazyload.js"></script>

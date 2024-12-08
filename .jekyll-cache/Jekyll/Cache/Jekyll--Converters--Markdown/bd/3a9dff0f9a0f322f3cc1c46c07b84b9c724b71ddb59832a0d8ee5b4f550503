@@ -1,0 +1,103 @@
+I"�%<p>Il <strong>routing</strong> in un’applicazione Single Page Application (SPA) con Vue.js viene gestito principalmente attraverso Vue Router, un plugin ufficiale di Vue.js dedicato alla gestione delle navigazioni. 
+Vue Router permette di creare e gestire il routing in modo dinamico, efficiente e scalabile.</p>
+
+<p>Ecco una guida dettagliata su come implementarlo e utilizzarlo per gestire percorsi e parametri.</p>
+
+<h4 id="1-installazione-e-configurazione-di-vue-router">1. <strong>Installazione e configurazione di Vue Router</strong></h4>
+<p>Per utilizzare Vue Router, è necessario prima installarlo. 
+Se stai creando un nuovo progetto con Vue CLI, puoi includere Vue Router selezionandolo nelle opzioni quando inizi un nuovo progetto. Per un progetto esistente, puoi aggiungerlo tramite npm o yarn:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>npm <span class="nb">install </span>vue-router
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Dopo l’installazione, devi configurare il router importandolo nel tuo file principale (solitamente <code class="language-plaintext highlighter-rouge">main.js</code> o <code class="language-plaintext highlighter-rouge">main.ts</code>) e dicendogli quali percorsi (routes) deve gestire.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+</pre></td><td class="rouge-code"><pre><span class="k">import</span> <span class="nx">Vue</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">vue</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">VueRouter</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">vue-router</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">HomeComponent</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./components/HomeComponent.vue</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">AboutComponent</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./components/AboutComponent.vue</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="nx">Vue</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">VueRouter</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">routes</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">{</span> <span class="na">path</span><span class="p">:</span> <span class="dl">'</span><span class="s1">/</span><span class="dl">'</span><span class="p">,</span> <span class="na">component</span><span class="p">:</span> <span class="nx">HomeComponent</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="na">path</span><span class="p">:</span> <span class="dl">'</span><span class="s1">/about</span><span class="dl">'</span><span class="p">,</span> <span class="na">component</span><span class="p">:</span> <span class="nx">AboutComponent</span> <span class="p">}</span>
+<span class="p">];</span>
+
+<span class="kd">const</span> <span class="nx">router</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">VueRouter</span><span class="p">({</span>
+  <span class="na">mode</span><span class="p">:</span> <span class="dl">'</span><span class="s1">history</span><span class="dl">'</span><span class="p">,</span>
+  <span class="nx">routes</span>
+<span class="p">});</span>
+
+<span class="k">new</span> <span class="nx">Vue</span><span class="p">({</span>
+  <span class="nx">router</span><span class="p">,</span>
+  <span class="na">render</span><span class="p">:</span> <span class="nx">h</span> <span class="o">=&gt;</span> <span class="nx">h</span><span class="p">(</span><span class="nx">App</span><span class="p">)</span>
+<span class="p">}).</span><span class="nx">$mount</span><span class="p">(</span><span class="dl">'</span><span class="s1">#app</span><span class="dl">'</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h4 id="2-modalità-del-router">2. <strong>Modalità del Router</strong></h4>
+<p>Vue Router supporta diverse modalità di navigazione, di cui la principale è la <code class="language-plaintext highlighter-rouge">history</code> mode. Questa modalità sfrutta la History API del browser per navigare tra le pagine senza un vero e proprio caricamento completo della pagina, offrendo un’esperienza utente simile a quella di un’applicazione tradizionale. L’altra modalità comune è la <code class="language-plaintext highlighter-rouge">hash</code> mode, che utilizza l’URL hash per simulare una completa navigazione di pagina.</p>
+
+<h4 id="3-gestione-dinamica-dei-percorsi">3. <strong>Gestione dinamica dei percorsi</strong></h4>
+<p>Vue Router permette di definire percorsi dinamici che possono adattarsi a vari pattern. Questo è utile quando hai pagine che dipendono da un identificativo unico (come un ID di un articolo o di un utente). Ecco come puoi definire un percorso dinamico:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="kd">const</span> <span class="nx">routes</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">{</span> <span class="na">path</span><span class="p">:</span> <span class="dl">'</span><span class="s1">/user/:id</span><span class="dl">'</span><span class="p">,</span> <span class="na">component</span><span class="p">:</span> <span class="nx">UserComponent</span> <span class="p">}</span>
+<span class="p">];</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>In questo esempio, <code class="language-plaintext highlighter-rouge">:id</code> è un parametro dinamico che Vue Router riconoscerà e renderà disponibile all’interno del componente UserComponent tramite <code class="language-plaintext highlighter-rouge">this.$route.params.id</code>.</p>
+
+<h4 id="4-navigazione-programmata">4. <strong>Navigazione programmata</strong></h4>
+<p>Oltre a navigare cliccando su link, puoi anche navigare programmatically usando Vue Router. Questo è utile in scenari dove devi eseguire una navigazione come risultato di un’altra azione. Ad esempio:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="k">this</span><span class="p">.</span><span class="nx">$router</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="dl">'</span><span class="s1">/home</span><span class="dl">'</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h4 id="5-gestione-degli-hook-del-ciclo-di-vita-del-routing">5. <strong>Gestione degli hook del ciclo di vita del routing</strong></h4>
+<p>Vue Router offre anche vari hook che possono essere utilizzati per controllare la navigazione, eseguire azioni prima o dopo che una navigazione avviene. I principali sono <code class="language-plaintext highlighter-rouge">beforeEach</code>, <code class="language-plaintext highlighter-rouge">afterEach</code>, e <code class="language-plaintext highlighter-rouge">beforeEnter</code>. Ad esempio, <code class="language-plaintext highlighter-rouge">beforeEach</code> può essere usato per verificare l’autenticazione prima di accedere a una rotta:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="nx">router</span><span class="p">.</span><span class="nx">beforeEach</span><span class="p">((</span><span class="nx">to</span><span class="p">,</span> <span class="k">from</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">to</span><span class="p">.</span><span class="nx">path</span> <span class="o">!==</span> <span class="dl">'</span><span class="s1">/login</span><span class="dl">'</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="nx">isLoggedIn</span><span class="p">())</span> <span class="p">{</span>
+    <span class="nx">next</span><span class="p">(</span><span class="dl">'</span><span class="s1">/login</span><span class="dl">'</span><span class="p">);</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nx">next</span><span class="p">();</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<h3 id="conclusione">Conclusione</h3>
+<p>Con questi strumenti e concetti, Vue Router si presenta come una soluzione robusta e flessibile per gestire il routing nelle applicazioni SPA con Vue.js, rendendo facile implementare navigazioni complesse e gestire transizioni senza problemi.</p>
+:ET
