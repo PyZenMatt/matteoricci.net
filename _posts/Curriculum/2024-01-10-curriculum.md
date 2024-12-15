@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Curriculum Vitae  "
+title:  "Curriculum Vitae"
 author: Matteo Ricci
 categories: 
 tags: curriculum

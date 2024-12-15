@@ -7,7 +7,7 @@ image: assets/images/
 featured: 
 description: "Impara a usare bordi e ombre in CSS per dare profondità e risalto ai tuoi elementi web. Esempi pratici inclusi"
 keywords: CSS, introduzione CSS, guida CSS, creare sito web, linguaggio HTML
-hidden: true
+hidden: false
 ---
 
 In CSS, lo stile dei bordi e delle ombre è utilizzato per rendere i contenuti visivamente più accattivanti e per dare profondità o risalto agli elementi. Ecco una spiegazione dettagliata delle proprietà coinvolte.
