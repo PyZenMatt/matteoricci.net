@@ -1,13 +1,12 @@
 ---
+layout: "post"
 title: "Bootstrap: Il Framework Front-End per Siti Web e Applicazioni Responsive"
 description: "Scopri Bootstrap, il framework front-end gratuito e open-source ideale per creare siti web e applicazioni responsive. Guida completa su griglie, componenti e personalizzazione."
-keywords: ["Bootstrap", "framework front-end", "siti web responsive", "applicazioni web", "Bootstrap 5", "guida Bootstrap", "tutorial Bootstrap", "progettazione web"]
-author: "Matteo Ricci"
+keywords: "Bootstrap", "framework front-end", "siti web responsive", "applicazioni web", "Bootstrap 5", "guida Bootstrap", "tutorial Bootstrap", "progettazione web"
+author: "Teo"
 date: 2024-12-15
-categories: ["Guida_Bootstrap", "Web Design", "Front-End Development", "Guide"]
-tags: ["Bootstrap", "Responsive Design", "CSS Framework", "Web Development"]
-layout: "post"
-background: "assets/images/guida_css/css.jpg" # Aggiorna con il percorso corretto dell'immagine
+categories: "Guida_Bootstrap", "Web Design", "Front-End Development", "Guide"
+tags: "Bootstrap", "Responsive Design", "CSS Framework", "Web Development"
 news: true
 ---
 

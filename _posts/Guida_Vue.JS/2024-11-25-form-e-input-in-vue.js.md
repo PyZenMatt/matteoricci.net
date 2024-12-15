@@ -120,8 +120,10 @@ export default {
 }
 </script>
 ```
+### Conclusione
 
 Questi concetti offrono una base solida per creare form reattivi e interattivi in Vue.js, garantendo che l'esperienza utente sia fluida e piacevole, mentre i dati vengono gestiti in modo efficiente e sicuro.
 
+Scopri come utilizzare le transizioni integrate e librerie per creare esperienze visive accattivanti.
 [**Effetti visivi e animazioni in Vue.js**]({{ site.baseurl }}/effetti-visivi/) 
-    Scopri come utilizzare le transizioni integrate e librerie per creare esperienze visive accattivanti.
+    

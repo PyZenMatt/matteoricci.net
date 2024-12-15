@@ -4,7 +4,7 @@ title: "CSS Avanzato: Filtri, Layout e Accessibilità - Tecniche Essenziali per 
 author: Teo
 categories: guida_CSS
 image: assets/images/
-featured: 
+news: true
 description: "Scopri tecniche avanzate di CSS come filtri, layout e accessibilità per migliorare il design e l'usabilità del tuo sito web."
 keywords: CSS, introduzione CSS, guida CSS, creare sito web, linguaggio HTML
 hidden: true

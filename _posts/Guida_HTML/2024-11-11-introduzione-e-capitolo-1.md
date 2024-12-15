@@ -97,6 +97,7 @@ Questi **tag** permettono di descrivere vari elementi, come titoli, paragrafi, i
 **struttura** di base di una pagina **HTML**
 
 La **struttura** di una pagina **HTML** è abbastanza semplice. Ecco uno schema di base, seguito da una spiegazione:
+
 ```**HTML** 
 <!DOCTYPE **HTML**>
 <**HTML** lang="it">
