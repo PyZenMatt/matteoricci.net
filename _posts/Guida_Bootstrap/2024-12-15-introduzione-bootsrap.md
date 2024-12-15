@@ -1,5 +1,6 @@
 ---
 layout: post
+image: assets/images/guida_bootstrap/bootstrap.jpg
 title: "Bootstrap, Il Framework Front-End per Siti Web e Applicazioni Responsive"
 description: "Scopri Bootstrap, il framework front-end gratuito e open-source ideale per creare siti web e applicazioni responsive. Guida completa su griglie, componenti e personalizzazione."
 keywords: Bootstrap, framework front-end, siti web responsive, applicazioni web, Bootstrap 5, guida Bootstrap, tutorial Bootstrap, progettazione web
