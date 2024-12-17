@@ -1,4 +1,4 @@
-I"9@
+I"s^
 <!-- Featured
 ================================================== -->
 <section class="featured-posts">
@@ -8,6 +8,65 @@
     <div class="row">
 
     
+
+        
+
+            <!-- begin post -->
+
+<div class="col-md-6 mb-30px">
+    <div class="listfeaturedtag h-100">
+        <div class="row h-100">
+            <div class="col-12 col-md-12 col-lg-5 pr-lg-0">
+                <div class="h-100">
+                    <div class="wrapthumbnail">
+                        <a href="/introduzione-bootsrap/">
+                            
+                            <img class="featured-box-img-cover" src="/assets/images/guida_bootstrap/bootstrap.jpeg" />
+                            
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-7">
+                <div class="h-100 card-group">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">
+                                <a class="text-dark" href="/introduzione-bootsrap/">Bootstrap, Il Framework Front-End per Siti Web e Applicazioni Responsive</a>
+                                
+                            </h2>
+
+                            <!-- <h4 class="card-text">Bootstrap è un framework front-end gratuito e open-source, progettato per semplificare la creazione di siti web e applicazioni responsive. Creato da Mark Otto e Jacob...</h4> -->
+                            <h4 class="card-text">
+                                
+                                    Scopri Bootstrap, il framework front-end gratuito e open-source ideale per creare siti web e applicazioni responsive. Guida completa su griglie, componenti e personalizzazione.
+                                
+                            </h4>
+                        </div>
+                        <div class="card-footer b-0 bg-white mt-auto">
+                            <div class="wrapfooter">
+                                
+                                <span class="meta-footer-thumb">
+                                
+                                <img class="author-thumb" src="https://www.gravatar.com/avatar/e56154546cf4be74e393c62d1ae9f9d4?s=250&amp;d=mm&amp;r=x" alt="Teo" />
+                                
+                                </span>
+                                <span class="author-meta">
+                                <span class="post-name"><a target="_blank" href="https://www.matteoricci.net">Teo</a></span><br />
+                                
+                                <span class="post-date">15 Dec 2024</span>
+                                </span>
+                                <span class="post-read-more"><a href="/introduzione-bootsrap/" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end post -->
 
         
 
@@ -954,7 +1013,7 @@
 
 <!-- Posts Index
 ================================================== -->
-<!-- <section class="recent-posts">
+<section class="recent-posts">
 
     <div class="section-title">
 
@@ -968,22 +1027,29 @@
 
         <!-- begin post -->
 
+
 <div class="col-lg-4 col-md-6 mb-30px card-group">
     <div class="card h-100">
         <div class="maxthumb">
-            <a href="/introduzione-bootsrap/">
+            <a href="/repositary/">
+                
+
+                    
+                        <img class="img-fluid" src="/assets/images/" alt="Repository: Cosa Sono e Come Crearne Uno" /> 
+                    
+
                 
             </a>
         </div>
         <div class="card-body">
             <h2 class="card-title">
-                <a class="text-dark" href="/introduzione-bootsrap/">Bootstrap, Il Framework Front-End per Siti Web e Applicazioni Responsive</a>
+                <a class="text-dark" href="/repositary/">Repository: Cosa Sono e Come Crearne Uno</a>
                 
             </h2>
-            <!-- <h4 class="card-text">Bootstrap è un framework front-end gratuito e open-source, progettato per semplificare la creazione di siti web e applicazioni responsive. Creato da Mark Otto e Jacob Thornton durante il loro lavoro...</h4> -->
+            <!-- <h4 class="card-text">I repository sono elementi fondamentali nel mondo dello sviluppo software. Sono strutture organizzate dove vengono salvati, gestiti e tracciati i file di un progetto. Utilizzando Git, uno dei più popolari...</h4> -->
             <h4 class="card-text">
                 
-                    Scopri Bootstrap, il framework front-end gratuito e open-source ideale per creare siti web e applicazioni responsive. Guida completa su griglie, componenti e personalizzazione.
+                    Esplora la guida definitiva su cosa sono i repository Git e come crearli. Impara le differenze tra repository locali e remoti e scopri come gestire efficacemente i tuoi progetti di sviluppo
                 
             </h4>
         </div>
@@ -998,9 +1064,9 @@
                 <span class="author-meta">
                 <span class="post-name"><a target="_blank" href="https://www.matteoricci.net">Teo</a></span><br />
                 
-                <span class="post-date">15 Dec 2024</span>
+                <span class="post-date">22 Nov 2024</span>
                 </span>
-                    <span class="post-read-more"><a href="/introduzione-bootsrap/" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+                    <span class="post-read-more"><a href="/repositary/" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
                 <div class="clearfix"></div> 
             </div>
         </div>
@@ -1008,13 +1074,114 @@
 </div>
 <!-- end post -->
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="rouge-code"><pre>&lt;/div&gt; --&gt;
+        
 
-&lt;!--Posts Category:Guida Git ================================================== --&gt;
-</pre></td></tr></tbody></table></code></pre></div></div>
+        <!-- begin post -->
+
+
+<div class="col-lg-4 col-md-6 mb-30px card-group">
+    <div class="card h-100">
+        <div class="maxthumb">
+            <a href="/box-model/">
+                
+
+                    
+                        <img class="img-fluid" src="/assets/images/" alt="Introduzione CSS: Box Model" /> 
+                    
+
+                
+            </a>
+        </div>
+        <div class="card-body">
+            <h2 class="card-title">
+                <a class="text-dark" href="/box-model/">Introduzione CSS: Box Model</a>
+                
+            </h2>
+            <!-- <h4 class="card-text">Il CSS Box Model è uno dei concetti fondamentali da comprendere per costruire layout web efficaci e precisi. Ogni elemento HTML è considerato un “box” e, di conseguenza, è composto...</h4> -->
+            <h4 class="card-text">
+                
+                    Comprendi il Box Model CSS: scopri come padding, margini e bordi influenzano i layout web per risultati impeccabili.
+                
+            </h4>
+        </div>
+        <div class="card-footer bg-white">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                
+                <img class="author-thumb" src="https://www.gravatar.com/avatar/e56154546cf4be74e393c62d1ae9f9d4?s=250&amp;d=mm&amp;r=x" alt="Teo" />
+                
+                </span>
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href="https://www.matteoricci.net">Teo</a></span><br />
+                
+                <span class="post-date">14 Nov 2024</span>
+                </span>
+                    <span class="post-read-more"><a href="/box-model/" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+                <div class="clearfix"></div> 
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end post -->
+
+        
+
+        <!-- begin post -->
+
+
+<div class="col-lg-4 col-md-6 mb-30px card-group">
+    <div class="card h-100">
+        <div class="maxthumb">
+            <a href="/bordi-e-box-shadow/">
+                
+
+                    
+                        <img class="img-fluid" src="/assets/images/" alt="Introduzione CSS: Bordi e Box Shadow" /> 
+                    
+
+                
+            </a>
+        </div>
+        <div class="card-body">
+            <h2 class="card-title">
+                <a class="text-dark" href="/bordi-e-box-shadow/">Introduzione CSS: Bordi e Box Shadow</a>
+                
+            </h2>
+            <!-- <h4 class="card-text">In CSS, lo stile dei bordi e delle ombre è utilizzato per rendere i contenuti visivamente più accattivanti e per dare profondità o risalto agli elementi. Ecco una spiegazione dettagliata...</h4> -->
+            <h4 class="card-text">
+                
+                    Impara a usare bordi e ombre in CSS per dare profondità e risalto ai tuoi elementi web. Esempi pratici inclusi
+                
+            </h4>
+        </div>
+        <div class="card-footer bg-white">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                
+                <img class="author-thumb" src="https://www.gravatar.com/avatar/e56154546cf4be74e393c62d1ae9f9d4?s=250&amp;d=mm&amp;r=x" alt="Teo" />
+                
+                </span>
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href="https://www.matteoricci.net">Teo</a></span><br />
+                
+                <span class="post-date">14 Nov 2024</span>
+                </span>
+                    <span class="post-read-more"><a href="/bordi-e-box-shadow/" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+                <div class="clearfix"></div> 
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end post -->
+
+        
+
+    </div> 
+
+<!-- Posts Category:Guida Git
+================================================== -->
 <section class="category-posts">
 
     <div class="section-title">
@@ -2153,5 +2320,5 @@
 </span>
 </div> 
 
-</section>
+</section></section>
 :ET
