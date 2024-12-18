@@ -38,51 +38,51 @@ Per chi si avvicina a **Bootstrap**, è utile seguire un percorso strutturato, a
 
 ### 2. Sistema a Griglia (Grid System)
 - [Concetto di griglia a **12 colonne**.]({{ site.baseurl }}/griglia-12-colonne/)
-- [Utilizzo di **container**, **row** e **column**.]({{ site.baseurl }}/container/)
+- [Utilizzo di **container**, **row** e **column**.]({{ site.baseurl }}/container-row-column/)
 - [Classi di responsive design].({{ site.baseurl }}/responsive-design/)
 - [**Breakpoint** e gestione della responsività.]({{ site.baseurl }}/breakpoint/)
 
 ### 3. Tipografia
 - [Classi predefinite per il testo]({{ site.baseurl }}/classi-predefinite/) 
-- Dimensioni dei caratteri (`display-1`, `lead`) e stili (`fw-bold`, `fst-italic`).
-- **Personalizzazione** dei colori (`text-primary`, `text-danger`).
+- [Dimensioni dei caratteri  e stili]({{ site.baseurl }}/dimensioni-caratteri-stili/) (`fw-bold`, `fst-italic`) (`display-1`, `lead`).
+- [**Personalizzazione** dei colori]({{ site.baseurl }}/colori/) (`text-primary`, `text-danger`).
 
 ### 4. Colori e Sfondi
-- **Palette predefinita** (`primary`, `success`, `danger`, ecc.).
-- Classi per sfondi (`bg-primary`, `bg-light`).
-- Tecniche di **personalizzazione con SCSS**.
+- [**Palette predefinita**]({{ site.baseurl }}/pallette-predefinita/) (`primary`, `success`, `danger`, ecc.).
+- [Classi per sfondi]({{ site.baseurl }}/colori-e-sfondi/) (`bg-primary`, `bg-light`).
+- [Tecniche di **personalizzazione con SCSS**]({{ site.baseurl }}/personalizzazione-scss/).
 
 ### 5. Componenti di Base
-- **Bottoni**: Varianti (`btn-primary`, `btn-lg`).
-- **Navbar**: Creazione di menu di navigazione responsive.
-- **Card**: Struttura per blocchi di contenuto.
-- **Badge** e **Alert**: Notifiche e messaggi.
-- **Modali**: Finestre dinamiche.
-- **Form**: Campi di input, checkbox, e radio button.
+- [**Bottoni**: Varianti] (`btn-primary`, `btn-lg`)({{ site.baseurl }}/bottoni/)
+- [**Navbar**: Creazione di menu di navigazione responsive.]({{ site.baseurl }}/navbar/)
+- [**Card**: Struttura per blocchi di contenuto.]({{ site.baseurl }}/card/)
+- [**Badge** e **Alert**: Notifiche e messaggi.]({{ site.baseurl }}/badge-alert/)
+- [**Modali**: Finestre dinamiche.]({{ site.baseurl }}/modali/)
+- [**Form**: Campi di input, checkbox, e radio button.]({{ site.baseurl }}/form/)
 
 ### 6. Utility Classes
-- **Spaziatura** (`m-`, `p-`).
-- Gestione della **visibilità** (`d-none`, `d-flex`).
-- Layout con **Flexbox** (`align-items-`, `justify-content-`).
-- Dimensioni (`w-50`, `h-25`).
+- [**Spaziatura** (`m-`, `p-`).]({{ site.baseurl }}/personalizzazione-scss/)
+- [Gestione della **visibilità** (`d-none`, `d-flex`).]({{ site.baseurl }}/personalizzazione-scss/)
+- [Layout con **Flexbox** (`align-items-`, `justify-content-`).]({{ site.baseurl }}/personalizzazione-scss/)
+- [Dimensioni (`w-50`, `h-25`).]({{ site.baseurl }}/personalizzazione-scss/)
 
 ### 7. Responsive Design
-- Principio di **Mobile-First**.
-- Classi per dispositivi specifici (`d-sm-none`, `d-md-block`).
-- **Media query** integrate.
+- [Principio di **Mobile-First**.]({{ site.baseurl }}/personalizzazione-scss/)
+- [Classi per dispositivi specifici (`d-sm-none`, `d-md-block`).]({{ site.baseurl }}/personalizzazione-scss/)
+- [**Media query** integrate.]({{ site.baseurl }}/personalizzazione-scss/)
 
 ### 8. Icone
-- Introduzione a **Bootstrap Icons**.
-- Modalità di integrazione nel progetto.
+- [Introduzione a **Bootstrap Icons**.]({{ site.baseurl }}/personalizzazione-scss/)
+- [Modalità di integrazione nel progetto.]({{ site.baseurl }}/personalizzazione-scss/)
 
 ### 9. Personalizzazione Avanzata
-- Sovrascrittura delle classi con **CSS personalizzato**.
-- Utilizzo di **variabili SCSS** per modificare i temi.
+- [Sovrascrittura delle classi con **CSS personalizzato**.]({{ site.baseurl }}/personalizzazione-scss/)
+- [Utilizzo di **variabili SCSS** per modificare i temi.]({{ site.baseurl }}/personalizzazione-scss/)
 
 ### 10. Esempi Pratici
-- Creare una pagina web con **layout responsivo**.
-- Aggiungere un **menu di navigazione**, sezioni, card e bottoni.
-- Costruire una **landing page** o un portfolio.
+- [Creare una pagina web con **layout responsivo**.]({{ site.baseurl }}/personalizzazione-scss/)
+- [Aggiungere un **menu di navigazione**, sezioni, card e bottoni.]({{ site.baseurl }}/personalizzazione-scss/)
+- [Costruire una **landing page** o un portfolio.]({{ site.baseurl }}/personalizzazione-scss/)
 
 ## Conclusione
 

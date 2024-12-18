@@ -4,10 +4,9 @@ title: "Installazione di Bootstrap: CDN o File Locali? Guida Completa"
 description: "Scopri come installare Bootstrap tramite CDN o file locali e scegli la soluzione migliore per il tuo progetto web. Confronto dettagliato e consigli pratici."
 keywords: "Bootstrap, installazione Bootstrap, CDN Bootstrap, file locali Bootstrap, sviluppo web, framework CSS"
 categories: "Web Development, Bootstrap"
-layout: post
+author: Teo
+hidden: true
 ---
-
-## **Introduzione a Bootstrap**
 
 **Bootstrap** è uno dei **framework CSS** più popolari per creare **siti web responsivi** e moderni. 
 
