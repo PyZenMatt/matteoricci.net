@@ -6,7 +6,6 @@ keywords: "satoshis, Bitcoin, criptovaluta, micropagamenti, investimento in Bitc
 author: Teo
 category: bitcoin
 tags: Bitcoin, Satoshis, Criptovaluta, Investimento, Finanza
-featured: true
 hidden: false
 image: assets/images/bitcoin.jpg
 ---
