@@ -1,0 +1,87 @@
+I"�<h3 id="introduzione-ai-django-forms">Introduzione ai Django Forms</h3>
+
+<p>Django Forms è uno strumento essenziale per qualsiasi sviluppatore web che utilizza il framework Django per creare applicazioni web interattive. In questo tutorial, esploreremo come creare, validare e gestire form in Django, fornendo agli utenti un’interfaccia intuitiva per l’input dei dati. Questo articolo è pensato per essere una guida introduttiva all’uso dei Django Forms e assume che tu stia lavorando su un sistema Linux Ubuntu.</p>
+
+<h3 id="cosa-sono-i-django-forms">Cosa sono i Django Forms?</h3>
+
+<p>Django Forms è una libreria integrata nel framework Django che facilita la raccolta e la validazione dei dati degli utenti tramite form HTML. Utilizzando Django Forms, puoi ridurre significativamente il codice boilerplate necessario per creare form sicuri e user-friendly.
+Perché usare Django Forms?</p>
+
+<h3 id="utilizzare-django-forms-offre-diversi-vantaggi">Utilizzare Django Forms offre diversi vantaggi:</h3>
+
+<p>Validazione dei dati: Django Forms gestisce la validazione lato server, garantendo che i dati inviati dagli utenti siano corretti e sicuri prima di essere elaborati o salvati.</p>
+
+<p>Riduzione del codice: Con i form Django, il codice necessario per generare form HTML, raccogliere dati grezzi, e convertirli in tipi Python utilizzabili è notevolmente ridotto.</p>
+
+<p>Riutilizzabilità: I form possono essere definiti una volta e riutilizzati in diverse parti dell’applicazione, mantenendo il codice organizzato e DRY (Don’t Repeat Yourself).</p>
+
+<h3 id="creazione-di-un-form-in-django">Creazione di un Form in Django</h3>
+
+<p>Per creare un form in Django, inizia definendo una classe Form che eredita da django.forms.Form. Ecco un semplice esempio di un form per la raccolta di un nome utente e una password:</p>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="kn">from</span> <span class="nn">django</span> <span class="kn">import</span> <span class="n">forms</span>
+
+<span class="k">class</span> <span class="nc">LoginForm</span><span class="p">(</span><span class="n">forms</span><span class="p">.</span><span class="n">Form</span><span class="p">):</span>
+    <span class="n">username</span> <span class="o">=</span> <span class="n">forms</span><span class="p">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s">'Username'</span><span class="p">,</span> <span class="n">max_length</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">password</span> <span class="o">=</span> <span class="n">forms</span><span class="p">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">widget</span><span class="o">=</span><span class="n">forms</span><span class="p">.</span><span class="n">PasswordInput</span><span class="p">())</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>In questo esempio, username è un campo di testo e password è un campo di password, il quale nasconde l’input visualizzato grazie a forms.PasswordInput().</p>
+
+<h3 id="validazione-dei-dati">Validazione dei Dati</h3>
+
+<p>Django fornisce una validazione automatica di base, ma puoi anche definire metodi di validazione personalizzati. Per aggiungere una validazione personalizzata al campo username, puoi definire un metodo nella tua classe form che segue il formato clean_<fieldname>():</fieldname></p>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="k">def</span> <span class="nf">clean_username</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">cleaned_data</span><span class="p">[</span><span class="s">'username'</span><span class="p">]</span>
+    <span class="k">if</span> <span class="s">"Django"</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">forms</span><span class="p">.</span><span class="n">ValidationError</span><span class="p">(</span><span class="s">"Username non può contenere 'Django'"</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">data</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Questo metodo controlla se la parola “Django” è presente nel nome utente e, in tal caso, solleva un errore di validazione.
+Gestione del Form nel View</p>
+
+<p>Per utilizzare il form in una vista, devi gestire sia le richieste GET che POST. Ecco come potresti configurare una vista per utilizzare il LoginForm:</p>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="rouge-code"><pre><span class="kn">from</span> <span class="nn">django.shortcuts</span> <span class="kn">import</span> <span class="n">render</span>
+<span class="kn">from</span> <span class="nn">.forms</span> <span class="kn">import</span> <span class="n">LoginForm</span>
+
+<span class="k">def</span> <span class="nf">login_view</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">request</span><span class="p">.</span><span class="n">method</span> <span class="o">==</span> <span class="s">'POST'</span><span class="p">:</span>
+        <span class="n">form</span> <span class="o">=</span> <span class="n">LoginForm</span><span class="p">(</span><span class="n">request</span><span class="p">.</span><span class="n">POST</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">form</span><span class="p">.</span><span class="n">is_valid</span><span class="p">():</span>
+            <span class="c1"># Processa i dati in form.cleaned_data
+</span>            <span class="c1"># (ad esempio autenticazione dell'utente)
+</span>            <span class="k">return</span> <span class="n">redirect</span><span class="p">(</span><span class="s">'success_url'</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">form</span> <span class="o">=</span> <span class="n">LoginForm</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="s">'login.html'</span><span class="p">,</span> <span class="p">{</span><span class="s">'form'</span><span class="p">:</span> <span class="n">form</span><span class="p">})</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>In questa vista, il form viene inizializzato vuoto per le richieste GET, mentre per le richieste POST il form viene popolato con i dati inviati e validato. Se la validazione riesce, i dati possono essere processati ulteriormente.
+Conclusione</p>
+
+<p>I Django Forms sono uno strumento potente che semplifica la gestione dei dati degli utenti nelle applicazioni web. Con essi, puoi facilmente creare form sicuri e validare i dati con minimi sforzi, migliorando l’efficienza dello sviluppo e l’integrità dell’applicazione. Continua a esplorare le funzionalità dei Django Forms per sfruttare appieno il loro potenziale nel tuo progetto Django.</p>
+
+<p><a href="/testing-in-django/">Testing in Django</a></p>
+:ET

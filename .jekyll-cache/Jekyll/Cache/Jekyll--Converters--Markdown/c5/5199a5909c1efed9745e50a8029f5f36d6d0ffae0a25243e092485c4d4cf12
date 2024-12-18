@@ -1,0 +1,254 @@
+I"�J<p>Quando si inizia a programmare, il passaggio dalla teoria alla pratica può sembrare intimidatorio. Python, con la sua sintassi semplice e leggibile, è uno dei linguaggi migliori per imparare a scrivere codice che risolve problemi reali. Creare piccoli progetti pratici è il modo più efficace per mettere in pratica ciò che si è appreso, consolidare i concetti fondamentali e sviluppare una comprensione intuitiva del linguaggio.</p>
+
+<p>In questo articolo, ti guideremo attraverso una serie di progetti pensati per principianti, progettati per essere accessibili ma anche stimolanti. Questi esercizi ti aiuteranno a:</p>
+
+<ul>
+  <li>Applicare concetti base come input/output, strutture condizionali, cicli e funzioni.</li>
+  <li>Comprendere come risolvere problemi comuni con la programmazione.</li>
+  <li>Costruire fiducia nella tua capacità di trasformare idee in codice funzionante.</li>
+</ul>
+
+<p>Ogni progetto proposto è stato scelto per affrontare una specifica sfida di programmazione, dall’automazione di semplici calcoli matematici alla gestione di liste o al design di un piccolo gioco. Che tu voglia imparare per hobby, per iniziare una carriera nel settore tecnologico, o semplicemente per arricchire il tuo bagaglio di competenze, questi progetti rappresentano un ottimo punto di partenza.</p>
+
+<p>Prendi il tuo editor di testo preferito, e preparati a scrivere le prime righe di codice dei tuoi progetti Python!</p>
+
+<h3 id="1-calcolatrice-semplice">1. <strong>Calcolatrice Semplice</strong></h3>
+<p>Una calcolatrice che permette di eseguire operazioni di base come addizione, sottrazione, moltiplicazione e divisione.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+</pre></td><td class="rouge-code"><pre><span class="k">def</span> <span class="nf">calcolatrice</span><span class="p">():</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Benvenuto nella calcolatrice!"</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Operazioni disponibili: +, -, *, /"</span><span class="p">)</span>
+    <span class="n">operazione</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Inserisci l'operazione: "</span><span class="p">)</span>
+    
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">num1</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Inserisci il primo numero: "</span><span class="p">))</span>
+        <span class="n">num2</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Inserisci il secondo numero: "</span><span class="p">))</span>
+        
+        <span class="k">if</span> <span class="n">operazione</span> <span class="o">==</span> <span class="s">"+"</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"Risultato: </span><span class="si">{</span><span class="n">num1</span> <span class="o">+</span> <span class="n">num2</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">operazione</span> <span class="o">==</span> <span class="s">"-"</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"Risultato: </span><span class="si">{</span><span class="n">num1</span> <span class="o">-</span> <span class="n">num2</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">operazione</span> <span class="o">==</span> <span class="s">"*"</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"Risultato: </span><span class="si">{</span><span class="n">num1</span> <span class="o">*</span> <span class="n">num2</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">operazione</span> <span class="o">==</span> <span class="s">"/"</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"Risultato: </span><span class="si">{</span><span class="n">num1</span> <span class="o">/</span> <span class="n">num2</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">"Operazione non valida!"</span><span class="p">)</span>
+    <span class="k">except</span> <span class="nb">ValueError</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Errore: inserisci solo numeri validi."</span><span class="p">)</span>
+    <span class="k">except</span> <span class="nb">ZeroDivisionError</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Errore: non è possibile dividere per zero."</span><span class="p">)</span>
+
+<span class="n">calcolatrice</span><span class="p">()</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<h3 id="2-gioco-indovina-il-numero">2. <strong>Gioco “Indovina il Numero”</strong></h3>
+<p>Un semplice gioco in cui il giocatore deve indovinare un numero generato casualmente.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="k">def</span> <span class="nf">indovina_numero</span><span class="p">():</span>
+    <span class="n">numero_segreto</span> <span class="o">=</span> <span class="n">random</span><span class="p">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+    <span class="n">tentativi</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Benvenuto al gioco 'Indovina il numero'!"</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Ho scelto un numero tra 1 e 100. Riesci a indovinarlo?"</span><span class="p">)</span>
+    
+    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">tentativo</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Inserisci un numero: "</span><span class="p">))</span>
+            <span class="n">tentativi</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">if</span> <span class="n">tentativo</span> <span class="o">&lt;</span> <span class="n">numero_segreto</span><span class="p">:</span>
+                <span class="k">print</span><span class="p">(</span><span class="s">"Troppo basso!"</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">tentativo</span> <span class="o">&gt;</span> <span class="n">numero_segreto</span><span class="p">:</span>
+                <span class="k">print</span><span class="p">(</span><span class="s">"Troppo alto!"</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"Complimenti! Hai indovinato in </span><span class="si">{</span><span class="n">tentativi</span><span class="si">}</span><span class="s"> tentativi."</span><span class="p">)</span>
+                <span class="k">break</span>
+        <span class="k">except</span> <span class="nb">ValueError</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">"Per favore, inserisci un numero valido."</span><span class="p">)</span>
+
+<span class="n">indovina_numero</span><span class="p">()</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<h3 id="3-gestione-della-lista-della-spesa">3. <strong>Gestione della Lista della Spesa</strong></h3>
+<p>Un programma che permette di aggiungere, rimuovere e visualizzare elementi nella lista della spesa.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+</pre></td><td class="rouge-code"><pre><span class="k">def</span> <span class="nf">lista_spesa</span><span class="p">():</span>
+    <span class="n">lista</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Menu Lista della Spesa"</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"1. Aggiungi elemento"</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"2. Rimuovi elemento"</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"3. Visualizza lista"</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"4. Esci"</span><span class="p">)</span>
+        
+        <span class="n">scelta</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Scegli un'opzione: "</span><span class="p">)</span>
+        
+        <span class="k">if</span> <span class="n">scelta</span> <span class="o">==</span> <span class="s">"1"</span><span class="p">:</span>
+            <span class="n">elemento</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Inserisci l'elemento da aggiungere: "</span><span class="p">)</span>
+            <span class="n">lista</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">elemento</span><span class="p">)</span>
+            <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">elemento</span><span class="si">}</span><span class="s"> aggiunto alla lista."</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">scelta</span> <span class="o">==</span> <span class="s">"2"</span><span class="p">:</span>
+            <span class="n">elemento</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Inserisci l'elemento da rimuovere: "</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">elemento</span> <span class="ow">in</span> <span class="n">lista</span><span class="p">:</span>
+                <span class="n">lista</span><span class="p">.</span><span class="n">remove</span><span class="p">(</span><span class="n">elemento</span><span class="p">)</span>
+                <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">elemento</span><span class="si">}</span><span class="s"> rimosso dalla lista."</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">print</span><span class="p">(</span><span class="s">"Elemento non trovato."</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">scelta</span> <span class="o">==</span> <span class="s">"3"</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">"La tua lista della spesa:"</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">lista</span><span class="p">:</span>
+                <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"- </span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">scelta</span> <span class="o">==</span> <span class="s">"4"</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">"Uscita dal programma."</span><span class="p">)</span>
+            <span class="k">break</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">"Scelta non valida."</span><span class="p">)</span>
+
+<span class="n">lista_spesa</span><span class="p">()</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<h3 id="4-conversione-di-unità-celsius--fahrenheit">4. <strong>Conversione di Unità (Celsius ⇔ Fahrenheit)</strong></h3>
+<p>Un convertitore semplice per trasformare le temperature da Celsius a Fahrenheit e viceversa.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+</pre></td><td class="rouge-code"><pre><span class="k">def</span> <span class="nf">conversione_unita</span><span class="p">():</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Conversione di temperature"</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"1. Da Celsius a Fahrenheit"</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"2. Da Fahrenheit a Celsius"</span><span class="p">)</span>
+    
+    <span class="n">scelta</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Scegli un'opzione (1 o 2): "</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">scelta</span> <span class="o">==</span> <span class="s">"1"</span><span class="p">:</span>
+            <span class="n">celsius</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Inserisci la temperatura in Celsius: "</span><span class="p">))</span>
+            <span class="n">fahrenheit</span> <span class="o">=</span> <span class="p">(</span><span class="n">celsius</span> <span class="o">*</span> <span class="mi">9</span><span class="o">/</span><span class="mi">5</span><span class="p">)</span> <span class="o">+</span> <span class="mi">32</span>
+            <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">celsius</span><span class="si">}</span><span class="s">°C corrispondono a </span><span class="si">{</span><span class="n">fahrenheit</span><span class="si">}</span><span class="s">°F."</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">scelta</span> <span class="o">==</span> <span class="s">"2"</span><span class="p">:</span>
+            <span class="n">fahrenheit</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Inserisci la temperatura in Fahrenheit: "</span><span class="p">))</span>
+            <span class="n">celsius</span> <span class="o">=</span> <span class="p">(</span><span class="n">fahrenheit</span> <span class="o">-</span> <span class="mi">32</span><span class="p">)</span> <span class="o">*</span> <span class="mi">5</span><span class="o">/</span><span class="mi">9</span>
+            <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">fahrenheit</span><span class="si">}</span><span class="s">°F corrispondono a </span><span class="si">{</span><span class="n">celsius</span><span class="si">}</span><span class="s">°C."</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">"Opzione non valida!"</span><span class="p">)</span>
+    <span class="k">except</span> <span class="nb">ValueError</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Errore: inserisci un numero valido."</span><span class="p">)</span>
+
+<span class="n">conversione_unita</span><span class="p">()</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<h2 id="conclusione-dai-piccoli-progetti-alle-grandi-competenze">Conclusione: Dai piccoli progetti alle grandi competenze</h2>
+
+<p>L’apprendimento della programmazione in Python diventa più coinvolgente quando è basato su progetti pratici. I piccoli esercizi presentati in questo articolo, come la calcolatrice, il gioco “Indovina il Numero”, la gestione della lista della spesa e la conversione di unità, non sono solo semplici attività: rappresentano vere e proprie opportunità per immergersi nel problem-solving e per costruire una solida base di conoscenze.</p>
+
+<p>Con questi progetti, hai esplorato concetti chiave come input/output, condizionali, cicli, funzioni e gestione delle eccezioni. Ora, il passo successivo è quello di sfidare te stesso: prova a migliorare questi programmi, aggiungendo nuove funzionalità o ottimizzandone il funzionamento. Ad esempio, puoi trasformare la calcolatrice in un’interfaccia grafica o espandere il gioco “Indovina il Numero” con modalità multigiocatore.</p>
+
+<p>Ricorda che ogni piccolo passo compiuto nella programmazione è un passo verso obiettivi più grandi. Continua a sperimentare, costruire e imparare. Python è un linguaggio potente e versatile, e queste prime esperienze ti porteranno presto a realizzare progetti più complessi e ambiziosi. Non fermarti: la tua avventura nella programmazione è appena iniziata!</p>
+:ET

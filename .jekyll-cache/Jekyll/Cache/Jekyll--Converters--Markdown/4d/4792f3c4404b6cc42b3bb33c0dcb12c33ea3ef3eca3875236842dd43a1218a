@@ -1,0 +1,124 @@
+I"�"<p>Il <strong>CSS Box Model</strong> è uno dei concetti fondamentali da comprendere per costruire layout web efficaci e precisi. Ogni elemento HTML è considerato un “box” e, di conseguenza, è composto da quattro parti principali: <strong>contenuto</strong>, <strong>padding</strong>, <strong>bordo</strong> e <strong>margine</strong>.</p>
+
+<h3 id="1-struttura-del-box-model">1. Struttura del Box Model</h3>
+
+<p>L’elemento (o box) è strutturato nei seguenti componenti:</p>
+
+<ol>
+  <li>
+    <p><strong>Content</strong> (Contenuto): La sezione interna del box che contiene il testo o gli elementi figli. È qui che viene visualizzato il contenuto reale dell’elemento.</p>
+  </li>
+  <li>
+    <p><strong>Padding</strong>: La parte tra il contenuto e il bordo. Aggiunge spazio interno intorno al contenuto e lo separa dal bordo.</p>
+  </li>
+  <li>
+    <p><strong>Border</strong> (Bordo): Circonda l’elemento e il padding, rappresentando il confine dell’elemento. I bordi possono essere personalizzati in spessore, colore e stile.</p>
+  </li>
+  <li>
+    <p><strong>Margin</strong> (Margine): Lo spazio esterno che separa il box dagli altri elementi circostanti. Serve a distanziare l’elemento dagli altri elementi sulla pagina.</p>
+  </li>
+</ol>
+
+<h4 id="diagramma-del-box-model">Diagramma del Box Model</h4>
+<p>Visualmente, si può immaginare il Box Model come segue:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="rouge-code"><pre>┌──────────────┐ &lt;- Margine
+│              │
+│ ┌──────────┐ │ &lt;- Bordo
+│ │          │ │
+│ │          │ │
+│ │ Contenuto │ &lt;- Padding
+│ │          │ │
+│ │          │ │
+│ └──────────┘ │
+│              │
+└──────────────┘
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="2-differenze-tra-content-box-e-border-box">2. Differenze tra <code class="language-plaintext highlighter-rouge">content-box</code> e <code class="language-plaintext highlighter-rouge">border-box</code></h3>
+
+<p>L’<strong><code class="language-plaintext highlighter-rouge">box-sizing</code></strong> è una proprietà CSS che determina come il browser calcola le dimensioni complessive di un elemento. I valori principali per <code class="language-plaintext highlighter-rouge">box-sizing</code> sono <code class="language-plaintext highlighter-rouge">content-box</code> e <code class="language-plaintext highlighter-rouge">border-box</code>.</p>
+
+<h4 id="box-sizing-content-box-predefinito"><code class="language-plaintext highlighter-rouge">box-sizing: content-box;</code> (Predefinito)</h4>
+
+<ul>
+  <li>Con <code class="language-plaintext highlighter-rouge">content-box</code>, la <strong>larghezza e altezza</strong> dell’elemento si applicano <strong>solo al contenuto</strong> (senza includere padding e bordi).</li>
+  <li>Se definisci, ad esempio, <code class="language-plaintext highlighter-rouge">width: 100px</code> e aggiungi <code class="language-plaintext highlighter-rouge">padding: 10px</code> e <code class="language-plaintext highlighter-rouge">border: 2px</code>, la larghezza complessiva sarà <code class="language-plaintext highlighter-rouge">100px + 10px (padding sinistro) + 10px (padding destro) + 2px (bordo sinistro) + 2px (bordo destro) = 124px</code>.</li>
+</ul>
+
+<p>Questa configurazione può creare complicazioni quando cerchi di mantenere le dimensioni complessive di un elemento esattamente uguali a una larghezza e altezza prefissate, in quanto ogni aggiunta di padding o bordo aumenta la dimensione complessiva.</p>
+
+<h4 id="box-sizing-border-box"><code class="language-plaintext highlighter-rouge">box-sizing: border-box;</code></h4>
+
+<ul>
+  <li>Con <code class="language-plaintext highlighter-rouge">border-box</code>, la larghezza e l’altezza dell’elemento <strong>includono il padding e il bordo</strong>.</li>
+  <li>Utilizzando lo stesso esempio (<code class="language-plaintext highlighter-rouge">width: 100px</code>, <code class="language-plaintext highlighter-rouge">padding: 10px</code>, <code class="language-plaintext highlighter-rouge">border: 2px</code>), la larghezza complessiva sarà sempre <code class="language-plaintext highlighter-rouge">100px</code> perché padding e bordo sono inclusi nelle dimensioni stabilite per l’elemento.</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">border-box</code> è particolarmente utile per mantenere le dimensioni coerenti. In pratica, evita di dover calcolare ogni volta la larghezza e l’altezza aggiungendo margini e padding, quindi semplifica la creazione di layout responsivi.</p>
+
+<h3 id="3-esempi-pratici">3. Esempi pratici</h3>
+
+<h4 id="esempio-con-content-box">Esempio con <code class="language-plaintext highlighter-rouge">content-box</code></h4>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="nc">.box-content-box</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">5px</span> <span class="nb">solid</span> <span class="no">black</span><span class="p">;</span>
+  <span class="nl">box-sizing</span><span class="p">:</span> <span class="n">content-box</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>In questo caso, la larghezza complessiva sarà <code class="language-plaintext highlighter-rouge">200px + 20px (padding destro e sinistro) + 5px (bordo destro e sinistro) = 250px</code>.</p>
+
+<h4 id="esempio-con-border-box">Esempio con <code class="language-plaintext highlighter-rouge">border-box</code></h4>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="nc">.box-border-box</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">5px</span> <span class="nb">solid</span> <span class="no">black</span><span class="p">;</span>
+  <span class="nl">box-sizing</span><span class="p">:</span> <span class="n">border-box</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Qui la larghezza complessiva sarà esattamente <code class="language-plaintext highlighter-rouge">200px</code>, perché padding e border sono inclusi nelle dimensioni dichiarate.</p>
+
+<h3 id="4-consigli-pratici">4. Consigli pratici</h3>
+
+<p>Molti sviluppatori utilizzano <code class="language-plaintext highlighter-rouge">border-box</code> come impostazione di default globale per evitare calcoli extra. Per impostarlo su tutti gli elementi, puoi usare il seguente codice CSS:</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="o">*,</span>
+<span class="o">*</span><span class="nd">::before</span><span class="o">,</span>
+<span class="o">*</span><span class="nd">::after</span> <span class="p">{</span>
+  <span class="nl">box-sizing</span><span class="p">:</span> <span class="n">border-box</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Questa semplice riga di codice rende il layout più prevedibile, poiché padding e bordo sono già inclusi nelle dimensioni degli elementi.</p>
+
+<p>Comprendere a fondo il Box Model in CSS è fondamentale per costruire layout web precisi e visivamente gradevoli. Gestendo con competenza contenuto, padding, bordi e margini, puoi migliorare l’estetica e la funzionalità di ogni elemento, ottimizzando al contempo l’esperienza dell’utente. Questa base ti permetterà di progredire verso layout più complessi e responsive, affrontando con maggiore sicurezza le sfide del design web.</p>
+
+<p><a href="/colori-e-background/">Colori e Background</a></p>
+:ET

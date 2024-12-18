@@ -4,7 +4,7 @@ title: "Esplora la Palette Predefinita di Bootstrap: Una Guida Completa"
 description: "Scopri come utilizzare la palette predefinita di Bootstrap per migliorare il design del tuo sito web. Questo articolo offre una panoramica dettagliata delle opzioni di colore disponibili e consigli pratici per l'uso efficace delle sfumature predefinite."
 keywords: "Bootstrap, Palette Predefinita, Design Web, CSS"
 author: "Teo"
-categories: Design Web
+categories: guida_bootstrap
 hidden: true
 ---
 

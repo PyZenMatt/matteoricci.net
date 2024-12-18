@@ -5,7 +5,7 @@ description: "Scopri come il sistema di griglia a 12 colonne di Bootstrap può t
 keywords: "Bootstrap, sistema di griglia, griglia a 12 colonne, responsive design, layout web"
 author: "Teo"
 hidden: true
-categories: Web Design, Bootstrap, Responsive Design
+categories: guida_bootstrap
 ---
 
 Il **sistema di griglia** di Bootstrap è uno degli aspetti più potenti e versatili del popolare framework di frontend. Questo sistema è progettato per **semplificare la progettazione reattiva**, assicurando che il layout di un sito web si adatti efficacemente a vari tipi di dispositivi e dimensioni di schermo. Al cuore di questo sistema c'è il concetto di **griglia a 12 colonne**, una struttura che offre massima flessibilità e controllo nel posizionamento e dimensionamento degli elementi della pagina.

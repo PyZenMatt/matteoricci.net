@@ -2,7 +2,7 @@
 layout: post
 title: "Routing in Vue.js: Creare SPA con Vue Router"
 author: Teo
-categories: 
+categories: guida_vue
 image: 
 featured: 
 description: "Scopri come utilizzare Vue Router per gestire percorsi, parametri e navigazioni programmate in applicazioni Single Page."

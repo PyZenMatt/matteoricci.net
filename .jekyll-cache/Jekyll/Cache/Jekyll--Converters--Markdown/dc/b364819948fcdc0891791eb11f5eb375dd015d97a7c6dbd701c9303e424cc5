@@ -1,0 +1,247 @@
+I"�=<p>Introduzione</p>
+
+<p>Il controllo del flusso è uno degli elementi fondamentali in qualsiasi linguaggio di programmazione, e Python non fa eccezione. Grazie alle sue sintassi leggibili e intuitive, Python rende facile comprendere e implementare logiche condizionali, iterazioni e gestione delle decisioni nei programmi. In questo articolo esploreremo come utilizzare costrutti essenziali come if, elif, else, operatori logici, cicli for e while, nonché strumenti come range(), insieme ai comandi break e continue per gestire i flussi di esecuzione in modo efficace e pulito.</p>
+
+<p>Se stai iniziando a programmare o vuoi approfondire come strutturare meglio il flusso logico dei tuoi script, questa guida ti offrirà tutte le basi di cui hai bisogno.</p>
+
+<h2 id="1-condizioni"><strong>1. Condizioni</strong></h2>
+
+<p>Il controllo delle condizioni in Python permette di eseguire blocchi di codice diversi a seconda che una o più condizioni siano vere o false.</p>
+
+<h3 id="11-if-elif-else"><strong>1.1 if, elif, else</strong></h3>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">if</code></strong>: valuta una condizione. Se è vera, esegue il blocco di codice sottostante.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">elif</code></strong>: abbreviazione di “else if”, permette di aggiungere ulteriori condizioni da valutare se le precedenti sono false.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">else</code></strong>: esegue il blocco di codice se nessuna delle condizioni precedenti è vera.</li>
+</ul>
+
+<h4 id="esempio"><strong>Esempio</strong>:</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
+
+<span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"x è positivo"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"x è zero"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"x è negativo"</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="12-operatori-logici"><strong>1.2 Operatori logici</strong></h3>
+
+<p>Gli operatori logici combinano più condizioni e restituiscono un valore booleano (<code class="language-plaintext highlighter-rouge">True</code> o <code class="language-plaintext highlighter-rouge">False</code>).</p>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">and</code></strong>: restituisce <code class="language-plaintext highlighter-rouge">True</code> se entrambe le condizioni sono vere.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">or</code></strong>: restituisce <code class="language-plaintext highlighter-rouge">True</code> se almeno una delle condizioni è vera.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">not</code></strong>: inverte il valore booleano di una condizione.</li>
+</ul>
+
+<h4 id="esempio-1"><strong>Esempio</strong>:</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="rouge-code"><pre><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">10</span>
+
+<span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">b</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Entrambi sono positivi"</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">b</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Almeno uno dei due è positivo"</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"a non è negativo"</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<h2 id="2-cicli"><strong>2. Cicli</strong></h2>
+
+<p>I cicli consentono di ripetere un blocco di codice più volte fino al soddisfacimento di una condizione.</p>
+
+<h3 id="21-ciclo-for"><strong>2.1 Ciclo <code class="language-plaintext highlighter-rouge">for</code></strong></h3>
+
+<p>Un ciclo <code class="language-plaintext highlighter-rouge">for</code> in Python itera su una sequenza (come liste, stringhe, tuple, o range di numeri).</p>
+
+<h4 id="esempio-2"><strong>Esempio</strong>:</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="n">frutti</span> <span class="o">=</span> <span class="p">[</span><span class="s">"mela"</span><span class="p">,</span> <span class="s">"banana"</span><span class="p">,</span> <span class="s">"ciliegia"</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">frutto</span> <span class="ow">in</span> <span class="n">frutti</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"Ho trovato un </span><span class="si">{</span><span class="n">frutto</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="22-ciclo-while"><strong>2.2 Ciclo <code class="language-plaintext highlighter-rouge">while</code></strong></h3>
+
+<p>Un ciclo <code class="language-plaintext highlighter-rouge">while</code> continua a eseguire il blocco di codice finché una condizione è vera.</p>
+
+<h4 id="esempio-3"><strong>Esempio</strong>:</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+
+<span class="k">while</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"x è </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">-=</span> <span class="mi">1</span>  <span class="c1"># decrementa x di 1
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<h2 id="3-uso-di-range"><strong>3. Uso di <code class="language-plaintext highlighter-rouge">range()</code></strong></h2>
+
+<p>La funzione <code class="language-plaintext highlighter-rouge">range()</code> genera una sequenza di numeri interi, utile per iterazioni.</p>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">range(stop)</code></strong>: genera numeri da 0 a <code class="language-plaintext highlighter-rouge">stop - 1</code>.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">range(start, stop)</code></strong>: genera numeri da <code class="language-plaintext highlighter-rouge">start</code> a <code class="language-plaintext highlighter-rouge">stop - 1</code>.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">range(start, stop, step)</code></strong>: genera numeri con un incremento definito da <code class="language-plaintext highlighter-rouge">step</code>.</li>
+</ul>
+
+<h4 id="esempio-4"><strong>Esempio</strong>:</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>  <span class="c1"># Da 0 a 4
+</span>    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>  <span class="c1"># Da 1 a 5
+</span>    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>  <span class="c1"># Da 0 a 8, con incremento di 2
+</span>    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<h2 id="4-interruzione-dei-cicli-con-break-e-continue"><strong>4. Interruzione dei cicli con <code class="language-plaintext highlighter-rouge">break</code> e <code class="language-plaintext highlighter-rouge">continue</code></strong></h2>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">break</code></strong>: interrompe completamente il ciclo e passa alla riga successiva del programma.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">continue</code></strong>: interrompe solo l’iterazione corrente e passa alla successiva.</li>
+</ul>
+
+<h4 id="esempio-con-break"><strong>Esempio con <code class="language-plaintext highlighter-rouge">break</code></strong>:</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Interrompo il ciclo"</span><span class="p">)</span>
+        <span class="k">break</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Output:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre>0
+1
+2
+3
+4
+Interrompo il ciclo
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h4 id="esempio-con-continue"><strong>Esempio con <code class="language-plaintext highlighter-rouge">continue</code></strong>:</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># Salta i numeri pari
+</span>        <span class="k">continue</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Output:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre>1
+3
+5
+7
+9
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<h3 id="ciclo-while-con-break-e-continue"><strong>Ciclo <code class="language-plaintext highlighter-rouge">while</code> con <code class="language-plaintext highlighter-rouge">break</code> e <code class="language-plaintext highlighter-rouge">continue</code></strong></h3>
+
+<p>Questi meccanismi funzionano anche nei cicli <code class="language-plaintext highlighter-rouge">while</code>.</p>
+
+<h4 id="esempio-5"><strong>Esempio</strong>:</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
+
+<span class="k">while</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">x</span> <span class="o">-=</span> <span class="mi">1</span>
+    <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Salto il valore 5"</span><span class="p">)</span>
+        <span class="k">continue</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<p>Conclusione</p>
+
+<p>Il controllo del flusso è un aspetto essenziale della programmazione, e Python offre strumenti potenti e semplici da utilizzare per gestirlo con eleganza. Comprendere e padroneggiare i costrutti condizionali, i cicli e i meccanismi di interruzione come break e continue ti permette di scrivere codici più chiari, efficienti e adattabili a situazioni complesse.</p>
+
+<p>Con una solida comprensione di questi concetti, sarai in grado di affrontare con successo problemi più avanzati, costruendo programmi che si comportano in modo prevedibile e organizzato. Il tuo viaggio nella programmazione con Python non finisce qui: continua a sperimentare e applicare queste basi per affrontare sfide sempre più ambiziose.</p>
+
+<p>Se vuoi esplorare altri argomenti legati a Python, come strutture dati o funzioni avanzate, il prossimo passo è dietro l’angolo. Buona programmazione!</p>
+
+<p><a href="/strutture-dati-fondamentali/">Strutture Dati Fondamentali</a></p>
+:ET

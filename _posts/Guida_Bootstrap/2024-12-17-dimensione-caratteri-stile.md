@@ -4,7 +4,8 @@ title: "Guida Completa alle Dimensioni dei Caratteri e Stili in Bootstrap"
 description: "Esplora come gestire dimensioni dei caratteri e stili con Bootstrap per migliorare l'usabilità e l'estetica del tuo sito web."
 keywords: "Bootstrap, dimensioni caratteri, stili caratteri, CSS, responsive design"
 author: Teo
-categories: [Bootstrap, CSS]
+categories: guida_bootstrap
+hidden: true
 ---
 
 # **Guida Completa alle Dimensioni dei Caratteri e Stili in Bootstrap**

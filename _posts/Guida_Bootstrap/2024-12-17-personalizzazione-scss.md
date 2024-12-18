@@ -5,6 +5,7 @@ description: "Scopri come personalizzare Bootstrap con SCSS per creare design un
 keywords: "Bootstrap, SCSS, personalizzazione, CSS, design web"
 author: "Teo"
 hidden: true
+categories: guida_bootstrap
 ---
 
 Bootstrap è uno dei **framework front-end** più utilizzati e apprezzati nel mondo dello sviluppo web. Offre una vasta gamma di componenti reattivi e funzionali che possono essere personalizzati per adattarsi alle esigenze specifiche di qualsiasi progetto. Una delle tecniche più potenti per la personalizzazione è l'uso di SCSS, un preprocessore CSS che permette di scrivere codice più pulito, organizzato e riutilizzabile.

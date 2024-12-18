@@ -4,6 +4,8 @@ title: "Guida Completa alle Classi Predefinite per il Testo in Bootstrap"
 description: "Scopri come utilizzare le classi predefinite per il testo in Bootstrap per migliorare la leggibilità e l'estetica del tuo sito web. Questa guida dettagliata ti offre esempi pratici e consigli utili per ottimizzare il design del tuo testo."
 keywords: "Bootstrap, classi predefinite testo, gestione testo Bootstrap, design testo web"
 author: Teo
+categories: guida_bootstrap
+hidden: true
 ---
 
 # **Guida Completa alle Classi Predefinite per il Testo in Bootstrap**

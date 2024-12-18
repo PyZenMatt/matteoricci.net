@@ -1,0 +1,214 @@
+I"I:<hr />
+
+<h3 id="tipografia-css-proprietà-del-testo-e-google-fonts">Tipografia CSS: Proprietà del Testo e Google Fonts</h3>
+
+<p>La tipografia è un aspetto cruciale del design di un sito web, poiché influisce sull’estetica e sulla leggibilità dei contenuti. In CSS, abbiamo diverse proprietà che ci permettono di controllare l’aspetto del testo, dall’aspetto visivo alla sua posizione all’interno degli elementi HTML. In questa guida, esploreremo le proprietà CSS per il testo e la loro configurazione, l’uso di Google Fonts e dei font customizzati, e l’impiego delle unità di misura relative e assolute.</p>
+
+<hr />
+
+<h3 id="proprietà-del-testo-in-css">Proprietà del Testo in CSS</h3>
+
+<ol>
+  <li><strong>Color (Colore del Testo)</strong>:
+    <ul>
+      <li>La proprietà <code class="language-plaintext highlighter-rouge">color</code> definisce il colore del testo di un elemento HTML. È possibile specificare il colore in vari formati: nomi di colori (es. <code class="language-plaintext highlighter-rouge">red</code>), valori esadecimali (es. <code class="language-plaintext highlighter-rouge">#ff0000</code>), valori RGB (es. <code class="language-plaintext highlighter-rouge">rgb(255, 0, 0)</code>), o valori HSL (es. <code class="language-plaintext highlighter-rouge">hsl(0, 100%, 50%)</code>).</li>
+      <li>Esempio:
+        <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#333333</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Font-Size (Dimensione del Carattere)</strong>:
+    <ul>
+      <li>La proprietà <code class="language-plaintext highlighter-rouge">font-size</code> imposta la dimensione del testo e può essere definita con unità assolute (come <code class="language-plaintext highlighter-rouge">px</code> o <code class="language-plaintext highlighter-rouge">pt</code>) o relative (come <code class="language-plaintext highlighter-rouge">%</code>, <code class="language-plaintext highlighter-rouge">em</code>, <code class="language-plaintext highlighter-rouge">rem</code>). Un valore più grande rende il testo più grande e viceversa.</li>
+      <li>Esempio:
+        <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nt">h1</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">2rem</span><span class="p">;</span> <span class="c">/* Dimensione relativa */</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Font-Weight (Peso del Carattere)</strong>:
+    <ul>
+      <li>La proprietà <code class="language-plaintext highlighter-rouge">font-weight</code> specifica lo spessore del carattere. I valori possono variare da <code class="language-plaintext highlighter-rouge">100</code> (più sottile) a <code class="language-plaintext highlighter-rouge">900</code> (più spesso), o essere impostati come <code class="language-plaintext highlighter-rouge">normal</code> o <code class="language-plaintext highlighter-rouge">bold</code>.</li>
+      <li>Esempio:
+        <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nt">strong</span> <span class="p">{</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Font-Style (Stile del Carattere)</strong>:
+    <ul>
+      <li>La proprietà <code class="language-plaintext highlighter-rouge">font-style</code> controlla lo stile del carattere, solitamente impostato su <code class="language-plaintext highlighter-rouge">normal</code> o <code class="language-plaintext highlighter-rouge">italic</code>. Altri valori possono includere <code class="language-plaintext highlighter-rouge">oblique</code>, che inclina il testo, anche se non con la stessa precisione di <code class="language-plaintext highlighter-rouge">italic</code>.</li>
+      <li>Esempio:
+        <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nt">em</span> <span class="p">{</span>
+  <span class="nl">font-style</span><span class="p">:</span> <span class="nb">italic</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Text-Align (Allineamento del Testo)</strong>:
+    <ul>
+      <li>La proprietà <code class="language-plaintext highlighter-rouge">text-align</code> determina come viene allineato il testo all’interno di un elemento. I valori possono essere <code class="language-plaintext highlighter-rouge">left</code>, <code class="language-plaintext highlighter-rouge">right</code>, <code class="language-plaintext highlighter-rouge">center</code>, o <code class="language-plaintext highlighter-rouge">justify</code>.</li>
+      <li>Esempio:
+        <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">justify</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Line-Height (Altezza della Linea)</strong>:
+    <ul>
+      <li>La proprietà <code class="language-plaintext highlighter-rouge">line-height</code> controlla l’altezza di ciascuna riga di testo, influenzando la leggibilità e il “respiro” del testo. Solitamente è impostata come una unità senza dimensione (<code class="language-plaintext highlighter-rouge">1.5</code>) o con unità relative e assolute.</li>
+      <li>Esempio:
+        <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">line-height</span><span class="p">:</span> <span class="m">1.6</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h3 id="google-fonts-e-font-customizzati">Google Fonts e Font Customizzati</h3>
+
+<h4 id="google-fonts">Google Fonts</h4>
+<p>Google Fonts è una libreria gratuita di font online che permette di importare facilmente font personalizzati nei progetti web. L’uso dei font di Google migliora l’estetica e la personalizzazione dei testi e la libreria offre una vasta gamma di opzioni gratuite. Per utilizzare Google Fonts:</p>
+
+<ol>
+  <li>Vai su <a href="https://fonts.google.com/">Google Fonts</a> e seleziona il font desiderato.</li>
+  <li>Scegli gli stili necessari (es. <code class="language-plaintext highlighter-rouge">Regular 400</code>, <code class="language-plaintext highlighter-rouge">Bold 700</code>).</li>
+  <li>Copia il link generato e aggiungilo all’interno del tag <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> nel file HTML:
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>Imposta il font nel tuo CSS:
+    <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Roboto'</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+</ol>
+
+<h4 id="font-customizzati">Font Customizzati</h4>
+<p>È possibile anche utilizzare font personalizzati (scaricati o creati). Per farlo, si utilizza la regola <code class="language-plaintext highlighter-rouge">@font-face</code> in CSS, specificando il percorso del file del font.</p>
+
+<p>Esempio:</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="rouge-code"><pre><span class="k">@font-face</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'MyCustomFont'</span><span class="p">;</span>
+  <span class="nl">src</span><span class="p">:</span> <span class="sx">url('path/to/font.woff2')</span> <span class="n">format</span><span class="p">(</span><span class="s2">'woff2'</span><span class="p">),</span>
+       <span class="sx">url('path/to/font.woff')</span> <span class="n">format</span><span class="p">(</span><span class="s2">'woff'</span><span class="p">);</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+  <span class="nl">font-style</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'MyCustomFont'</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<h3 id="unità-di-misura-relative-e-assolute">Unità di Misura Relative e Assolute</h3>
+
+<h4 id="unità-assolute">Unità Assolute</h4>
+<p>Le unità assolute (come <code class="language-plaintext highlighter-rouge">px</code>, <code class="language-plaintext highlighter-rouge">pt</code>) definiscono una dimensione fissa, indipendente dal contesto:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">px</code> (pixel): Utilizzato per precisione e per mantenere proporzioni costanti tra i dispositivi, anche se a volte può essere meno flessibile per layout responsive.</li>
+  <li><code class="language-plaintext highlighter-rouge">pt</code> (point): Utilizzato principalmente nella stampa, raramente usato per il web.</li>
+</ul>
+
+<p>Esempio:</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nt">h1</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">24px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h4 id="unità-relative">Unità Relative</h4>
+<p>Le unità relative si adattano al contesto, rendendole preferibili per i layout responsive.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">em</code>: Definisce la dimensione del font rispetto alla dimensione del font del suo elemento padre. Esempio: se il font del body è impostato a <code class="language-plaintext highlighter-rouge">16px</code>, <code class="language-plaintext highlighter-rouge">1.5em</code> sarà pari a <code class="language-plaintext highlighter-rouge">24px</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">rem</code> (root em): Definisce la dimensione del font rispetto alla dimensione del font radice (solitamente <code class="language-plaintext highlighter-rouge">16px</code>), quindi offre maggiore coerenza rispetto a <code class="language-plaintext highlighter-rouge">em</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">%</code>: Definisce la dimensione rispetto alla dimensione del contenitore padre, usata spesso per larghezze e altezze.</li>
+</ul>
+
+<p>Esempio:</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="rouge-code"><pre><span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span> <span class="c">/* Dimensione radice */</span>
+<span class="p">}</span>
+
+<span class="nt">h1</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">2rem</span><span class="p">;</span> <span class="c">/* 32px rispetto alla radice */</span>
+<span class="p">}</span>
+
+<span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">1.5em</span><span class="p">;</span> <span class="c">/* 24px rispetto alla dimensione del font del paragrafo */</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<h3 id="conclusione">Conclusione</h3>
+
+<p>La tipografia CSS è un potente strumento per migliorare la leggibilità e l’attrattiva del testo in un sito web. Con la giusta combinazione di proprietà di testo, font personalizzati e una scelta consapevole delle unità di misura, è possibile creare un’esperienza visiva coerente e ottimizzata per diversi dispositivi e risoluzioni.</p>
+
+<p><a href="/layout-css/">Layout CSS</a></p>
+:ET

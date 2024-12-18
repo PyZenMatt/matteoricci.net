@@ -4,7 +4,8 @@ title: "Guida ai Componenti Badge e Alert di Bootstrap - Notifiche Essenziali pe
 description: "Scopri come utilizzare i componenti Badge e Alert di Bootstrap per migliorare l'interazione utente sul tuo sito web. Questa guida dettagliata ti offre esempi pratici e consigli utili."
 keywords: "Bootstrap, Componenti Bootstrap, Badge Bootstrap, Alert Bootstrap, Guida Bootstrap, Notifiche Bootstrap"
 author: Teo
-categories: [Bootstrap, UI Components]
+categories: guida_bootstrap
+hidden: true
 ---
 
 # Guida ai Componenti **Badge** e **Alert** di Bootstrap

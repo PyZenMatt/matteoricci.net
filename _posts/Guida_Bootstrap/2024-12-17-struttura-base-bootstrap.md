@@ -6,6 +6,7 @@ layout: post
 tags: Bootstrap, HTML, CSS, JS
 author: Teo
 hidden: true
+categories: guida_bootstrap
 
 ---
 

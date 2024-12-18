@@ -5,6 +5,7 @@ description: "Scopri come utilizzare le classi per sfondi in Bootstrap per migli
 tags: Bootstrap, Web Design, CSS
 hidden: true
 author: Matteo Ricci
+categories: guida_bootstrap
 ---
 
 # Guida Completa alle Classi per Sfondi in Bootstrap

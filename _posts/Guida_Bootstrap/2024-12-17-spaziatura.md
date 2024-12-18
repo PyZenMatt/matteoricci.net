@@ -2,6 +2,9 @@
 title: "Impara a Utilizzare le Classi di Utilità per la Spaziatura in Bootstrap"
 description: "Questo articolo ti guida attraverso le classi di utilità per la spaziatura in Bootstrap, essenziali per ottimizzare il layout delle tue pagine web."
 keywords: "Bootstrap, classi di utilità, spaziatura, margini, padding"
+categories: guida_bootstrap
+author: Teo
+hidden: true
 ---
 
 # **Classi di Utilità per la Spaziatura in Bootstrap**

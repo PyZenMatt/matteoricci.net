@@ -1,0 +1,36 @@
+I"
+<p>Bootstrap è uno dei framework di front-end più popolari per lo sviluppo di siti web responsive e dinamici. Uno degli aspetti fondamentali di Bootstrap è l’uso di <strong>container</strong>, <strong>row</strong> e <strong>column</strong> per organizzare e gestire il layout delle pagine web. In questa guida, esploreremo come questi elementi lavorano insieme per creare layout responsive che si adattano a diverse dimensioni di schermo.</p>
+
+<h2 id="che-cosa-sono-i-container-in-bootstrap">Che cosa sono i <strong>Container</strong> in Bootstrap?</h2>
+
+<p>I <strong>container</strong> sono elementi fondamentali in Bootstrap che racchiudono e allineano il contenuto del tuo sito web in modo centrato e uniforme. Ci sono due tipi principali di container:</p>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">.container</code></strong>: Questo è un container con una larghezza massima fissa che cambia a vari breakpoint di dimensione dello schermo, che si adatta per essere responsive.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">.container-fluid</code></strong>: Questo container ha una larghezza che si estende al 100% del viewport, rendendolo completamente fluido in tutte le risoluzioni di schermo.</li>
+</ul>
+
+<p>Utilizzare il giusto tipo di container è cruciale per assicurare che il tuo sito appaia ordinato e ben organizzato su qualsiasi dispositivo.</p>
+
+<h2 id="gestione-delle-row-e-column">Gestione delle <strong>Row</strong> e <strong>Column</strong></h2>
+
+<p>Dentro un <strong>container</strong>, Bootstrap utilizza un sistema di griglia basato su <strong>row</strong> (righe) e <strong>column</strong> (colonne) per posizionare e allineare i contenuti. Ecco come puoi sfruttare al meglio questi elementi:</p>
+
+<h3 id="row">Row</h3>
+
+<p>Le <strong>row</strong> servono come wrapper per le colonne e sono essenziali per mantenere l’allineamento corretto. Ogni riga è divisa in 12 unità colonna, e ogni contenuto all’interno della riga deve essere posto in una colonna per garantire un corretto allineamento.</p>
+
+<h3 id="column">Column</h3>
+
+<p>Le <strong>column</strong> in Bootstrap sono flessibili e si adattano automaticamente alla larghezza della riga. Le colonne possono essere dimensionate utilizzando classi specifiche che indicano quante delle 12 unità di griglia occupare, ad esempio, <code class="language-plaintext highlighter-rouge">col-4</code> per una colonna che occupa un terzo della riga (4/12).</p>
+
+<h4 id="esempio-di-layout-con-container-row-e-column">Esempio di layout con <strong>Container</strong>, <strong>Row</strong> e <strong>Column</strong>:</h4>
+
+<p>```html</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">Contenuto principale</div>
+    <div class="col-md-4">Barra laterale</div>
+  </div>
+</div>
+:ET

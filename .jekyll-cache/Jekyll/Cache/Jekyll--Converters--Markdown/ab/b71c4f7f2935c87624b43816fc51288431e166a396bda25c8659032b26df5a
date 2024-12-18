@@ -1,0 +1,137 @@
+I"E6<p>In CSS, lo stile dei bordi e delle ombre è utilizzato per rendere i contenuti visivamente più accattivanti e per dare profondità o risalto agli elementi. Ecco una spiegazione dettagliata delle proprietà coinvolte.</p>
+
+<h3 id="1-stile-del-bordo">1. Stile del Bordo</h3>
+<p>Le proprietà CSS relative al bordo consentono di definire la larghezza, il colore, lo stile e il raggio dei bordi degli elementi.</p>
+
+<h4 id="border"><code class="language-plaintext highlighter-rouge">border</code></h4>
+<p>La proprietà <code class="language-plaintext highlighter-rouge">border</code> è una scorciatoia per definire larghezza, stile e colore del bordo in una sola dichiarazione. Si utilizza così:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">border</span><span class="o">:</span> <span class="err">2</span><span class="nt">px</span> <span class="nt">solid</span> <span class="err">#333</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>In questo caso:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">2px</code> rappresenta la larghezza del bordo.</li>
+  <li><code class="language-plaintext highlighter-rouge">solid</code> indica lo stile del bordo.</li>
+  <li><code class="language-plaintext highlighter-rouge">#333</code> è il colore del bordo.</li>
+</ul>
+
+<h5 id="esempi-di-stili-di-bordo-border-style">Esempi di stili di bordo (<code class="language-plaintext highlighter-rouge">border-style</code>)</h5>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">solid</code>: un bordo pieno e continuo.</li>
+  <li><code class="language-plaintext highlighter-rouge">dotted</code>: un bordo a punti.</li>
+  <li><code class="language-plaintext highlighter-rouge">dashed</code>: un bordo a tratteggio.</li>
+  <li><code class="language-plaintext highlighter-rouge">double</code>: un bordo doppio.</li>
+  <li><code class="language-plaintext highlighter-rouge">none</code>: nessun bordo.</li>
+</ul>
+
+<h4 id="border-radius"><code class="language-plaintext highlighter-rouge">border-radius</code></h4>
+<p><code class="language-plaintext highlighter-rouge">border-radius</code> definisce l’arrotondamento degli angoli di un elemento, permettendo di creare effetti visivi come bordi arrotondati o cerchi perfetti. Si può applicare in diversi modi:</p>
+
+<ul>
+  <li><strong>Valore singolo</strong>: <code class="language-plaintext highlighter-rouge">border-radius: 10px;</code> – arrotonda tutti gli angoli con un raggio di 10px.</li>
+  <li><strong>Valori separati per ogni angolo</strong>: <code class="language-plaintext highlighter-rouge">border-radius: 10px 20px 30px 40px;</code> – arrotonda ogni angolo con valori differenti (rispettivamente in senso orario: angolo in alto a sinistra, in alto a destra, in basso a destra, in basso a sinistra).</li>
+</ul>
+
+<h5 id="esempi">Esempi</h5>
+<ul>
+  <li>Per creare un cerchio: imposta <code class="language-plaintext highlighter-rouge">border-radius</code> al 50% su un elemento quadrato.</li>
+</ul>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">border-radius</span><span class="o">:</span> <span class="err">50</span><span class="o">%;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h4 id="border-color"><code class="language-plaintext highlighter-rouge">border-color</code></h4>
+<p><code class="language-plaintext highlighter-rouge">border-color</code> specifica il colore del bordo e supporta colori definiti con nomi (<code class="language-plaintext highlighter-rouge">red</code>), esadecimali (<code class="language-plaintext highlighter-rouge">#ff0000</code>), RGB (<code class="language-plaintext highlighter-rouge">rgb(255, 0, 0)</code>) o altre notazioni. Se combinato con <code class="language-plaintext highlighter-rouge">border-style</code> e <code class="language-plaintext highlighter-rouge">border-width</code>, si può creare un bordo ben definito attorno all’elemento.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">border-color</span><span class="o">:</span> <span class="nf">#ff0000</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h4 id="border-style"><code class="language-plaintext highlighter-rouge">border-style</code></h4>
+<p><code class="language-plaintext highlighter-rouge">border-style</code> definisce il tipo di bordo (continuo, tratteggiato, puntinato, ecc.) e va sempre specificato per rendere visibile il bordo.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">border-style</span><span class="o">:</span> <span class="nt">dashed</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="2-ombre">2. Ombre</h3>
+<p>Le ombre migliorano la profondità visiva e la leggibilità degli elementi. In CSS, abbiamo <code class="language-plaintext highlighter-rouge">box-shadow</code> per le ombre degli elementi e <code class="language-plaintext highlighter-rouge">text-shadow</code> per il testo.</p>
+
+<h4 id="box-shadow"><code class="language-plaintext highlighter-rouge">box-shadow</code></h4>
+<p>Questa proprietà permette di creare un’ombra attorno agli elementi, definendo offset orizzontale e verticale, sfocatura, estensione e colore.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">box-shadow</span><span class="o">:</span> <span class="err">5</span><span class="nt">px</span> <span class="err">5</span><span class="nt">px</span> <span class="err">10</span><span class="nt">px</span> <span class="nt">rgba</span><span class="o">(</span><span class="err">0</span><span class="o">,</span> <span class="err">0</span><span class="o">,</span> <span class="err">0</span><span class="o">,</span> <span class="err">0</span><span class="o">.</span><span class="err">5</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Dove:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">5px</code>: offset orizzontale (positivo verso destra, negativo verso sinistra).</li>
+  <li><code class="language-plaintext highlighter-rouge">5px</code>: offset verticale (positivo verso il basso, negativo verso l’alto).</li>
+  <li><code class="language-plaintext highlighter-rouge">10px</code>: raggio di sfocatura dell’ombra (più è alto, più è sfocata).</li>
+  <li><code class="language-plaintext highlighter-rouge">rgba(0, 0, 0, 0.5)</code>: colore dell’ombra con trasparenza.</li>
+</ul>
+
+<h5 id="opzioni-aggiuntive">Opzioni Aggiuntive</h5>
+<ul>
+  <li><strong>Valore di estensione (spread radius)</strong>: specifica quanto l’ombra si estende oltre i bordi dell’elemento. Ad esempio:</li>
+</ul>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">box-shadow</span><span class="o">:</span> <span class="err">5</span><span class="nt">px</span> <span class="err">5</span><span class="nt">px</span> <span class="err">10</span><span class="nt">px</span> <span class="err">5</span><span class="nt">px</span> <span class="nt">rgba</span><span class="o">(</span><span class="err">0</span><span class="o">,</span> <span class="err">0</span><span class="o">,</span> <span class="err">0</span><span class="o">,</span> <span class="err">0</span><span class="o">.</span><span class="err">3</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h5 id="ombre-multiple">Ombre Multiple</h5>
+<p>Puoi creare più ombre per un singolo elemento separandole con una virgola.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">box-shadow</span><span class="o">:</span> <span class="err">5</span><span class="nt">px</span> <span class="err">5</span><span class="nt">px</span> <span class="err">10</span><span class="nt">px</span> <span class="nt">rgba</span><span class="o">(</span><span class="err">0</span><span class="o">,</span> <span class="err">0</span><span class="o">,</span> <span class="err">0</span><span class="o">,</span> <span class="err">0</span><span class="o">.</span><span class="err">5</span><span class="o">),</span> <span class="nt">-5px</span> <span class="nt">-5px</span> <span class="err">5</span><span class="nt">px</span> <span class="nt">rgba</span><span class="o">(</span><span class="err">255</span><span class="o">,</span> <span class="err">0</span><span class="o">,</span> <span class="err">0</span><span class="o">,</span> <span class="err">0</span><span class="o">.</span><span class="err">5</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h4 id="text-shadow"><code class="language-plaintext highlighter-rouge">text-shadow</code></h4>
+<p><code class="language-plaintext highlighter-rouge">text-shadow</code> applica un’ombra al testo, migliorando la leggibilità o creando effetti visivi accattivanti.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">text-shadow</span><span class="o">:</span> <span class="err">2</span><span class="nt">px</span> <span class="err">2</span><span class="nt">px</span> <span class="err">5</span><span class="nt">px</span> <span class="nt">rgba</span><span class="o">(</span><span class="err">0</span><span class="o">,</span> <span class="err">0</span><span class="o">,</span> <span class="err">0</span><span class="o">,</span> <span class="err">0</span><span class="o">.</span><span class="err">5</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Dove:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">2px</code>: offset orizzontale.</li>
+  <li><code class="language-plaintext highlighter-rouge">2px</code>: offset verticale.</li>
+  <li><code class="language-plaintext highlighter-rouge">5px</code>: raggio di sfocatura.</li>
+  <li><code class="language-plaintext highlighter-rouge">rgba(0, 0, 0, 0.5)</code>: colore dell’ombra.</li>
+</ul>
+
+<h3 id="esempio-completo">Esempio Completo</h3>
+<p>Combinando tutte queste proprietà, puoi creare un elemento stilizzato:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="nc">.elemento</span> <span class="p">{</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">2px</span> <span class="nb">solid</span> <span class="m">#333</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">3px</span> <span class="m">3px</span> <span class="m">5px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0.3</span><span class="p">);</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#333</span><span class="p">;</span>
+  <span class="nl">text-shadow</span><span class="p">:</span> <span class="m">1px</span> <span class="m">1px</span> <span class="m">2px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0.2</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="riassunto">Riassunto</h3>
+<ul>
+  <li><strong>Bordi</strong>: usa <code class="language-plaintext highlighter-rouge">border</code>, <code class="language-plaintext highlighter-rouge">border-radius</code>, <code class="language-plaintext highlighter-rouge">border-color</code> e <code class="language-plaintext highlighter-rouge">border-style</code> per gestire spessore, colore, stile e arrotondamento del bordo.</li>
+  <li><strong>Ombre</strong>: usa <code class="language-plaintext highlighter-rouge">box-shadow</code> per creare ombre intorno agli elementi e <code class="language-plaintext highlighter-rouge">text-shadow</code> per aggiungere ombre al testo, dando profondità e risalto visivo.</li>
+</ul>
+
+<p>Questi strumenti ti permettono di creare effetti visivi che migliorano l’estetica e la leggibilità dei contenuti CSS.</p>
+
+<p><a href="/transizioni-e-animazioni/">Transizioni e Animazioni CSS</a></p>
+:ET

@@ -5,6 +5,7 @@ description: "Guida dettagliata sull'utilizzo dei breakpoint di Bootstrap per ga
 keywords: "Bootstrap, Breakpoint, Responsività, Design Adattivo, Web Design"
 author: "Teo"
 hidden: true
+categories: guida_bootstrap
 ---
 
 Nel mondo del **web design**, la responsività è fondamentale per assicurare che un sito si adatti efficacemente a tutti i tipi di dispositivi, dai desktop agli smartphone. **Bootstrap**, uno dei framework di front-end più popolari, fornisce un sistema robusto di **breakpoint** per gestire la responsività. In questo articolo, esploreremo come utilizzare i **breakpoint** di Bootstrap per ottimizzare i tuoi progetti web.

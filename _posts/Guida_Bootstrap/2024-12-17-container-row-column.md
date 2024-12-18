@@ -3,8 +3,9 @@ layout: post
 title: "Guida Completa all'Uso di Container, Row e Column in Bootstrap per Layout Responsive"
 description: "Scopri come utilizzare container, row e column in Bootstrap per creare layout responsive efficaci. Questa guida completa ti offre tutti i dettagli necessari per massimizzare l'efficacia del tuo design web."
 date: 2024-12-17
-categories: [Web Design, Bootstrap]
-keywords: ["Bootstrap container", "Bootstrap row", "Bootstrap column", "Responsive web design", "Bootstrap layout"]
+categories: guida_bootstrap
+keywords: "Bootstrap container, Bootstrap row, Bootstrap column, Responsive web design, Bootstrap layout"
+hidden: true
 ---
 
 Bootstrap è uno dei framework di front-end più popolari per lo sviluppo di siti web responsive e dinamici. Uno degli aspetti fondamentali di Bootstrap è l'uso di **container**, **row** e **column** per organizzare e gestire il layout delle pagine web. In questa guida, esploreremo come questi elementi lavorano insieme per creare layout responsive che si adattano a diverse dimensioni di schermo.

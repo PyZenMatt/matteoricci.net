@@ -4,6 +4,7 @@ description: "Scopri come utilizzare le classi di responsive design di Bootstrap
 keywords: "Responsive Design, Bootstrap, Classi Responsive, Web Design Responsive, Adattabilità del Sito"
 author: "Teo"
 hidden: true
+categories: guida_bootstrap
 ---
 
 Bootstrap è uno dei framework di front-end più utilizzati per sviluppare interfacce web che sono sia esteticamente piacevoli sia funzionali. Una caratteristica fondamentale di Bootstrap è il suo supporto efficace al **responsive design** attraverso l'uso di classi specifiche che permettono agli elementi di adattarsi dinamicamente a diverse dimensioni di schermo. Questo articolo esplora in dettaglio le classi di responsive design fornite da Bootstrap, illustrandone l'utilizzo pratico e i benefici.

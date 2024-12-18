@@ -1,0 +1,151 @@
+I"�<p><strong>Bootstrap</strong> è uno dei <strong>framework CSS</strong> più popolari per creare <strong>siti web responsivi</strong> e moderni.</p>
+
+<p>La sua installazione può avvenire in due modi principali:</p>
+
+<ol>
+  <li>
+    <p><strong>Utilizzando una CDN</strong>.</p>
+  </li>
+  <li>
+    <p><strong>Tramite file locali</strong> scaricati e aggiunti al progetto.</p>
+  </li>
+</ol>
+
+<p>In questo articolo approfondiremo entrambe le opzioni per aiutarti a scegliere quella più adatta al tuo <strong>progetto web</strong>.</p>
+
+<hr />
+
+<h2 id="1-installazione-di-bootstrap-tramite-cdn"><strong>1. Installazione di Bootstrap tramite CDN</strong></h2>
+
+<p>Una <strong>CDN (Content Delivery Network)</strong> è un sistema di server distribuiti che ospita il codice di <strong>Bootstrap</strong>, permettendoti di caricarlo direttamente da internet.</p>
+
+<h3 id="vantaggi-della-cdn"><strong>Vantaggi della CDN</strong></h3>
+<ul>
+  <li><strong>Velocità</strong>: I file vengono caricati da server distribuiti globalmente, riducendo i tempi di caricamento.</li>
+  <li><strong>Sempre aggiornato</strong>: Utilizzando una CDN, ottieni sempre l’ultima versione stabile.</li>
+  <li><strong>Facile da implementare</strong>: Non devi scaricare o caricare manualmente i file.</li>
+</ul>
+
+<h3 id="come-installare-bootstrap-tramite-cdn"><strong>Come installare Bootstrap tramite CDN</strong></h3>
+<p>Aggiungi semplicemente i seguenti <strong>link</strong> all’interno del <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> del tuo file <strong>HTML</strong>:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="c">&lt;!-- Bootstrap CSS --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Bootstrap JS --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="quando-usare-la-cdn"><strong>Quando usare la CDN?</strong></h3>
+<p>La CDN è ideale per:</p>
+<ul>
+  <li>Progetti <strong>leggeri</strong> e <strong>veloci</strong> da implementare.</li>
+  <li>Situazioni in cui non hai bisogno di <strong>personalizzare</strong> Bootstrap.</li>
+</ul>
+
+<hr />
+
+<h2 id="2-installazione-di-bootstrap-tramite-file-locali"><strong>2. Installazione di Bootstrap tramite file locali</strong></h2>
+
+<p>Se preferisci avere <strong>pieno controllo</strong> dei file di Bootstrap, puoi scaricarli e aggiungerli localmente al tuo progetto.</p>
+
+<h3 id="vantaggi-dei-file-locali"><strong>Vantaggi dei file locali</strong></h3>
+<ul>
+  <li><strong>Personalizzazione completa</strong>: Puoi modificare i file CSS e JS di Bootstrap.</li>
+  <li><strong>Offline</strong>: Funziona anche senza una connessione internet.</li>
+  <li><strong>Controllo delle versioni</strong>: Puoi utilizzare una versione specifica di Bootstrap.</li>
+</ul>
+
+<h3 id="come-installare-bootstrap-localmente"><strong>Come installare Bootstrap localmente</strong></h3>
+<ol>
+  <li>
+    <p>Scarica Bootstrap dal sito ufficiale:
+<a href="https://getbootstrap.com">Scarica Bootstrap</a></p>
+  </li>
+  <li>Estrai il contenuto e copia i file CSS e JS nella tua cartella di progetto, ad esempio:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>/css/bootstrap.min.css
+/js/bootstrap.bundle.min.js
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>Aggiungi i link ai file locali nel tuo file <strong>HTML</strong>:</li>
+</ol>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="c">&lt;!-- Bootstrap CSS Locale --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"css/bootstrap.min.css"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Bootstrap JS Locale --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"js/bootstrap.bundle.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="quando-usare-i-file-locali"><strong>Quando usare i file locali?</strong></h3>
+<p>I file locali sono ideali per:</p>
+<ul>
+  <li><strong>Progetti complessi</strong> con bisogno di personalizzazioni avanzate.</li>
+  <li>Situazioni in cui devi lavorare <strong>offline</strong>.</li>
+</ul>
+
+<hr />
+
+<h2 id="confronto-tra-cdn-e-file-locali"><strong>Confronto tra CDN e File Locali</strong></h2>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Caratteristica</strong></th>
+      <th><strong>CDN</strong></th>
+      <th><strong>File Locali</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Velocità</strong></td>
+      <td>Molto veloce</td>
+      <td>Dipende dall’hosting</td>
+    </tr>
+    <tr>
+      <td><strong>Personalizzazione</strong></td>
+      <td>Limitata</td>
+      <td>Totale</td>
+    </tr>
+    <tr>
+      <td><strong>Accessibilità Offline</strong></td>
+      <td>No</td>
+      <td>Sì</td>
+    </tr>
+    <tr>
+      <td><strong>Facilità di implementazione</strong></td>
+      <td>Molto facile</td>
+      <td>Richiede download e setup</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="conclusione"><strong>Conclusione</strong></h2>
+
+<p>Sia la <strong>CDN</strong> che i <strong>file locali</strong> hanno i loro <strong>vantaggi</strong> e <strong>svantaggi</strong>. La scelta dipende dal tuo progetto:</p>
+<ul>
+  <li>Se vuoi una soluzione <strong>rapida</strong> e non hai bisogno di personalizzazioni, scegli <strong>CDN</strong>.</li>
+  <li>Se hai bisogno di <strong>controllo completo</strong> e personalizzazioni avanzate, opta per i <strong>file locali</strong>.</li>
+</ul>
+
+<p>Sperimenta entrambe le soluzioni e scegli quella che si adatta meglio alle tue esigenze di <strong>sviluppo web</strong>.</p>
+
+<hr />
+
+<p><strong>Hai bisogno di ulteriori approfondimenti su Bootstrap?</strong> Iscriviti alla nostra <strong>newsletter</strong> o visita il nostro blog per altre guide complete sul <strong>web development</strong>!</p>
+
+:ET
