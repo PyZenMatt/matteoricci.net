@@ -77,7 +77,7 @@ Per chi si avvicina a **Bootstrap**, è utile seguire un percorso strutturato, a
 
 ### 9. Personalizzazione Avanzata
 - [Sovrascrittura delle classi con **CSS personalizzato**.]({{ site.baseurl }}/sovrascrittura-delle-classi-con-css-personalizzato/)
-- [Utilizzo di **variabili SCSS** per modificare i temi.]({{ site.baseurl }}/personalizzazione-scss/)
+- [Utilizzo di **variabili SCSS** per modificare i temi.]({{ site.baseurl }}/utilizzo-di-variabili-scss/)
 
 ### 10. Esempi Pratici
 - [Creare una pagina web con **layout responsivo**.]({{ site.baseurl }}/personalizzazione-scss/)
