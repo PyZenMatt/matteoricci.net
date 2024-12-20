@@ -61,22 +61,22 @@ Per chi si avvicina a **Bootstrap**, è utile seguire un percorso strutturato, a
 - [**Form**: Campi di input, checkbox, e radio button.]({{ site.baseurl }}/form/)
 
 ### 6. Utility Classes
-- [**Spaziatura** (`m-`, `p-`).]({{ site.baseurl }}/personalizzazione-scss/)
-- [Gestione della **visibilità** (`d-none`, `d-flex`).]({{ site.baseurl }}/personalizzazione-scss/)
-- [Layout con **Flexbox** (`align-items-`, `justify-content-`).]({{ site.baseurl }}/personalizzazione-scss/)
-- [Dimensioni (`w-50`, `h-25`).]({{ site.baseurl }}/personalizzazione-scss/)
+- [**Spaziatura** (`m-`, `p-`).]({{ site.baseurl }}/spaziatura/)
+- [Gestione della **visibilità** (`d-none`, `d-flex`).]({{ site.baseurl }}/gestione-della-visibilità/)
+- [Layout con **Flexbox** (`align-items-`, `justify-content-`).]({{ site.baseurl }}/layout-con-flebox/)
+- [Dimensioni (`w-50`, `h-25`).]({{ site.baseurl }}/dimensioni/)
 
 ### 7. Responsive Design
-- [Principio di **Mobile-First**.]({{ site.baseurl }}/personalizzazione-scss/)
-- [Classi per dispositivi specifici (`d-sm-none`, `d-md-block`).]({{ site.baseurl }}/personalizzazione-scss/)
-- [**Media query** integrate.]({{ site.baseurl }}/personalizzazione-scss/)
+- [Principio di **Mobile-First**.]({{ site.baseurl }}/mobile-first/)
+- [Classi per dispositivi specifici (`d-sm-none`, `d-md-block`).]({{ site.baseurl }}/classi-per-dispositivi/)
+- [**Media query** integrate.]({{ site.baseurl }}/media-query-integrate/)
 
 ### 8. Icone
-- [Introduzione a **Bootstrap Icons**.]({{ site.baseurl }}/personalizzazione-scss/)
-- [Modalità di integrazione nel progetto.]({{ site.baseurl }}/personalizzazione-scss/)
+- [Introduzione a **Bootstrap Icons**.]({{ site.baseurl }}/introduzione-a-bootstrap-icons/)
+- [Modalità di integrazione nel progetto.]({{ site.baseurl }}/integrazioni-nel-progetto/)
 
 ### 9. Personalizzazione Avanzata
-- [Sovrascrittura delle classi con **CSS personalizzato**.]({{ site.baseurl }}/personalizzazione-scss/)
+- [Sovrascrittura delle classi con **CSS personalizzato**.]({{ site.baseurl }}/sovrascrittura-delle-classi-con-css-personalizzato/)
 - [Utilizzo di **variabili SCSS** per modificare i temi.]({{ site.baseurl }}/personalizzazione-scss/)
 
 ### 10. Esempi Pratici

@@ -7,7 +7,6 @@ tags: Bootstrap, HTML, CSS, JS
 author: Teo
 hidden: true
 categories: guida_bootstrap
-
 ---
 
 Se stai iniziando a lavorare con **Bootstrap**, è fondamentale comprendere come creare e organizzare la **struttura base** del progetto. Questo **framework CSS** è la scelta ideale per sviluppare siti web **responsive** e dall'aspetto professionale, risparmiando tempo e sforzo.
