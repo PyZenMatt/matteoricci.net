@@ -1,8 +1,8 @@
 ---
-title: "Controllo della Visibilità con **Bootstrap**: Strategie e Classi"
+title: "Controllo della Visibilita�con Bootstrap Strategie e Classi"
 description: "Esplora il sistema di gestione della visibilità di Bootstrap, che include classi per nascondere o mostrare elementi in base alla dimensione dello schermo."
 layout: post
-tags: **Bootstrap**, HTML, CSS, JS
+tags: Bootstrap, HTML, CSS, JS
 author: Teo
 hidden: true
 categories: guida_bootstrap
