@@ -1,2 +1,0 @@
-I"&<p>In Linux, la gestione dei log di sistema è fondamentale per la manutenzione e la sicurezza. I log permettono agli amministratori di monitorare ciò che accade nel sistema, diagnosticare problemi, e mantenere un’occhiata attenta su attività sospette. Due degli strumenti principali per la consultazione dei log di sistema in Linux sono <code class="language-plaintext highlighter-rouge">journalctl</code> e <code class="language-plaintext highlighter-rouge">dmesg</code>. Entrambi giocano ruoli cruciali ma distinti nella gestione dei log.</p>
-:ET

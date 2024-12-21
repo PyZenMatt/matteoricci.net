@@ -7,7 +7,7 @@ image: assets/images/
 featured: 
 description: "Esplora la guida definitiva su cosa sono i repository Git e come crearli. Impara le differenze tra repository locali e remoti e scopri come gestire efficacemente i tuoi progetti di sviluppo"
 keywords: Guida Git per principianti, Cos’è Git, Cos’è GitHub, Imparare Git e GitHub, Comandi Git essenziali, Installare Git, Gestione repository Git, Differenza tra Git e GitHub
-hidden: false
+hidden: true
 Introduzione a Git: Creare le Fondamenta nel controllo di versione# **Che cos'è Git?**
 --- 
 

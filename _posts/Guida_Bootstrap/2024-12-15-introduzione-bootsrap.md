@@ -1,10 +1,11 @@
 ---
 layout: post
+image: assets/images/guida_bootstrap/bootstrap.jpeg
 title: "Bootstrap, Il Framework Front-End per Siti Web e Applicazioni Responsive"
 description: "Scopri Bootstrap, il framework front-end gratuito e open-source ideale per creare siti web e applicazioni responsive. Guida completa su griglie, componenti e personalizzazione."
 keywords: Bootstrap, framework front-end, siti web responsive, applicazioni web, Bootstrap 5, guida Bootstrap, tutorial Bootstrap, progettazione web
 author: Teo
-categories: Guida_Bootstrap, Web Design, Front-End Development, Guide
+categories: guida_bootstrap
 hidden: true 
 featured: true
 ---
@@ -37,51 +38,51 @@ Per chi si avvicina a **Bootstrap**, è utile seguire un percorso strutturato, a
 
 ### 2. Sistema a Griglia (Grid System)
 - [Concetto di griglia a **12 colonne**.]({{ site.baseurl }}/griglia-12-colonne/)
-- [Utilizzo di **container**, **row** e **column**.]({{ site.baseurl }}/container/)
+- [Utilizzo di **container**, **row** e **column**.]({{ site.baseurl }}/container-row-column/)
 - [Classi di responsive design].({{ site.baseurl }}/responsive-design/)
 - [**Breakpoint** e gestione della responsività.]({{ site.baseurl }}/breakpoint/)
 
 ### 3. Tipografia
 - [Classi predefinite per il testo]({{ site.baseurl }}/classi-predefinite/) 
-- Dimensioni dei caratteri (`display-1`, `lead`) e stili (`fw-bold`, `fst-italic`).
-- **Personalizzazione** dei colori (`text-primary`, `text-danger`).
+- [Dimensioni dei caratteri  e stili]({{ site.baseurl }}/dimensioni-caratteri-stili/) (`fw-bold`, `fst-italic`) (`display-1`, `lead`).
+- [**Personalizzazione** dei colori]({{ site.baseurl }}/colori/) (`text-primary`, `text-danger`).
 
 ### 4. Colori e Sfondi
-- **Palette predefinita** (`primary`, `success`, `danger`, ecc.).
-- Classi per sfondi (`bg-primary`, `bg-light`).
-- Tecniche di **personalizzazione con SCSS**.
+- [**Palette predefinita**]({{ site.baseurl }}/pallette-predefinita/) (`primary`, `success`, `danger`, ecc.).
+- [Classi per sfondi]({{ site.baseurl }}/colori-e-sfondi/) (`bg-primary`, `bg-light`).
+- [Tecniche di **personalizzazione con SCSS**]({{ site.baseurl }}/personalizzazione-scss/).
 
 ### 5. Componenti di Base
-- **Bottoni**: Varianti (`btn-primary`, `btn-lg`).
-- **Navbar**: Creazione di menu di navigazione responsive.
-- **Card**: Struttura per blocchi di contenuto.
-- **Badge** e **Alert**: Notifiche e messaggi.
-- **Modali**: Finestre dinamiche.
-- **Form**: Campi di input, checkbox, e radio button.
+- [**Bottoni**: Varianti] (`btn-primary`, `btn-lg`)({{ site.baseurl }}/bottoni/)
+- [**Navbar**: Creazione di menu di navigazione responsive.]({{ site.baseurl }}/navbar/)
+- [**Card**: Struttura per blocchi di contenuto.]({{ site.baseurl }}/card/)
+- [**Badge** e **Alert**: Notifiche e messaggi.]({{ site.baseurl }}/badge-alert/)
+- [**Modali**: Finestre dinamiche.]({{ site.baseurl }}/modali/)
+- [**Form**: Campi di input, checkbox, e radio button.]({{ site.baseurl }}/form/)
 
 ### 6. Utility Classes
-- **Spaziatura** (`m-`, `p-`).
-- Gestione della **visibilità** (`d-none`, `d-flex`).
-- Layout con **Flexbox** (`align-items-`, `justify-content-`).
-- Dimensioni (`w-50`, `h-25`).
+- [**Spaziatura** (`m-`, `p-`).]({{ site.baseurl }}/spaziatura/)
+- [Gestione della **visibilità** (`d-none`, `d-flex`).]({{ site.baseurl }}/gestione-della-visibilità/)
+- [Layout con **Flexbox** (`align-items-`, `justify-content-`).]({{ site.baseurl }}/layout-con-flebox/)
+- [Dimensioni (`w-50`, `h-25`).]({{ site.baseurl }}/dimensioni/)
 
 ### 7. Responsive Design
-- Principio di **Mobile-First**.
-- Classi per dispositivi specifici (`d-sm-none`, `d-md-block`).
-- **Media query** integrate.
+- [Principio di **Mobile-First**.]({{ site.baseurl }}/mobile-first/)
+- [Classi per dispositivi specifici (`d-sm-none`, `d-md-block`).]({{ site.baseurl }}/classi-per-dispositivi/)
+- [**Media query** integrate.]({{ site.baseurl }}/media-query-integrate/)
 
 ### 8. Icone
-- Introduzione a **Bootstrap Icons**.
-- Modalità di integrazione nel progetto.
+- [Introduzione a **Bootstrap Icons**.]({{ site.baseurl }}/introduzione-a-bootstrap-icons/)
+- [Modalità di integrazione nel progetto.]({{ site.baseurl }}/integrazioni-nel-progetto/)
 
 ### 9. Personalizzazione Avanzata
-- Sovrascrittura delle classi con **CSS personalizzato**.
-- Utilizzo di **variabili SCSS** per modificare i temi.
+- [Sovrascrittura delle classi con **CSS personalizzato**.]({{ site.baseurl }}/sovrascrittura-delle-classi-con-css-personalizzato/)
+- [Utilizzo di **variabili SCSS** per modificare i temi.]({{ site.baseurl }}/utilizzo-di-variabili-scss/)
 
 ### 10. Esempi Pratici
-- Creare una pagina web con **layout responsivo**.
-- Aggiungere un **menu di navigazione**, sezioni, card e bottoni.
-- Costruire una **landing page** o un portfolio.
+- [Creare una pagina web con **layout responsivo**.]({{ site.baseurl }}/personalizzazione-scss/)
+- [Aggiungere un **menu di navigazione**, sezioni, card e bottoni.]({{ site.baseurl }}/personalizzazione-scss/)
+- [Costruire una **landing page** o un portfolio.]({{ site.baseurl }}/personalizzazione-scss/)
 
 ## Conclusione
 
