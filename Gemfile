@@ -20,7 +20,8 @@ group :jekyll_plugins do
     gem 'rexml'
     gem "jekyll", "~> 4.2.0"  # Ultima versione stabile di Jekyll
     gem "kramdown-parser-gfm" # Supporto per la sintassi di GitHub Flavored Markdown
-    
+    gem 'jekyll-redirect-from'
+
 
 
 end
