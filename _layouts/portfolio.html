@@ -47,6 +47,10 @@
     <!-- DevIcons for Tech Logos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     
+    <!-- Resource preloading for better performance -->
+    <link rel="preload" as="image" href="/img/profile.jpg" type="image/jpeg">
+    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2" type="font/woff2" crossorigin>
+    
     <!-- Main CSS -->
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
     
@@ -69,8 +73,8 @@
   <body>
     {{ content }}
     
-    <!-- Main JavaScript -->
-    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
-    <script src="{{ '/assets/js/cookies.js' | relative_url }}"></script>
+    <!-- Deferred JavaScript for better performance -->
+    <script defer src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    <script defer src="{{ '/assets/js/cookies.js' | relative_url }}"></script>
   </body>
 </html>

@@ -1,0 +1,50 @@
+title: "Matteo Ricci - Full Stack Developer"
+email: "matteo@matteoricci.net"
+description: "Full Stack Developer specializing in Django, React, Python, and Web3 technologies. Building innovative educational platforms and smart contract solutions."
+author: Matteo Ricci
+baseurl: ""
+url: "https://matteoricci.net"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - .jekyll-metadata
+  - README.md
+
+# Sass
+sass:
+  style: compressed
+
+# SEO
+lang: en_US
+
+# Social profiles
+github_username: PyZenMatt
+linkedin_username: matteo-ricci-dev
+
+# Portfolio specific
+tagline: "Full Stack Developer & Web3 Innovator"
+location: "Milan, Italy"
+available_for_work: true
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name/

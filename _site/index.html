@@ -13,8 +13,8 @@
     <meta name="revisit-after" content="1 days">
     
     <!-- Content Freshness Indicators -->
-    <meta name="date" content="2025-07-30T16:27:12+02:00">
-    <meta name="last-modified" content="2025-07-30T16:27:12+02:00">
+    <meta name="date" content="2025-07-30T17:16:26+02:00">
+    <meta name="last-modified" content="2025-07-30T17:16:26+02:00">
     
     <!-- Professional Developer Portfolio -->
     <meta name="author" content="Matteo Ricci">
@@ -25,7 +25,7 @@
     <meta property="og:title" content="Matteo Ricci - Full Stack Developer">
     <meta property="og:description" content="Full Stack Developer specializing in Django, React, Python, and Web3 technologies. Building innovative educational platforms and smart contract solutions.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://matteoricci.net/">
+    <meta property="og:url" content="http://0.0.0.0:4001/">
     <meta property="og:site_name" content="Matteo Ricci - Full Stack Developer">
     
     <!-- Twitter Card -->
@@ -34,7 +34,7 @@
     <meta name="twitter:description" content="Full Stack Developer specializing in Django, React, Python, and Web3 technologies. Building innovative educational platforms and smart contract solutions.">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://matteoricci.net/">
+    <link rel="canonical" href="http://0.0.0.0:4001/">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -46,6 +46,10 @@
     
     <!-- DevIcons for Tech Logos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    
+    <!-- Resource preloading for better performance -->
+    <link rel="preload" as="image" href="/img/profile.jpg" type="image/jpeg">
+    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2" type="font/woff2" crossorigin>
     
     <!-- Main CSS -->
     <link rel="stylesheet" href="/assets/css/main.css">
@@ -68,583 +72,6 @@
   
   <body>
     <!-- Header -->
-
-<style>
-  /* CSS Variables with Auto Dark Mode Detection */
-  :root {
-    --bg-color: #ffffff;
-    --text-color: #1a1a1a;
-    --text-muted: #666;
-    --text-light: #555;
-    --border-color: #f0f0f0;
-    --card-bg: #ffffff;
-    --section-bg: #fafafa;
-    --accent-color: #1a1a1a;
-    --accent-hover: #333;
-    --shadow: rgba(0,0,0,0.1);
-  }
-
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg-color: #1a1a1a;
-      --text-color: #e1e1e1;
-      --text-muted: #c9c9c9;
-      --text-light: #ccc;
-      --border-color: #333;
-      --card-bg: #2a2a2a;
-      --section-bg: #252525;
-      --accent-color: #e1e1e1;
-      --accent-hover: #f0f0f0;
-      --shadow: rgba(0,0,0,0.3);
-    }
-  }
-
-  /* Modern Portfolio Styles */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    line-height: 1.6;
-    color: var(--text-color);
-    background: var(--bg-color);
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-  }
-  
-  /* Header */
-  .header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--border-color);
-    z-index: 1000;
-    padding: 1rem 0;
-    transition: background-color 0.3s;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .header {
-      background: rgba(37, 37, 37, 0.95);
-      border-bottom: 1px solid #333;
-    }
-  }
-  
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    font-weight: 600;
-    font-size: 1.2rem;
-    color: var(--text-color);
-    text-decoration: none;
-  }
-  
-  .nav-menu {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-    align-items: center;
-  }
-  
-  .nav-menu a {
-    color: var(--text-muted);
-    text-decoration: none;
-    font-weight: 400;
-    transition: color 0.2s;
-  }
-  
-  .nav-menu a:hover {
-    color: var(--text-color);
-  }
-  
-  /* Hero */
-  .hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 2rem 0;
-  }
-  
-  .hero-content {
-    display: grid;
-    grid-template-columns: 1fr 300px;
-    gap: 4rem;
-    align-items: center;
-  }
-  
-  .hero-text h1 {
-    font-size: clamp(2.5rem, 4vw, 3.5rem);
-    font-weight: 700;
-    line-height: 1.1;
-    margin-bottom: 1.5rem;
-  }
-  
-  .hero-text .subtitle {
-    font-size: 1.25rem;
-    color: var(--text-muted);
-    margin-bottom: 1.5rem;
-    font-weight: 400;
-  }
-  
-  .hero-text .description {
-    font-size: 1.1rem;
-    color: var(--text-light);
-    margin-bottom: 2.5rem;
-    line-height: 1.7;
-  }
-  
-  .cta-primary {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: var(--accent-color);
-    color: var(--bg-color);
-    padding: 1rem 2rem;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.2s;
-  }
-  
-  .cta-primary:hover {
-    background: var(--accent-hover);
-    transform: translateY(-1px);
-  }
-  
-  .hero-image {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .profile-avatar {
-    width: 280px;
-    height: 280px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #f8f8f8;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  }
-  
-  /* Sections */
-  .section {
-    padding: 4rem 0;
-  }
-  
-  .section-title {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 2.5rem;
-    text-align: center;
-  }
-  
-  /* About */
-  .about-text {
-    max-width: 700px;
-    margin: 0 auto;
-    font-size: 1.1rem;
-    color: var(--text-light);
-    line-height: 1.8;
-    text-align: center;
-  }
-  
-  /* Skills */
-  .skills-container {
-    background: var(--section-bg);
-  }
-  
-  .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    margin-top: 2rem;
-  }
-  
-  .skill-card {
-    background: var(--card-bg);
-    padding: 2rem 1.5rem;
-    border-radius: 8px;
-    text-align: center;
-    border: 1px solid var(--border-color);
-    transition: all 0.3s ease;
-    animation: float 6s ease-in-out infinite;
-  }
-  
-  .skill-card:nth-child(1) { animation-delay: 0s; }
-  .skill-card:nth-child(2) { animation-delay: 0.5s; }
-  .skill-card:nth-child(3) { animation-delay: 1s; }
-  .skill-card:nth-child(4) { animation-delay: 1.5s; }
-  .skill-card:nth-child(5) { animation-delay: 2s; }
-  .skill-card:nth-child(6) { animation-delay: 2.5s; }
-  .skill-card:nth-child(7) { animation-delay: 3s; }
-  .skill-card:nth-child(8) { animation-delay: 3.5s; }
-  .skill-card:nth-child(9) { animation-delay: 4s; }
-  
-  @keyframes float {
-    0%, 100% { 
-      transform: translateY(0px) rotate(0deg); 
-    }
-    25% { 
-      transform: translateY(-3px) rotate(0.5deg); 
-    }
-    50% { 
-      transform: translateY(-6px) rotate(0deg); 
-    }
-    75% { 
-      transform: translateY(-3px) rotate(-0.5deg); 
-    }
-  }
-  
-  .skill-card:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 12px 30px var(--shadow);
-    animation-play-state: paused;
-  }
-  
-  .skill-icon {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .skill-icon img {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-  }
-  
-  .skill-name {
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: var(--text-color);
-  }
-  
-  .skill-level {
-    color: var(--text-muted);
-    font-size: 0.9rem;
-  }
-  
-  /* Projects */
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-  }
-  
-  .project-card {
-    background: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    overflow: hidden;
-    transition: all 0.2s;
-  }
-  
-  .project-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 35px var(--shadow);
-  }
-  
-  .project-info {
-    padding: 2rem;
-  }
-  
-  .project-title {
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: var(--text-color);
-  }
-  
-  .project-desc {
-    color: var(--text-muted);
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
-  }
-  
-  .project-links {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .project-link {
-    color: var(--text-color);
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 0.95rem;
-    transition: color 0.2s;
-  }
-  
-  .project-link:hover {
-    color: var(--text-muted);
-  }
-  
-  /* Contact */
-  .contact-container {
-    background: var(--section-bg);
-  }
-  
-  .contact-content {
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .contact-text {
-    font-size: 1.1rem;
-    color: var(--text-light);
-    margin-bottom: 2rem;
-    line-height: 1.7;
-  }
-  
-  .contact-cta {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: var(--accent-color);
-    color: var(--bg-color);
-    padding: 1.2rem 2.5rem;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.1rem;
-    transition: all 0.2s;
-  }
-  
-  .contact-cta:hover {
-    background: var(--accent-hover);
-    transform: translateY(-1px);
-  }
-  
-  /* Footer */
-  .footer {
-    background: #1a1a1a;
-    color: white;
-    padding: 2.5rem 0 2rem;
-    text-align: center;
-  }
-  
-  .social-links {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .social-link {
-    color: #ccc;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.2s;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  
-  .social-link:hover {
-    color: white;
-  }
-  
-  .social-link img {
-    width: 20px;
-    height: 20px;
-    filter: invert(0.8);
-    transition: filter 0.2s;
-  }
-  
-  .social-link:hover img {
-    filter: invert(1);
-  }
-  
-  .footer-text {
-    color: #999;
-    font-size: 0.95rem;
-  }
-  
-  /* Mobile Responsive */
-  @media (max-width: 768px) {
-    .nav-menu {
-      display: none;
-    }
-    
-    .hero-content {
-      grid-template-columns: 1fr;
-      gap: 2rem;
-      text-align: center;
-    }
-    
-    .hero-image {
-      order: -1;
-    }
-    
-    .profile-avatar {
-      width: 200px;
-      height: 200px;
-    }
-    
-    .skills-grid {
-      grid-template-columns: 1fr;
-    }
-    
-    .projects-grid {
-      grid-template-columns: 1fr;
-    }
-    
-    .container {
-      padding: 0 1rem;
-    }
-  }
-  
-  /* Tablet Responsive */
-  @media (max-width: 1024px) and (min-width: 769px) {
-    .skills-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  /* Smooth animations */
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  /* Cookie Banner */
-  .cookie-banner {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #1a1a1a;
-    color: white;
-    padding: 1.5rem;
-    z-index: 10000;
-    transform: translateY(100%);
-    transition: transform 0.3s ease-in-out;
-    box-shadow: 0 -4px 20px rgba(0,0,0,0.2);
-  }
-  
-  .cookie-banner.show {
-    transform: translateY(0);
-  }
-  
-  .cookie-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1rem;
-  }
-  
-  .cookie-text {
-    flex: 1;
-    min-width: 300px;
-    font-size: 0.95rem;
-    line-height: 1.5;
-  }
-  
-  .cookie-text a {
-    color: #ccc;
-    text-decoration: underline;
-  }
-  
-  .cookie-buttons {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-  
-  .cookie-btn {
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 4px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.2s;
-    text-decoration: none;
-    font-size: 0.9rem;
-  }
-  
-  .cookie-btn.accept {
-    background: white;
-    color: #1a1a1a;
-  }
-  
-  .cookie-btn.accept:hover {
-    background: #f0f0f0;
-  }
-  
-  .cookie-btn.decline {
-    background: transparent;
-    color: white;
-    border: 1px solid #666;
-  }
-  
-  .cookie-btn.decline:hover {
-    border-color: white;
-  }
-  
-  .cookie-btn.settings {
-    background: transparent;
-    color: #ccc;
-    border: 1px solid #444;
-  }
-  
-  .cookie-btn.settings:hover {
-    color: white;
-    border-color: #666;
-  }
-  
-  @media (max-width: 768px) {
-    .cookie-content {
-      flex-direction: column;
-      text-align: center;
-    }
-    
-    .cookie-buttons {
-      justify-content: center;
-      width: 100%;
-    }
-    
-    .cookie-btn {
-      flex: 1;
-      min-width: 100px;
-    }
-  }
-  
-  /* Fade in animation */
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .fade-in {
-    animation: fadeInUp 0.6s ease-out;
-  }
-</style>
-
-<!-- Header -->
 <header class="header">
   <div class="container">
     <nav class="nav">
@@ -672,9 +99,6 @@
           Let's build something →
         </a>
       </div>
-      <div class="hero-image">
-        <img src="/img/profile.jpg" alt="Matteo Ricci" class="profile-avatar" onerror="this.style.display='none'">
-      </div>
     </div>
   </div>
 </section>
@@ -695,72 +119,71 @@
 <section id="skills" class="section skills-container">
   <div class="container">
     <h2 class="section-title">Skills & Technologies</h2>
-    <div class="skills-grid">
+        <div class="skills-grid">
       <div class="skill-card">
         <div class="skill-icon">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
         </div>
-        <div class="skill-name">Python</div>
-        <div class="skill-level">Advanced</div>
+        <h3>Python</h3>
+        <p>Advanced</p>
       </div>
       <div class="skill-card">
         <div class="skill-icon">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" />
         </div>
-        <div class="skill-name">Django</div>
-        <div class="skill-level">Expert</div>
+        <h3>Django</h3>
+        <p>Expert</p>
       </div>
       <div class="skill-card">
         <div class="skill-icon">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
         </div>
-        <div class="skill-name">React</div>
-        <div class="skill-level">Advanced</div>
+        <h3>React</h3>
+        <p>Advanced</p>
       </div>
       <div class="skill-card">
         <div class="skill-icon">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
         </div>
-        <div class="skill-name">PostgreSQL</div>
-        <div class="skill-level">Advanced</div>
+        <h3>PostgreSQL</h3>
+        <p>Advanced</p>
       </div>
       <div class="skill-card">
         <div class="skill-icon">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" />
         </div>
-        <div class="skill-name">Docker</div>
-        <div class="skill-level">Intermediate</div>
+        <h3>Docker</h3>
+        <p>Intermediate</p>
       </div>
       <div class="skill-card">
         <div class="skill-icon">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" />
         </div>
-        <div class="skill-name">Linux</div>
-        <div class="skill-level">Advanced</div>
+        <h3>Linux</h3>
+        <p>Advanced</p>
       </div>
       <div class="skill-card">
         <div class="skill-icon">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/solidity/solidity-original.svg" alt="Solidity" />
         </div>
-        <div class="skill-name">Solidity</div>
-        <div class="skill-level">Intermediate</div>
+        <h3>Solidity</h3>
+        <p>Intermediate</p>
       </div>
       <div class="skill-card">
         <div class="skill-icon">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="REST APIs" />
         </div>
-        <div class="skill-name">REST APIs</div>
-        <div class="skill-level">Expert</div>
+        <h3>REST APIs</h3>
+        <p>Expert</p>
       </div>
       <div class="skill-card">
         <div class="skill-icon">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
         </div>
-        <div class="skill-name">GitHub</div>
-        <div class="skill-level">Advanced</div>
+        <h3>GitHub</h3>
+        <p>Advanced</p>
       </div>
     </div>
-  </div>
 </section>
 
 <!-- Projects Section -->
@@ -769,9 +192,9 @@
     <h2 class="section-title">Featured Projects</h2>
     <div class="projects-grid">
       <div class="project-card">
-        <div class="project-info">
+        <div class="project-content">
           <h3 class="project-title">SchoolPlatform</h3>
-          <p class="project-desc">An innovative Web3 educational platform combining modern learning techniques with blockchain technology. Built with Django, React, and smart contracts on Polygon.</p>
+          <p class="project-description">An innovative Web3 educational platform combining modern learning techniques with blockchain technology. Built with Django, React, and smart contracts on Polygon.</p>
           <div class="project-links">
             <a href="https://pyzenmatt.github.io/SchoolPlatform/" class="project-link">View Page →</a>
             <a href="https://github.com/PyZenMatt/SchoolPlatform" class="project-link">GitHub →</a>
@@ -780,9 +203,9 @@
       </div>
       
       <div class="project-card">
-        <div class="project-info">
+        <div class="project-content">
           <h3 class="project-title">Messy Mind</h3>
-          <p class="project-desc">A mindfulness blog built with Jekyll, featuring modern design and optimized for performance. Focus on practical spirituality and personal growth.</p>
+          <p class="project-description">A mindfulness blog built with Jekyll, featuring modern design and optimized for performance. Focus on practical spirituality and personal growth.</p>
           <div class="project-links">
             <a href="https://messymind.it" class="project-link">Visit Site →</a>
           </div>
@@ -790,9 +213,9 @@
       </div>
       
       <div class="project-card">
-        <div class="project-info">
+        <div class="project-content">
           <h3 class="project-title">Open Source Contributions</h3>
-          <p class="project-desc">Various open source projects and contributions including Python libraries, Django packages, and educational resources for developers.</p>
+          <p class="project-description">Various open source projects and contributions including Python libraries, Django packages, and educational resources for developers.</p>
           <div class="project-links">
             <a href="https://github.com/PyZenMatt" class="project-link">View GitHub →</a>
           </div>
@@ -820,15 +243,27 @@
   <div class="container">
     <div class="social-links">
       <a href="https://github.com/PyZenMatt" class="social-link">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+        <span class="social-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"/>
+          </svg>
+        </span>
         GitHub
       </a>
       <a href="https://linkedin.com/in/teo-dev" class="social-link">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
+        <span class="social-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z"/>
+          </svg>
+        </span>
         LinkedIn
       </a>
       <a href="https://messymind.it" class="social-link">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" alt="Blog" />
+        <span class="social-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M11,16.5L18,9.5L16.5,8L11,13.5L7.5,10L6,11.5L11,16.5Z"/>
+          </svg>
+        </span>
         Mindfulness Blog
       </a>
     </div>
@@ -840,25 +275,6 @@
     <p class="footer-text">&copy; 2025 Matteo Ricci. Built with Jekyll and passion.</p>
   </div>
 </footer>
-
-  </div>
-</footer>
-
-<!-- Cookie Banner -->
-<div id="cookie-banner" class="cookie-banner">
-  <div class="cookie-content">
-    <div class="cookie-text">
-      <p>This website uses cookies to enhance your browsing experience and provide personalized content. 
-      By continuing to use this site, you consent to our use of cookies. 
-      Learn more in our <a href="/privacy-policy">Privacy Policy</a> and <a href="/cookie-policy">Cookie Policy</a>.</p>
-    </div>
-    <div class="cookie-buttons">
-      <button class="cookie-btn accept" onclick="acceptCookies()">Accept All</button>
-      <button class="cookie-btn decline" onclick="declineCookies()">Decline</button>
-      <button class="cookie-btn settings" onclick="cookieSettings()">Settings</button>
-    </div>
-  </div>
-</div>
 
 <!-- Cookie Banner -->
 <div id="cookie-banner" class="cookie-banner">
@@ -987,8 +403,8 @@
 </script>
 
     
-    <!-- Main JavaScript -->
-    <script src="/assets/js/main.js"></script>
-    <script src="/assets/js/cookies.js"></script>
+    <!-- Deferred JavaScript for better performance -->
+    <script defer src="/assets/js/main.js"></script>
+    <script defer src="/assets/js/cookies.js"></script>
   </body>
 </html>
