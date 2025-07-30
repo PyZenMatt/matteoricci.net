@@ -7,20 +7,6 @@
     <title>{{ page.title | default: site.title }}</title>
     <meta name="description" content="{{ page.description | default: site.description }}">
     
-    <!-- Google Meta Tags for Content Change -->
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta name="googlebot" content="index, follow">
-    <meta name="revisit-after" content="1 days">
-    
-    <!-- Content Freshness Indicators -->
-    <meta name="date" content="{{ site.time | date_to_xmlschema }}">
-    <meta name="last-modified" content="{{ site.time | date_to_xmlschema }}">
-    
-    <!-- Professional Developer Portfolio -->
-    <meta name="author" content="Matteo Ricci">
-    <meta name="category" content="Technology, Web Development, Portfolio">
-    <meta name="keywords" content="Full Stack Developer, Django, React, Python, Web3, Blockchain, Portfolio, Milan">
-    
     <!-- SEO Meta Tags -->
     <meta property="og:title" content="{{ page.title | default: site.title }}">
     <meta property="og:description" content="{{ page.description | default: site.description }}">
@@ -44,11 +30,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- DevIcons for Tech Logos -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <!-- Blog CSS -->
+    <link rel="stylesheet" href="{{ '/assets/css/blog.css' | relative_url }}">
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MLB32YW721"></script>
@@ -69,8 +52,8 @@
   <body>
     {{ content }}
     
-    <!-- Main JavaScript -->
-    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    <!-- Blog JavaScript -->
+    <script src="{{ '/assets/js/blog.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/cookies.js' | relative_url }}"></script>
   </body>
 </html>

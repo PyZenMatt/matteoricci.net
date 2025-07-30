@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://matteoricci.net/sitemap.xml
+
+# Portfolio site - Full Stack Developer
+# All content is fresh and new as of July 2025
+
+# Allow crawling of main sections
+Allow: /about
+Allow: /skills
+Allow: /projects
+Allow: /contact
+Allow: /privacy-policy
+Allow: /cookie-policy
+
+# Assets and static files
+Allow: /assets/
+Allow: /img/
+Allow: /_site/
+
+# Prevent crawling of Jekyll build files
+Disallow: /_includes/
+Disallow: /_layouts/
+Disallow: /_sass/
+Disallow: /.jekyll-cache/
+Disallow: /node_modules/
