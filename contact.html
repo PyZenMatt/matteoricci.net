@@ -1,0 +1,64 @@
+---
+layout: portfolio
+title: "Contact Me - Matteo Ricci"
+description: "Contact form for inquiries, collaborations, and information."
+permalink: /contact/
+---
+
+
+<section id="contact" class="section contact-container">
+  <div class="container">
+    <div class="contact-content">
+      <h2 class="section-title">Contact Me</h2>
+      <p class="contact-text">Fill out the form below to send me a message. I will reply as soon as possible!</p>
+      <form id="contactForm" class="contact-form" autocomplete="off" novalidate>
+        <input type="text" name="name" placeholder="Name" required aria-label="Name">
+        <input type="email" name="email" placeholder="Email" required aria-label="Email">
+        <textarea name="message" placeholder="Message" required aria-label="Message"></textarea>
+        <input type="text" name="honeypot" style="display:none" tabindex="-1" autocomplete="off">
+        <button type="submit" class="cta-primary">Send</button>
+        <div id="formStatus" style="margin-top:1rem;min-height:1.5em;text-align:center;font-size:1rem;"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script>
+
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const form = e.target;
+  const status = document.getElementById('formStatus');
+  const button = form.querySelector('button[type="submit"]');
+  status.textContent = '';
+  button.disabled = true;
+  button.textContent = 'Sending...';
+  const data = {
+    name: form.name.value,
+    email: form.email.value,
+    message: form.message.value,
+    honeypot: form.honeypot.value
+  };
+  try {
+    const response = await fetch("https://PyZenMatt.pythonanywhere.com/api/contact/submit/", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data)
+    });
+    const result = await response.json();
+    if(result.success) {
+      status.style.color = '#2e7d32';
+      status.textContent = 'Message sent successfully!';
+      form.reset();
+    } else {
+      status.style.color = '#c62828';
+      status.textContent = result.error ? result.error : 'An error occurred. Please try again.';
+    }
+  } catch (err) {
+    status.style.color = '#c62828';
+    status.textContent = 'Network error. Please try again.';
+  }
+  button.disabled = false;
+  button.textContent = 'Send';
+});
+</script>

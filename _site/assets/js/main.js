@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Header background on scroll
   function updateHeaderBackground() {
     const header = document.querySelector('.header');
+    if (!header) return;
     if (window.scrollY > 100) {
       header.style.backgroundColor = window.matchMedia('(prefers-color-scheme: dark)').matches 
         ? 'rgba(37, 37, 37, 0.98)' 

@@ -74,6 +74,7 @@
     {{ content }}
     
     <!-- Deferred JavaScript for better performance -->
+    {% include cookie-banner.html %}
     <script defer src="{{ '/assets/js/main.js' | relative_url }}"></script>
     <script defer src="{{ '/assets/js/cookies.js' | relative_url }}"></script>
   </body>

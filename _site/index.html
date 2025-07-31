@@ -13,8 +13,8 @@
     <meta name="revisit-after" content="1 days">
     
     <!-- Content Freshness Indicators -->
-    <meta name="date" content="2025-07-30T17:16:26+02:00">
-    <meta name="last-modified" content="2025-07-30T17:16:26+02:00">
+    <meta name="date" content="2025-07-31T17:04:31+02:00">
+    <meta name="last-modified" content="2025-07-31T17:04:31+02:00">
     
     <!-- Professional Developer Portfolio -->
     <meta name="author" content="Matteo Ricci">
@@ -25,7 +25,7 @@
     <meta property="og:title" content="Matteo Ricci - Full Stack Developer">
     <meta property="og:description" content="Full Stack Developer specializing in Django, React, Python, and Web3 technologies. Building innovative educational platforms and smart contract solutions.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://0.0.0.0:4001/">
+    <meta property="og:url" content="http://localhost:4000/">
     <meta property="og:site_name" content="Matteo Ricci - Full Stack Developer">
     
     <!-- Twitter Card -->
@@ -34,7 +34,7 @@
     <meta name="twitter:description" content="Full Stack Developer specializing in Django, React, Python, and Web3 technologies. Building innovative educational platforms and smart contract solutions.">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="http://0.0.0.0:4001/">
+    <link rel="canonical" href="http://localhost:4000/">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -231,7 +231,7 @@
     <div class="contact-content">
       <h2 class="section-title">Let's Work Together</h2>
       <p class="contact-text">I'm currently available for freelance projects and full-time opportunities. Whether you need a web application, API development, or Web3 consultation, I'd love to hear about your project.</p>
-      <a href="mailto:info@matteoricci.net" class="contact-cta">
+      <a href="/contact" class="contact-cta">
         Get In Touch →
       </a>
     </div>
@@ -276,134 +276,22 @@
   </div>
 </footer>
 
-<!-- Cookie Banner -->
-<div id="cookie-banner" class="cookie-banner">
+
+    
+    <!-- Deferred JavaScript for better performance -->
+    <div id="cookie-banner" class="cookie-banner" style="display:none;">
   <div class="cookie-content">
     <div class="cookie-text">
-      <p>This website uses cookies to enhance your browsing experience and provide personalized content. 
-      By continuing to use this site, you consent to our use of cookies. 
-      Learn more in our <a href="/privacy-policy">Privacy Policy</a> and <a href="/cookie-policy">Cookie Policy</a>.</p>
+      <p>Questo sito utilizza cookie per migliorare l'esperienza di navigazione e fornire contenuti personalizzati. Proseguendo, accetti l'uso dei cookie. Leggi la <a href="/privacy-policy">Privacy Policy</a> e la <a href="/cookie-policy">Cookie Policy</a>.</p>
     </div>
     <div class="cookie-buttons">
-      <button class="cookie-btn accept" onclick="acceptCookies()">Accept All</button>
-      <button class="cookie-btn decline" onclick="declineCookies()">Decline</button>
-      <button class="cookie-btn settings" onclick="cookieSettings()">Settings</button>
+      <button class="cookie-btn accept" onclick="acceptCookies()">Accetta tutti</button>
+      <button class="cookie-btn decline" onclick="declineCookies()">Rifiuta</button>
+      <button class="cookie-btn settings" onclick="cookieSettings()">Impostazioni</button>
     </div>
   </div>
 </div>
 
-<script>
-  // Cookie Management System
-  const COOKIE_CONSENT_KEY = 'matteoricci_cookie_consent';
-  const COOKIE_BANNER_DELAY = 1000; // Show after 1 second
-
-  // Check if user has already made a choice
-  function hasUserConsent() {
-    return localStorage.getItem(COOKIE_CONSENT_KEY) !== null;
-  }
-
-  // Show cookie banner
-  function showCookieBanner() {
-    if (!hasUserConsent()) {
-      setTimeout(() => {
-        const banner = document.getElementById('cookie-banner');
-        banner.classList.add('show');
-      }, COOKIE_BANNER_DELAY);
-    }
-  }
-
-  // Hide cookie banner
-  function hideCookieBanner() {
-    const banner = document.getElementById('cookie-banner');
-    banner.classList.remove('show');
-  }
-
-  // Accept all cookies
-  function acceptCookies() {
-    localStorage.setItem(COOKIE_CONSENT_KEY, JSON.stringify({
-      necessary: true,
-      analytics: true,
-      marketing: true,
-      timestamp: Date.now()
-    }));
-    hideCookieBanner();
-    enableCookies();
-  }
-
-  // Decline optional cookies
-  function declineCookies() {
-    localStorage.setItem(COOKIE_CONSENT_KEY, JSON.stringify({
-      necessary: true,
-      analytics: false,
-      marketing: false,
-      timestamp: Date.now()
-    }));
-    hideCookieBanner();
-    disableOptionalCookies();
-  }
-
-  // Show cookie settings (for future modal implementation)
-  function cookieSettings() {
-    // For now, redirect to cookie policy
-    window.location.href = '/cookie-policy';
-  }
-
-  // Enable cookies based on consent
-  function enableCookies() {
-    const consent = JSON.parse(localStorage.getItem(COOKIE_CONSENT_KEY) || '{}');
-    
-    // Enable Google Analytics if consented
-    if (consent.analytics) {
-      loadGoogleAnalytics();
-    }
-    
-    // Enable marketing cookies if consented
-    if (consent.marketing) {
-      console.log('Marketing cookies enabled');
-    }
-  }
-
-  // Load Google Analytics
-  function loadGoogleAnalytics() {
-    // Your actual GA4 measurement ID
-    const GA_MEASUREMENT_ID = 'G-MLB32YW721';
-    
-    // Create and load gtag script
-    const script1 = document.createElement('script');
-    script1.async = true;
-    script1.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
-    document.head.appendChild(script1);
-    
-    // Initialize gtag
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', GA_MEASUREMENT_ID, {
-      'anonymize_ip': true,
-      'respect_do_not_track': true
-    });
-    
-    console.log('Google Analytics loaded');
-  }
-
-  // Disable optional cookies
-  function disableOptionalCookies() {
-    // Clear any existing analytics/marketing cookies
-    console.log('Optional cookies disabled');
-  }
-
-  // Initialize cookie system
-  document.addEventListener('DOMContentLoaded', () => {
-    if (hasUserConsent()) {
-      enableCookies();
-    } else {
-      showCookieBanner();
-    }
-  });
-</script>
-
-    
-    <!-- Deferred JavaScript for better performance -->
     <script defer src="/assets/js/main.js"></script>
     <script defer src="/assets/js/cookies.js"></script>
   </body>
