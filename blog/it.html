@@ -1,0 +1,52 @@
+---
+layout: blog
+lang: it
+title: "Tech Blog IT - Matteo Ricci"
+description: "Articoli tecnici su sviluppo web, Python, Django, React e tecnologie Web3 in italiano"
+permalink: /blog/it/
+---
+
+<div class="blog-container">
+  <a href="/" class="back-to-portfolio">← Torna al Portfolio</a>
+
+  <header class="blog-header">
+    <h1 class="blog-title">Blog IT</h1>
+    <p class="blog-subtitle">Pensieri su sviluppo web, Python e tecnologie emergenti</p>
+    <a href="/blog/en/" class="lang-switch">🇬🇧 EN Blog</a>
+  </header>
+
+  <div class="categories-filter">
+    <button class="category-btn active" data-category="all">Tutti i post</button>
+    <button class="category-btn" data-category="web-development">Sviluppo Web</button>
+    <button class="category-btn" data-category="python">Python</button>
+    <button class="category-btn" data-category="django">Django</button>
+    <button class="category-btn" data-category="react">React</button>
+    <button class="category-btn" data-category="web3">Web3</button>
+    <button class="category-btn" data-category="tutorials">Tutorial</button>
+  </div>
+
+  <div class="posts-grid">
+    {% assign sorted_posts = site.posts | where_exp: "item", "item.lang == 'it'" | sort: 'date' | reverse %}
+    {% if sorted_posts.size > 0 %}
+      {% for post in sorted_posts %}
+        <article class="post-card" data-categories="{{ post.categories | join: ',' | downcase }}">
+          <div class="post-content">
+            <div class="post-date">{{ post.date | date: "%d/%m/%Y" }}</div>
+            <h2 class="post-title">
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </h2>
+            <div class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</div>
+            <div class="post-categories">
+              {% for category in post.categories %}
+                <span class="post-category">{{ category }}</span>
+              {% endfor %}
+            </div>
+            <a href="{{ post.url | relative_url }}" class="read-more">Leggi tutto →</a>
+          </div>
+        </article>
+      {% endfor %}
+    {% else %}
+      <p>Nessun articolo disponibile.</p>
+    {% endif %}
+  </div>
+</div>

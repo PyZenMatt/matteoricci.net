@@ -1,13 +1,13 @@
 ---
-layout: post
 title: Cos’è Django e perché usarlo per costruire applicazioni web in Python
+layout: post
 date: '2025-08-07'
 author: Matteo Ricci
 categories:
 - django-development
 site: https://matteoricci.net
 slug: cose-django-e-perche-usarlo
-published: false
+published: true
 updated_at: '2025-08-08T06:29:52.654428Z'
 seo_title:  Vantaggi, Sicurezza e Rapidità per Applicazioni Web in Python e Django
 background: null
@@ -23,6 +23,7 @@ kramdown:
   toc_levels: 1..2 
 ref: cose-django-e-perche-usarlo
 lang: it
+permalink: /blog/it/2025/08/07/cose-django-e-perche-usarlo/
 
 ---
 

@@ -1,0 +1,13 @@
+{% if page.ref %}
+  {% if page.lang == "en" %}
+    {% assign other = site.posts | where: 'ref', page.ref | where: 'lang', 'it' | first %}
+    {% if other %}
+      <a href="{{ other.url }}" hreflang="it">🇮🇹 IT</a>
+    {% endif %}
+  {% elsif page.lang == "it" %}
+    {% assign other = site.posts | where: 'ref', page.ref | where: 'lang', 'en' | first %}
+    {% if other %}
+      <a href="{{ other.url }}" hreflang="en">🇬🇧 EN</a>
+    {% endif %}
+  {% endif %}
+{% endif %}

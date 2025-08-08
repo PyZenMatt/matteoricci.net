@@ -1,36 +1,32 @@
+# ===== Site basics =====
 title: "Matteo Ricci - Full Stack Developer"
 email: "info@matteoricci.net"
 description: "Full Stack Developer specializing in Django, React, Python, and Web3 technologies. Building innovative educational platforms and smart contract solutions."
 author: Matteo Ricci
-baseurl: ""
-url: "https://matteoricci.net"
+baseurl: ""                      # lascia vuoto su GitHub Pages custom domain
+url: "https://matteoricci.net"   # dominio pubblico
 
-# Google Analytics (your actual GA4 measurement ID)
-google_analytics: G-MLB32YW721
+# ===== Analytics =====
+google_analytics: G-MLB32YW721   # GA4 Measurement ID
 
-# Build settings
+# ===== Build & Markdown =====
 markdown: kramdown
-highlighter: rouge
-# theme: minima  # Commented out to use custom layout
-
-# Posts configuration
+kramdown:
+  input: GFM
+  toc_levels: 1..2               # usa il TOC nativo (no jekyll-toc)
 permalink: /blog/:year/:month/:day/:title/
 paginate: 10
 paginate_path: "/blog/page:num/"
+timezone: "Europe/Rome"
 
-# Plugins
+# ===== GitHub Pages whitelisted plugins =====
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-paginate
-  - jekyll-toc
 
-jekyll_toc:
-  min_level: 1
-  max_level: 2
-
-# Exclude from processing
+# ===== Excludes =====
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -41,24 +37,66 @@ exclude:
   - .jekyll-metadata
   - README.md
 
-# Sass
+# ===== Sass =====
 sass:
   style: compressed
 
-# SEO
-lang: en_US
+# ===== SEO / Language defaults =====
+lang: en                         # lingua di sito (html lang fallback). Og:locale lo gestisci nel layout
 
-# Social profiles
+# ===== Social =====
 github_username: PyZenMatt
 linkedin_username: matteo-ricci-dev
 
-# Portfolio specific
+# ===== Portfolio meta =====
 tagline: "Full Stack Developer & Web3 Innovator"
 location: "Italy"
 available_for_work: true
 
-# Collections
+# ===== Defaults (EN default, IT dentro /it/) =====
+# Struttura consigliata:
+#   _posts/            -> post EN
+#   it/_posts/         -> post IT
+defaults:
+  # Valori generali (qualsiasi file fuori da /it)
+  - scope:
+      path: ""
+    values:
+      lang: "en"
+
+  # Post EN
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      lang: "en"
+      layout: "post"
+      permalink: /blog/en/:year/:month/:day/:title/
+
+  # Qualsiasi contenuto sotto /it (pagine e post)
+  - scope:
+      path: "it"
+    values:
+      lang: "it"
+
+  # Post IT: permalink dedicato sotto /blog/it/
+  - scope:
+      path: "it"
+      type: "posts"
+    values:
+      lang: "it"
+      layout: "post"
+      permalink: /blog/it/:year/:month/:day/:title/
+
+# ===== Collections =====
 collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
   projects:
     output: true
     permalink: /:collection/:name/
+
+# ===== Feed (opzionale: imposta titolo/descrizione custom per RSS) =====
+feed:
+  path: feed.xml

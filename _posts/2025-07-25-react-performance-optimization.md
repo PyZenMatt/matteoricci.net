@@ -6,6 +6,8 @@ categories: [React, Performance, Frontend]
 tags: [react, performance, optimization, frontend]
 date: 2025-07-25
 reading_time: 7
+ref: react-performance-optimization
+lang: en
 ---
 
 React applications can suffer from performance issues as they grow. Here are proven techniques to keep your apps fast and responsive.
