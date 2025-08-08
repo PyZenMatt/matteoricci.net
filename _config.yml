@@ -24,6 +24,11 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-toc
+
+jekyll_toc:
+  min_level: 1
+  max_level: 2
 
 # Exclude from processing
 exclude:
