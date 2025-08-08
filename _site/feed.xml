@@ -1,4 +1,274 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-08-08T14:12:11+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Matteo Ricci - Full Stack Developer</title><subtitle>Full Stack Developer specializing in Django, React, Python, and Web3 technologies. Building innovative educational platforms and smart contract solutions.</subtitle><author><name>Matteo Ricci</name></author><entry xml:lang="it"><title type="html">Cos’è Django e perché usarlo per costruire applicazioni web in Python</title><link href="http://localhost:4000/blog/it/2025/08/07/cose-django-e-perche-usarlo/" rel="alternate" type="text/html" title="Cos’è Django e perché usarlo per costruire applicazioni web in Python" /><published>2025-08-07T00:00:00+02:00</published><updated>2025-08-07T00:00:00+02:00</updated><id>http://localhost:4000/blog/it/2025/08/07/cose-django-e-perche-usarlo</id><content type="html" xml:base="http://localhost:4000/blog/it/2025/08/07/cose-django-e-perche-usarlo/"><![CDATA[<p>Hai mai voluto creare un sito web in modo veloce, sicuro e scalabile… ma non sapevi da dove iniziare? Django è uno dei framework più usati al mondo per lo sviluppo web in Python. In questo articolo scoprirai cos’è Django, come funziona e perché potrebbe essere il miglior alleato per costruire la tua prossima applicazione.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-08-08T14:32:49+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Matteo Ricci - Full Stack Developer</title><subtitle>Full Stack Developer specializing in Django, React, Python, and Web3 technologies. Building innovative educational platforms and smart contract solutions.</subtitle><author><name>Matteo Ricci</name></author><entry xml:lang="en"><title type="html">What Is Django and Why Use It to Build Web Applications in Python</title><link href="http://localhost:4000/blog/en/2025/08/07/what-is-django-and-why-use-it/" rel="alternate" type="text/html" title="What Is Django and Why Use It to Build Web Applications in Python" /><published>2025-08-07T00:00:00+02:00</published><updated>2025-08-07T00:00:00+02:00</updated><id>http://localhost:4000/blog/en/2025/08/07/what-is-django-and-why-use-it</id><content type="html" xml:base="http://localhost:4000/blog/en/2025/08/07/what-is-django-and-why-use-it/"><![CDATA[<p>Have you ever wanted to build a website quickly, securely, and at scale… but didn’t know where to start? Django is one of the most widely used frameworks in the world for web development in Python. In this article, you’ll learn what Django is, how it works, and why it may be your best ally for your next application.</p>
+
+<h2 id="why-choose-django-for-your-next-web-project">Why choose Django for your next web project?</h2>
+
+<p>A framework is a set of ready-made tools and libraries that help you write less repetitive code.</p>
+
+<p>Instead of reinventing the wheel every time, the framework gives you a ready-made structure to:</p>
+<ul>
+  <li>Handle HTTP requests</li>
+  <li>Connect to a database</li>
+  <li>Render HTML templates</li>
+  <li>
+    <p>Validate data, and much more</p>
+  </li>
+  <li><a href="#why-choose-django-for-your-next-web-project">Why choose Django for your next web project?</a>
+    <ul>
+      <li><a href="#what-is-a-web-framework">What is a web framework?</a></li>
+      <li><a href="#flask-vs-django-whats-the-difference">Flask vs Django: what’s the difference?</a></li>
+    </ul>
+  </li>
+  <li><a href="#the-concrete-advantages-of-using-django">The concrete advantages of using Django</a>
+    <ul>
+      <li><a href="#1-built-in-security">1. Built-in Security</a></li>
+      <li><a href="#powerful-orm-object-relational-mapper">Powerful ORM (Object Relational Mapper)</a></li>
+    </ul>
+  </li>
+  <li><a href="#-automatic-admin-panel">⚡ Automatic Admin Panel</a></li>
+  <li><a href="#-development-speed">🚀 Development Speed</a></li>
+  <li><a href="#when-and-when-not-to-use-django">When (and when not) to use Django</a></li>
+  <li><a href="#conclusion">Conclusion</a></li>
+  <li><a href="#useful-resources">Useful Resources</a></li>
+</ul>
+
+<h2 id="what-is-a-web-framework">What is a web framework?</h2>
+
+<p>Django is a full‑stack framework, which means it provides everything you need—from the database to the frontend.
+For more, visit the <a href="https://docs.djangoproject.com/en/4.2/" rel="nofollow" target="_blank">Official Django Documentation</a>.</p>
+
+<h2 id="flask-vs-django-whats-the-difference">Flask vs Django: what’s the difference?</h2>
+
+<p>Beginners in Python often run into two options: Flask and Django.</p>
+
+<p>Here’s a brief comparison:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Feature</th>
+      <th style="text-align: left">Django</th>
+      <th style="text-align: left">Flask</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Type</td>
+      <td style="text-align: left">Full‑stack “batteries‑included”</td>
+      <td style="text-align: left">Minimal micro‑framework</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Philosophy</td>
+      <td style="text-align: left">Convention &gt; configuration</td>
+      <td style="text-align: left">Configuration &gt; convention</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Built‑in ORM</td>
+      <td style="text-align: left">✅ <code class="language-plaintext highlighter-rouge">django.db</code></td>
+      <td style="text-align: left">❌ No → use <code class="language-plaintext highlighter-rouge">SQLAlchemy</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">DB migrations</td>
+      <td style="text-align: left">✅ Built‑in (<code class="language-plaintext highlighter-rouge">makemigrations</code>/<code class="language-plaintext highlighter-rouge">migrate</code>)</td>
+      <td style="text-align: left">❌ No → <code class="language-plaintext highlighter-rouge">Alembic</code> (via SQLAlchemy)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Admin Panel</td>
+      <td style="text-align: left">✅ Included</td>
+      <td style="text-align: left">❌ No (external/hand‑made)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Routing</td>
+      <td style="text-align: left">URL dispatcher + path/regex</td>
+      <td style="text-align: left">Simple router, Blueprints for modularity</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Template engine</td>
+      <td style="text-align: left">Django Templates (similar to Jinja)</td>
+      <td style="text-align: left">Jinja2</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Auth &amp; permissions</td>
+      <td style="text-align: left">✅ Users, sessions, groups, integrated permissions</td>
+      <td style="text-align: left">Extensions: <code class="language-plaintext highlighter-rouge">Flask-Login</code>, <code class="language-plaintext highlighter-rouge">Flask-Security-Too</code>, etc.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Forms &amp; validation</td>
+      <td style="text-align: left">✅ <code class="language-plaintext highlighter-rouge">django.forms</code> + validations</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">WTForms</code>/custom validation</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Security out‑of‑the‑box</td>
+      <td style="text-align: left">✅ CSRF, XSS, clickjacking, host header, password hashing</td>
+      <td style="text-align: left">Base is light → add extensions/config</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">REST APIs</td>
+      <td style="text-align: left">✅ <code class="language-plaintext highlighter-rouge">Django REST Framework (DRF)</code></td>
+      <td style="text-align: left">Extensions: <code class="language-plaintext highlighter-rouge">Flask-RESTful</code>, <code class="language-plaintext highlighter-rouge">Flask-API</code>, <code class="language-plaintext highlighter-rouge">FastAPI</code> (another path)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WebSockets / realtime</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">Django Channels</code> (ASGI)</td>
+      <td style="text-align: left">Extensions (<code class="language-plaintext highlighter-rouge">Flask-Sock</code>, <code class="language-plaintext highlighter-rouge">Socket.IO</code> via <code class="language-plaintext highlighter-rouge">flask-socketio</code>)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Async / ASGI</td>
+      <td style="text-align: left">ASGI support (Django 3.2+) + selective <code class="language-plaintext highlighter-rouge">async</code> views</td>
+      <td style="text-align: left">WSGI by default, ASGI via <code class="language-plaintext highlighter-rouge">Quart</code>/extensions</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Project structure</td>
+      <td style="text-align: left">Modular apps, settings management, management commands</td>
+      <td style="text-align: left">Free-form: you decide folders and patterns</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">CLI &amp; scaffold</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">django-admin</code>/<code class="language-plaintext highlighter-rouge">manage.py</code></td>
+      <td style="text-align: left">Minimal; often custom scripts</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Ecosystem</td>
+      <td style="text-align: left">Huge, enterprise‑oriented</td>
+      <td style="text-align: left">Vast, very granular</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Caching</td>
+      <td style="text-align: left">Built‑in backends (Memcached, Redis, DB, file…)</td>
+      <td style="text-align: left">Extensions (<code class="language-plaintext highlighter-rouge">Flask-Caching</code>)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Testing utilities</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">TestCase</code>, client, fixtures, ORM test helpers</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">pytest</code> + plugins/flask testing utilities</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">i18n / l10n</td>
+      <td style="text-align: left">✅ Integrated</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">Flask-Babel</code> and similar</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Performance &amp; overhead</td>
+      <td style="text-align: left">More initial overhead, excellent at scale</td>
+      <td style="text-align: left">Very light, quick to start</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Learning curve</td>
+      <td style="text-align: left">Steeper, but guides design</td>
+      <td style="text-align: left">Gentle, maximum freedom</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Deploy</td>
+      <td style="text-align: left">WSGI/ASGI, great with <code class="language-plaintext highlighter-rouge">gunicorn</code>/<code class="language-plaintext highlighter-rouge">uvicorn</code> + <code class="language-plaintext highlighter-rouge">nginx</code></td>
+      <td style="text-align: left">WSGI with <code class="language-plaintext highlighter-rouge">gunicorn</code>/<code class="language-plaintext highlighter-rouge">uWSGI</code>; ASGI via compatible stack</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Ideal for</td>
+      <td style="text-align: left">Complete projects, teams, scalability, back office</td>
+      <td style="text-align: left">Prototypes, microservices, lean APIs, specific services</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>In short, if you need something ready‑to‑use, Django is the right choice. If you prefer to build everything from scratch, Flask is a better fit.</p>
+
+<h2 id="the-concrete-advantages-of-using-django">The concrete advantages of using Django</h2>
+
+<h2 id="1-builtin-security">1. Built‑in Security</h2>
+
+<p>Django automatically protects you against:</p>
+
+<ul>
+  <li>SQL Injection</li>
+  <li>Cross‑Site Scripting (XSS)</li>
+  <li>Cross‑Site Request Forgery (CSRF)</li>
+</ul>
+
+<p>You don’t have to worry about it: the framework handles baseline security.</p>
+
+<h2 id="powerful-orm-object-relational-mapper">Powerful ORM (Object Relational Mapper)</h2>
+
+<p>Django’s ORM is a very powerful tool that lets you interact with the database using Python, without writing SQL queries.</p>
+
+<p>Suppose you created a blog where you write articles and your model is called Article.</p>
+
+<p>First, open a shell.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span> <span class="n">manage</span><span class="p">.</span><span class="n">py</span> <span class="n">shell</span>
+</code></pre></div></div>
+
+<p>Then import the model:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">myapp.models</span> <span class="kn">import</span> <span class="n">Article</span>
+</code></pre></div></div>
+
+<h3 class="no_toc" id="fetch-all-articles">Fetch all articles</h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">articles</span> <span class="o">=</span> <span class="n">Article</span><span class="p">.</span><span class="n">objects</span><span class="p">.</span><span class="nf">all</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h3 id="create-a-new-article">Create a new article</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">.</span><span class="n">objects</span><span class="p">.</span><span class="nf">create</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="sh">"</span><span class="s">Hello world</span><span class="sh">"</span><span class="p">,</span> <span class="n">content</span><span class="o">=</span><span class="sh">"</span><span class="s">This is my first post!</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>So you don’t need to learn SQL to manage your data.</p>
+
+<p>And you can switch databases (SQLite, PostgreSQL, MySQL…) without heavily changing your code.</p>
+
+<h2 id="-automatic-admin-panel">⚡ Automatic Admin Panel</h2>
+
+<p>Django gives you a complete admin panel without writing a single line of HTML.</p>
+
+<p>This tool is powerful because it lets you browse the database with a graphical interface, which you can customize as you like.</p>
+
+<p>For example, once the model is defined, Django generates a page to create/modify/delete records.</p>
+
+<h3 id="modelspy">models.py</h3>
+
+<p>from django.db import models</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Book</span><span class="p">(</span><span class="n">models</span><span class="p">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">title</span> <span class="o">=</span> <span class="n">models</span><span class="p">.</span><span class="nc">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">author</span> <span class="o">=</span> <span class="n">models</span><span class="p">.</span><span class="nc">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="-development-speed">🚀 Development Speed</h2>
+
+<p>Django follows the “batteries included” principle: it has everything integrated. You can focus on your app’s logic instead of spending time on configuration details.</p>
+
+<h2 id="when-and-when-not-to-use-django">When (and when not) to use Django</h2>
+
+<p>✅ Use it if:</p>
+
+<ul>
+  <li>You need a site/blog/e‑commerce/management app</li>
+  <li>You want a well‑structured REST backend</li>
+  <li>You have tight deadlines and want to go live quickly</li>
+</ul>
+
+<p>❌ Avoid it if:</p>
+
+<ul>
+  <li>You want a 10‑line micro API</li>
+  <li>You’re building only a frontend or a mobile app without a backend</li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Django is a complete, mature, and secure framework for building web applications in Python. It offers a solid architecture, an integrated ORM, and ready‑to‑use tools like the admin panel.</p>
+
+<p>If you’re a beginner developer, Django helps you learn good practices. If you’re experienced, you can build scalable and performant apps quickly.</p>
+
+<p>Here are some useful resources:</p>
+
+<h2 id="useful-resources">Useful Resources</h2>
+
+<ul>
+  <li><a href="https://docs.djangoproject.com/en/4.2/" rel="nofollow" target="_blank">Official Django Documentation</a></li>
+  <li><a href="https://tutorial.djangogirls.org/en/" rel="nofollow" target="_blank">Django Girls Tutorial</a></li>
+</ul>
+
+<p>Thanks a lot!</p>
+
+<p>Matteo Ricci
+Full Stack Developer | Django &amp; Python | Solidity Smart Contracts | Web3 &amp; EdTech Builder</p>]]></content><author><name>Matteo Ricci</name></author><category term="Django" /><category term="Python" /><category term="Backend" /><category term="django" /><category term="python" /><category term="web" /><category term="security" /><category term="orm" /><category term="admin" /><category term="flask" /><category term="scalable-apps" /><summary type="html"><![CDATA[Discover what Django is, its advantages, built-in security, and why it’s an ideal framework for building scalable and secure web applications in Python. Comparison with Flask and useful resources.]]></summary></entry><entry xml:lang="it"><title type="html">Cos’è Django e perché usarlo per costruire applicazioni web in Python</title><link href="http://localhost:4000/blog/it/2025/08/07/cose-django-e-perche-usarlo/" rel="alternate" type="text/html" title="Cos’è Django e perché usarlo per costruire applicazioni web in Python" /><published>2025-08-07T00:00:00+02:00</published><updated>2025-08-07T00:00:00+02:00</updated><id>http://localhost:4000/blog/it/2025/08/07/cose-django-e-perche-usarlo</id><content type="html" xml:base="http://localhost:4000/blog/it/2025/08/07/cose-django-e-perche-usarlo/"><![CDATA[<p>Hai mai voluto creare un sito web in modo veloce, sicuro e scalabile… ma non sapevi da dove iniziare? Django è uno dei framework più usati al mondo per lo sviluppo web in Python. In questo articolo scoprirai cos’è Django, come funziona e perché potrebbe essere il miglior alleato per costruire la tua prossima applicazione.</p>
 
 <h2 id="perché-scegliere-django-per-il-tuo-prossimo-progetto-web">Perché scegliere Django per il tuo prossimo progetto web?</h2>
 

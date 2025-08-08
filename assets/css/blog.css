@@ -186,6 +186,30 @@ body {
   opacity: 0.8;
 }
 
+/* Language Switch (Blog pages) */
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  color: var(--text-muted);
+}
+.lang-option {
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: var(--text-muted);
+  padding: 0.1rem 0.25rem;
+  border-radius: 6px;
+  transition: color 0.2s, background-color 0.2s;
+}
+.lang-option:hover {
+  color: var(--text-color);
+  background: var(--secondary-bg);
+}
+.lang-option.active { color: var(--text-color); }
+.lang-switch .divider { color: var(--text-light); }
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .blog-container {

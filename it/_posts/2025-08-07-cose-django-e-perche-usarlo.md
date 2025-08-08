@@ -14,7 +14,6 @@ background: null
 tags: null
 description: Scopri cos’è Django, i suoi vantaggi, la sicurezza integrata e perché è il framework ideale per sviluppare applicazioni web scalabili e sicure in Python. Confronto con Flask e risorse utili.
 keywords: Django, framework Python, sviluppo web, sicurezza, ORM, admin panel, Flask, applicazioni scalabili
-canonical_url: https://matteoricci.net/blog/cose-django-e-perche-usarlo/
 alt: Django framework Python applicazioni web
 og_type: article
 og_title: Cos’è Django e perché usarlo per applicazioni web in Python
