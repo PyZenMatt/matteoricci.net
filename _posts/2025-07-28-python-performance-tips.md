@@ -7,6 +7,8 @@ date: 2025-07-28
 categories: [Python, Performance]
 tags: [python, optimization, profiling, performance]
 reading_time: 6
+ref: python-performance-tips
+lang: en
 ---
 
 Python's simplicity and readability make it a favorite among developers, but performance optimization can be challenging. In this guide, we'll explore proven techniques to make your Python code faster and more efficient.

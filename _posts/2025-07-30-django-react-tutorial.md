@@ -7,6 +7,8 @@ date: 2025-07-30
 categories: [Web Development, Django, React]
 tags: [python, javascript, full-stack, tutorial]
 reading_time: 8
+ref: django-react-tutorial
+lang: en
 ---
 
 Building modern web applications requires a careful balance between robust backend architecture and intuitive user interfaces. In this comprehensive guide, we'll explore how to combine Django's powerful backend capabilities with React's dynamic frontend to create scalable, maintainable applications.

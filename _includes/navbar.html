@@ -1,0 +1,8 @@
+{% assign menu = site.data["menu-" | append: page.lang ] %}
+<nav>
+  <ul>
+    {% for item in menu %}
+      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>
