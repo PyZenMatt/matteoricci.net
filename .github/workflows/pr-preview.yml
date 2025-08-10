@@ -1,0 +1,29 @@
+name: PR Preview
+
+on:
+  pull_request:
+    branches:
+      - '**'
+
+jobs:
+  pr-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1' # Adjust if needed
+
+      - name: Install dependencies
+        run: bundle install
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+
+      - name: Upload _site as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: jekyll-site-preview
+          path: _site
