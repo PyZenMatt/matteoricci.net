@@ -1,0 +1,24 @@
+{%- assign page_title = page.meta_title | default: page.title -%}
+{%- assign page_description = page.meta_description | default: page.description -%}
+{%- assign page_keywords = page.meta_keywords -%}
+{%- assign canonical_url = page.canonical | default: page.url | absolute_url -%}
+{%- assign og_title = page.og_title | default: page_title -%}
+{%- assign og_description = page.og_description | default: page_description -%}
+{%- assign og_image = page.og_image -%}
+{%- assign noindex = page.noindex | default: false -%}
+
+<title>{{ page_title }}</title>
+<meta name="description" content="{{ page_description }}" />
+{%- if page_keywords %}
+<meta name="keywords" content="{{ page_keywords }}" />
+{%- endif %}
+<link rel="canonical" href="{{ canonical_url }}" />
+{%- if noindex == true or noindex == 'true' %}
+<meta name="robots" content="noindex, nofollow" />
+{%- endif %}
+<!-- Open Graph -->
+<meta property="og:title" content="{{ og_title }}" />
+<meta property="og:description" content="{{ og_description }}" />
+{%- if og_image %}
+<meta property="og:image" content="{{ og_image | absolute_url }}" />
+{%- endif %}

@@ -1,0 +1,30 @@
+{% comment %}
+Custom sitemap.xml for Jekyll: excludes pages/posts with 'noindex: true' in front matter.
+{% endcomment %}
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% assign pages = site.pages | concat: site.posts %}
+  {% for page in pages %}
+    {% unless page.noindex %}
+      <url>
+        <loc>{{ page.url | absolute_url }}</loc>
+        {% if page.last_modified_at %}
+          <lastmod>{{ page.last_modified_at | date_to_xmlschema }}</lastmod>
+        {% elsif page.date %}
+          <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
+        {% endif %}
+        {% if page.image %}
+          <image:image>
+            <image:loc>{{ page.image | absolute_url }}</image:loc>
+          </image:image>
+        {% endif %}
+        {% if page.canonical %}
+          <xhtml:link rel="canonical" href="{{ page.canonical }}" />
+        {% endif %}
+      </url>
+    {% endunless %}
+  {% endfor %}
+</urlset>

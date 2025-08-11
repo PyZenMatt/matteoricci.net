@@ -1,0 +1,31 @@
+{% comment %}
+Custom feed.xml for Jekyll: excludes posts with 'noindex: true' in front matter, includes canonical and image if present.
+{% endcomment %}
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>{{ site.title }}</title>
+    <link>{{ site.url | absolute_url }}</link>
+    <description>{{ site.description }}</description>
+    {% for post in site.posts %}
+      {% unless post.noindex %}
+        <item>
+          <title>{{ post.title }}</title>
+          <link>{{ post.url | absolute_url }}</link>
+          <guid>{{ post.url | absolute_url }}</guid>
+          <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+          <description>{{ post.excerpt | xml_escape }}</description>
+          {% if post.image %}
+            <image>{{ post.image | absolute_url }}</image>
+          {% endif %}
+          {% if post.canonical %}
+            <canonical>{{ post.canonical }}</canonical>
+          {% endif %}
+        </item>
+      {% endunless %}
+    {% endfor %}
+  </channel>
+</rss>

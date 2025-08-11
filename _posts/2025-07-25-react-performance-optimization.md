@@ -10,9 +10,9 @@ ref: react-performance-optimization
 lang: en
 ---
 
-React applications can suffer from performance issues as they grow. Here are proven techniques to keep your apps fast and responsive.
+React applications can suffer from performance issues as they grow bigger. Here are proven techniques to keep your apps fast and responsive.
 
-## Component Optimization
+
 
 ### React.memo for Functional Components
 Prevent unnecessary re-renders:
