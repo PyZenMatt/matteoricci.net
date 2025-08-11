@@ -1,9 +1,14 @@
 name: PR Preview
-
 on:
   pull_request:
-    branches:
-      - '**'
+    branches: ['**']
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pr-preview-${{ github.event.number }}
+  cancel-in-progress: true
 
 jobs:
   pr-preview:
@@ -14,16 +19,17 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1' # Adjust if needed
+          ruby-version: '3.3'        # o allinea alla tua .ruby-version/Gemfile.lock
+          bundler-cache: true        # cache automatica delle gem
 
-      - name: Install dependencies
-        run: bundle install
-
-      - name: Build Jekyll site
-        run: bundle exec jekyll build
+      - name: Build Jekyll (production)
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build --trace
 
       - name: Upload _site as artifact
         uses: actions/upload-artifact@v4
         with:
           name: jekyll-site-preview
           path: _site
+          retention-days: 7

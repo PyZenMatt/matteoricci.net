@@ -3,55 +3,65 @@ title: "Matteo Ricci - Full Stack Developer"
 email: "info@matteoricci.net"
 description: "Full Stack Developer specializing in Django, React, Python, and Web3 technologies. Building innovative educational platforms and smart contract solutions."
 author: Matteo Ricci
-baseurl: ""                      # lascia vuoto su GitHub Pages custom domain
-url: "https://matteoricci.net"   # dominio pubblico
+tagline: "Full Stack Developer & Web3 Innovator"
+location: "Italy"
+available_for_work: true
 
-# ===== Analytics =====
-google_analytics: G-MLB32YW721   # GA4 Measurement ID
+# Dominio pubblico (necessario per URL assoluti, canonical e og:image)
+url: "https://matteoricci.net"
+# Se usi project pages su /repo, imposta baseurl: "/repo"; con dominio custom lascia vuoto
+baseurl: ""
+
+# ===== Language / i18n =====
+lang: en   # fallback
+timezone: "Europe/Rome"
+
+# ===== Analytics / Verification =====
+google_analytics: G-MLB32YW721        # GA4
+google_site_verification: ""           # <-- incolla il token di Search Console se lo hai
+bing_site_verification: ""             # opzionale
+yandex_site_verification: ""           # opzionale
+
+# ===== Social / SEO tag config =====
+# jekyll-seo-tag userà questi dati per Open Graph e Twitter
+twitter_username: ""                   # senza @ (opzionale)
+logo: "/assets/img/logo.png"           # logo del sito (usato come fallback og:image)
+social:
+  links:
+    - "https://github.com/PyZenMatt"
+    - "https://www.linkedin.com/in/matteo-ricci-dev/"
+title_separator: " — "                 # <title>Site — Page</title>
 
 # ===== Build & Markdown =====
 markdown: kramdown
+highlighter: rouge
 kramdown:
   input: GFM
-  toc_levels: 1..2               # usa il TOC nativo (no jekyll-toc)
+  toc_levels: 1..2                     # TOC nativo (se lo usi nel layout)
 permalink: /blog/:year/:month/:day/:title/
+future: false                          # non pubblicare articoli nel futuro
+strict_front_matter: true
+
+# ===== Pagination =====
 paginate: 10
 paginate_path: "/blog/page:num/"
-timezone: "Europe/Rome"
 
-# ===== GitHub Pages whitelisted plugins =====
+# ===== Plugins (compatibili con GitHub Pages) =====
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-redirect-from              # utile per redirect dopo cambio slug/percorso
 
-# ===== Excludes =====
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor
-  - .sass-cache
-  - .jekyll-cache
-  - .jekyll-metadata
-  - README.md
-
-# ===== Sass =====
-sass:
-  style: compressed
-
-# ===== SEO / Language defaults =====
-lang: en                         # lingua di sito (html lang fallback). Og:locale lo gestisci nel layout
-
-# ===== Social =====
-github_username: PyZenMatt
-linkedin_username: matteo-ricci-dev
-
-# ===== Portfolio meta =====
-tagline: "Full Stack Developer & Web3 Innovator"
-location: "Italy"
-available_for_work: true
+# ===== Collections =====
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
+  projects:
+    output: true
+    permalink: /:collection/:name/
 
 # ===== Defaults (EN default, IT dentro /it/) =====
 # Struttura consigliata:
@@ -63,6 +73,17 @@ defaults:
       path: ""
     values:
       lang: "en"
+      layout: "default"
+      image: "/assets/img/og-default.jpg" # fallback og:image (sovrascrivibile nei post)
+      noindex: false                       # il Blog Manager può impostarlo a true per escludere
+      sitemap: true
+
+  # Pagine EN
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
 
   # Post EN
   - scope:
@@ -72,6 +93,9 @@ defaults:
       lang: "en"
       layout: "post"
       permalink: /blog/en/:year/:month/:day/:title/
+      seo:
+        type: "article"                   # hint per jekyll-seo-tag
+      redirect_from: []                   # il Blog Manager può popolare vecchi slug qui
 
   # Qualsiasi contenuto sotto /it (pagine e post)
   - scope:
@@ -87,16 +111,44 @@ defaults:
       lang: "it"
       layout: "post"
       permalink: /blog/it/:year/:month/:day/:title/
+      seo:
+        type: "article"
+      redirect_from: []
 
-# ===== Collections =====
-collections:
-  posts:
-    output: true
-    permalink: /blog/:year/:month/:day/:title/
-  projects:
-    output: true
-    permalink: /:collection/:name/
+  # Projects
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+      sitemap: true
 
-# ===== Feed (opzionale: imposta titolo/descrizione custom per RSS) =====
+# ===== Feed (RSS) =====
 feed:
   path: feed.xml
+  # title: "Matteo Ricci – Tech Feed"
+  # description: "Articles on Django, React, Python and Web3."
+
+# ===== Sass =====
+sass:
+  style: compressed
+
+# ===== Excludes (non pubblicare/indicizzare questi asset) =====
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - .jekyll-metadata
+  - README.md
+  - .github/
+  - scripts/
+  - docs/
+  - LICENSE
+
+# ===== Include extra =====
+# cartelle speciali da includere se presenti
+include:
+  - .well-known
