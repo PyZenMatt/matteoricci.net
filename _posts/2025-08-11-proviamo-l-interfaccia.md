@@ -10,7 +10,7 @@ image: https://res.cloudinary.com/dkoc4knvv/image/upload/v1/
 canonical: https://matteoricci.net.git/2025/08/11/proviamo-l-interfaccia.html
 meta_title: proviamo l'interfaccia grafica
 meta_description: dovrei esserci riuscito è stato un parto
-meta_keywords: ''
+meta_keywords: equlibrio-interiore
 og_title: proviamo l'interfaccia grafica
 og_description: dovrei esserci riuscito è stato un parto
 og_image: ''
