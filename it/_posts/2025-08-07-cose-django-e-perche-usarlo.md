@@ -4,7 +4,7 @@ layout: post
 date: '2025-08-07'
 author: Matteo Ricci
 categories:
-- django-development
+- django-development, django
 site: https://matteoricci.net
 slug: cose-django-e-perche-usarlo
 published: true
@@ -191,3 +191,4 @@ Grazie mille!
 
 Matteo Ricci 
 Full Stack Developer | Django & Python | Solidity Smart Contracts | Web3 & EdTech Builder |
+
