@@ -1,6 +1,5 @@
 ---
 title: 'Tipi di dato base in Python: str, int, float, bool (con esempi chiari)'
-date: 2025-08-12 08:00:00 +0200
 slug: tipi-di-dato-base-in-python-str-int-float-bool-con-esempi-chiari
 description: 'Guida pratica ai tipi di dato base in Python 3.12: stringhe, interi,
   float e booleani. Operazioni comuni, conversioni, errori frequenti e best practice.'
@@ -18,7 +17,7 @@ og_description: 'Guida pratica ai tipi di dato base in Python 3.12: stringhe, in
   float e booleani. Operazioni comuni, conversioni, errori frequenti e best practice.'
 og_image: ''
 noindex: false
-date: "2025-08-13"
+date: "2025-08-12"
 lang: it
 reading\_time: "6 min"
 ---
