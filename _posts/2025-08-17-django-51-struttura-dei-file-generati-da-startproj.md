@@ -1,24 +1,25 @@
 ---
-title: Django 5.1 struttura dei file generati da startproject e startapp con esempi pratici
-slug: django-51-struttura-dei-file-generati-da-startproject-e-startapp-con-esempi-pratici
+title: "Django 5.1 struttura dei file generati da startproject e startapp con esempi pratici"
+slug: "django-51-struttura-dei-file-generati-da-startproject-e-startapp-con-esempi-pratici"
 description: "Guida pratica alla struttura dei file creati da Django 5.1 con startproject e startapp: cosa fa ogni file, come collegare l’app, dove mettere template e static."
 tags:
-- python
-- django
-- project-structure
-- beginner
+  - python
+  - django
+  - project-structure
+  - beginner
 categories:
-- django
-canonical: https://matteoricci.net/blog/it/2025/08/17/django-51-struttura-dei-file-generati-da-startproj.html
-meta_title: 'Django 5.1: struttura dei file generati da startproject e startapp…
-meta_description: 'Django 5.1: struttura dei file generati da startproject e startapp con esempi pratici'
-meta_keywords: django
-og_title: 'Django 5.1: struttura dei file generati da startproject e startapp'
-og_description: 'Django 5.1: struttura dei file generati da startproject e startappcon esempi pratici'
-og_image: ''
+  - django
+canonical: "https://matteoricci.net/blog/it/2025/08/17/django-51-struttura-dei-file-generati-da-startproj.html"
+meta_title: "Django 5.1: struttura dei file generati da startproject e startapp con esempi pratici"
+meta_description: "Django 5.1: struttura dei file generati da startproject e startapp con esempi pratici"
+meta_keywords: "django"
+og_title: "Django 5.1: struttura dei file generati da startproject e startapp"
+og_description: "Django 5.1: struttura dei file generati da startproject e startapp con esempi pratici"
+og_image: ""
 noindex: false
-reading\_time: "9 min"
+reading_time: "9 min"
 ---
+
 
 # Django 5.1: struttura dei file generati da `startproject` e `startapp`
 
@@ -347,6 +348,7 @@ Hai visto **cosa genera Django** e come **collegare tra loro** progetto, app, UR
 
 
 **CTA**: crea il tuo mini‐progetto con `blog` seguendo la guida, poi **aggiungi un modello** e una pagina lista dei post. Quando funziona, condividi i test e confrontali con questa guida.
+
 
 
 
