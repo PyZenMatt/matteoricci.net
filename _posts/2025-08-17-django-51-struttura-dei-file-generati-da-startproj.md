@@ -1,36 +1,25 @@
 ---
-title: 'Django 5.1: struttura dei file generati da `startproject` e `startapp` (con
-  esempi pratici)'
+title: 'Django 5.1: struttura dei file generati da startproject e startapp (conesempi pratici)'
 date: '2025-08-17T09:59:42+00:00'
 slug: django-51-struttura-dei-file-generati-da-startproject-e-startapp-con-esempi-pratici
-description: ''
-tags: ''
+description: "Guida pratica alla struttura dei file creati da Django 5.1 con startproject e startapp: cosa fa ogni file, come collegare l’app, dove mettere template e static."
+tags:
+- python
+- django
+- project-structure
+- beginner
 categories:
 - django
-image: https://res.cloudinary.com/dkoc4knvv/image/upload/v1/
-canonical: https://matteoricci.net.git/2025/08/17/django-51-struttura-dei-file-generati-da-startproj.html
-meta_title: 'Django 5.1: struttura dei file generati da `startproject` e `startapp…'
-meta_description: 'Django 5.1: struttura dei file generati da startproject e startapp
-  con esempi pratici'
+canonical: https://matteoricci.net/blog/it/2025/08/17/django-51-struttura-dei-file-generati-da-startproj.html
+meta_title: 'Django 5.1: struttura dei file generati da startproject e startapp…
+meta_description: 'Django 5.1: struttura dei file generati da startproject e startapp con esempi pratici'
 meta_keywords: django
-og_title: 'Django 5.1: struttura dei file generati da `startproject` e `startapp…'
-og_description: 'Django 5.1: struttura dei file generati da startproject e startapp
-  con esempi pratici'
+og_title: 'Django 5.1: struttura dei file generati da startproject e startapp'
+og_description: 'Django 5.1: struttura dei file generati da startproject e startappcon esempi pratici'
 og_image: ''
 noindex: false
----
-
----
-
-title: "Django 5.1: struttura dei file generati da `startproject` e `startapp` (con esempi pratici)"
-slug: "django-startproject-startapp-struttura-file"
-date: "2025-08-13"
-description: "Guida pratica alla struttura dei file creati da Django 5.1 con startproject e startapp: cosa fa ogni file, come collegare l’app, dove mettere template e static."
-tags: \["python", "django", "project-structure", "beginner"]
-hero\_image: "[https://placehold.co/1200x630?text=Django+Project+Structure](https://placehold.co/1200x630?text=Django+Project+Structure)"
-canonical\_url: "[https://matteoricci.net/django-startproject-startapp-struttura-file](https://matteoricci.net/django-startproject-startapp-struttura-file)"
 reading\_time: "9 min"
-----------------------
+---
 
 # Django 5.1: struttura dei file generati da `startproject` e `startapp`
 
@@ -42,7 +31,7 @@ reading\_time: "9 min"
 * Livello: **beginner**
 * Vincoli: **solo stdlib + Django**, nessun servizio esterno
 
-## Prerequisiti
+**Prerequisiti**
 
 * Python 3.12, Django 5.1, venv, pip
 * Comandi rapidi:
@@ -356,5 +345,6 @@ python manage.py test
 
 Hai visto **cosa genera Django** e come **collegare tra loro** progetto, app, URL, template e (facoltativamente) un modello con admin.
 **Prossimi passi**: crea una seconda app (es. `accounts`), sposta i test in `tests/`, e valuta **settings modulari** per sviluppo/produzione.
+
 
 **CTA**: crea il tuo mini‐progetto con `blog` seguendo la guida, poi **aggiungi un modello** e una pagina lista dei post. Quando funziona, condividi i test e confrontali con questa guida.
