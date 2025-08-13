@@ -4,7 +4,8 @@ layout: post
 date: '2025-08-07'
 author: Matteo Ricci
 categories:
-- django-development, django
+- django-development
+- django
 site: https://matteoricci.net
 slug: cose-django-e-perche-usarlo
 published: true

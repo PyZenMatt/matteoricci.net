@@ -49,7 +49,7 @@ Capire **cosa genera** Django ti evita errori classici: app non registrate, URL 
 
 ---
 
-## Passo 1: Crea il progetto (`startproject`)
+## Crea il progetto (`startproject`)
 
 ```bash
 django-admin startproject config .
@@ -89,7 +89,7 @@ Se vedi la pagina di benvenuto, il progetto base è ok.
 
 ---
 
-## Passo 2: Crea un’app (`startapp`) e registrala
+## Crea un’app (`startapp`) e registrala
 
 ```bash
 python manage.py startapp blog
@@ -135,7 +135,7 @@ INSTALLED_APPS = [
 
 ---
 
-## Passo 3: Collega URL di progetto e app
+## Collega URL di progetto e app
 
 Crea gli URL dell’app:
 
@@ -181,7 +181,7 @@ python manage.py runserver
 
 ---
 
-## Passo 4: Template e static (il minimo indispensabile)
+## Template e static (il minimo indispensabile)
 
 Aggiungi una cartella template di progetto:
 
