@@ -1,7 +1,6 @@
 ---
-title: 'Tipi di dato base in Python: list, tuple, set e dict — differenze e quando
-  usarli'
-date: '2025-08-13T09:37:55+00:00'
+title: Tipi di dato base in Python: list, tuple, set e dict — differenze e quando usarli
+date: 2025-08-13T09:37:55+00:00
 slug: tipi-di-dato-base-in-python-list-tuple-set-e-dict-differenze-e-quando-usarli
 description: 'Guida pratica ai tipi di datobase in Python 3.12: list, tuple, set e dict. Differenze, esempi chiari e consigli'
 tags: 'python, basi, tipi di dato, guide'
@@ -266,3 +265,4 @@ python -m unittest -q
 
 
 Ora che hai il quadro chiaro, **scrivi 3 esempi tuoi** (uno con `list`, uno con `set`, uno con `dict`) e **confrontali** con la guida. Piccolo esercizio: prendi una lista con duplicati, rimuovi i doppioni con un `set`, ordina il risultato e mappa ogni elemento alla sua lunghezza con un `dict`. Buon Python!
+
