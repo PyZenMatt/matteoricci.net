@@ -258,8 +258,8 @@ python -m unittest -q
 
 ## Collegamenti utili
 
-* Interno: [Funzioni base in Python](/python-funzioni-base)
-* Interno: [Controllo di flusso in Python](/python-controllo-flusso)
+* Interno: [Funzioni base in Python](https://matteoricci.net/blog/it/2025/08/13/tipi-di-dato-base-in-python-list-tuple-set-e-dict-differenze-e-quando-usarli/)
+* Interno: [Cos'è Django e come usarlo](https://matteoricci.net/blog/it/2025/08/07/cose-django-e-perche-usarlo/)
 * Esterno: [Python Docs — Built-in Types](https://docs.python.org/3/library/stdtypes.html)
 * Esterno: [Python Docs — Data Structures](https://docs.python.org/3/tutorial/datastructures.html)
 
@@ -268,8 +268,8 @@ python -m unittest -q
 ## Conclusione & Next steps
 
 
-Ora che hai il quadro chiaro, **scrivi 3 esempi tuoi** (uno con `list`, uno con `set`, uno con `dict`) e **confrontali** con la guida. Piccolo esercizio: prendi una lista con duplicati, rimuovi i doppioni con un `set`, ordina il risultato e mappa ogni elemento alla sua lunghezza con un `dict`. Buon Python!
+Ora che hai il quadro chiaro, **scrivi 3 esempi tuoi** (uno con `list`, uno con `set`, uno con `dict`) e **confrontali** con la guida. Piccolo esercizio: prendi una lista con duplicati, rimuovi i doppioni con un `set`, ordina il risultato e mappa ogni elemento alla sua lunghezza con un `dict`. 
 
+Buon Python!
 
-
-
+Matteo Ricci

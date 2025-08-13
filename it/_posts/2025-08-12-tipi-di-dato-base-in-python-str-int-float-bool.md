@@ -1,6 +1,6 @@
 ---
 title: 'Tipi di dato base in Python: str, int, float, bool (con esempi chiari)'
-date: '2025-08-16T07:26:49+00:00'
+date: 2025-08-12 08:00:00 +0200
 slug: tipi-di-dato-base-in-python-str-int-float-bool-con-esempi-chiari
 description: 'Guida pratica ai tipi di dato base in Python 3.12: stringhe, interi,
   float e booleani. Operazioni comuni, conversioni, errori frequenti e best practice.'
@@ -18,16 +18,10 @@ og_description: 'Guida pratica ai tipi di dato base in Python 3.12: stringhe, in
   float e booleani. Operazioni comuni, conversioni, errori frequenti e best practice.'
 og_image: ''
 noindex: false
----
-
----
 date: "2025-08-13"
 lang: it
-
-
-
 reading\_time: "6 min"
-----------------------
+---
 
 # Tipi di dato base in Python: str, int, float, bool
 
@@ -39,7 +33,7 @@ reading\_time: "6 min"
 * Livello: beginner
 * Vincoli: solo standard library
 
-## Prerequisiti
+**Prerequisiti**
 
 * Python 3.12 installato, opzionale `venv`, `pip`.
 * Comandi rapidi:
@@ -55,7 +49,7 @@ Capire i tipi di dato base è il primo passo per scrivere codice affidabile. Que
 
 ---
 
-## Passo 1: Stringhe (`str`)
+## Stringhe (`str`)
 
 Le stringhe sono **immutabili** (ogni modifica crea una nuova stringa). Supportano indicizzazione, slicing e molti metodi utili.
 
@@ -86,7 +80,7 @@ msg = f"{name} aveva {age} anni"
 
 ---
 
-## Passo 2: Numeri interi (`int`) e in virgola mobile (`float`)
+## Numeri interi (`int`) e in virgola mobile (`float`)
 
 Gli interi non hanno limiti pratici (se non la memoria). I `float` usano la rappresentazione IEEE 754: comoda ma a volte **imprecisa**.
 
@@ -122,7 +116,7 @@ total = price * (Decimal("1") + tax)  # Decimal preciso
 
 ---
 
-## Passo 3: Booleani (`bool`) e “truthiness”
+## Booleani (`bool`) e “truthiness”
 
 `True` e `False` sono tipi booleani. Qualsiasi oggetto può essere valutato come vero/falso:
 
@@ -161,7 +155,7 @@ if value is None:
 
 ---
 
-## Passo 4: Conversioni e parsing
+## Conversioni e parsing
 
 Le funzioni **costruttore** convertono valori tra tipi. Attenzione agli input non validi.
 
@@ -258,8 +252,8 @@ pytest -q
 
 ## Collegamenti utili
 
-* Interno: [Funzioni base in Python](/python-funzioni-base)
-* Interno: [Controllo di flusso in Python](/python-controllo-flusso)
+* Interno: [Funzioni base in Python](https://matteoricci.net/blog/it/2025/08/13/tipi-di-dato-base-in-python-list-tuple-set-e-dict-differenze-e-quando-usarli/)
+* Interno: [Cos'è Django e come usarlo](https://matteoricci.net/blog/it/2025/08/07/cose-django-e-perche-usarlo/)
 * Esterno: [Python Docs – Built-in Types](https://docs.python.org/3/library/stdtypes.html)
 * Esterno: [Python Docs – `decimal`](https://docs.python.org/3/library/decimal.html)
 
@@ -268,3 +262,7 @@ pytest -q
 ## Conclusione & Next steps
 
 Hai visto l’essenziale di `str`, `int`, `float`, `bool`. Prossimo passo: **scrivi 3 snippet tuoi** (uno per tipo) con input dell’utente, conversione sicura e messaggio finale. Poi confrontali con gli esempi qui sopra e ottimizzali.
+
+Buon Python!
+
+Matteo Ricci

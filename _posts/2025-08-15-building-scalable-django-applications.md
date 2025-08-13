@@ -1,3 +1,4 @@
+---
 layout: post
 title: "Building Scalable Django Applications: Best Practices"
 description: "Explore advanced patterns and techniques for building maintainable Django applications that can scale with your business needs"
