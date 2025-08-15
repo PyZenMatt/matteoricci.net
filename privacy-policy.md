@@ -1,90 +1,90 @@
 ---
 layout: default
-title: "Privacy Policy - Matteo Ricci"
-description: "Privacy Policy for matteoricci.net - How we collect, use, and protect your personal data"
+title: "Informativa Privacy - Matteo Ricci"
+description: "Informativa privacy per matteoricci.net - Come raccogliamo, usiamo e proteggiamo i tuoi dati personali"
 permalink: /privacy-policy/
 ---
 
-# Privacy Policy
+# Informativa Privacy
 
-**Last updated: {{ "now" | date: "%B %d, %Y" }}**
+**Ultimo aggiornamento: {{ "now" | date: "%d/%m/%Y" }}**
 
-## Introduction
+## Introduzione
 
-This Privacy Policy describes how Matteo Ricci ("we", "our", or "us") collects, uses, and protects your information when you visit matteoricci.net (the "Service").
+Questa informativa descrive come Matteo Ricci ("noi") raccoglie, utilizza e protegge i tuoi dati personali quando visiti matteoricci.net (il "Sito").
 
-## Information We Collect
+## Quali dati raccogliamo
 
-### Information You Provide
-- Contact form submissions (name, email, message)
-- Email communications
+### Dati forniti dall'utente
+- Invio di moduli di contatto (nome, email, messaggio)
+- Comunicazioni via email
 
-### Information Automatically Collected
-- IP address
-- Browser type and version
-- Device information
-- Pages visited and time spent
-- Referring websites
+### Dati raccolti automaticamente
+- Indirizzo IP
+- Tipo e versione del browser
+- Informazioni sul dispositivo
+- Pagine visitate e tempo di permanenza
+- Siti di provenienza
 
-## How We Use Your Information
+## Come utilizziamo i tuoi dati
 
-We use the collected information for:
-- Responding to your inquiries
-- Improving our website and services
-- Analytics and understanding user behavior
-- Legal compliance
+Utilizziamo i dati raccolti per:
+- Rispondere alle tue richieste
+- Migliorare il sito e i servizi
+- Analisi e comprensione del comportamento degli utenti
+- Adempimenti legali
 
-## Cookies and Tracking Technologies
+## Cookie e tecnologie di tracciamento
 
-We use cookies and similar technologies to:
-- Remember your preferences
-- Analyze website traffic
-- Improve user experience
+Utilizziamo cookie e tecnologie simili per:
+- Ricordare le tue preferenze
+- Analizzare il traffico del sito
+- Migliorare l'esperienza utente
 
-For detailed information about cookies, please see our [Cookie Policy](/cookie-policy).
+Per maggiori dettagli consulta la nostra [Cookie Policy](/cookie-policy).
 
-## Data Sharing
+## Condivisione dei dati
 
-We do not sell, trade, or rent your personal information. We may share information with:
-- Service providers who assist in website operations
-- Legal authorities when required by law
+Non vendiamo, cediamo o affittiamo i tuoi dati personali. Possiamo condividere i dati solo con:
+- Fornitori di servizi che supportano il sito
+- Autorità legali se richiesto dalla legge
 
-## Data Security
+## Sicurezza dei dati
 
-We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.
+Adottiamo misure di sicurezza adeguate per proteggere i tuoi dati personali da accessi non autorizzati, alterazioni, divulgazioni o distruzioni.
 
-## Your Rights
+## I tuoi diritti
 
-You have the right to:
-- Access your personal data
-- Correct inaccurate information
-- Request deletion of your data
-- Object to data processing
-- Data portability
+Hai diritto a:
+- Accedere ai tuoi dati personali
+- Correggere informazioni inesatte
+- Richiedere la cancellazione dei dati
+- Opporti al trattamento
+- Portabilità dei dati
 
-## Third-Party Services
+## Servizi di terze parti
 
-Our website may use:
-- **Google Analytics**: For website analytics
-- **GitHub Pages**: For hosting
-- **Font providers**: For web fonts
+Il sito può utilizzare:
+- **Google Analytics**: per le statistiche
+- **GitHub Pages**: per l'hosting
+- **Fornitori di font**: per i caratteri web
 
-Each service has its own privacy policy.
+Ogni servizio ha una propria informativa privacy.
 
-## Children's Privacy
+## Privacy dei minori
 
-Our service is not intended for children under 16. We do not knowingly collect personal information from children under 16.
+Il sito non è destinato a minori di 16 anni. Non raccogliamo consapevolmente dati personali di minori di 16 anni.
 
-## Changes to This Policy
+## Modifiche all'informativa
 
-We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page.
+Possiamo aggiornare questa informativa periodicamente. Eventuali modifiche saranno pubblicate su questa pagina.
 
-## Contact Us
+## Contatti
 
-If you have questions about this Privacy Policy, please contact us at:
+Per domande su questa informativa scrivi a:
 - **Email**: [matteo@matteoricci.net](mailto:matteo@matteoricci.net)
-- **Website**: [matteoricci.net](https://matteoricci.net)
+- **Sito web**: [matteoricci.net](https://matteoricci.net)
 
 ---
 
-*This privacy policy complies with GDPR and other applicable privacy laws.*
+*Questa informativa è conforme al GDPR e alle normative sulla privacy applicabili.*

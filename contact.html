@@ -1,7 +1,7 @@
 ---
 layout: portfolio
-title: "Contact Me - Matteo Ricci"
-description: "Contact form for inquiries, collaborations, and information."
+title: "Contattami - Matteo Ricci"
+description: "Modulo di contatto per richieste, collaborazioni e informazioni."
 permalink: /contact/
 ---
 
@@ -9,14 +9,14 @@ permalink: /contact/
 <section id="contact" class="section contact-container">
   <div class="container">
     <div class="contact-content">
-      <h2 class="section-title">Contact Me</h2>
-      <p class="contact-text">Fill out the form below to send me a message. I will reply as soon as possible!</p>
+  <h2 class="section-title">Contattami</h2>
+  <p class="contact-text">Compila il modulo qui sotto per inviarmi un messaggio. Ti risponderò il prima possibile!</p>
       <form id="contactForm" class="contact-form" autocomplete="off" novalidate>
-        <input type="text" name="name" placeholder="Name" required aria-label="Name">
-        <input type="email" name="email" placeholder="Email" required aria-label="Email">
-        <textarea name="message" placeholder="Message" required aria-label="Message"></textarea>
+  <input type="text" name="name" placeholder="Nome" required aria-label="Nome">
+  <input type="email" name="email" placeholder="Email" required aria-label="Email">
+  <textarea name="message" placeholder="Messaggio" required aria-label="Messaggio"></textarea>
         <input type="text" name="honeypot" style="display:none" tabindex="-1" autocomplete="off">
-        <button type="submit" class="cta-primary">Send</button>
+  <button type="submit" class="cta-primary">Invia</button>
         <div id="formStatus" style="margin-top:1rem;min-height:1.5em;text-align:center;font-size:1rem;"></div>
       </form>
     </div>
@@ -48,17 +48,17 @@ document.getElementById('contactForm').addEventListener('submit', async function
     const result = await response.json();
     if(result.success) {
       status.style.color = '#2e7d32';
-      status.textContent = 'Message sent successfully!';
+  status.textContent = 'Messaggio inviato con successo!';
       form.reset();
     } else {
       status.style.color = '#c62828';
-      status.textContent = result.error ? result.error : 'An error occurred. Please try again.';
+  status.textContent = result.error ? result.error : 'Si è verificato un errore. Riprova.';
     }
   } catch (err) {
     status.style.color = '#c62828';
-    status.textContent = 'Network error. Please try again.';
+  status.textContent = 'Errore di rete. Riprova.';
   }
   button.disabled = false;
-  button.textContent = 'Send';
+  button.textContent = 'Invia';
 });
 </script>

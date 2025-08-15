@@ -13,7 +13,7 @@ url: "https://matteoricci.net"
 baseurl: ""
 
 # ===== Language / i18n =====
-lang: en   # fallback
+lang: it
 timezone: "Europe/Rome"
 
 # ===== Analytics / Verification =====
@@ -64,58 +64,21 @@ collections:
     permalink: /:collection/:name/
 
 # ===== Defaults (EN default, IT dentro /it/) =====
-# Struttura consigliata:
-#   _posts/            -> post EN
-#   it/_posts/         -> post IT
 defaults:
-  # Valori generali (qualsiasi file fuori da /it)
   - scope:
       path: ""
+      type: "posts"
     values:
-      lang: "en"
-      layout: "default"
-      image: "/assets/img/og-default.jpg" # fallback og:image (sovrascrivibile nei post)
-      noindex: false                       # il Blog Manager può impostarlo a true per escludere
-      sitemap: true
-
-  # Pagine EN
+      layout: "post"
+      permalink: /blog/:year/:month/:day/:title/
+      seo:
+        type: "article"
+      redirect_from: []
   - scope:
       path: ""
       type: "pages"
     values:
       layout: "page"
-
-  # Post EN
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      lang: "en"
-      layout: "post"
-      permalink: /blog/en/:year/:month/:day/:title/
-      seo:
-        type: "article"                   # hint per jekyll-seo-tag
-      redirect_from: []                   # il Blog Manager può popolare vecchi slug qui
-
-  # Qualsiasi contenuto sotto /it (pagine e post)
-  - scope:
-      path: "it"
-    values:
-      lang: "it"
-
-  # Post IT: permalink dedicato sotto /blog/it/
-  - scope:
-      path: "it"
-      type: "posts"
-    values:
-      lang: "it"
-      layout: "post"
-      permalink: /blog/it/:year/:month/:day/:title/
-      seo:
-        type: "article"
-      redirect_from: []
-
-  # Projects
   - scope:
       path: ""
       type: "projects"

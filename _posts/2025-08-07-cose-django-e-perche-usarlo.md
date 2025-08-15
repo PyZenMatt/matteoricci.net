@@ -22,8 +22,6 @@ og_description: Django è un framework completo, sicuro e veloce per sviluppare 
 kramdown:
   toc_levels: 1..2 
 ref: cose-django-e-perche-usarlo
-lang: it
-permalink: /blog/it/2025/08/07/cose-django-e-perche-usarlo/
 
 ---
 
@@ -184,6 +182,9 @@ Se sei uno sviluppatore alle prime armi, Django ti aiuterà a imparare buone pra
 Ti lascio alcune risorse utili:
 
 ## Risorse utili
+
+[Vuoi sapere come ho costruito una piattoforma educativa in stile Udemy collegandola al web3? inizia dal mio case study]* In arrivo il 16 agosto!*("https://matteoricci.net/blog/2025/08/16/case-study-django-blockchain-backend-schoolplatform-drf-jwt-web3py.html")
+oppure [Vuoi sapere il perchè l'ho fatto con Django] *In arrivo il 18 agosto!*("https://matteoricci.net/blog/2025/08/18/perche-costruire-un-lms-con-django-nel-2025-e-quando-non-farlo.html")
 
 - <a href="https://docs.djangoproject.com/it/4.2/" rel="nofollow" target="_blank">Documentazione ufficiale Django</a>
 - <a href="https://tutorial.djangogirls.org/it/" rel="nofollow" target="_blank">Django Girls Tutorial</a>

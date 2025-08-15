@@ -2,9 +2,6 @@
 {% if page.ref %}
   {% assign en = site.posts | where: 'ref', page.ref | where: 'lang', 'en' | first %}
   {% assign it = site.posts | where: 'ref', page.ref | where: 'lang', 'it' | first %}
-  {% if en %}
-    <link rel="alternate" hreflang="en" href="{{ en.url | absolute_url }}">
-  {% endif %}
   {% if it %}
     <link rel="alternate" hreflang="it" href="{{ it.url | absolute_url }}">
   {% endif %}

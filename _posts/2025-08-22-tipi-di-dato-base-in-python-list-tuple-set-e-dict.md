@@ -22,8 +22,6 @@ reading_time: "7 min"
 date: 2025-08-13 08:00:00 +0200
 ---
 
-
-
 # Tipi di dato base in Python: list, tuple, set e dict — differenze e quando usarli
 
 > **Sommario**: in 10 minuti capirai come scegliere tra **liste**, **tuple**, **set** e **dizionari** in Python 3.12. Useremo esempi semplici e analogie concrete per evitare confusione e scrivere codice più pulito.

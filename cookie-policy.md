@@ -1,133 +1,133 @@
 ---
 layout: default
-title: "Cookie Policy - Matteo Ricci"
-description: "Cookie Policy for matteoricci.net - Understanding how we use cookies and tracking technologies"
+title: "Informativa Cookie - Matteo Ricci"
+description: "Informativa cookie per matteoricci.net - Come usiamo cookie e tecnologie di tracciamento"
 permalink: /cookie-policy/
 ---
 
-# Cookie Policy
+# Informativa Cookie
 
-**Last updated: {{ "now" | date: "%B %d, %Y" }}**
+**Ultimo aggiornamento: {{ "now" | date: "%d/%m/%Y" }}**
 
-## What Are Cookies
+## Cosa sono i cookie
 
-Cookies are small text files stored on your device when you visit our website. They help us provide you with a better browsing experience by remembering your preferences and analyzing how you use our site.
+I cookie sono piccoli file di testo memorizzati sul tuo dispositivo quando visiti il nostro sito. Ci aiutano a offrirti una migliore esperienza di navigazione ricordando le tue preferenze e analizzando come utilizzi il sito.
 
-## Types of Cookies We Use
+## Tipi di cookie utilizzati
 
-### Necessary Cookies
-These cookies are essential for the website to function properly. They cannot be disabled.
+### Cookie necessari
+Questi cookie sono essenziali per il funzionamento del sito e non possono essere disattivati.
 
-- **Session cookies**: Maintain your session during your visit
-- **Security cookies**: Protect against malicious attacks
-- **Cookie consent**: Remember your cookie preferences
+- **Cookie di sessione**: Mantengono la sessione durante la visita
+- **Cookie di sicurezza**: Proteggono da attacchi malevoli
+- **Cookie di consenso**: Ricordano le tue preferenze sui cookie
 
-### Analytics Cookies
-These cookies help us understand how visitors interact with our website.
+### Cookie di analisi
+Questi cookie ci aiutano a capire come i visitatori interagiscono con il sito.
 
-- **Google Analytics**: Tracks page views, user behavior, and site performance
-- **Performance monitoring**: Measures loading times and errors
+- **Google Analytics**: Traccia le visualizzazioni delle pagine, il comportamento degli utenti e le performance
+- **Monitoraggio performance**: Misura tempi di caricamento ed errori
 
-### Marketing Cookies
-These cookies are used to provide personalized content and advertisements.
+### Cookie di marketing
+Questi cookie servono per offrire contenuti e pubblicità personalizzati.
 
-- **Social media**: Enable sharing on social platforms
-- **Advertising**: Track effectiveness of marketing campaigns
+- **Social media**: Permettono la condivisione sui social
+- **Pubblicità**: Tracciano l'efficacia delle campagne
 
-## Cookie Details
+## Dettagli sui cookie
 
-| Cookie Name | Type | Purpose | Duration |
-|-------------|------|---------|----------|
-| matteoricci_cookie_consent | Necessary | Stores your cookie preferences | 1 year |
-| _ga | Analytics | Google Analytics visitor identification | 2 years |
-| _ga_* | Analytics | Google Analytics session information | 2 years |
-| _gid | Analytics | Google Analytics visitor identification | 24 hours |
+| Nome cookie | Tipo | Scopo | Durata |
+|-------------|------|-------|--------|
+| matteoricci_cookie_consent | Necessario | Memorizza le preferenze sui cookie | 1 anno |
+| _ga | Analisi | Identificazione visitatore Google Analytics | 2 anni |
+| _ga_* | Analisi | Informazioni di sessione Google Analytics | 2 anni |
+| _gid | Analisi | Identificazione visitatore Google Analytics | 24 ore |
 
-## Managing Your Cookie Preferences
+## Gestione delle preferenze cookie
 
-### Browser Settings
-You can control cookies through your browser settings:
+### Impostazioni del browser
+Puoi gestire i cookie tramite le impostazioni del tuo browser:
 
-- **Chrome**: Settings → Privacy and security → Cookies and other site data
-- **Firefox**: Options → Privacy & Security → Cookies and Site Data
-- **Safari**: Preferences → Privacy → Manage Website Data
-- **Edge**: Settings → Site permissions → Cookies and site data
+- **Chrome**: Impostazioni → Privacy e sicurezza → Cookie e altri dati dei siti
+- **Firefox**: Opzioni → Privacy e sicurezza → Cookie e dati dei siti
+- **Safari**: Preferenze → Privacy → Gestisci dati siti web
+- **Edge**: Impostazioni → Autorizzazioni sito → Cookie e dati dei siti
 
-### Our Cookie Banner
-When you first visit our site, you can choose:
+### Banner cookie
+Al primo accesso puoi scegliere:
 
-- **Accept All**: Allow all cookies for the best experience
-- **Decline**: Only necessary cookies will be used
-- **Settings**: Customize your preferences (future feature)
+- **Accetta tutto**: Consenti tutti i cookie per la migliore esperienza
+- **Rifiuta**: Verranno usati solo i cookie necessari
+- **Impostazioni**: Personalizza le preferenze (funzionalità futura)
 
-## Third-Party Cookies
+## Cookie di terze parti
 
-Some cookies are set by third-party services we use:
+Alcuni cookie sono impostati da servizi esterni:
 
 ### Google Analytics
-- **Purpose**: Website analytics and performance monitoring
-- **Data collected**: Page views, user interactions, device information
-- **Privacy policy**: [Google Privacy Policy](https://policies.google.com/privacy)
+- **Scopo**: Statistiche e monitoraggio performance
+- **Dati raccolti**: Visualizzazioni, interazioni, informazioni sul dispositivo
+- **Privacy**: [Google Privacy Policy](https://policies.google.com/privacy)
 - **Opt-out**: [Google Analytics Opt-out](https://tools.google.com/dlpage/gaoptout)
 
 ### GitHub Pages
-- **Purpose**: Website hosting
-- **Privacy policy**: [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement)
+- **Scopo**: Hosting del sito
+- **Privacy**: [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement)
 
-## Cookie Consent Management
+## Gestione del consenso cookie
 
-### Your Rights
-Under GDPR and other privacy laws, you have the right to:
+### I tuoi diritti
+Ai sensi del GDPR e delle normative sulla privacy hai diritto a:
 
-- Know what cookies are being used
-- Consent to or refuse cookie placement
-- Withdraw consent at any time
-- Access and delete your data
+- Sapere quali cookie vengono utilizzati
+- Dare o negare il consenso
+- Revocare il consenso in qualsiasi momento
+- Accedere e cancellare i tuoi dati
 
-### Updating Your Preferences
-To change your cookie preferences:
+### Aggiornare le preferenze
+Per modificare le preferenze:
 
-1. Clear your browser's local storage for matteoricci.net
-2. Refresh the page to see the cookie banner again
-3. Make your new selection
+1. Cancella la memoria locale del browser per matteoricci.net
+2. Ricarica la pagina per visualizzare nuovamente il banner cookie
+3. Fai una nuova selezione
 
-Or contact us at [matteo@matteoricci.net](mailto:matteo@matteoricci.net)
+Oppure contattaci a [matteo@matteoricci.net](mailto:matteo@matteoricci.net)
 
-## Impact of Disabling Cookies
+## Effetti della disattivazione dei cookie
 
-### Necessary Cookies
-Disabling these may cause:
-- Loss of session information
-- Security vulnerabilities
-- Broken website functionality
+### Cookie necessari
+Disattivandoli potresti:
+- Perdere informazioni di sessione
+- Esporre il sito a vulnerabilità
+- Compromettere il funzionamento del sito
 
-### Analytics Cookies
-Disabling these will:
-- Prevent us from improving the website
-- Not affect your browsing experience
+### Cookie di analisi
+Disattivandoli:
+- Non potremo migliorare il sito
+- La tua esperienza di navigazione non sarà influenzata
 
-### Marketing Cookies
-Disabling these will:
-- Show less relevant content
-- Reduce social media integration
+### Cookie di marketing
+Disattivandoli:
+- Visualizzerai contenuti meno pertinenti
+- Ridotta integrazione con i social
 
-## Updates to This Policy
+## Aggiornamenti all'informativa
 
-We may update this Cookie Policy to reflect changes in our practices or applicable laws. We will notify you of significant changes by updating the "Last updated" date.
+Possiamo aggiornare questa informativa per riflettere cambiamenti nelle pratiche o nelle leggi. Le modifiche rilevanti saranno segnalate aggiornando la data "Ultimo aggiornamento".
 
-## Contact Information
+## Contatti
 
-For questions about our use of cookies, please contact:
+Per domande sull'uso dei cookie, contattaci:
 
 - **Email**: [matteo@matteoricci.net](mailto:matteo@matteoricci.net)
-- **Website**: [matteoricci.net](https://matteoricci.net)
+- **Sito web**: [matteoricci.net](https://matteoricci.net)
 
-## Additional Resources
+## Risorse utili
 
-- [Privacy Policy](/privacy-policy)
-- [About Cookies (allaboutcookies.org)](https://www.allaboutcookies.org/)
-- [GDPR Information](https://gdpr.eu/)
+- [Informativa Privacy](/privacy-policy)
+- [Informazioni sui cookie (allaboutcookies.org)](https://www.allaboutcookies.org/)
+- [Informazioni GDPR](https://gdpr.eu/)
 
 ---
 
-*This cookie policy is designed to be transparent and compliant with GDPR, CCPA, and other privacy regulations.*
+*Questa informativa cookie è trasparente e conforme a GDPR, CCPA e altre normative sulla privacy.*
