@@ -20,6 +20,7 @@ og_description: "Perché Django resta una scelta vincente per un LMS moderno: si
 og_image: "https://matteoricci.net/images/django-lms-2025-cover.png"
 noindex: false
 reading_time: "8 min"
+date: '2025-08-18'
 ---
 
 # Perché costruire un LMS con Django nel 2025 (e quando non farlo)
