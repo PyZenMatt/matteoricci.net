@@ -20,6 +20,8 @@ og_description: "Come un refactoring mirato ha reso SchoolPlatform più robusta 
 og_image: "/assets/images/posts/refactoring-schoolplatform-cover.jpg"
 noindex: false
 reading_time: "6 min"
+date: '2025-08-20'
+
 ---
 
 # Refactoring in Django: investimento per scalabilità e stabilità
