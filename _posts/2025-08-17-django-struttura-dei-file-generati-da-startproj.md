@@ -347,7 +347,11 @@ Hai visto **cosa genera Django** e come **collegare tra loro** progetto, app, UR
 **Prossimi passi**: crea una seconda app (es. `accounts`), sposta i test in `tests/`, e valuta **settings modulari** per sviluppo/produzione.
 
 
-**CTA**: crea il tuo mini‐progetto con `blog` seguendo la guida, poi **aggiungi un modello** e una pagina lista dei post. Quando funziona, condividi i test e confrontali con questa guida.
+Crea il tuo mini‐progetto con `blog` seguendo la guida, poi **aggiungi un modello** e una pagina lista dei post. Quando funziona, condividi i test e confrontali con questa guida.
+
+Grazie per essere arrivato fino alla fine!
+
+Matteo Ricci - Full Stack Developer
 
 
 

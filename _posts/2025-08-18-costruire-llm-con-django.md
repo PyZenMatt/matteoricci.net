@@ -137,3 +137,8 @@ Vuoi vedere **DRF in azione** e come ho separato DB e blockchain senza fumo negl
 👉 [Leggi il case study sul backend di LMS con Django]("https://matteoricci.net/blog/2025/08/18/case-study-django-blockchain-backend-schoolplatform-drf-jwt-web3py.html")
 👉 [Vai alla demo della mia piattaforma](https://schoolplatform-frontend.onrender.com/)
 ```
+
+Grazie per essere arrivato fino alla fine!
+
+Matteo Ricci - Full Stack Developer
+

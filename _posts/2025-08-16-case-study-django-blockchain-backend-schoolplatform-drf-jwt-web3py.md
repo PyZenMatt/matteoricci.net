@@ -183,3 +183,7 @@ SchoolPlatform dimostra che un backend Django può integrarsi con blockchain in 
 
 💬 E tu? Hai mai dovuto sincronizzare un DB con una blockchain? Che approccio hai scelto?
 
+Grazie per essere arrivato fino alla fine!
+
+Matteo Ricci - Full Stack Developer
+
