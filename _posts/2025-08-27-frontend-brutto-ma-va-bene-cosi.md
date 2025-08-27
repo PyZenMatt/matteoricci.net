@@ -7,6 +7,7 @@ slug: frontend-mvp-refactor-vs-rewrite
 lang: it
 categories: [frontend, UX, React]
 tags: [frontend, MVP, UX/UI, refactor, React, Vite, design system, primitives, code-splitting]
+date: '2025-08-27'
 ---
 
 # Il mio primo frontend era brutto e va bene così
