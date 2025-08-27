@@ -64,7 +64,7 @@ Il criterio pratico:
 Traduco colori, spaziature e tipografia in **design tokens** (CSS/TS) e li promuovo a **primitives** (Button, Input, Card, Badge). In questo modo ogni pagina eredita coerenza automaticamente.
 
 Esempio (semplificato):
-
+{% raw %}
 ```ts
 // src/design/tokens.ts
 export const colors = {
@@ -81,10 +81,11 @@ export const font = {
   weight: { regular: 400, medium: 500, bold: 700 },
   lineHeight: 1.5
 };
-````
+```
+{% endraw %}
 
 **src/primitives/Button.tsx**
-
+{% raw %}
 ```ts
 import { colors, space, font } from "@/design/tokens";
 type Variant = "primary" | "ghost" | "danger" | "success";
@@ -102,15 +103,14 @@ export function Button({
   };
   return (
     <button
-      style={{
-        ...styles[variant],
+      style={Object.assign({}, styles[variant], {
         padding: `${space.sm}px ${space.lg}px`,
         fontFamily: font.family,
         fontSize: font.size.base,
         borderRadius: 12,
         opacity: disabled ? 0.6 : 1,
         cursor: disabled ? "not-allowed" : "pointer"
-      }}
+      })}
       {...props}
     >
       {children}
@@ -118,6 +118,7 @@ export function Button({
   );
 }
 ```
+{% endraw %}
 
 #### Accessibilità e naming
 
@@ -156,6 +157,20 @@ export const router = createBrowserRouter([
   { path: "/lesson/:id", element: <React.Suspense fallback={null}><Lesson/></React.Suspense> }
 ]);
 ```
+{% raw %}
+```ts
+import { createBrowserRouter } from "react-router-dom";
+import React from "react";
+const Course = React.lazy(() => import("./pages/Course"));
+const Lesson = React.lazy(() => import("./pages/Lesson"));
+const Dashboard = React.lazy(() => import("./pages/Dashboard"));
+export const router = createBrowserRouter([
+  { path: "/", element: <React.Suspense fallback={null}><Dashboard/></React.Suspense> },
+  { path: "/course/:id", element: <React.Suspense fallback={null}><Course/></React.Suspense> },
+  { path: "/lesson/:id", element: <React.Suspense fallback={null}><Lesson/></React.Suspense> }
+]);
+```
+{% endraw %}
 
 ---
 
@@ -184,7 +199,7 @@ Nelle pagine con librerie pesanti (editor, grafici, Web3) l’effetto è tangibi
 
 ---
 
-* Vuoi vedere come trasformo token in **primitives** su un caso reale? Leggi “\[Da Figma a React + Vite + TypeScript: il frontend dietro SchoolPlatform]\({% post\_url 2025-08-25-figma-react-vite-schoolplatform %})”.
+* Vuoi vedere come trasformo token in **primitives** su un caso reale? Leggi “[Da Figma a React + Vite + TypeScript: il frontend dietro SchoolPlatform]({% post_url 2025-08-25-figma-react-vite-schoolplatform %})”.
 * Curioso del codice? Dai un’occhiata al mio **portfolio** e ai repo collegati su GitHub dalla pagina.
 * Se ti interessa questo percorso di redesign, scrivimi dalla pagina contact "newsletter" e la tua email.
 

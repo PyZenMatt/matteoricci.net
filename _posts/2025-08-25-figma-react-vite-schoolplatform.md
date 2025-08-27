@@ -1,6 +1,6 @@
 ---
 layout: post
-date: '2025-08-23'
+date: '2025-08-25'
 title: "Da Figma a React + Vite + TypeScript: il frontend dietro SchoolPlatform"
 description: "Come ho trasformato un design Figma.make in un frontend React + Vite con primitives riutilizzabili, routing a moduli e integrazione blockchain tramite ethers.js (MetaMask, Polygon Amoy)."
 permalink: /figma-react-vite-schoolplatform/

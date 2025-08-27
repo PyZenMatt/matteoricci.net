@@ -31,11 +31,11 @@ In chiusura: **quando NON migrare** (sì, esiste) e **FAQ** in stile *People Als
 
 ---
 
-## 1) Perché mettere a confronto Vite e CRA {#perche-confronto}
+## 1 Perché mettere a confronto Vite e CRA {#perche-confronto}
 
 CRA ti mette su **Webpack** con zero configurazione. Vite separa sviluppo e build: **esbuild** per il dev server (rapidissimo) e **Rollup** per la produzione. Risultato pratico: **feedback loop** più corto e concentrazione alta, specie in team.
 
-## 2) Dev loop: cold start e HMR {#dev-loop}
+## 2 Dev loop: cold start e HMR {#dev-loop}
 
 Progetto tipo: **React 18 + TypeScript**, decine di componenti, alcune rotte in **lazy**.
 
@@ -48,7 +48,7 @@ Progetto tipo: **React 18 + TypeScript**, decine di componenti, alcune rotte in 
 
 Con `@vitejs/plugin-react` l’HMR funziona senza magie. Effetto reale: iteri su stile/UX in **micro-passi** senza spezzare il flusso mentale.
 
-## 3) Build e dimensione del bundle {#build-e-bundle}
+## 3 Build e dimensione del bundle {#build-e-bundle}
 
 Vite usa **Rollup** per la build finale, con **tree-shaking** solido. Con **code-splitting** per rotta e dipendenze sobrie, ho visto:
 
@@ -77,21 +77,23 @@ export default defineConfig({
 })
 ````
 
-> Inserisci nel post uno **screenshot** di `stats.html` con alt tecnico (es. “Treemap bundle con split vendor/app e peso librerie router”).
+Inserisci nel post uno **screenshot** di `stats.html` con alt tecnico (es. “Treemap bundle con split vendor/app e peso librerie router”).
 
-## 4) Strumenti di misura che ho usato {#strumenti-misura}
+## 4 Strumenti di misura che ho usato {#strumenti-misura}
 
-* **Bundle**: `rollup-plugin-visualizer` (Vite) · `webpack-bundle-analyzer` (CRA)
-* **Tempi dev/build**: cronometro terra-terra + log CLI su **3–5 run** per media
-* **Runtime**: DevTools “Coverage” per valutare codice caricato inutilmente
+**Bundle**: `rollup-plugin-visualizer` (Vite) · `webpack-bundle-analyzer` (CRA)
 
-> Piccolo rito: misura **prima** della migrazione, **dopo** e **una settimana** più tardi. Annota versione dipendenze: future update falsano il confronto.
+**Tempi dev/build**: cronometro terra-terra + log CLI su **3–5 run** per media
 
-## 5) Migrazione guidata da CRA a Vite {#migrazione-guidata}
+**Runtime**: DevTools “Coverage” per valutare codice caricato inutilmente
+
+Piccolo rito: misura **prima** della migrazione, **dopo** e **una settimana** più tardi. Annota versione dipendenze: future update falsano il confronto.
+
+## 5 Migrazione guidata da CRA a Vite {#migrazione-guidata}
 
 ### 5.1 Crea progetto Vite
 
-```bash
+```
 npm create vite@latest my-app -- --template react-ts
 cd my-app && npm i
 ```
@@ -102,8 +104,8 @@ Copia componenti/pagine/asset. Nota: in Vite **`index.html` è in root**, non in
 
 ### 5.3 Variabili d’ambiente
 
-* CRA → `process.env.REACT_APP_API_BASE_URL`
-* Vite → `import.meta.env.VITE_API_BASE_URL`
+CRA → `process.env.REACT_APP_API_BASE_URL`
+Vite → `import.meta.env.VITE_API_BASE_URL`
 
 `.env`:
 
@@ -180,31 +182,39 @@ Se usi **Jest**, puoi restare su Jest o passare a **Vitest** (più reattivo in w
 
 > Tip: se hai path alias tipo `@/components`, sincronizza `tsconfig.json` + `vite-tsconfig-paths`.
 
-## 6) Edge case e compatibilità {#edge-case}
+## 6 Edge case e compatibilità {#edge-case}
 
-* **PWA/Service Worker** → valuta `vite-plugin-pwa`
-* **SVG/asset** → in Vite import come modulo o URL; verifica eventuali loader custom di CRA
-* **Polyfill** → aggiungi solo ciò che serve (es. `URL`, `fetch`)
-* **Monorepo** → configura `root`/`build.outDir` e workspace correttamente
-* **Linting** → controlla regole ESLint legate a Webpack che non servono più
+**PWA/Service Worker** → valuta `vite-plugin-pwa`
 
-## 7) Quando migrare (e quando no) {#quando-migrare}
+**SVG/asset** → in Vite import come modulo o URL; verifica eventuali loader custom di CRA
+
+**Polyfill** → aggiungi solo ciò che serve (es. `URL`, `fetch`)
+
+**Monorepo** → configura `root`/`build.outDir` e workspace correttamente
+
+**Linting** → controlla regole ESLint legate a Webpack che non servono più
+
+## 7 Quando migrare (e quando no) {#quando-migrare}
 
 **Ha senso migrare se…**
 
-* il **dev loop è lento** e frena la produttività;
-* cerchi **code-splitting** pulito e toolchain moderna;
-* stai avviando un nuovo progetto o il codebase non è enorme.
+il **dev loop è lento** e frena la produttività;
+
+cerchi **code-splitting** pulito e toolchain moderna;
+
+stai avviando un nuovo progetto o il codebase non è enorme.
 
 **Meglio NON migrare se…**
 
-* dipendi da **plugin Webpack** difficili da replicare;
-* pipeline di build/CD è fortemente legata a CRA e **non hai banda** per rifattorizzare;
-* il team è in una fase critica (release imminente) e i tempi attuali sono **accettabili**.
+dipendi da **plugin Webpack** difficili da replicare;
+
+pipeline di build/CD è fortemente legata a CRA e **non hai banda** per rifattorizzare;
+
+il team è in una fase critica (release imminente) e i tempi attuali sono **accettabili**.
 
 > Strategia low-risk: prova Vite in **branch** solo per lo sviluppo (dev server), lasciando la build prod su CRA per una o due settimane. Se i guadagni sono chiari, completi il passaggio.
 
-## 8) Conclusioni operative + CTA {#conclusioni}
+## 8 Conclusioni operative + CTA {#conclusioni}
 
 Vite rende lo sviluppo **più scattante**. Se vivi di micro-iterazioni UI/UX, lo senti subito. Misura, migra a cerchi concentrici e mantieni i benchmark **ripetibili**.
 
@@ -212,7 +222,7 @@ Vite rende lo sviluppo **più scattante**. Se vivi di micro-iterazioni UI/UX, lo
 
 ---
 
-## 9) FAQ {#faq}
+## 9 FAQ {#faq}
 
 **Vite è più veloce anche in produzione?**
 Spesso sì: la build Rollup è rapida e produce bundle puliti. Il guadagno più evidente resta comunque il **dev loop**.
