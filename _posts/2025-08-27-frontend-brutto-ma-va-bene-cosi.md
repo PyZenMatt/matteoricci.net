@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Il mio primo frontend era brutto e va bene così"
-description: "Perché ho spedito un MVP funzionante prima della grafica, come ho deciso tra refactor e riscrittura totale, e il piano concreto per rimettere ordine in UX/UI senza fermare lo sviluppo."
-permalink: /frontend-brutto-va-bene-cosi/
-slug: frontend-brutto-va-bene-cosi
+title: "Frontend MVP: refactor o riscrittura? Lezioni dal mio primo progetto"
+description: "Come ho spedito un MVP funzionante senza curare la grafica, i criteri per scegliere tra refactor e riscrittura, e il piano concreto per migliorare UX/UI con React, Vite e design tokens."
+permalink: /frontend-mvp-refactor-vs-rewrite/
+slug: frontend-mvp-refactor-vs-rewrite
 lang: it
+categories: [frontend, UX, React]
+tags: [frontend, MVP, UX/UI, refactor, React, Vite, design system, primitives, code-splitting]
 ---
 
 # Il mio primo frontend era brutto e va bene così
@@ -16,6 +18,7 @@ Ho consegnato un **MVP funzionante** anche se il frontend non seguiva tutte le b
 Spedire presto mi ha dato segnali utili: cosa cercano studenti e docenti, dove inciampano, quali azioni sono davvero frequenti. Da lì ho iniziato a disegnare il piano di rientro su UX/UI, senza buttare via il lavoro.
 
 > Approfondimento tecnico: raccontato passo-passo in “[Da Figma a React + Vite + TypeScript: il frontend dietro SchoolPlatform]({% post_url 2025-08-25-figma-react-vite-schoolplatform %})”.
+
 ---
 
 ## Indice dei contenuti
@@ -32,8 +35,6 @@ Spedire presto mi ha dato segnali utili: cosa cercano studenti e docenti, dove i
     - [FAQ](#faq)
 
 ---
-
-
 
 ### Refactor o “purga”? Il mio criterio
 
@@ -79,12 +80,11 @@ export const font = {
   weight: { regular: 400, medium: 500, bold: 700 },
   lineHeight: 1.5
 };
-```
+````
 
 **src/primitives/Button.tsx**
 
 ```ts
-
 import { colors, space, font } from "@/design/tokens";
 type Variant = "primary" | "ghost" | "danger" | "success";
 export function Button({
@@ -101,7 +101,7 @@ export function Button({
   };
   return (
     <button
-      style=&#123;&#123;
+      style={{
         ...styles[variant],
         padding: `${space.sm}px ${space.lg}px`,
         fontFamily: font.family,
@@ -109,7 +109,7 @@ export function Button({
         borderRadius: 12,
         opacity: disabled ? 0.6 : 1,
         cursor: disabled ? "not-allowed" : "pointer"
-      &#125;&#125;
+      }}
       {...props}
     >
       {children}
@@ -117,7 +117,6 @@ export function Button({
   );
 }
 ```
-**src/primitives/Button.tsx**
 
 #### Accessibilità e naming
 
@@ -157,8 +156,6 @@ export const router = createBrowserRouter([
 ]);
 ```
 
-
-
 ---
 
 ### Cosa mi porto a casa
@@ -186,30 +183,29 @@ Nelle pagine con librerie pesanti (editor, grafici, Web3) l’effetto è tangibi
 
 ---
 
-* Vuoi vedere come trasformo token in **primitives** su un caso reale? Leggi “[Da Figma a React + Vite + TypeScript: il frontend dietro SchoolPlatform]({% post_url 2025-08-25-figma-react-vite-schoolplatform %})”.
-  
+* Vuoi vedere come trasformo token in **primitives** su un caso reale? Leggi “\[Da Figma a React + Vite + TypeScript: il frontend dietro SchoolPlatform]\({% post\_url 2025-08-25-figma-react-vite-schoolplatform %})”.
 * Curioso del codice? Dai un’occhiata al mio **portfolio** e ai repo collegati su GitHub dalla pagina.
-  
 * Se ti interessa questo percorso di redesign, scrivimi dalla pagina contact "newsletter" e la tua email.
 
 Come sempre, Grazie per essere arrivato fin qui!
 
 Matteo Ricci | Full Stack Developer
 
-
-
 <!-- JSON-LD: BlogPosting -->
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Il mio primo frontend era brutto e va bene così",
-  "description": "Perché ho spedito un MVP funzionante prima della grafica, come ho deciso tra refactor e riscrittura totale, e il piano concreto per rimettere ordine in UX/UI senza fermare lo sviluppo.",
+  "headline": "Frontend MVP: refactor o riscrittura? Lezioni dal mio primo progetto",
+  "description": "Come ho spedito un MVP funzionante senza curare la grafica, i criteri per scegliere tra refactor e riscrittura, e il piano concreto per migliorare UX/UI con React, Vite e design tokens.",
   "author": { "@type": "Person", "name": "Matteo Ricci" },
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "/frontend-brutto-va-bene-cosi/" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "/frontend-mvp-refactor-vs-rewrite/" },
   "image": "/assets/img/cover/frontend-brutto.webp",
   "datePublished": "2025-08-24T09:00:00+02:00",
   "dateModified": "2025-08-24T09:00:00+02:00"
 }
 </script>
 
+```
+```
