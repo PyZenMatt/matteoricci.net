@@ -7,7 +7,7 @@ slug: "erc20-lms-django-polygon"
 date: "2025-08-31"
 last_modified_at: "2025-08-31"
 lang: "it"
-categories: ["Progetti","Blockchain","Django", Web3]
+categories: ["Progetti","Blockchain","Django", "Web3"]
 tags: ["blog","seo","ERC-20","Polygon","Django","web3.py","token","arte"]
 author: "Matteo Ricci"
 image_alt: "Diagramma architettura LMS con integrazione ERC-20 su Polygon"
