@@ -1,30 +1,92 @@
-{% comment %}
-Custom sitemap.xml for Jekyll: excludes pages/posts with 'noindex: true' in front matter.
-{% endcomment %}
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% assign pages = site.pages | concat: site.posts %}
-  {% for page in pages %}
-    {% unless page.noindex %}
-      <url>
-        <loc>{{ page.url | absolute_url }}</loc>
-        {% if page.last_modified_at %}
-          <lastmod>{{ page.last_modified_at | date_to_xmlschema }}</lastmod>
-        {% elsif page.date %}
-          <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
-        {% endif %}
-        {% if page.image %}
-          <image:image>
-            <image:loc>{{ page.image | absolute_url }}</image:loc>
-          </image:image>
-        {% endif %}
-        {% if page.canonical %}
-          <xhtml:link rel="canonical" href="{{ page.canonical }}" />
-        {% endif %}
-      </url>
-    {% endunless %}
-  {% endfor %}
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://matteoricci.net/blog/2025/08/07/cose-django-e-perche-usarlo/</loc>
+<lastmod>2025-08-07T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>https://matteoricci.net/blog/2025/08/12/tipi-di-dato-base-in-python-str-int-float-bool-con-esempi-chiari/</loc>
+<lastmod>2025-08-12T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>https://matteoricci.net/blog/2025/08/13/tipi-di-dato-base-in-python-list-tuple-set-e-dict-differenze-e-quando-usarli/</loc>
+<lastmod>2025-08-13T08:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>https://matteoricci.net/blog/2025/08/16/case-study-django-blockchain-backend-schoolplatform-drf-jwt-web3py/</loc>
+<lastmod>2025-08-16T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>https://matteoricci.net/blog/2025/08/17/django-51-struttura-dei-file-generati-da-startproject-e-startapp-con-esempi-pratici/</loc>
+<lastmod>2025-08-17T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>https://matteoricci.net/blog/2025/08/18/perche-costruire-un-lms-con-django-nel-2025-e-quando-non-farlo/</loc>
+<lastmod>2025-08-18T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>https://matteoricci.net/blog/2025/08/20/refactoring-investimento-schoolplatform/</loc>
+<lastmod>2025-08-20T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>https://matteoricci.net/blog/2025/08/24/frontend-brutto-va-bene-cosi/</loc>
+<lastmod>2025-08-24T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>https://matteoricci.net/blog/2025/08/24/vite-vs-create-react-app-cosa-ho-imparato/</loc>
+<lastmod>2025-08-24T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>https://matteoricci.net/figma-react-vite-schoolplatform/</loc>
+<lastmod>2025-08-25T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>https://matteoricci.net/frontend-mvp-refactor-vs-rewrite/</loc>
+<lastmod>2025-08-27T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>https://matteoricci.net/vite-vs-create-react-app-cosa-ho-imparato/</loc>
+<lastmod>2025-08-27T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>https://matteoricci.net/erc20-lms-django-polygon/</loc>
+<lastmod>2025-08-31T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>https://matteoricci.net/blockchain-app-non-cripto/</loc>
+<lastmod>2025-09-02T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>https://matteoricci.net/blockchain-formazione-valore-reale/</loc>
+<lastmod>2025-09-05T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>https://matteoricci.net/blog/</loc>
+</url>
+<url>
+<loc>https://matteoricci.net/contact/</loc>
+</url>
+<url>
+<loc>https://matteoricci.net/cookie-policy/</loc>
+</url>
+<url>
+<loc>https://matteoricci.net/</loc>
+</url>
+<url>
+<loc>https://matteoricci.net/portfolio/</loc>
+</url>
+<url>
+<loc>https://matteoricci.net/privacy-policy/</loc>
+</url>
+<url>
+<loc>https://matteoricci.net/blog/page2/</loc>
+</url>
+<url>
+<loc>https://matteoricci.net/google-verification-placeholder.html</loc>
+<lastmod>2025-07-30T16:36:04+02:00</lastmod>
+</url>
+<url>
+<loc>https://matteoricci.net/it/blog.html</loc>
+<lastmod>2025-08-24T09:04:49+02:00</lastmod>
+</url>
 </urlset>
