@@ -1,5 +1,5 @@
 ---
-title: 📊 Django vs Node/FastAPI per LMS
+title: Django vs Node/FastAPI per LMS
 ---
 
 Ecco il testo formattato in Markdown con **front matter per Jekyll** e struttura pulita:
