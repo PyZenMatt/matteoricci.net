@@ -9,7 +9,7 @@ lang: it
 categories: ["Progetti","ai","rag","case-study"]
 tags: ["blog","seo","RAG","BM25","FAISS","MiniLM","Evaluation","Audit","Policy"]
 author: "Matteo Ricci"
-canonical_url: "https://matteoricci.net/mini-rag-case-study/
+canonical_url: "https://matteoricci.net/mini-rag-case-study/"
 robots: "index, follow"
 sitemap: true
 published: false
