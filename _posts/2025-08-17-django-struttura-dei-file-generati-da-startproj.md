@@ -1,6 +1,6 @@
 ---
 title: "Django 5.1 struttura dei file generati da startproject e startapp con esempi pratici"
-slug: "django-51-struttura-dei-file-generati-da-startproject-e-startapp-con-esempi-pratici"
+slug: "django-startproject-e-startapp-con-esempi-pratici"
 description: "Guida pratica alla struttura dei file creati da Django 5.1 con startproject e startapp: cosa fa ogni file, come collegare l’app, dove mettere template e static."
 tags:
   - python

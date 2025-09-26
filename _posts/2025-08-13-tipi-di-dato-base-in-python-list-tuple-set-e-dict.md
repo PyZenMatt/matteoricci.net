@@ -1,6 +1,6 @@
 ---
 title: "Tipi di dato base in Python: list, tuple, set e dict — differenze e quando usarli"
-slug: "tipi-di-dato-base-in-python-list-tuple-set-e-dict-differenze-e-quando-usarli"
+slug: "tipi-di-dato-base-in-python-list-tuple-set-e-dict"
 description: "Guida pratica ai tipi di dato base in Python 3.12: list, tuple, set e dict. Differenze, esempi chiari e consigli."
 tags:
   - python
