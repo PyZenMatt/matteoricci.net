@@ -12,7 +12,7 @@ author: "Matteo Ricci"
 canonical_url: "https://matteoricci.net/mini-rag-case-study/
 robots: "index,follow"
 sitemap: true
-draft: false
+published: false
 ---
 
 # Mini-RAG su testi di mindfulness: dal pilot alla Policy GOLD v1.1
@@ -22,18 +22,24 @@ Costruire un RAG non è solo una questione di “far rispondere un modello”. �
 Il risultato è una pipeline che si può **replicare** per tutti i libri senza impazzire.
 
 ### Table of Contents
-- [Contesto: perché due indici separati](#contesto-perché-due-indici-separati)
-- [Il percorso, senza salti logici](#il-percorso-senza-salti-logici)
-- [Cosa dicono i numeri (senza fumo)](#cosa-dicono-i-numeri-senza-fumo)
-- [Dove il retrieval inciampa (e come l’ho visto)](#dove-il-retrieval-inciampa-e-come-lho-visto)
-- [Perché la policy batte le patch](#perché-la-policy-batte-le-patch)
-- [Artefatti che aiutano gli umani (non solo i modelli)](#artefatti-che-aiutano-gli-umani-non-solo-i-modelli)
-- [Limiti dichiarati (per scelta)](#limiti-dichiarati-per-scelta)
-- [Come replicare questo lavoro in 6 mosse](#come-replicare-questo-lavoro-in-6-mosse)
-- [Link utili e artefatti](#link-utili-e-artefatti)
-- [Cosa mi porto a casa](#cosa-mi-porto-a-casa)
-- [FAQ](#faq)
-- [Apply This in Practice](#apply-this-in-practice)
+- [Mini-RAG su testi di mindfulness: dal pilot alla Policy GOLD v1.1](#mini-rag-su-testi-di-mindfulness-dal-pilot-alla-policy-gold-v11)
+    - [Table of Contents](#table-of-contents)
+  - [Contesto: perché due indici separati](#contesto-perché-due-indici-separati)
+  - [Il percorso, senza salti logici](#il-percorso-senza-salti-logici)
+  - [Cosa dicono i numeri (senza fumo)](#cosa-dicono-i-numeri-senza-fumo)
+  - [Dove il retrieval inciampa (e come l’ho visto)](#dove-il-retrieval-inciampa-e-come-lho-visto)
+  - [Perché la policy batte le patch](#perché-la-policy-batte-le-patch)
+  - [Artefatti che aiutano gli umani (non solo i modelli)](#artefatti-che-aiutano-gli-umani-non-solo-i-modelli)
+  - [Limiti dichiarati (per scelta)](#limiti-dichiarati-per-scelta)
+  - [Come replicare questo lavoro in 6 mosse](#come-replicare-questo-lavoro-in-6-mosse)
+  - [Link utili e artefatti](#link-utili-e-artefatti)
+  - [Cosa mi porto a casa](#cosa-mi-porto-a-casa)
+    - [FAQ](#faq)
+      - [Cos’è la Policy GOLD v1.1?](#cosè-la-policy-gold-v11)
+      - [Perché usare due indici (BM25 e FAISS)?](#perché-usare-due-indici-bm25-e-faiss)
+      - [Quali metriche ho usato?](#quali-metriche-ho-usato)
+      - [Quando conviene un indice unificato?](#quando-conviene-un-indice-unificato)
+    - [Apply This in Practice](#apply-this-in-practice)
 
 ## Contesto: perché due indici separati
 
