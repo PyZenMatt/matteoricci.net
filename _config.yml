@@ -85,6 +85,14 @@ defaults:
     values:
       layout: "project"
       sitemap: true
+  - scope:
+      path: "preview"
+    values:
+      layout: post
+      noindex: true
+      sitemap: false
+      seo:
+        type: "article"
 
 # ===== Feed (RSS) =====
 feed:
@@ -115,3 +123,8 @@ exclude:
 # cartelle speciali da includere se presenti
 include:
   - .well-known
+  - preview
+# ===== Include / Exclude =====
+
+
+    
