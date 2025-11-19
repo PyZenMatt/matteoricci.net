@@ -33,20 +33,7 @@
     <!-- Blog CSS -->
     <link rel="stylesheet" href="{{ '/assets/css/blog.css' | relative_url }}">
     
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MLB32YW721"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      
-      // Initialize with denied consent
-      gtag('consent', 'default', {
-        'analytics_storage': 'denied'
-      });
-      
-      gtag('js', new Date());
-      gtag('config', 'G-MLB32YW721');
-    </script>
+    {% include analytics.html %}
   </head>
   
   <body>

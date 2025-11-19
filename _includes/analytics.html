@@ -1,0 +1,32 @@
+{% comment %}
+  Google Analytics 4 (GA4) tracking code
+  
+  This include centralizes GA4 implementation across all layouts.
+  The Measurement ID is configured in _config.yml (google_analytics property).
+  
+  IMPORTANT: Verify the Measurement ID belongs to the correct property:
+  - MatteoRicci.net should use property ID: 352111958
+  - MessyMind.it should use property ID: 498950157
+  
+  To find your Measurement ID in GA4:
+  1. Go to GA4 Admin → Data Streams
+  2. Select your web data stream
+  3. Copy the Measurement ID (format: G-XXXXXXXXX)
+{% endcomment %}
+
+{% if site.google_analytics %}
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  
+  // Initialize with denied consent (GDPR compliance)
+  gtag('consent', 'default', {
+    'analytics_storage': 'denied'
+  });
+  
+  gtag('js', new Date());
+  gtag('config', '{{ site.google_analytics }}');
+</script>
+{% endif %}
