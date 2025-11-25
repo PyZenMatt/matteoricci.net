@@ -37,7 +37,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
     name: form.name.value,
     email: form.email.value,
     message: form.message.value,
-    honeypot: form.honeypot.value
+    website: form.website.value
   };
   try {
     const response = await fetch("https://PyZenMatt.pythonanywhere.com/api/contact/submit/", {
